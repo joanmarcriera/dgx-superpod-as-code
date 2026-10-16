@@ -1,0 +1,30 @@
+path,url,publisher,kind,terms,retrieved
+media/logos/nvidia.svg,https://github.com/simple-icons/simple-icons/blob/develop/icons/nvidia.svg,simple-icons,logo,SVG file CC0-1.0 but NVIDIA trademark applies; written approval needed per NVIDIA logo guidelines,2026-09-30
+media/logos/wikimedia_nvidia_logo.svg,https://commons.wikimedia.org/wiki/File:Nvidia_logo.svg,Wikimedia Commons,logo,Tagged public domain (copyright) but trademarked; NVIDIA approval needed for use,2026-09-30
+media/logos/wikimedia_NVIDIA_logo_apache.svg,https://commons.wikimedia.org/wiki/File:NVIDIA_logo.svg,Wikimedia Commons,logo,Tagged Apache-2.0 (copyright) but trademarked; NVIDIA approval needed for use,2026-09-30
+media/logos/wikimedia_VAST_Data_logo.svg,https://commons.wikimedia.org/wiki/File:VAST_Data_logo.svg,Wikimedia Commons,logo,Tagged public domain (copyright) but trademarked; unclear - internal reference only; prefer VAST official press kit,2026-09-30
+media/logos/wikimedia_Legrand_SA_logo.svg,https://commons.wikimedia.org/wiki/File:Logo_Legrand_SA.svg,Wikimedia Commons,logo,Tagged public domain (copyright) but trademarked; Legrand parent logo not Raritan; unclear - internal reference only,2026-09-30
+(not downloaded) NVIDIA brand guidelines,https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage/,NVIDIA,pdf,All logo use requires NVIDIA written permission; no recolour/distortion; no third-party stock sources,2026-09-30
+(not downloaded) DDN brand assets,https://www.ddn.com/company/brand-assets/,DDN,logo,Official SVG/PNG/JPEG on page (JS-loaded); terms not stated beyond contact brand@ddn.com - unclear - internal reference only,2026-09-30
+media/icons/nvidia_visio/QM97X0.vssx,https://d29g4g2dyqv443.cloudfront.net/sites/default/files/akamai/networking/stencils/QM97X0.vssx,NVIDIA,diagram,Public download from NVIDIA developer page; no licence text found - unclear - internal reference only,2026-09-30
+media/icons/nvidia_visio/SN4600C_Stencils.vssx,https://d29g4g2dyqv443.cloudfront.net/sites/default/files/akamai/networking/stencils/SN4600C_Stencils.vssx,NVIDIA,diagram,Public download; no licence text found - unclear - internal reference only,2026-09-30
+media/icons/nvidia_visio/SN4600_Stencils.vssx,https://d29g4g2dyqv443.cloudfront.net/sites/default/files/akamai/networking/stencils/SN4600_Stencils.vssx,NVIDIA,diagram,Public download; no licence text found - unclear - internal reference only,2026-09-30
+media/icons/nvidia_visio/SN2201_Stencils.vssx,https://developer.download.nvidia.com/images/stencils/SN2201_Stencils.vssx,NVIDIA,diagram,Public download; no licence text found - unclear - internal reference only,2026-09-30
+media/icons/nvidia_visio/SN5600_Stencils.vssx,https://developer.download.nvidia.com/images/networking/stencils/SN5600_Stencils.vssx,NVIDIA,diagram,Public download; no licence text found - unclear - internal reference only,2026-09-30
+media/icons/drawio/Sidebar-Rack.js,https://github.com/jgraph/drawio/blob/dev/src/main/webapp/js/diagramly/sidebar/Sidebar-Rack.js,jgraph/drawio,diagram,Apache-2.0 (see media/icons/drawio/LICENSE),2026-09-30
+media/icons/drawio/LICENSE,https://github.com/jgraph/drawio/blob/dev/LICENSE,jgraph/drawio,diagram,Apache-2.0,2026-09-30
+(not downloaded) DGX H200 Visio stencils,https://www.visiostencils.com/product/products/Nvidia.html,VisioStencils.com,diagram,"Paid subscription required; price not published (email Sales@VisioStencils.com); EQID NVID142 DGX H200, NVID143 H100, NVID144 bezel, NVID145 controller",2026-09-30
+(not downloaded) Lenovo ThinkSystem stencils,https://lenovopress.lenovo.com/lp1599-visio-stencils,Lenovo Press / VisioCafe,diagram,Free download via VisioCafe; licence terms not reviewed - unclear - internal reference only,2026-09-30
+(not downloaded) Dell server stencils,http://www.visiocafe.com/dell.htm,VisioCafe (Dell),diagram,Free download; licence terms not reviewed - unclear - internal reference only,2026-09-30
+(not downloaded) Omniverse DSX dsx_dataset,https://catalog.ngc.nvidia.com/orgs/nvidia/omniverse/resources/dsx_dataset/-,NVIDIA NGC,3d,"NVIDIA Sample Data License for Evaluation; demonstration only, not for production; 32.69 GB v2.1",2026-09-30
+(not downloaded) SimReady assets doc,https://docs.omniverse.nvidia.com/dsx/latest/simready-assets.html,NVIDIA,pdf,Describes DGX GB300 NVL72 rack and Vertiv XDU2300 CDU SimReady assets (OpenUSD),2026-09-30
+(not downloaded) DSX blueprint repo,https://github.com/NVIDIA-Omniverse-blueprints/omniverse-dsx-blueprint-for-ai-factories,NVIDIA,3d,NVIDIA Software License Agreement + Omniverse Product-Specific Terms,2026-09-30
+media/3d/polypizza_server_rack_JeremyEyring.glb,https://poly.pizza/m/6ijQclm8jxw,Poly Pizza / Jeremy Eyring,3d,CC-BY 3.0 - attribution required (Jeremy Eyring),2026-09-30
+media/3d/polypizza_computer_room_BrunoOliveira.glb,https://poly.pizza/m/cA_lcvRC4NA,Poly Pizza / Bruno Oliveira,3d,CC-BY 3.0 - attribution required (Bruno Oliveira),2026-09-30
+media/3d/polyhaven_modular_electric_cables_1k.blend,https://polyhaven.com/a/modular_electric_cables,Poly Haven / Kuutti Siitonen,3d,CC0,2026-09-30
+media/hdri/empty_warehouse_01_2k.hdr,https://polyhaven.com/a/empty_warehouse_01,Poly Haven / Sergej Majboroda,hdri,CC0,2026-09-30
+media/hdri/small_hangar_01_2k.hdr,https://polyhaven.com/a/small_hangar_01,Poly Haven / Sergej Majboroda,hdri,CC0,2026-09-30
+media/textures/polyhaven_concrete_floor_painted/,https://polyhaven.com/a/concrete_floor_painted,Poly Haven / Rob Tuytel,texture,CC0,2026-09-30
+media/textures/ambientcg_Metal009_1K-JPG/,https://ambientcg.com/a/Metal009,ambientCG,texture,CC0 - brushed metal,2026-09-30
+media/textures/ambientcg_SheetMetal001_1K-JPG/,https://ambientcg.com/a/SheetMetal001,ambientCG,texture,CC0 - perforated sheet metal,2026-09-30
+media/textures/ambientcg_Plastic012B_1K-JPG/,https://ambientcg.com/a/Plastic012B,ambientCG,texture,CC0 - black scratched plastic,2026-09-30

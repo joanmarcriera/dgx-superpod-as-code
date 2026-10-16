@@ -1,0 +1,25 @@
+# Motivair (Schneider Electric) MCDU-40 floor-standing coolant distribution unit — custom.
+# Sources (reference/cooling-schneider/README.md §2, CDU26 = CDU brochure 2026):
+#   headline "up to 1.2 MW"; rated 842.51 kW at R4 (primary 45 F / secondary 60-84 F =
+#   7.2 C / 15.6-28.9 C, ~8.3 K approach, derived) — the printed rating nearest an RDHx loop;
+#   nominal flow 280 / 240 GPM (primary / secondary); 4 in connections, top or bottom;
+#   80-1/2 x 61-5/8 x 36 in = 2045 H x 1565 D x 914 W mm; dual pumps standard; 380-480 V
+#   3ph with "Redundant A/B Power Connections", 15.4 A at 400 V (10.7 kVA, derived);
+#   BACnet / Modbus; weight NOT FOUND.
+# Non-racked device in the hall (role cooling-cdu). PRI-* = facility water (plant side),
+# SEC-* = technology loop (header side); both are `other` interfaces cabled as coolant runs.
+manufacturer: Motivair
+model: MCDU-40
+slug: motivair-mcdu-40
+u_height: 0
+is_full_depth: false
+comments: Floor-standing CDU, 842.5 kW at R4 (7.2 C primary, 15.6/28.9 C secondary), 2045 x 914 x 1565 mm. Custom definition — see catalog/custom/README.md.
+interfaces:
+  - {name: PRI-S, label: "primary supply (from plant), 4 in", type: other}
+  - {name: PRI-R, label: "primary return (to plant), 4 in", type: other}
+  - {name: SEC-S, label: "secondary supply (to header), 4 in", type: other}
+  - {name: SEC-R, label: "secondary return (from header), 4 in", type: other}
+  - {name: mgmt0, label: "PLC BACnet/Modbus", type: 1000base-t, mgmt_only: true}
+power-ports:
+  - {name: A, label: "feed A, 400 V 3ph", type: hardwired, maximum_draw: 10700, allocated_draw: 5350}
+  - {name: B, label: "feed B, 400 V 3ph", type: hardwired, maximum_draw: 10700, allocated_draw: 5350}

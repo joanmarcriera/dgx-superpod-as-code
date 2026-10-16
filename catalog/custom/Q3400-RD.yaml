@@ -1,0 +1,17 @@
+# NVIDIA Quantum-X800 Q3400-RD, 144 x XDR 800G InfiniBand — custom, not in the library.
+# RA-GB300 "Compute Fabric": "enhanced port radix if 144 port for Q3400-RD" (Fig. 10).
+# Ports named like the library QM9700: P<cage>.<lane>, 72 twin-port OSFP cages.
+# CHOICE (not in RA): 4U; 2 PSUs, 3,600 W peak.
+manufacturer: Nvidia
+model: Q3400-RD
+slug: nvidia-q3400-rd
+u_height: 4
+is_full_depth: true
+airflow: front-to-rear
+interfaces:
+  - {name: "P{0..71}.0", type: 800gbase-x-osfp}
+  - {name: "P{0..71}.1", type: 800gbase-x-osfp}
+  - {name: mgmt0, type: 1000base-t, mgmt_only: true}
+power-ports:
+  - {name: psu1, type: iec-60320-c20, maximum_draw: 3600, allocated_draw: 1800}
+  - {name: psu2, type: iec-60320-c20, maximum_draw: 3600, allocated_draw: 1800}

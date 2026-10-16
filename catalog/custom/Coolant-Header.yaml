@@ -1,0 +1,16 @@
+# Overhead coolant header (supply + return mains) for one row and one loop — a modelling
+# stand-in, not a product: NetBox has no pipe object, so a header is a non-racked device whose
+# `other` interfaces are its tees. S-n/R-n = the branch (isolation valve + flex hose pair) to
+# rack n of the row; CDU-S-k/CDU-R-k = the k-th CDU's secondary connection. Sizing (DN, rated
+# flow, insulation) lives in spec cooling.loops.<loop>.header and docs/design-choices.md.
+manufacturer: Generic
+model: Coolant Header (row supply/return mains)
+slug: generic-coolant-header
+u_height: 0
+is_full_depth: false
+comments: Modelling stand-in for the overhead supply/return headers of one row and loop. Custom definition — see catalog/custom/README.md.
+interfaces:
+  - {name: "S-{1..32}", label: "supply tee to rack", type: other}
+  - {name: "R-{1..32}", label: "return tee from rack", type: other}
+  - {name: "CDU-S-{1..6}", label: "supply from CDU secondary", type: other}
+  - {name: "CDU-R-{1..6}", label: "return to CDU secondary", type: other}

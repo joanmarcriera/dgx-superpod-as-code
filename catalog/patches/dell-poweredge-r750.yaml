@@ -1,0 +1,13 @@
+# Management server per RA H200 Table 7 ("4x HDR200 VPI Ports") and DCG Table 4 (R750).
+# The four VPI ports are modelled as fixed interfaces (2 IB to the storage fabric,
+# 2 Ethernet to in-band) rather than as PCIe modules. Power: DCG Table 4, 880 W peak (allocated_draw = peak / 2).
+add:
+  interfaces:
+    - {name: vpi1, label: "CX-7 VPI p1 (IB storage)", type: 200gbase-x-qsfp56}
+    - {name: vpi2, label: "CX-7 VPI p2 (IB storage)", type: 200gbase-x-qsfp56}
+    - {name: vpi3, label: "CX-7 VPI p3 (in-band)", type: 200gbase-x-qsfp56}
+    - {name: vpi4, label: "CX-7 VPI p4 (in-band)", type: 200gbase-x-qsfp56}
+    - {name: bond0, type: lag}
+  power-ports:
+    - {name: psu1, type: iec-60320-c14, maximum_draw: 880, allocated_draw: 440}
+    - {name: psu2, type: iec-60320-c14, maximum_draw: 880, allocated_draw: 440}

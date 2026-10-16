@@ -1,0 +1,12 @@
+# Data-centre core demarcation — a stand-in for the data centre's core routers so the
+# in-band uplinks (RA H200 Table 8: 4x CWDM4 "Uplink to core DC" + 8x AOC "Core DC")
+# are two-ended cables. Occupies no rack space (0U), not a real product. 16 ports: the H200
+# design uses core1-12; the mixed design (spec/superpod-mixed.yaml) shares one demarc between
+# both pods and lands the GB300 SU's 2 x 100GbE "Customer Edge" links on core13-14.
+manufacturer: Generic
+model: DC Core Demarc
+slug: generic-dc-core-demarc
+u_height: 0
+is_full_depth: false
+interfaces:
+  - {name: "core{1..16}", type: 100gbase-x-qsfp28}

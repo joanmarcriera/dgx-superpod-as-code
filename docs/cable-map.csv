@@ -1,0 +1,2446 @@
+label,fabric,su,rail,type,a_device,a_port,b_device,b_port
+F-dgx-su1-r01-pdu-a,power,,,power,dgx-su1-r01-pdu-a,Inlet I1,PP-A,dgx-su1-r01-feed-a
+F-dgx-su1-r01-pdu-b,power,,,power,dgx-su1-r01-pdu-b,Inlet I1,PP-B,dgx-su1-r01-feed-b
+F-dgx-su1-r01-pdu-c,power,,,power,dgx-su1-r01-pdu-c,Inlet I1,PP-C,dgx-su1-r01-feed-c
+F-dgx-su1-r02-pdu-a,power,,,power,dgx-su1-r02-pdu-a,Inlet I1,PP-A,dgx-su1-r02-feed-a
+F-dgx-su1-r02-pdu-b,power,,,power,dgx-su1-r02-pdu-b,Inlet I1,PP-B,dgx-su1-r02-feed-b
+F-dgx-su1-r02-pdu-c,power,,,power,dgx-su1-r02-pdu-c,Inlet I1,PP-C,dgx-su1-r02-feed-c
+F-dgx-su1-r03-pdu-a,power,,,power,dgx-su1-r03-pdu-a,Inlet I1,PP-A,dgx-su1-r03-feed-a
+F-dgx-su1-r03-pdu-b,power,,,power,dgx-su1-r03-pdu-b,Inlet I1,PP-B,dgx-su1-r03-feed-b
+F-dgx-su1-r03-pdu-c,power,,,power,dgx-su1-r03-pdu-c,Inlet I1,PP-C,dgx-su1-r03-feed-c
+F-dgx-su1-r04-pdu-a,power,,,power,dgx-su1-r04-pdu-a,Inlet I1,PP-A,dgx-su1-r04-feed-a
+F-dgx-su1-r04-pdu-b,power,,,power,dgx-su1-r04-pdu-b,Inlet I1,PP-B,dgx-su1-r04-feed-b
+F-dgx-su1-r04-pdu-c,power,,,power,dgx-su1-r04-pdu-c,Inlet I1,PP-C,dgx-su1-r04-feed-c
+F-dgx-su1-r05-pdu-a,power,,,power,dgx-su1-r05-pdu-a,Inlet I1,PP-A,dgx-su1-r05-feed-a
+F-dgx-su1-r05-pdu-b,power,,,power,dgx-su1-r05-pdu-b,Inlet I1,PP-B,dgx-su1-r05-feed-b
+F-dgx-su1-r05-pdu-c,power,,,power,dgx-su1-r05-pdu-c,Inlet I1,PP-C,dgx-su1-r05-feed-c
+F-dgx-su1-r06-pdu-a,power,,,power,dgx-su1-r06-pdu-a,Inlet I1,PP-A,dgx-su1-r06-feed-a
+F-dgx-su1-r06-pdu-b,power,,,power,dgx-su1-r06-pdu-b,Inlet I1,PP-B,dgx-su1-r06-feed-b
+F-dgx-su1-r06-pdu-c,power,,,power,dgx-su1-r06-pdu-c,Inlet I1,PP-C,dgx-su1-r06-feed-c
+F-dgx-su1-r07-pdu-a,power,,,power,dgx-su1-r07-pdu-a,Inlet I1,PP-A,dgx-su1-r07-feed-a
+F-dgx-su1-r07-pdu-b,power,,,power,dgx-su1-r07-pdu-b,Inlet I1,PP-B,dgx-su1-r07-feed-b
+F-dgx-su1-r07-pdu-c,power,,,power,dgx-su1-r07-pdu-c,Inlet I1,PP-C,dgx-su1-r07-feed-c
+F-dgx-su1-r08-pdu-a,power,,,power,dgx-su1-r08-pdu-a,Inlet I1,PP-A,dgx-su1-r08-feed-a
+F-dgx-su1-r08-pdu-b,power,,,power,dgx-su1-r08-pdu-b,Inlet I1,PP-B,dgx-su1-r08-feed-b
+F-dgx-su1-r08-pdu-c,power,,,power,dgx-su1-r08-pdu-c,Inlet I1,PP-C,dgx-su1-r08-feed-c
+F-dgx-su1-r09-pdu-a,power,,,power,dgx-su1-r09-pdu-a,Inlet I1,PP-A,dgx-su1-r09-feed-a
+F-dgx-su1-r09-pdu-b,power,,,power,dgx-su1-r09-pdu-b,Inlet I1,PP-B,dgx-su1-r09-feed-b
+F-dgx-su1-r09-pdu-c,power,,,power,dgx-su1-r09-pdu-c,Inlet I1,PP-C,dgx-su1-r09-feed-c
+F-dgx-su1-r10-pdu-a,power,,,power,dgx-su1-r10-pdu-a,Inlet I1,PP-A,dgx-su1-r10-feed-a
+F-dgx-su1-r10-pdu-b,power,,,power,dgx-su1-r10-pdu-b,Inlet I1,PP-B,dgx-su1-r10-feed-b
+F-dgx-su1-r10-pdu-c,power,,,power,dgx-su1-r10-pdu-c,Inlet I1,PP-C,dgx-su1-r10-feed-c
+F-dgx-su1-r11-pdu-a,power,,,power,dgx-su1-r11-pdu-a,Inlet I1,PP-A,dgx-su1-r11-feed-a
+F-dgx-su1-r11-pdu-b,power,,,power,dgx-su1-r11-pdu-b,Inlet I1,PP-B,dgx-su1-r11-feed-b
+F-dgx-su1-r11-pdu-c,power,,,power,dgx-su1-r11-pdu-c,Inlet I1,PP-C,dgx-su1-r11-feed-c
+F-dgx-su1-r12-pdu-a,power,,,power,dgx-su1-r12-pdu-a,Inlet I1,PP-A,dgx-su1-r12-feed-a
+F-dgx-su1-r12-pdu-b,power,,,power,dgx-su1-r12-pdu-b,Inlet I1,PP-B,dgx-su1-r12-feed-b
+F-dgx-su1-r12-pdu-c,power,,,power,dgx-su1-r12-pdu-c,Inlet I1,PP-C,dgx-su1-r12-feed-c
+F-dgx-su1-r13-pdu-a,power,,,power,dgx-su1-r13-pdu-a,Inlet I1,PP-A,dgx-su1-r13-feed-a
+F-dgx-su1-r13-pdu-b,power,,,power,dgx-su1-r13-pdu-b,Inlet I1,PP-B,dgx-su1-r13-feed-b
+F-dgx-su1-r13-pdu-c,power,,,power,dgx-su1-r13-pdu-c,Inlet I1,PP-C,dgx-su1-r13-feed-c
+F-dgx-su1-r14-pdu-a,power,,,power,dgx-su1-r14-pdu-a,Inlet I1,PP-A,dgx-su1-r14-feed-a
+F-dgx-su1-r14-pdu-b,power,,,power,dgx-su1-r14-pdu-b,Inlet I1,PP-B,dgx-su1-r14-feed-b
+F-dgx-su1-r14-pdu-c,power,,,power,dgx-su1-r14-pdu-c,Inlet I1,PP-C,dgx-su1-r14-feed-c
+F-dgx-su1-r15-pdu-a,power,,,power,dgx-su1-r15-pdu-a,Inlet I1,PP-A,dgx-su1-r15-feed-a
+F-dgx-su1-r15-pdu-b,power,,,power,dgx-su1-r15-pdu-b,Inlet I1,PP-B,dgx-su1-r15-feed-b
+F-dgx-su1-r15-pdu-c,power,,,power,dgx-su1-r15-pdu-c,Inlet I1,PP-C,dgx-su1-r15-feed-c
+F-dgx-su1-r16-pdu-a,power,,,power,dgx-su1-r16-pdu-a,Inlet I1,PP-A,dgx-su1-r16-feed-a
+F-dgx-su1-r16-pdu-b,power,,,power,dgx-su1-r16-pdu-b,Inlet I1,PP-B,dgx-su1-r16-feed-b
+F-dgx-su1-r16-pdu-c,power,,,power,dgx-su1-r16-pdu-c,Inlet I1,PP-C,dgx-su1-r16-feed-c
+F-dgx-su2-r01-pdu-a,power,,,power,dgx-su2-r01-pdu-a,Inlet I1,PP-A,dgx-su2-r01-feed-a
+F-dgx-su2-r01-pdu-b,power,,,power,dgx-su2-r01-pdu-b,Inlet I1,PP-B,dgx-su2-r01-feed-b
+F-dgx-su2-r01-pdu-c,power,,,power,dgx-su2-r01-pdu-c,Inlet I1,PP-C,dgx-su2-r01-feed-c
+F-dgx-su2-r02-pdu-a,power,,,power,dgx-su2-r02-pdu-a,Inlet I1,PP-A,dgx-su2-r02-feed-a
+F-dgx-su2-r02-pdu-b,power,,,power,dgx-su2-r02-pdu-b,Inlet I1,PP-B,dgx-su2-r02-feed-b
+F-dgx-su2-r02-pdu-c,power,,,power,dgx-su2-r02-pdu-c,Inlet I1,PP-C,dgx-su2-r02-feed-c
+F-dgx-su2-r03-pdu-a,power,,,power,dgx-su2-r03-pdu-a,Inlet I1,PP-A,dgx-su2-r03-feed-a
+F-dgx-su2-r03-pdu-b,power,,,power,dgx-su2-r03-pdu-b,Inlet I1,PP-B,dgx-su2-r03-feed-b
+F-dgx-su2-r03-pdu-c,power,,,power,dgx-su2-r03-pdu-c,Inlet I1,PP-C,dgx-su2-r03-feed-c
+F-dgx-su2-r04-pdu-a,power,,,power,dgx-su2-r04-pdu-a,Inlet I1,PP-A,dgx-su2-r04-feed-a
+F-dgx-su2-r04-pdu-b,power,,,power,dgx-su2-r04-pdu-b,Inlet I1,PP-B,dgx-su2-r04-feed-b
+F-dgx-su2-r04-pdu-c,power,,,power,dgx-su2-r04-pdu-c,Inlet I1,PP-C,dgx-su2-r04-feed-c
+F-dgx-su2-r05-pdu-a,power,,,power,dgx-su2-r05-pdu-a,Inlet I1,PP-A,dgx-su2-r05-feed-a
+F-dgx-su2-r05-pdu-b,power,,,power,dgx-su2-r05-pdu-b,Inlet I1,PP-B,dgx-su2-r05-feed-b
+F-dgx-su2-r05-pdu-c,power,,,power,dgx-su2-r05-pdu-c,Inlet I1,PP-C,dgx-su2-r05-feed-c
+F-dgx-su2-r06-pdu-a,power,,,power,dgx-su2-r06-pdu-a,Inlet I1,PP-A,dgx-su2-r06-feed-a
+F-dgx-su2-r06-pdu-b,power,,,power,dgx-su2-r06-pdu-b,Inlet I1,PP-B,dgx-su2-r06-feed-b
+F-dgx-su2-r06-pdu-c,power,,,power,dgx-su2-r06-pdu-c,Inlet I1,PP-C,dgx-su2-r06-feed-c
+F-dgx-su2-r07-pdu-a,power,,,power,dgx-su2-r07-pdu-a,Inlet I1,PP-A,dgx-su2-r07-feed-a
+F-dgx-su2-r07-pdu-b,power,,,power,dgx-su2-r07-pdu-b,Inlet I1,PP-B,dgx-su2-r07-feed-b
+F-dgx-su2-r07-pdu-c,power,,,power,dgx-su2-r07-pdu-c,Inlet I1,PP-C,dgx-su2-r07-feed-c
+F-dgx-su2-r08-pdu-a,power,,,power,dgx-su2-r08-pdu-a,Inlet I1,PP-A,dgx-su2-r08-feed-a
+F-dgx-su2-r08-pdu-b,power,,,power,dgx-su2-r08-pdu-b,Inlet I1,PP-B,dgx-su2-r08-feed-b
+F-dgx-su2-r08-pdu-c,power,,,power,dgx-su2-r08-pdu-c,Inlet I1,PP-C,dgx-su2-r08-feed-c
+F-dgx-su2-r09-pdu-a,power,,,power,dgx-su2-r09-pdu-a,Inlet I1,PP-A,dgx-su2-r09-feed-a
+F-dgx-su2-r09-pdu-b,power,,,power,dgx-su2-r09-pdu-b,Inlet I1,PP-B,dgx-su2-r09-feed-b
+F-dgx-su2-r09-pdu-c,power,,,power,dgx-su2-r09-pdu-c,Inlet I1,PP-C,dgx-su2-r09-feed-c
+F-dgx-su2-r10-pdu-a,power,,,power,dgx-su2-r10-pdu-a,Inlet I1,PP-A,dgx-su2-r10-feed-a
+F-dgx-su2-r10-pdu-b,power,,,power,dgx-su2-r10-pdu-b,Inlet I1,PP-B,dgx-su2-r10-feed-b
+F-dgx-su2-r10-pdu-c,power,,,power,dgx-su2-r10-pdu-c,Inlet I1,PP-C,dgx-su2-r10-feed-c
+F-dgx-su2-r11-pdu-a,power,,,power,dgx-su2-r11-pdu-a,Inlet I1,PP-A,dgx-su2-r11-feed-a
+F-dgx-su2-r11-pdu-b,power,,,power,dgx-su2-r11-pdu-b,Inlet I1,PP-B,dgx-su2-r11-feed-b
+F-dgx-su2-r11-pdu-c,power,,,power,dgx-su2-r11-pdu-c,Inlet I1,PP-C,dgx-su2-r11-feed-c
+F-dgx-su2-r12-pdu-a,power,,,power,dgx-su2-r12-pdu-a,Inlet I1,PP-A,dgx-su2-r12-feed-a
+F-dgx-su2-r12-pdu-b,power,,,power,dgx-su2-r12-pdu-b,Inlet I1,PP-B,dgx-su2-r12-feed-b
+F-dgx-su2-r12-pdu-c,power,,,power,dgx-su2-r12-pdu-c,Inlet I1,PP-C,dgx-su2-r12-feed-c
+F-dgx-su2-r13-pdu-a,power,,,power,dgx-su2-r13-pdu-a,Inlet I1,PP-A,dgx-su2-r13-feed-a
+F-dgx-su2-r13-pdu-b,power,,,power,dgx-su2-r13-pdu-b,Inlet I1,PP-B,dgx-su2-r13-feed-b
+F-dgx-su2-r13-pdu-c,power,,,power,dgx-su2-r13-pdu-c,Inlet I1,PP-C,dgx-su2-r13-feed-c
+F-dgx-su2-r14-pdu-a,power,,,power,dgx-su2-r14-pdu-a,Inlet I1,PP-A,dgx-su2-r14-feed-a
+F-dgx-su2-r14-pdu-b,power,,,power,dgx-su2-r14-pdu-b,Inlet I1,PP-B,dgx-su2-r14-feed-b
+F-dgx-su2-r14-pdu-c,power,,,power,dgx-su2-r14-pdu-c,Inlet I1,PP-C,dgx-su2-r14-feed-c
+F-dgx-su2-r15-pdu-a,power,,,power,dgx-su2-r15-pdu-a,Inlet I1,PP-A,dgx-su2-r15-feed-a
+F-dgx-su2-r15-pdu-b,power,,,power,dgx-su2-r15-pdu-b,Inlet I1,PP-B,dgx-su2-r15-feed-b
+F-dgx-su2-r15-pdu-c,power,,,power,dgx-su2-r15-pdu-c,Inlet I1,PP-C,dgx-su2-r15-feed-c
+F-dgx-su2-r16-pdu-a,power,,,power,dgx-su2-r16-pdu-a,Inlet I1,PP-A,dgx-su2-r16-feed-a
+F-dgx-su2-r16-pdu-b,power,,,power,dgx-su2-r16-pdu-b,Inlet I1,PP-B,dgx-su2-r16-feed-b
+F-dgx-su2-r16-pdu-c,power,,,power,dgx-su2-r16-pdu-c,Inlet I1,PP-C,dgx-su2-r16-feed-c
+F-mgmt-r01-pdu-a,power,,,power,mgmt-r01-pdu-a,Inlet I1,PP-A,mgmt-r01-feed-a
+F-mgmt-r01-pdu-b,power,,,power,mgmt-r01-pdu-b,Inlet I1,PP-B,mgmt-r01-feed-b
+F-mgmt-r02-pdu-a,power,,,power,mgmt-r02-pdu-a,Inlet I1,PP-A,mgmt-r02-feed-a
+F-mgmt-r02-pdu-b,power,,,power,mgmt-r02-pdu-b,Inlet I1,PP-B,mgmt-r02-feed-b
+F-mgmt-r03-pdu-a,power,,,power,mgmt-r03-pdu-a,Inlet I1,PP-A,mgmt-r03-feed-a
+F-mgmt-r03-pdu-b,power,,,power,mgmt-r03-pdu-b,Inlet I1,PP-B,mgmt-r03-feed-b
+F-mgmt-r04-pdu-a,power,,,power,mgmt-r04-pdu-a,Inlet I1,PP-A,mgmt-r04-feed-a
+F-mgmt-r04-pdu-b,power,,,power,mgmt-r04-pdu-b,Inlet I1,PP-B,mgmt-r04-feed-b
+F-stor-r01-pdu-a,power,,,power,stor-r01-pdu-a,Inlet I1,PP-A,stor-r01-feed-a
+F-stor-r01-pdu-b,power,,,power,stor-r01-pdu-b,Inlet I1,PP-B,stor-r01-feed-b
+F-stor-r02-pdu-a,power,,,power,stor-r02-pdu-a,Inlet I1,PP-A,stor-r02-feed-a
+F-stor-r02-pdu-b,power,,,power,stor-r02-pdu-b,Inlet I1,PP-B,stor-r02-feed-b
+C-dgx-su1-n01-R1,compute,1,1,mmf-om4,dgx-su1-n01,OSFP4P2,ibc-su1-leaf-r1,P0.0
+C-dgx-su1-n01-R2,compute,1,2,mmf-om4,dgx-su1-n01,OSFP3P2,ibc-su1-leaf-r2,P0.0
+C-dgx-su1-n01-R3,compute,1,3,mmf-om4,dgx-su1-n01,OSFP3P1,ibc-su1-leaf-r3,P0.0
+C-dgx-su1-n01-R4,compute,1,4,mmf-om4,dgx-su1-n01,OSFP4P1,ibc-su1-leaf-r4,P0.0
+C-dgx-su1-n01-R5,compute,1,5,mmf-om4,dgx-su1-n01,OSFP1P2,ibc-su1-leaf-r5,P0.0
+C-dgx-su1-n01-R6,compute,1,6,mmf-om4,dgx-su1-n01,OSFP2P2,ibc-su1-leaf-r6,P0.0
+C-dgx-su1-n01-R7,compute,1,7,mmf-om4,dgx-su1-n01,OSFP2P1,ibc-su1-leaf-r7,P0.0
+C-dgx-su1-n01-R8,compute,1,8,mmf-om4,dgx-su1-n01,OSFP1P1,ibc-su1-leaf-r8,P0.0
+C-dgx-su1-n02-R1,compute,1,1,mmf-om4,dgx-su1-n02,OSFP4P2,ibc-su1-leaf-r1,P0.1
+C-dgx-su1-n02-R2,compute,1,2,mmf-om4,dgx-su1-n02,OSFP3P2,ibc-su1-leaf-r2,P0.1
+C-dgx-su1-n02-R3,compute,1,3,mmf-om4,dgx-su1-n02,OSFP3P1,ibc-su1-leaf-r3,P0.1
+C-dgx-su1-n02-R4,compute,1,4,mmf-om4,dgx-su1-n02,OSFP4P1,ibc-su1-leaf-r4,P0.1
+C-dgx-su1-n02-R5,compute,1,5,mmf-om4,dgx-su1-n02,OSFP1P2,ibc-su1-leaf-r5,P0.1
+C-dgx-su1-n02-R6,compute,1,6,mmf-om4,dgx-su1-n02,OSFP2P2,ibc-su1-leaf-r6,P0.1
+C-dgx-su1-n02-R7,compute,1,7,mmf-om4,dgx-su1-n02,OSFP2P1,ibc-su1-leaf-r7,P0.1
+C-dgx-su1-n02-R8,compute,1,8,mmf-om4,dgx-su1-n02,OSFP1P1,ibc-su1-leaf-r8,P0.1
+C-dgx-su1-n03-R1,compute,1,1,mmf-om4,dgx-su1-n03,OSFP4P2,ibc-su1-leaf-r1,P1.0
+C-dgx-su1-n03-R2,compute,1,2,mmf-om4,dgx-su1-n03,OSFP3P2,ibc-su1-leaf-r2,P1.0
+C-dgx-su1-n03-R3,compute,1,3,mmf-om4,dgx-su1-n03,OSFP3P1,ibc-su1-leaf-r3,P1.0
+C-dgx-su1-n03-R4,compute,1,4,mmf-om4,dgx-su1-n03,OSFP4P1,ibc-su1-leaf-r4,P1.0
+C-dgx-su1-n03-R5,compute,1,5,mmf-om4,dgx-su1-n03,OSFP1P2,ibc-su1-leaf-r5,P1.0
+C-dgx-su1-n03-R6,compute,1,6,mmf-om4,dgx-su1-n03,OSFP2P2,ibc-su1-leaf-r6,P1.0
+C-dgx-su1-n03-R7,compute,1,7,mmf-om4,dgx-su1-n03,OSFP2P1,ibc-su1-leaf-r7,P1.0
+C-dgx-su1-n03-R8,compute,1,8,mmf-om4,dgx-su1-n03,OSFP1P1,ibc-su1-leaf-r8,P1.0
+C-dgx-su1-n04-R1,compute,1,1,mmf-om4,dgx-su1-n04,OSFP4P2,ibc-su1-leaf-r1,P1.1
+C-dgx-su1-n04-R2,compute,1,2,mmf-om4,dgx-su1-n04,OSFP3P2,ibc-su1-leaf-r2,P1.1
+C-dgx-su1-n04-R3,compute,1,3,mmf-om4,dgx-su1-n04,OSFP3P1,ibc-su1-leaf-r3,P1.1
+C-dgx-su1-n04-R4,compute,1,4,mmf-om4,dgx-su1-n04,OSFP4P1,ibc-su1-leaf-r4,P1.1
+C-dgx-su1-n04-R5,compute,1,5,mmf-om4,dgx-su1-n04,OSFP1P2,ibc-su1-leaf-r5,P1.1
+C-dgx-su1-n04-R6,compute,1,6,mmf-om4,dgx-su1-n04,OSFP2P2,ibc-su1-leaf-r6,P1.1
+C-dgx-su1-n04-R7,compute,1,7,mmf-om4,dgx-su1-n04,OSFP2P1,ibc-su1-leaf-r7,P1.1
+C-dgx-su1-n04-R8,compute,1,8,mmf-om4,dgx-su1-n04,OSFP1P1,ibc-su1-leaf-r8,P1.1
+C-dgx-su1-n05-R1,compute,1,1,mmf-om4,dgx-su1-n05,OSFP4P2,ibc-su1-leaf-r1,P2.0
+C-dgx-su1-n05-R2,compute,1,2,mmf-om4,dgx-su1-n05,OSFP3P2,ibc-su1-leaf-r2,P2.0
+C-dgx-su1-n05-R3,compute,1,3,mmf-om4,dgx-su1-n05,OSFP3P1,ibc-su1-leaf-r3,P2.0
+C-dgx-su1-n05-R4,compute,1,4,mmf-om4,dgx-su1-n05,OSFP4P1,ibc-su1-leaf-r4,P2.0
+C-dgx-su1-n05-R5,compute,1,5,mmf-om4,dgx-su1-n05,OSFP1P2,ibc-su1-leaf-r5,P2.0
+C-dgx-su1-n05-R6,compute,1,6,mmf-om4,dgx-su1-n05,OSFP2P2,ibc-su1-leaf-r6,P2.0
+C-dgx-su1-n05-R7,compute,1,7,mmf-om4,dgx-su1-n05,OSFP2P1,ibc-su1-leaf-r7,P2.0
+C-dgx-su1-n05-R8,compute,1,8,mmf-om4,dgx-su1-n05,OSFP1P1,ibc-su1-leaf-r8,P2.0
+C-dgx-su1-n06-R1,compute,1,1,mmf-om4,dgx-su1-n06,OSFP4P2,ibc-su1-leaf-r1,P2.1
+C-dgx-su1-n06-R2,compute,1,2,mmf-om4,dgx-su1-n06,OSFP3P2,ibc-su1-leaf-r2,P2.1
+C-dgx-su1-n06-R3,compute,1,3,mmf-om4,dgx-su1-n06,OSFP3P1,ibc-su1-leaf-r3,P2.1
+C-dgx-su1-n06-R4,compute,1,4,mmf-om4,dgx-su1-n06,OSFP4P1,ibc-su1-leaf-r4,P2.1
+C-dgx-su1-n06-R5,compute,1,5,mmf-om4,dgx-su1-n06,OSFP1P2,ibc-su1-leaf-r5,P2.1
+C-dgx-su1-n06-R6,compute,1,6,mmf-om4,dgx-su1-n06,OSFP2P2,ibc-su1-leaf-r6,P2.1
+C-dgx-su1-n06-R7,compute,1,7,mmf-om4,dgx-su1-n06,OSFP2P1,ibc-su1-leaf-r7,P2.1
+C-dgx-su1-n06-R8,compute,1,8,mmf-om4,dgx-su1-n06,OSFP1P1,ibc-su1-leaf-r8,P2.1
+C-dgx-su1-n07-R1,compute,1,1,mmf-om4,dgx-su1-n07,OSFP4P2,ibc-su1-leaf-r1,P3.0
+C-dgx-su1-n07-R2,compute,1,2,mmf-om4,dgx-su1-n07,OSFP3P2,ibc-su1-leaf-r2,P3.0
+C-dgx-su1-n07-R3,compute,1,3,mmf-om4,dgx-su1-n07,OSFP3P1,ibc-su1-leaf-r3,P3.0
+C-dgx-su1-n07-R4,compute,1,4,mmf-om4,dgx-su1-n07,OSFP4P1,ibc-su1-leaf-r4,P3.0
+C-dgx-su1-n07-R5,compute,1,5,mmf-om4,dgx-su1-n07,OSFP1P2,ibc-su1-leaf-r5,P3.0
+C-dgx-su1-n07-R6,compute,1,6,mmf-om4,dgx-su1-n07,OSFP2P2,ibc-su1-leaf-r6,P3.0
+C-dgx-su1-n07-R7,compute,1,7,mmf-om4,dgx-su1-n07,OSFP2P1,ibc-su1-leaf-r7,P3.0
+C-dgx-su1-n07-R8,compute,1,8,mmf-om4,dgx-su1-n07,OSFP1P1,ibc-su1-leaf-r8,P3.0
+C-dgx-su1-n08-R1,compute,1,1,mmf-om4,dgx-su1-n08,OSFP4P2,ibc-su1-leaf-r1,P3.1
+C-dgx-su1-n08-R2,compute,1,2,mmf-om4,dgx-su1-n08,OSFP3P2,ibc-su1-leaf-r2,P3.1
+C-dgx-su1-n08-R3,compute,1,3,mmf-om4,dgx-su1-n08,OSFP3P1,ibc-su1-leaf-r3,P3.1
+C-dgx-su1-n08-R4,compute,1,4,mmf-om4,dgx-su1-n08,OSFP4P1,ibc-su1-leaf-r4,P3.1
+C-dgx-su1-n08-R5,compute,1,5,mmf-om4,dgx-su1-n08,OSFP1P2,ibc-su1-leaf-r5,P3.1
+C-dgx-su1-n08-R6,compute,1,6,mmf-om4,dgx-su1-n08,OSFP2P2,ibc-su1-leaf-r6,P3.1
+C-dgx-su1-n08-R7,compute,1,7,mmf-om4,dgx-su1-n08,OSFP2P1,ibc-su1-leaf-r7,P3.1
+C-dgx-su1-n08-R8,compute,1,8,mmf-om4,dgx-su1-n08,OSFP1P1,ibc-su1-leaf-r8,P3.1
+C-dgx-su1-n09-R1,compute,1,1,mmf-om4,dgx-su1-n09,OSFP4P2,ibc-su1-leaf-r1,P4.0
+C-dgx-su1-n09-R2,compute,1,2,mmf-om4,dgx-su1-n09,OSFP3P2,ibc-su1-leaf-r2,P4.0
+C-dgx-su1-n09-R3,compute,1,3,mmf-om4,dgx-su1-n09,OSFP3P1,ibc-su1-leaf-r3,P4.0
+C-dgx-su1-n09-R4,compute,1,4,mmf-om4,dgx-su1-n09,OSFP4P1,ibc-su1-leaf-r4,P4.0
+C-dgx-su1-n09-R5,compute,1,5,mmf-om4,dgx-su1-n09,OSFP1P2,ibc-su1-leaf-r5,P4.0
+C-dgx-su1-n09-R6,compute,1,6,mmf-om4,dgx-su1-n09,OSFP2P2,ibc-su1-leaf-r6,P4.0
+C-dgx-su1-n09-R7,compute,1,7,mmf-om4,dgx-su1-n09,OSFP2P1,ibc-su1-leaf-r7,P4.0
+C-dgx-su1-n09-R8,compute,1,8,mmf-om4,dgx-su1-n09,OSFP1P1,ibc-su1-leaf-r8,P4.0
+C-dgx-su1-n10-R1,compute,1,1,mmf-om4,dgx-su1-n10,OSFP4P2,ibc-su1-leaf-r1,P4.1
+C-dgx-su1-n10-R2,compute,1,2,mmf-om4,dgx-su1-n10,OSFP3P2,ibc-su1-leaf-r2,P4.1
+C-dgx-su1-n10-R3,compute,1,3,mmf-om4,dgx-su1-n10,OSFP3P1,ibc-su1-leaf-r3,P4.1
+C-dgx-su1-n10-R4,compute,1,4,mmf-om4,dgx-su1-n10,OSFP4P1,ibc-su1-leaf-r4,P4.1
+C-dgx-su1-n10-R5,compute,1,5,mmf-om4,dgx-su1-n10,OSFP1P2,ibc-su1-leaf-r5,P4.1
+C-dgx-su1-n10-R6,compute,1,6,mmf-om4,dgx-su1-n10,OSFP2P2,ibc-su1-leaf-r6,P4.1
+C-dgx-su1-n10-R7,compute,1,7,mmf-om4,dgx-su1-n10,OSFP2P1,ibc-su1-leaf-r7,P4.1
+C-dgx-su1-n10-R8,compute,1,8,mmf-om4,dgx-su1-n10,OSFP1P1,ibc-su1-leaf-r8,P4.1
+C-dgx-su1-n11-R1,compute,1,1,mmf-om4,dgx-su1-n11,OSFP4P2,ibc-su1-leaf-r1,P5.0
+C-dgx-su1-n11-R2,compute,1,2,mmf-om4,dgx-su1-n11,OSFP3P2,ibc-su1-leaf-r2,P5.0
+C-dgx-su1-n11-R3,compute,1,3,mmf-om4,dgx-su1-n11,OSFP3P1,ibc-su1-leaf-r3,P5.0
+C-dgx-su1-n11-R4,compute,1,4,mmf-om4,dgx-su1-n11,OSFP4P1,ibc-su1-leaf-r4,P5.0
+C-dgx-su1-n11-R5,compute,1,5,mmf-om4,dgx-su1-n11,OSFP1P2,ibc-su1-leaf-r5,P5.0
+C-dgx-su1-n11-R6,compute,1,6,mmf-om4,dgx-su1-n11,OSFP2P2,ibc-su1-leaf-r6,P5.0
+C-dgx-su1-n11-R7,compute,1,7,mmf-om4,dgx-su1-n11,OSFP2P1,ibc-su1-leaf-r7,P5.0
+C-dgx-su1-n11-R8,compute,1,8,mmf-om4,dgx-su1-n11,OSFP1P1,ibc-su1-leaf-r8,P5.0
+C-dgx-su1-n12-R1,compute,1,1,mmf-om4,dgx-su1-n12,OSFP4P2,ibc-su1-leaf-r1,P5.1
+C-dgx-su1-n12-R2,compute,1,2,mmf-om4,dgx-su1-n12,OSFP3P2,ibc-su1-leaf-r2,P5.1
+C-dgx-su1-n12-R3,compute,1,3,mmf-om4,dgx-su1-n12,OSFP3P1,ibc-su1-leaf-r3,P5.1
+C-dgx-su1-n12-R4,compute,1,4,mmf-om4,dgx-su1-n12,OSFP4P1,ibc-su1-leaf-r4,P5.1
+C-dgx-su1-n12-R5,compute,1,5,mmf-om4,dgx-su1-n12,OSFP1P2,ibc-su1-leaf-r5,P5.1
+C-dgx-su1-n12-R6,compute,1,6,mmf-om4,dgx-su1-n12,OSFP2P2,ibc-su1-leaf-r6,P5.1
+C-dgx-su1-n12-R7,compute,1,7,mmf-om4,dgx-su1-n12,OSFP2P1,ibc-su1-leaf-r7,P5.1
+C-dgx-su1-n12-R8,compute,1,8,mmf-om4,dgx-su1-n12,OSFP1P1,ibc-su1-leaf-r8,P5.1
+C-dgx-su1-n13-R1,compute,1,1,mmf-om4,dgx-su1-n13,OSFP4P2,ibc-su1-leaf-r1,P6.0
+C-dgx-su1-n13-R2,compute,1,2,mmf-om4,dgx-su1-n13,OSFP3P2,ibc-su1-leaf-r2,P6.0
+C-dgx-su1-n13-R3,compute,1,3,mmf-om4,dgx-su1-n13,OSFP3P1,ibc-su1-leaf-r3,P6.0
+C-dgx-su1-n13-R4,compute,1,4,mmf-om4,dgx-su1-n13,OSFP4P1,ibc-su1-leaf-r4,P6.0
+C-dgx-su1-n13-R5,compute,1,5,mmf-om4,dgx-su1-n13,OSFP1P2,ibc-su1-leaf-r5,P6.0
+C-dgx-su1-n13-R6,compute,1,6,mmf-om4,dgx-su1-n13,OSFP2P2,ibc-su1-leaf-r6,P6.0
+C-dgx-su1-n13-R7,compute,1,7,mmf-om4,dgx-su1-n13,OSFP2P1,ibc-su1-leaf-r7,P6.0
+C-dgx-su1-n13-R8,compute,1,8,mmf-om4,dgx-su1-n13,OSFP1P1,ibc-su1-leaf-r8,P6.0
+C-dgx-su1-n14-R1,compute,1,1,mmf-om4,dgx-su1-n14,OSFP4P2,ibc-su1-leaf-r1,P6.1
+C-dgx-su1-n14-R2,compute,1,2,mmf-om4,dgx-su1-n14,OSFP3P2,ibc-su1-leaf-r2,P6.1
+C-dgx-su1-n14-R3,compute,1,3,mmf-om4,dgx-su1-n14,OSFP3P1,ibc-su1-leaf-r3,P6.1
+C-dgx-su1-n14-R4,compute,1,4,mmf-om4,dgx-su1-n14,OSFP4P1,ibc-su1-leaf-r4,P6.1
+C-dgx-su1-n14-R5,compute,1,5,mmf-om4,dgx-su1-n14,OSFP1P2,ibc-su1-leaf-r5,P6.1
+C-dgx-su1-n14-R6,compute,1,6,mmf-om4,dgx-su1-n14,OSFP2P2,ibc-su1-leaf-r6,P6.1
+C-dgx-su1-n14-R7,compute,1,7,mmf-om4,dgx-su1-n14,OSFP2P1,ibc-su1-leaf-r7,P6.1
+C-dgx-su1-n14-R8,compute,1,8,mmf-om4,dgx-su1-n14,OSFP1P1,ibc-su1-leaf-r8,P6.1
+C-dgx-su1-n15-R1,compute,1,1,mmf-om4,dgx-su1-n15,OSFP4P2,ibc-su1-leaf-r1,P7.0
+C-dgx-su1-n15-R2,compute,1,2,mmf-om4,dgx-su1-n15,OSFP3P2,ibc-su1-leaf-r2,P7.0
+C-dgx-su1-n15-R3,compute,1,3,mmf-om4,dgx-su1-n15,OSFP3P1,ibc-su1-leaf-r3,P7.0
+C-dgx-su1-n15-R4,compute,1,4,mmf-om4,dgx-su1-n15,OSFP4P1,ibc-su1-leaf-r4,P7.0
+C-dgx-su1-n15-R5,compute,1,5,mmf-om4,dgx-su1-n15,OSFP1P2,ibc-su1-leaf-r5,P7.0
+C-dgx-su1-n15-R6,compute,1,6,mmf-om4,dgx-su1-n15,OSFP2P2,ibc-su1-leaf-r6,P7.0
+C-dgx-su1-n15-R7,compute,1,7,mmf-om4,dgx-su1-n15,OSFP2P1,ibc-su1-leaf-r7,P7.0
+C-dgx-su1-n15-R8,compute,1,8,mmf-om4,dgx-su1-n15,OSFP1P1,ibc-su1-leaf-r8,P7.0
+C-dgx-su1-n16-R1,compute,1,1,mmf-om4,dgx-su1-n16,OSFP4P2,ibc-su1-leaf-r1,P7.1
+C-dgx-su1-n16-R2,compute,1,2,mmf-om4,dgx-su1-n16,OSFP3P2,ibc-su1-leaf-r2,P7.1
+C-dgx-su1-n16-R3,compute,1,3,mmf-om4,dgx-su1-n16,OSFP3P1,ibc-su1-leaf-r3,P7.1
+C-dgx-su1-n16-R4,compute,1,4,mmf-om4,dgx-su1-n16,OSFP4P1,ibc-su1-leaf-r4,P7.1
+C-dgx-su1-n16-R5,compute,1,5,mmf-om4,dgx-su1-n16,OSFP1P2,ibc-su1-leaf-r5,P7.1
+C-dgx-su1-n16-R6,compute,1,6,mmf-om4,dgx-su1-n16,OSFP2P2,ibc-su1-leaf-r6,P7.1
+C-dgx-su1-n16-R7,compute,1,7,mmf-om4,dgx-su1-n16,OSFP2P1,ibc-su1-leaf-r7,P7.1
+C-dgx-su1-n16-R8,compute,1,8,mmf-om4,dgx-su1-n16,OSFP1P1,ibc-su1-leaf-r8,P7.1
+C-dgx-su1-n17-R1,compute,1,1,mmf-om4,dgx-su1-n17,OSFP4P2,ibc-su1-leaf-r1,P8.0
+C-dgx-su1-n17-R2,compute,1,2,mmf-om4,dgx-su1-n17,OSFP3P2,ibc-su1-leaf-r2,P8.0
+C-dgx-su1-n17-R3,compute,1,3,mmf-om4,dgx-su1-n17,OSFP3P1,ibc-su1-leaf-r3,P8.0
+C-dgx-su1-n17-R4,compute,1,4,mmf-om4,dgx-su1-n17,OSFP4P1,ibc-su1-leaf-r4,P8.0
+C-dgx-su1-n17-R5,compute,1,5,mmf-om4,dgx-su1-n17,OSFP1P2,ibc-su1-leaf-r5,P8.0
+C-dgx-su1-n17-R6,compute,1,6,mmf-om4,dgx-su1-n17,OSFP2P2,ibc-su1-leaf-r6,P8.0
+C-dgx-su1-n17-R7,compute,1,7,mmf-om4,dgx-su1-n17,OSFP2P1,ibc-su1-leaf-r7,P8.0
+C-dgx-su1-n17-R8,compute,1,8,mmf-om4,dgx-su1-n17,OSFP1P1,ibc-su1-leaf-r8,P8.0
+C-dgx-su1-n18-R1,compute,1,1,mmf-om4,dgx-su1-n18,OSFP4P2,ibc-su1-leaf-r1,P8.1
+C-dgx-su1-n18-R2,compute,1,2,mmf-om4,dgx-su1-n18,OSFP3P2,ibc-su1-leaf-r2,P8.1
+C-dgx-su1-n18-R3,compute,1,3,mmf-om4,dgx-su1-n18,OSFP3P1,ibc-su1-leaf-r3,P8.1
+C-dgx-su1-n18-R4,compute,1,4,mmf-om4,dgx-su1-n18,OSFP4P1,ibc-su1-leaf-r4,P8.1
+C-dgx-su1-n18-R5,compute,1,5,mmf-om4,dgx-su1-n18,OSFP1P2,ibc-su1-leaf-r5,P8.1
+C-dgx-su1-n18-R6,compute,1,6,mmf-om4,dgx-su1-n18,OSFP2P2,ibc-su1-leaf-r6,P8.1
+C-dgx-su1-n18-R7,compute,1,7,mmf-om4,dgx-su1-n18,OSFP2P1,ibc-su1-leaf-r7,P8.1
+C-dgx-su1-n18-R8,compute,1,8,mmf-om4,dgx-su1-n18,OSFP1P1,ibc-su1-leaf-r8,P8.1
+C-dgx-su1-n19-R1,compute,1,1,mmf-om4,dgx-su1-n19,OSFP4P2,ibc-su1-leaf-r1,P9.0
+C-dgx-su1-n19-R2,compute,1,2,mmf-om4,dgx-su1-n19,OSFP3P2,ibc-su1-leaf-r2,P9.0
+C-dgx-su1-n19-R3,compute,1,3,mmf-om4,dgx-su1-n19,OSFP3P1,ibc-su1-leaf-r3,P9.0
+C-dgx-su1-n19-R4,compute,1,4,mmf-om4,dgx-su1-n19,OSFP4P1,ibc-su1-leaf-r4,P9.0
+C-dgx-su1-n19-R5,compute,1,5,mmf-om4,dgx-su1-n19,OSFP1P2,ibc-su1-leaf-r5,P9.0
+C-dgx-su1-n19-R6,compute,1,6,mmf-om4,dgx-su1-n19,OSFP2P2,ibc-su1-leaf-r6,P9.0
+C-dgx-su1-n19-R7,compute,1,7,mmf-om4,dgx-su1-n19,OSFP2P1,ibc-su1-leaf-r7,P9.0
+C-dgx-su1-n19-R8,compute,1,8,mmf-om4,dgx-su1-n19,OSFP1P1,ibc-su1-leaf-r8,P9.0
+C-dgx-su1-n20-R1,compute,1,1,mmf-om4,dgx-su1-n20,OSFP4P2,ibc-su1-leaf-r1,P9.1
+C-dgx-su1-n20-R2,compute,1,2,mmf-om4,dgx-su1-n20,OSFP3P2,ibc-su1-leaf-r2,P9.1
+C-dgx-su1-n20-R3,compute,1,3,mmf-om4,dgx-su1-n20,OSFP3P1,ibc-su1-leaf-r3,P9.1
+C-dgx-su1-n20-R4,compute,1,4,mmf-om4,dgx-su1-n20,OSFP4P1,ibc-su1-leaf-r4,P9.1
+C-dgx-su1-n20-R5,compute,1,5,mmf-om4,dgx-su1-n20,OSFP1P2,ibc-su1-leaf-r5,P9.1
+C-dgx-su1-n20-R6,compute,1,6,mmf-om4,dgx-su1-n20,OSFP2P2,ibc-su1-leaf-r6,P9.1
+C-dgx-su1-n20-R7,compute,1,7,mmf-om4,dgx-su1-n20,OSFP2P1,ibc-su1-leaf-r7,P9.1
+C-dgx-su1-n20-R8,compute,1,8,mmf-om4,dgx-su1-n20,OSFP1P1,ibc-su1-leaf-r8,P9.1
+C-dgx-su1-n21-R1,compute,1,1,mmf-om4,dgx-su1-n21,OSFP4P2,ibc-su1-leaf-r1,P10.0
+C-dgx-su1-n21-R2,compute,1,2,mmf-om4,dgx-su1-n21,OSFP3P2,ibc-su1-leaf-r2,P10.0
+C-dgx-su1-n21-R3,compute,1,3,mmf-om4,dgx-su1-n21,OSFP3P1,ibc-su1-leaf-r3,P10.0
+C-dgx-su1-n21-R4,compute,1,4,mmf-om4,dgx-su1-n21,OSFP4P1,ibc-su1-leaf-r4,P10.0
+C-dgx-su1-n21-R5,compute,1,5,mmf-om4,dgx-su1-n21,OSFP1P2,ibc-su1-leaf-r5,P10.0
+C-dgx-su1-n21-R6,compute,1,6,mmf-om4,dgx-su1-n21,OSFP2P2,ibc-su1-leaf-r6,P10.0
+C-dgx-su1-n21-R7,compute,1,7,mmf-om4,dgx-su1-n21,OSFP2P1,ibc-su1-leaf-r7,P10.0
+C-dgx-su1-n21-R8,compute,1,8,mmf-om4,dgx-su1-n21,OSFP1P1,ibc-su1-leaf-r8,P10.0
+C-dgx-su1-n22-R1,compute,1,1,mmf-om4,dgx-su1-n22,OSFP4P2,ibc-su1-leaf-r1,P10.1
+C-dgx-su1-n22-R2,compute,1,2,mmf-om4,dgx-su1-n22,OSFP3P2,ibc-su1-leaf-r2,P10.1
+C-dgx-su1-n22-R3,compute,1,3,mmf-om4,dgx-su1-n22,OSFP3P1,ibc-su1-leaf-r3,P10.1
+C-dgx-su1-n22-R4,compute,1,4,mmf-om4,dgx-su1-n22,OSFP4P1,ibc-su1-leaf-r4,P10.1
+C-dgx-su1-n22-R5,compute,1,5,mmf-om4,dgx-su1-n22,OSFP1P2,ibc-su1-leaf-r5,P10.1
+C-dgx-su1-n22-R6,compute,1,6,mmf-om4,dgx-su1-n22,OSFP2P2,ibc-su1-leaf-r6,P10.1
+C-dgx-su1-n22-R7,compute,1,7,mmf-om4,dgx-su1-n22,OSFP2P1,ibc-su1-leaf-r7,P10.1
+C-dgx-su1-n22-R8,compute,1,8,mmf-om4,dgx-su1-n22,OSFP1P1,ibc-su1-leaf-r8,P10.1
+C-dgx-su1-n23-R1,compute,1,1,mmf-om4,dgx-su1-n23,OSFP4P2,ibc-su1-leaf-r1,P11.0
+C-dgx-su1-n23-R2,compute,1,2,mmf-om4,dgx-su1-n23,OSFP3P2,ibc-su1-leaf-r2,P11.0
+C-dgx-su1-n23-R3,compute,1,3,mmf-om4,dgx-su1-n23,OSFP3P1,ibc-su1-leaf-r3,P11.0
+C-dgx-su1-n23-R4,compute,1,4,mmf-om4,dgx-su1-n23,OSFP4P1,ibc-su1-leaf-r4,P11.0
+C-dgx-su1-n23-R5,compute,1,5,mmf-om4,dgx-su1-n23,OSFP1P2,ibc-su1-leaf-r5,P11.0
+C-dgx-su1-n23-R6,compute,1,6,mmf-om4,dgx-su1-n23,OSFP2P2,ibc-su1-leaf-r6,P11.0
+C-dgx-su1-n23-R7,compute,1,7,mmf-om4,dgx-su1-n23,OSFP2P1,ibc-su1-leaf-r7,P11.0
+C-dgx-su1-n23-R8,compute,1,8,mmf-om4,dgx-su1-n23,OSFP1P1,ibc-su1-leaf-r8,P11.0
+C-dgx-su1-n24-R1,compute,1,1,mmf-om4,dgx-su1-n24,OSFP4P2,ibc-su1-leaf-r1,P11.1
+C-dgx-su1-n24-R2,compute,1,2,mmf-om4,dgx-su1-n24,OSFP3P2,ibc-su1-leaf-r2,P11.1
+C-dgx-su1-n24-R3,compute,1,3,mmf-om4,dgx-su1-n24,OSFP3P1,ibc-su1-leaf-r3,P11.1
+C-dgx-su1-n24-R4,compute,1,4,mmf-om4,dgx-su1-n24,OSFP4P1,ibc-su1-leaf-r4,P11.1
+C-dgx-su1-n24-R5,compute,1,5,mmf-om4,dgx-su1-n24,OSFP1P2,ibc-su1-leaf-r5,P11.1
+C-dgx-su1-n24-R6,compute,1,6,mmf-om4,dgx-su1-n24,OSFP2P2,ibc-su1-leaf-r6,P11.1
+C-dgx-su1-n24-R7,compute,1,7,mmf-om4,dgx-su1-n24,OSFP2P1,ibc-su1-leaf-r7,P11.1
+C-dgx-su1-n24-R8,compute,1,8,mmf-om4,dgx-su1-n24,OSFP1P1,ibc-su1-leaf-r8,P11.1
+C-dgx-su1-n25-R1,compute,1,1,mmf-om4,dgx-su1-n25,OSFP4P2,ibc-su1-leaf-r1,P12.0
+C-dgx-su1-n25-R2,compute,1,2,mmf-om4,dgx-su1-n25,OSFP3P2,ibc-su1-leaf-r2,P12.0
+C-dgx-su1-n25-R3,compute,1,3,mmf-om4,dgx-su1-n25,OSFP3P1,ibc-su1-leaf-r3,P12.0
+C-dgx-su1-n25-R4,compute,1,4,mmf-om4,dgx-su1-n25,OSFP4P1,ibc-su1-leaf-r4,P12.0
+C-dgx-su1-n25-R5,compute,1,5,mmf-om4,dgx-su1-n25,OSFP1P2,ibc-su1-leaf-r5,P12.0
+C-dgx-su1-n25-R6,compute,1,6,mmf-om4,dgx-su1-n25,OSFP2P2,ibc-su1-leaf-r6,P12.0
+C-dgx-su1-n25-R7,compute,1,7,mmf-om4,dgx-su1-n25,OSFP2P1,ibc-su1-leaf-r7,P12.0
+C-dgx-su1-n25-R8,compute,1,8,mmf-om4,dgx-su1-n25,OSFP1P1,ibc-su1-leaf-r8,P12.0
+C-dgx-su1-n26-R1,compute,1,1,mmf-om4,dgx-su1-n26,OSFP4P2,ibc-su1-leaf-r1,P12.1
+C-dgx-su1-n26-R2,compute,1,2,mmf-om4,dgx-su1-n26,OSFP3P2,ibc-su1-leaf-r2,P12.1
+C-dgx-su1-n26-R3,compute,1,3,mmf-om4,dgx-su1-n26,OSFP3P1,ibc-su1-leaf-r3,P12.1
+C-dgx-su1-n26-R4,compute,1,4,mmf-om4,dgx-su1-n26,OSFP4P1,ibc-su1-leaf-r4,P12.1
+C-dgx-su1-n26-R5,compute,1,5,mmf-om4,dgx-su1-n26,OSFP1P2,ibc-su1-leaf-r5,P12.1
+C-dgx-su1-n26-R6,compute,1,6,mmf-om4,dgx-su1-n26,OSFP2P2,ibc-su1-leaf-r6,P12.1
+C-dgx-su1-n26-R7,compute,1,7,mmf-om4,dgx-su1-n26,OSFP2P1,ibc-su1-leaf-r7,P12.1
+C-dgx-su1-n26-R8,compute,1,8,mmf-om4,dgx-su1-n26,OSFP1P1,ibc-su1-leaf-r8,P12.1
+C-dgx-su1-n27-R1,compute,1,1,mmf-om4,dgx-su1-n27,OSFP4P2,ibc-su1-leaf-r1,P13.0
+C-dgx-su1-n27-R2,compute,1,2,mmf-om4,dgx-su1-n27,OSFP3P2,ibc-su1-leaf-r2,P13.0
+C-dgx-su1-n27-R3,compute,1,3,mmf-om4,dgx-su1-n27,OSFP3P1,ibc-su1-leaf-r3,P13.0
+C-dgx-su1-n27-R4,compute,1,4,mmf-om4,dgx-su1-n27,OSFP4P1,ibc-su1-leaf-r4,P13.0
+C-dgx-su1-n27-R5,compute,1,5,mmf-om4,dgx-su1-n27,OSFP1P2,ibc-su1-leaf-r5,P13.0
+C-dgx-su1-n27-R6,compute,1,6,mmf-om4,dgx-su1-n27,OSFP2P2,ibc-su1-leaf-r6,P13.0
+C-dgx-su1-n27-R7,compute,1,7,mmf-om4,dgx-su1-n27,OSFP2P1,ibc-su1-leaf-r7,P13.0
+C-dgx-su1-n27-R8,compute,1,8,mmf-om4,dgx-su1-n27,OSFP1P1,ibc-su1-leaf-r8,P13.0
+C-dgx-su1-n28-R1,compute,1,1,mmf-om4,dgx-su1-n28,OSFP4P2,ibc-su1-leaf-r1,P13.1
+C-dgx-su1-n28-R2,compute,1,2,mmf-om4,dgx-su1-n28,OSFP3P2,ibc-su1-leaf-r2,P13.1
+C-dgx-su1-n28-R3,compute,1,3,mmf-om4,dgx-su1-n28,OSFP3P1,ibc-su1-leaf-r3,P13.1
+C-dgx-su1-n28-R4,compute,1,4,mmf-om4,dgx-su1-n28,OSFP4P1,ibc-su1-leaf-r4,P13.1
+C-dgx-su1-n28-R5,compute,1,5,mmf-om4,dgx-su1-n28,OSFP1P2,ibc-su1-leaf-r5,P13.1
+C-dgx-su1-n28-R6,compute,1,6,mmf-om4,dgx-su1-n28,OSFP2P2,ibc-su1-leaf-r6,P13.1
+C-dgx-su1-n28-R7,compute,1,7,mmf-om4,dgx-su1-n28,OSFP2P1,ibc-su1-leaf-r7,P13.1
+C-dgx-su1-n28-R8,compute,1,8,mmf-om4,dgx-su1-n28,OSFP1P1,ibc-su1-leaf-r8,P13.1
+C-dgx-su1-n29-R1,compute,1,1,mmf-om4,dgx-su1-n29,OSFP4P2,ibc-su1-leaf-r1,P14.0
+C-dgx-su1-n29-R2,compute,1,2,mmf-om4,dgx-su1-n29,OSFP3P2,ibc-su1-leaf-r2,P14.0
+C-dgx-su1-n29-R3,compute,1,3,mmf-om4,dgx-su1-n29,OSFP3P1,ibc-su1-leaf-r3,P14.0
+C-dgx-su1-n29-R4,compute,1,4,mmf-om4,dgx-su1-n29,OSFP4P1,ibc-su1-leaf-r4,P14.0
+C-dgx-su1-n29-R5,compute,1,5,mmf-om4,dgx-su1-n29,OSFP1P2,ibc-su1-leaf-r5,P14.0
+C-dgx-su1-n29-R6,compute,1,6,mmf-om4,dgx-su1-n29,OSFP2P2,ibc-su1-leaf-r6,P14.0
+C-dgx-su1-n29-R7,compute,1,7,mmf-om4,dgx-su1-n29,OSFP2P1,ibc-su1-leaf-r7,P14.0
+C-dgx-su1-n29-R8,compute,1,8,mmf-om4,dgx-su1-n29,OSFP1P1,ibc-su1-leaf-r8,P14.0
+C-dgx-su1-n30-R1,compute,1,1,mmf-om4,dgx-su1-n30,OSFP4P2,ibc-su1-leaf-r1,P14.1
+C-dgx-su1-n30-R2,compute,1,2,mmf-om4,dgx-su1-n30,OSFP3P2,ibc-su1-leaf-r2,P14.1
+C-dgx-su1-n30-R3,compute,1,3,mmf-om4,dgx-su1-n30,OSFP3P1,ibc-su1-leaf-r3,P14.1
+C-dgx-su1-n30-R4,compute,1,4,mmf-om4,dgx-su1-n30,OSFP4P1,ibc-su1-leaf-r4,P14.1
+C-dgx-su1-n30-R5,compute,1,5,mmf-om4,dgx-su1-n30,OSFP1P2,ibc-su1-leaf-r5,P14.1
+C-dgx-su1-n30-R6,compute,1,6,mmf-om4,dgx-su1-n30,OSFP2P2,ibc-su1-leaf-r6,P14.1
+C-dgx-su1-n30-R7,compute,1,7,mmf-om4,dgx-su1-n30,OSFP2P1,ibc-su1-leaf-r7,P14.1
+C-dgx-su1-n30-R8,compute,1,8,mmf-om4,dgx-su1-n30,OSFP1P1,ibc-su1-leaf-r8,P14.1
+C-dgx-su1-n31-R1,compute,1,1,mmf-om4,dgx-su1-n31,OSFP4P2,ibc-su1-leaf-r1,P15.0
+C-dgx-su1-n31-R2,compute,1,2,mmf-om4,dgx-su1-n31,OSFP3P2,ibc-su1-leaf-r2,P15.0
+C-dgx-su1-n31-R3,compute,1,3,mmf-om4,dgx-su1-n31,OSFP3P1,ibc-su1-leaf-r3,P15.0
+C-dgx-su1-n31-R4,compute,1,4,mmf-om4,dgx-su1-n31,OSFP4P1,ibc-su1-leaf-r4,P15.0
+C-dgx-su1-n31-R5,compute,1,5,mmf-om4,dgx-su1-n31,OSFP1P2,ibc-su1-leaf-r5,P15.0
+C-dgx-su1-n31-R6,compute,1,6,mmf-om4,dgx-su1-n31,OSFP2P2,ibc-su1-leaf-r6,P15.0
+C-dgx-su1-n31-R7,compute,1,7,mmf-om4,dgx-su1-n31,OSFP2P1,ibc-su1-leaf-r7,P15.0
+C-dgx-su1-n31-R8,compute,1,8,mmf-om4,dgx-su1-n31,OSFP1P1,ibc-su1-leaf-r8,P15.0
+C-dgx-su1-n32-R1,compute,1,1,mmf-om4,dgx-su1-n32,OSFP4P2,ibc-su1-leaf-r1,P15.1
+C-dgx-su1-n32-R2,compute,1,2,mmf-om4,dgx-su1-n32,OSFP3P2,ibc-su1-leaf-r2,P15.1
+C-dgx-su1-n32-R3,compute,1,3,mmf-om4,dgx-su1-n32,OSFP3P1,ibc-su1-leaf-r3,P15.1
+C-dgx-su1-n32-R4,compute,1,4,mmf-om4,dgx-su1-n32,OSFP4P1,ibc-su1-leaf-r4,P15.1
+C-dgx-su1-n32-R5,compute,1,5,mmf-om4,dgx-su1-n32,OSFP1P2,ibc-su1-leaf-r5,P15.1
+C-dgx-su1-n32-R6,compute,1,6,mmf-om4,dgx-su1-n32,OSFP2P2,ibc-su1-leaf-r6,P15.1
+C-dgx-su1-n32-R7,compute,1,7,mmf-om4,dgx-su1-n32,OSFP2P1,ibc-su1-leaf-r7,P15.1
+C-dgx-su1-n32-R8,compute,1,8,mmf-om4,dgx-su1-n32,OSFP1P1,ibc-su1-leaf-r8,P15.1
+C-dgx-su2-n01-R1,compute,2,1,mmf-om4,dgx-su2-n01,OSFP4P2,ibc-su2-leaf-r1,P0.0
+C-dgx-su2-n01-R2,compute,2,2,mmf-om4,dgx-su2-n01,OSFP3P2,ibc-su2-leaf-r2,P0.0
+C-dgx-su2-n01-R3,compute,2,3,mmf-om4,dgx-su2-n01,OSFP3P1,ibc-su2-leaf-r3,P0.0
+C-dgx-su2-n01-R4,compute,2,4,mmf-om4,dgx-su2-n01,OSFP4P1,ibc-su2-leaf-r4,P0.0
+C-dgx-su2-n01-R5,compute,2,5,mmf-om4,dgx-su2-n01,OSFP1P2,ibc-su2-leaf-r5,P0.0
+C-dgx-su2-n01-R6,compute,2,6,mmf-om4,dgx-su2-n01,OSFP2P2,ibc-su2-leaf-r6,P0.0
+C-dgx-su2-n01-R7,compute,2,7,mmf-om4,dgx-su2-n01,OSFP2P1,ibc-su2-leaf-r7,P0.0
+C-dgx-su2-n01-R8,compute,2,8,mmf-om4,dgx-su2-n01,OSFP1P1,ibc-su2-leaf-r8,P0.0
+C-dgx-su2-n02-R1,compute,2,1,mmf-om4,dgx-su2-n02,OSFP4P2,ibc-su2-leaf-r1,P0.1
+C-dgx-su2-n02-R2,compute,2,2,mmf-om4,dgx-su2-n02,OSFP3P2,ibc-su2-leaf-r2,P0.1
+C-dgx-su2-n02-R3,compute,2,3,mmf-om4,dgx-su2-n02,OSFP3P1,ibc-su2-leaf-r3,P0.1
+C-dgx-su2-n02-R4,compute,2,4,mmf-om4,dgx-su2-n02,OSFP4P1,ibc-su2-leaf-r4,P0.1
+C-dgx-su2-n02-R5,compute,2,5,mmf-om4,dgx-su2-n02,OSFP1P2,ibc-su2-leaf-r5,P0.1
+C-dgx-su2-n02-R6,compute,2,6,mmf-om4,dgx-su2-n02,OSFP2P2,ibc-su2-leaf-r6,P0.1
+C-dgx-su2-n02-R7,compute,2,7,mmf-om4,dgx-su2-n02,OSFP2P1,ibc-su2-leaf-r7,P0.1
+C-dgx-su2-n02-R8,compute,2,8,mmf-om4,dgx-su2-n02,OSFP1P1,ibc-su2-leaf-r8,P0.1
+C-dgx-su2-n03-R1,compute,2,1,mmf-om4,dgx-su2-n03,OSFP4P2,ibc-su2-leaf-r1,P1.0
+C-dgx-su2-n03-R2,compute,2,2,mmf-om4,dgx-su2-n03,OSFP3P2,ibc-su2-leaf-r2,P1.0
+C-dgx-su2-n03-R3,compute,2,3,mmf-om4,dgx-su2-n03,OSFP3P1,ibc-su2-leaf-r3,P1.0
+C-dgx-su2-n03-R4,compute,2,4,mmf-om4,dgx-su2-n03,OSFP4P1,ibc-su2-leaf-r4,P1.0
+C-dgx-su2-n03-R5,compute,2,5,mmf-om4,dgx-su2-n03,OSFP1P2,ibc-su2-leaf-r5,P1.0
+C-dgx-su2-n03-R6,compute,2,6,mmf-om4,dgx-su2-n03,OSFP2P2,ibc-su2-leaf-r6,P1.0
+C-dgx-su2-n03-R7,compute,2,7,mmf-om4,dgx-su2-n03,OSFP2P1,ibc-su2-leaf-r7,P1.0
+C-dgx-su2-n03-R8,compute,2,8,mmf-om4,dgx-su2-n03,OSFP1P1,ibc-su2-leaf-r8,P1.0
+C-dgx-su2-n04-R1,compute,2,1,mmf-om4,dgx-su2-n04,OSFP4P2,ibc-su2-leaf-r1,P1.1
+C-dgx-su2-n04-R2,compute,2,2,mmf-om4,dgx-su2-n04,OSFP3P2,ibc-su2-leaf-r2,P1.1
+C-dgx-su2-n04-R3,compute,2,3,mmf-om4,dgx-su2-n04,OSFP3P1,ibc-su2-leaf-r3,P1.1
+C-dgx-su2-n04-R4,compute,2,4,mmf-om4,dgx-su2-n04,OSFP4P1,ibc-su2-leaf-r4,P1.1
+C-dgx-su2-n04-R5,compute,2,5,mmf-om4,dgx-su2-n04,OSFP1P2,ibc-su2-leaf-r5,P1.1
+C-dgx-su2-n04-R6,compute,2,6,mmf-om4,dgx-su2-n04,OSFP2P2,ibc-su2-leaf-r6,P1.1
+C-dgx-su2-n04-R7,compute,2,7,mmf-om4,dgx-su2-n04,OSFP2P1,ibc-su2-leaf-r7,P1.1
+C-dgx-su2-n04-R8,compute,2,8,mmf-om4,dgx-su2-n04,OSFP1P1,ibc-su2-leaf-r8,P1.1
+C-dgx-su2-n05-R1,compute,2,1,mmf-om4,dgx-su2-n05,OSFP4P2,ibc-su2-leaf-r1,P2.0
+C-dgx-su2-n05-R2,compute,2,2,mmf-om4,dgx-su2-n05,OSFP3P2,ibc-su2-leaf-r2,P2.0
+C-dgx-su2-n05-R3,compute,2,3,mmf-om4,dgx-su2-n05,OSFP3P1,ibc-su2-leaf-r3,P2.0
+C-dgx-su2-n05-R4,compute,2,4,mmf-om4,dgx-su2-n05,OSFP4P1,ibc-su2-leaf-r4,P2.0
+C-dgx-su2-n05-R5,compute,2,5,mmf-om4,dgx-su2-n05,OSFP1P2,ibc-su2-leaf-r5,P2.0
+C-dgx-su2-n05-R6,compute,2,6,mmf-om4,dgx-su2-n05,OSFP2P2,ibc-su2-leaf-r6,P2.0
+C-dgx-su2-n05-R7,compute,2,7,mmf-om4,dgx-su2-n05,OSFP2P1,ibc-su2-leaf-r7,P2.0
+C-dgx-su2-n05-R8,compute,2,8,mmf-om4,dgx-su2-n05,OSFP1P1,ibc-su2-leaf-r8,P2.0
+C-dgx-su2-n06-R1,compute,2,1,mmf-om4,dgx-su2-n06,OSFP4P2,ibc-su2-leaf-r1,P2.1
+C-dgx-su2-n06-R2,compute,2,2,mmf-om4,dgx-su2-n06,OSFP3P2,ibc-su2-leaf-r2,P2.1
+C-dgx-su2-n06-R3,compute,2,3,mmf-om4,dgx-su2-n06,OSFP3P1,ibc-su2-leaf-r3,P2.1
+C-dgx-su2-n06-R4,compute,2,4,mmf-om4,dgx-su2-n06,OSFP4P1,ibc-su2-leaf-r4,P2.1
+C-dgx-su2-n06-R5,compute,2,5,mmf-om4,dgx-su2-n06,OSFP1P2,ibc-su2-leaf-r5,P2.1
+C-dgx-su2-n06-R6,compute,2,6,mmf-om4,dgx-su2-n06,OSFP2P2,ibc-su2-leaf-r6,P2.1
+C-dgx-su2-n06-R7,compute,2,7,mmf-om4,dgx-su2-n06,OSFP2P1,ibc-su2-leaf-r7,P2.1
+C-dgx-su2-n06-R8,compute,2,8,mmf-om4,dgx-su2-n06,OSFP1P1,ibc-su2-leaf-r8,P2.1
+C-dgx-su2-n07-R1,compute,2,1,mmf-om4,dgx-su2-n07,OSFP4P2,ibc-su2-leaf-r1,P3.0
+C-dgx-su2-n07-R2,compute,2,2,mmf-om4,dgx-su2-n07,OSFP3P2,ibc-su2-leaf-r2,P3.0
+C-dgx-su2-n07-R3,compute,2,3,mmf-om4,dgx-su2-n07,OSFP3P1,ibc-su2-leaf-r3,P3.0
+C-dgx-su2-n07-R4,compute,2,4,mmf-om4,dgx-su2-n07,OSFP4P1,ibc-su2-leaf-r4,P3.0
+C-dgx-su2-n07-R5,compute,2,5,mmf-om4,dgx-su2-n07,OSFP1P2,ibc-su2-leaf-r5,P3.0
+C-dgx-su2-n07-R6,compute,2,6,mmf-om4,dgx-su2-n07,OSFP2P2,ibc-su2-leaf-r6,P3.0
+C-dgx-su2-n07-R7,compute,2,7,mmf-om4,dgx-su2-n07,OSFP2P1,ibc-su2-leaf-r7,P3.0
+C-dgx-su2-n07-R8,compute,2,8,mmf-om4,dgx-su2-n07,OSFP1P1,ibc-su2-leaf-r8,P3.0
+C-dgx-su2-n08-R1,compute,2,1,mmf-om4,dgx-su2-n08,OSFP4P2,ibc-su2-leaf-r1,P3.1
+C-dgx-su2-n08-R2,compute,2,2,mmf-om4,dgx-su2-n08,OSFP3P2,ibc-su2-leaf-r2,P3.1
+C-dgx-su2-n08-R3,compute,2,3,mmf-om4,dgx-su2-n08,OSFP3P1,ibc-su2-leaf-r3,P3.1
+C-dgx-su2-n08-R4,compute,2,4,mmf-om4,dgx-su2-n08,OSFP4P1,ibc-su2-leaf-r4,P3.1
+C-dgx-su2-n08-R5,compute,2,5,mmf-om4,dgx-su2-n08,OSFP1P2,ibc-su2-leaf-r5,P3.1
+C-dgx-su2-n08-R6,compute,2,6,mmf-om4,dgx-su2-n08,OSFP2P2,ibc-su2-leaf-r6,P3.1
+C-dgx-su2-n08-R7,compute,2,7,mmf-om4,dgx-su2-n08,OSFP2P1,ibc-su2-leaf-r7,P3.1
+C-dgx-su2-n08-R8,compute,2,8,mmf-om4,dgx-su2-n08,OSFP1P1,ibc-su2-leaf-r8,P3.1
+C-dgx-su2-n09-R1,compute,2,1,mmf-om4,dgx-su2-n09,OSFP4P2,ibc-su2-leaf-r1,P4.0
+C-dgx-su2-n09-R2,compute,2,2,mmf-om4,dgx-su2-n09,OSFP3P2,ibc-su2-leaf-r2,P4.0
+C-dgx-su2-n09-R3,compute,2,3,mmf-om4,dgx-su2-n09,OSFP3P1,ibc-su2-leaf-r3,P4.0
+C-dgx-su2-n09-R4,compute,2,4,mmf-om4,dgx-su2-n09,OSFP4P1,ibc-su2-leaf-r4,P4.0
+C-dgx-su2-n09-R5,compute,2,5,mmf-om4,dgx-su2-n09,OSFP1P2,ibc-su2-leaf-r5,P4.0
+C-dgx-su2-n09-R6,compute,2,6,mmf-om4,dgx-su2-n09,OSFP2P2,ibc-su2-leaf-r6,P4.0
+C-dgx-su2-n09-R7,compute,2,7,mmf-om4,dgx-su2-n09,OSFP2P1,ibc-su2-leaf-r7,P4.0
+C-dgx-su2-n09-R8,compute,2,8,mmf-om4,dgx-su2-n09,OSFP1P1,ibc-su2-leaf-r8,P4.0
+C-dgx-su2-n10-R1,compute,2,1,mmf-om4,dgx-su2-n10,OSFP4P2,ibc-su2-leaf-r1,P4.1
+C-dgx-su2-n10-R2,compute,2,2,mmf-om4,dgx-su2-n10,OSFP3P2,ibc-su2-leaf-r2,P4.1
+C-dgx-su2-n10-R3,compute,2,3,mmf-om4,dgx-su2-n10,OSFP3P1,ibc-su2-leaf-r3,P4.1
+C-dgx-su2-n10-R4,compute,2,4,mmf-om4,dgx-su2-n10,OSFP4P1,ibc-su2-leaf-r4,P4.1
+C-dgx-su2-n10-R5,compute,2,5,mmf-om4,dgx-su2-n10,OSFP1P2,ibc-su2-leaf-r5,P4.1
+C-dgx-su2-n10-R6,compute,2,6,mmf-om4,dgx-su2-n10,OSFP2P2,ibc-su2-leaf-r6,P4.1
+C-dgx-su2-n10-R7,compute,2,7,mmf-om4,dgx-su2-n10,OSFP2P1,ibc-su2-leaf-r7,P4.1
+C-dgx-su2-n10-R8,compute,2,8,mmf-om4,dgx-su2-n10,OSFP1P1,ibc-su2-leaf-r8,P4.1
+C-dgx-su2-n11-R1,compute,2,1,mmf-om4,dgx-su2-n11,OSFP4P2,ibc-su2-leaf-r1,P5.0
+C-dgx-su2-n11-R2,compute,2,2,mmf-om4,dgx-su2-n11,OSFP3P2,ibc-su2-leaf-r2,P5.0
+C-dgx-su2-n11-R3,compute,2,3,mmf-om4,dgx-su2-n11,OSFP3P1,ibc-su2-leaf-r3,P5.0
+C-dgx-su2-n11-R4,compute,2,4,mmf-om4,dgx-su2-n11,OSFP4P1,ibc-su2-leaf-r4,P5.0
+C-dgx-su2-n11-R5,compute,2,5,mmf-om4,dgx-su2-n11,OSFP1P2,ibc-su2-leaf-r5,P5.0
+C-dgx-su2-n11-R6,compute,2,6,mmf-om4,dgx-su2-n11,OSFP2P2,ibc-su2-leaf-r6,P5.0
+C-dgx-su2-n11-R7,compute,2,7,mmf-om4,dgx-su2-n11,OSFP2P1,ibc-su2-leaf-r7,P5.0
+C-dgx-su2-n11-R8,compute,2,8,mmf-om4,dgx-su2-n11,OSFP1P1,ibc-su2-leaf-r8,P5.0
+C-dgx-su2-n12-R1,compute,2,1,mmf-om4,dgx-su2-n12,OSFP4P2,ibc-su2-leaf-r1,P5.1
+C-dgx-su2-n12-R2,compute,2,2,mmf-om4,dgx-su2-n12,OSFP3P2,ibc-su2-leaf-r2,P5.1
+C-dgx-su2-n12-R3,compute,2,3,mmf-om4,dgx-su2-n12,OSFP3P1,ibc-su2-leaf-r3,P5.1
+C-dgx-su2-n12-R4,compute,2,4,mmf-om4,dgx-su2-n12,OSFP4P1,ibc-su2-leaf-r4,P5.1
+C-dgx-su2-n12-R5,compute,2,5,mmf-om4,dgx-su2-n12,OSFP1P2,ibc-su2-leaf-r5,P5.1
+C-dgx-su2-n12-R6,compute,2,6,mmf-om4,dgx-su2-n12,OSFP2P2,ibc-su2-leaf-r6,P5.1
+C-dgx-su2-n12-R7,compute,2,7,mmf-om4,dgx-su2-n12,OSFP2P1,ibc-su2-leaf-r7,P5.1
+C-dgx-su2-n12-R8,compute,2,8,mmf-om4,dgx-su2-n12,OSFP1P1,ibc-su2-leaf-r8,P5.1
+C-dgx-su2-n13-R1,compute,2,1,mmf-om4,dgx-su2-n13,OSFP4P2,ibc-su2-leaf-r1,P6.0
+C-dgx-su2-n13-R2,compute,2,2,mmf-om4,dgx-su2-n13,OSFP3P2,ibc-su2-leaf-r2,P6.0
+C-dgx-su2-n13-R3,compute,2,3,mmf-om4,dgx-su2-n13,OSFP3P1,ibc-su2-leaf-r3,P6.0
+C-dgx-su2-n13-R4,compute,2,4,mmf-om4,dgx-su2-n13,OSFP4P1,ibc-su2-leaf-r4,P6.0
+C-dgx-su2-n13-R5,compute,2,5,mmf-om4,dgx-su2-n13,OSFP1P2,ibc-su2-leaf-r5,P6.0
+C-dgx-su2-n13-R6,compute,2,6,mmf-om4,dgx-su2-n13,OSFP2P2,ibc-su2-leaf-r6,P6.0
+C-dgx-su2-n13-R7,compute,2,7,mmf-om4,dgx-su2-n13,OSFP2P1,ibc-su2-leaf-r7,P6.0
+C-dgx-su2-n13-R8,compute,2,8,mmf-om4,dgx-su2-n13,OSFP1P1,ibc-su2-leaf-r8,P6.0
+C-dgx-su2-n14-R1,compute,2,1,mmf-om4,dgx-su2-n14,OSFP4P2,ibc-su2-leaf-r1,P6.1
+C-dgx-su2-n14-R2,compute,2,2,mmf-om4,dgx-su2-n14,OSFP3P2,ibc-su2-leaf-r2,P6.1
+C-dgx-su2-n14-R3,compute,2,3,mmf-om4,dgx-su2-n14,OSFP3P1,ibc-su2-leaf-r3,P6.1
+C-dgx-su2-n14-R4,compute,2,4,mmf-om4,dgx-su2-n14,OSFP4P1,ibc-su2-leaf-r4,P6.1
+C-dgx-su2-n14-R5,compute,2,5,mmf-om4,dgx-su2-n14,OSFP1P2,ibc-su2-leaf-r5,P6.1
+C-dgx-su2-n14-R6,compute,2,6,mmf-om4,dgx-su2-n14,OSFP2P2,ibc-su2-leaf-r6,P6.1
+C-dgx-su2-n14-R7,compute,2,7,mmf-om4,dgx-su2-n14,OSFP2P1,ibc-su2-leaf-r7,P6.1
+C-dgx-su2-n14-R8,compute,2,8,mmf-om4,dgx-su2-n14,OSFP1P1,ibc-su2-leaf-r8,P6.1
+C-dgx-su2-n15-R1,compute,2,1,mmf-om4,dgx-su2-n15,OSFP4P2,ibc-su2-leaf-r1,P7.0
+C-dgx-su2-n15-R2,compute,2,2,mmf-om4,dgx-su2-n15,OSFP3P2,ibc-su2-leaf-r2,P7.0
+C-dgx-su2-n15-R3,compute,2,3,mmf-om4,dgx-su2-n15,OSFP3P1,ibc-su2-leaf-r3,P7.0
+C-dgx-su2-n15-R4,compute,2,4,mmf-om4,dgx-su2-n15,OSFP4P1,ibc-su2-leaf-r4,P7.0
+C-dgx-su2-n15-R5,compute,2,5,mmf-om4,dgx-su2-n15,OSFP1P2,ibc-su2-leaf-r5,P7.0
+C-dgx-su2-n15-R6,compute,2,6,mmf-om4,dgx-su2-n15,OSFP2P2,ibc-su2-leaf-r6,P7.0
+C-dgx-su2-n15-R7,compute,2,7,mmf-om4,dgx-su2-n15,OSFP2P1,ibc-su2-leaf-r7,P7.0
+C-dgx-su2-n15-R8,compute,2,8,mmf-om4,dgx-su2-n15,OSFP1P1,ibc-su2-leaf-r8,P7.0
+C-dgx-su2-n16-R1,compute,2,1,mmf-om4,dgx-su2-n16,OSFP4P2,ibc-su2-leaf-r1,P7.1
+C-dgx-su2-n16-R2,compute,2,2,mmf-om4,dgx-su2-n16,OSFP3P2,ibc-su2-leaf-r2,P7.1
+C-dgx-su2-n16-R3,compute,2,3,mmf-om4,dgx-su2-n16,OSFP3P1,ibc-su2-leaf-r3,P7.1
+C-dgx-su2-n16-R4,compute,2,4,mmf-om4,dgx-su2-n16,OSFP4P1,ibc-su2-leaf-r4,P7.1
+C-dgx-su2-n16-R5,compute,2,5,mmf-om4,dgx-su2-n16,OSFP1P2,ibc-su2-leaf-r5,P7.1
+C-dgx-su2-n16-R6,compute,2,6,mmf-om4,dgx-su2-n16,OSFP2P2,ibc-su2-leaf-r6,P7.1
+C-dgx-su2-n16-R7,compute,2,7,mmf-om4,dgx-su2-n16,OSFP2P1,ibc-su2-leaf-r7,P7.1
+C-dgx-su2-n16-R8,compute,2,8,mmf-om4,dgx-su2-n16,OSFP1P1,ibc-su2-leaf-r8,P7.1
+C-dgx-su2-n17-R1,compute,2,1,mmf-om4,dgx-su2-n17,OSFP4P2,ibc-su2-leaf-r1,P8.0
+C-dgx-su2-n17-R2,compute,2,2,mmf-om4,dgx-su2-n17,OSFP3P2,ibc-su2-leaf-r2,P8.0
+C-dgx-su2-n17-R3,compute,2,3,mmf-om4,dgx-su2-n17,OSFP3P1,ibc-su2-leaf-r3,P8.0
+C-dgx-su2-n17-R4,compute,2,4,mmf-om4,dgx-su2-n17,OSFP4P1,ibc-su2-leaf-r4,P8.0
+C-dgx-su2-n17-R5,compute,2,5,mmf-om4,dgx-su2-n17,OSFP1P2,ibc-su2-leaf-r5,P8.0
+C-dgx-su2-n17-R6,compute,2,6,mmf-om4,dgx-su2-n17,OSFP2P2,ibc-su2-leaf-r6,P8.0
+C-dgx-su2-n17-R7,compute,2,7,mmf-om4,dgx-su2-n17,OSFP2P1,ibc-su2-leaf-r7,P8.0
+C-dgx-su2-n17-R8,compute,2,8,mmf-om4,dgx-su2-n17,OSFP1P1,ibc-su2-leaf-r8,P8.0
+C-dgx-su2-n18-R1,compute,2,1,mmf-om4,dgx-su2-n18,OSFP4P2,ibc-su2-leaf-r1,P8.1
+C-dgx-su2-n18-R2,compute,2,2,mmf-om4,dgx-su2-n18,OSFP3P2,ibc-su2-leaf-r2,P8.1
+C-dgx-su2-n18-R3,compute,2,3,mmf-om4,dgx-su2-n18,OSFP3P1,ibc-su2-leaf-r3,P8.1
+C-dgx-su2-n18-R4,compute,2,4,mmf-om4,dgx-su2-n18,OSFP4P1,ibc-su2-leaf-r4,P8.1
+C-dgx-su2-n18-R5,compute,2,5,mmf-om4,dgx-su2-n18,OSFP1P2,ibc-su2-leaf-r5,P8.1
+C-dgx-su2-n18-R6,compute,2,6,mmf-om4,dgx-su2-n18,OSFP2P2,ibc-su2-leaf-r6,P8.1
+C-dgx-su2-n18-R7,compute,2,7,mmf-om4,dgx-su2-n18,OSFP2P1,ibc-su2-leaf-r7,P8.1
+C-dgx-su2-n18-R8,compute,2,8,mmf-om4,dgx-su2-n18,OSFP1P1,ibc-su2-leaf-r8,P8.1
+C-dgx-su2-n19-R1,compute,2,1,mmf-om4,dgx-su2-n19,OSFP4P2,ibc-su2-leaf-r1,P9.0
+C-dgx-su2-n19-R2,compute,2,2,mmf-om4,dgx-su2-n19,OSFP3P2,ibc-su2-leaf-r2,P9.0
+C-dgx-su2-n19-R3,compute,2,3,mmf-om4,dgx-su2-n19,OSFP3P1,ibc-su2-leaf-r3,P9.0
+C-dgx-su2-n19-R4,compute,2,4,mmf-om4,dgx-su2-n19,OSFP4P1,ibc-su2-leaf-r4,P9.0
+C-dgx-su2-n19-R5,compute,2,5,mmf-om4,dgx-su2-n19,OSFP1P2,ibc-su2-leaf-r5,P9.0
+C-dgx-su2-n19-R6,compute,2,6,mmf-om4,dgx-su2-n19,OSFP2P2,ibc-su2-leaf-r6,P9.0
+C-dgx-su2-n19-R7,compute,2,7,mmf-om4,dgx-su2-n19,OSFP2P1,ibc-su2-leaf-r7,P9.0
+C-dgx-su2-n19-R8,compute,2,8,mmf-om4,dgx-su2-n19,OSFP1P1,ibc-su2-leaf-r8,P9.0
+C-dgx-su2-n20-R1,compute,2,1,mmf-om4,dgx-su2-n20,OSFP4P2,ibc-su2-leaf-r1,P9.1
+C-dgx-su2-n20-R2,compute,2,2,mmf-om4,dgx-su2-n20,OSFP3P2,ibc-su2-leaf-r2,P9.1
+C-dgx-su2-n20-R3,compute,2,3,mmf-om4,dgx-su2-n20,OSFP3P1,ibc-su2-leaf-r3,P9.1
+C-dgx-su2-n20-R4,compute,2,4,mmf-om4,dgx-su2-n20,OSFP4P1,ibc-su2-leaf-r4,P9.1
+C-dgx-su2-n20-R5,compute,2,5,mmf-om4,dgx-su2-n20,OSFP1P2,ibc-su2-leaf-r5,P9.1
+C-dgx-su2-n20-R6,compute,2,6,mmf-om4,dgx-su2-n20,OSFP2P2,ibc-su2-leaf-r6,P9.1
+C-dgx-su2-n20-R7,compute,2,7,mmf-om4,dgx-su2-n20,OSFP2P1,ibc-su2-leaf-r7,P9.1
+C-dgx-su2-n20-R8,compute,2,8,mmf-om4,dgx-su2-n20,OSFP1P1,ibc-su2-leaf-r8,P9.1
+C-dgx-su2-n21-R1,compute,2,1,mmf-om4,dgx-su2-n21,OSFP4P2,ibc-su2-leaf-r1,P10.0
+C-dgx-su2-n21-R2,compute,2,2,mmf-om4,dgx-su2-n21,OSFP3P2,ibc-su2-leaf-r2,P10.0
+C-dgx-su2-n21-R3,compute,2,3,mmf-om4,dgx-su2-n21,OSFP3P1,ibc-su2-leaf-r3,P10.0
+C-dgx-su2-n21-R4,compute,2,4,mmf-om4,dgx-su2-n21,OSFP4P1,ibc-su2-leaf-r4,P10.0
+C-dgx-su2-n21-R5,compute,2,5,mmf-om4,dgx-su2-n21,OSFP1P2,ibc-su2-leaf-r5,P10.0
+C-dgx-su2-n21-R6,compute,2,6,mmf-om4,dgx-su2-n21,OSFP2P2,ibc-su2-leaf-r6,P10.0
+C-dgx-su2-n21-R7,compute,2,7,mmf-om4,dgx-su2-n21,OSFP2P1,ibc-su2-leaf-r7,P10.0
+C-dgx-su2-n21-R8,compute,2,8,mmf-om4,dgx-su2-n21,OSFP1P1,ibc-su2-leaf-r8,P10.0
+C-dgx-su2-n22-R1,compute,2,1,mmf-om4,dgx-su2-n22,OSFP4P2,ibc-su2-leaf-r1,P10.1
+C-dgx-su2-n22-R2,compute,2,2,mmf-om4,dgx-su2-n22,OSFP3P2,ibc-su2-leaf-r2,P10.1
+C-dgx-su2-n22-R3,compute,2,3,mmf-om4,dgx-su2-n22,OSFP3P1,ibc-su2-leaf-r3,P10.1
+C-dgx-su2-n22-R4,compute,2,4,mmf-om4,dgx-su2-n22,OSFP4P1,ibc-su2-leaf-r4,P10.1
+C-dgx-su2-n22-R5,compute,2,5,mmf-om4,dgx-su2-n22,OSFP1P2,ibc-su2-leaf-r5,P10.1
+C-dgx-su2-n22-R6,compute,2,6,mmf-om4,dgx-su2-n22,OSFP2P2,ibc-su2-leaf-r6,P10.1
+C-dgx-su2-n22-R7,compute,2,7,mmf-om4,dgx-su2-n22,OSFP2P1,ibc-su2-leaf-r7,P10.1
+C-dgx-su2-n22-R8,compute,2,8,mmf-om4,dgx-su2-n22,OSFP1P1,ibc-su2-leaf-r8,P10.1
+C-dgx-su2-n23-R1,compute,2,1,mmf-om4,dgx-su2-n23,OSFP4P2,ibc-su2-leaf-r1,P11.0
+C-dgx-su2-n23-R2,compute,2,2,mmf-om4,dgx-su2-n23,OSFP3P2,ibc-su2-leaf-r2,P11.0
+C-dgx-su2-n23-R3,compute,2,3,mmf-om4,dgx-su2-n23,OSFP3P1,ibc-su2-leaf-r3,P11.0
+C-dgx-su2-n23-R4,compute,2,4,mmf-om4,dgx-su2-n23,OSFP4P1,ibc-su2-leaf-r4,P11.0
+C-dgx-su2-n23-R5,compute,2,5,mmf-om4,dgx-su2-n23,OSFP1P2,ibc-su2-leaf-r5,P11.0
+C-dgx-su2-n23-R6,compute,2,6,mmf-om4,dgx-su2-n23,OSFP2P2,ibc-su2-leaf-r6,P11.0
+C-dgx-su2-n23-R7,compute,2,7,mmf-om4,dgx-su2-n23,OSFP2P1,ibc-su2-leaf-r7,P11.0
+C-dgx-su2-n23-R8,compute,2,8,mmf-om4,dgx-su2-n23,OSFP1P1,ibc-su2-leaf-r8,P11.0
+C-dgx-su2-n24-R1,compute,2,1,mmf-om4,dgx-su2-n24,OSFP4P2,ibc-su2-leaf-r1,P11.1
+C-dgx-su2-n24-R2,compute,2,2,mmf-om4,dgx-su2-n24,OSFP3P2,ibc-su2-leaf-r2,P11.1
+C-dgx-su2-n24-R3,compute,2,3,mmf-om4,dgx-su2-n24,OSFP3P1,ibc-su2-leaf-r3,P11.1
+C-dgx-su2-n24-R4,compute,2,4,mmf-om4,dgx-su2-n24,OSFP4P1,ibc-su2-leaf-r4,P11.1
+C-dgx-su2-n24-R5,compute,2,5,mmf-om4,dgx-su2-n24,OSFP1P2,ibc-su2-leaf-r5,P11.1
+C-dgx-su2-n24-R6,compute,2,6,mmf-om4,dgx-su2-n24,OSFP2P2,ibc-su2-leaf-r6,P11.1
+C-dgx-su2-n24-R7,compute,2,7,mmf-om4,dgx-su2-n24,OSFP2P1,ibc-su2-leaf-r7,P11.1
+C-dgx-su2-n24-R8,compute,2,8,mmf-om4,dgx-su2-n24,OSFP1P1,ibc-su2-leaf-r8,P11.1
+C-dgx-su2-n25-R1,compute,2,1,mmf-om4,dgx-su2-n25,OSFP4P2,ibc-su2-leaf-r1,P12.0
+C-dgx-su2-n25-R2,compute,2,2,mmf-om4,dgx-su2-n25,OSFP3P2,ibc-su2-leaf-r2,P12.0
+C-dgx-su2-n25-R3,compute,2,3,mmf-om4,dgx-su2-n25,OSFP3P1,ibc-su2-leaf-r3,P12.0
+C-dgx-su2-n25-R4,compute,2,4,mmf-om4,dgx-su2-n25,OSFP4P1,ibc-su2-leaf-r4,P12.0
+C-dgx-su2-n25-R5,compute,2,5,mmf-om4,dgx-su2-n25,OSFP1P2,ibc-su2-leaf-r5,P12.0
+C-dgx-su2-n25-R6,compute,2,6,mmf-om4,dgx-su2-n25,OSFP2P2,ibc-su2-leaf-r6,P12.0
+C-dgx-su2-n25-R7,compute,2,7,mmf-om4,dgx-su2-n25,OSFP2P1,ibc-su2-leaf-r7,P12.0
+C-dgx-su2-n25-R8,compute,2,8,mmf-om4,dgx-su2-n25,OSFP1P1,ibc-su2-leaf-r8,P12.0
+C-dgx-su2-n26-R1,compute,2,1,mmf-om4,dgx-su2-n26,OSFP4P2,ibc-su2-leaf-r1,P12.1
+C-dgx-su2-n26-R2,compute,2,2,mmf-om4,dgx-su2-n26,OSFP3P2,ibc-su2-leaf-r2,P12.1
+C-dgx-su2-n26-R3,compute,2,3,mmf-om4,dgx-su2-n26,OSFP3P1,ibc-su2-leaf-r3,P12.1
+C-dgx-su2-n26-R4,compute,2,4,mmf-om4,dgx-su2-n26,OSFP4P1,ibc-su2-leaf-r4,P12.1
+C-dgx-su2-n26-R5,compute,2,5,mmf-om4,dgx-su2-n26,OSFP1P2,ibc-su2-leaf-r5,P12.1
+C-dgx-su2-n26-R6,compute,2,6,mmf-om4,dgx-su2-n26,OSFP2P2,ibc-su2-leaf-r6,P12.1
+C-dgx-su2-n26-R7,compute,2,7,mmf-om4,dgx-su2-n26,OSFP2P1,ibc-su2-leaf-r7,P12.1
+C-dgx-su2-n26-R8,compute,2,8,mmf-om4,dgx-su2-n26,OSFP1P1,ibc-su2-leaf-r8,P12.1
+C-dgx-su2-n27-R1,compute,2,1,mmf-om4,dgx-su2-n27,OSFP4P2,ibc-su2-leaf-r1,P13.0
+C-dgx-su2-n27-R2,compute,2,2,mmf-om4,dgx-su2-n27,OSFP3P2,ibc-su2-leaf-r2,P13.0
+C-dgx-su2-n27-R3,compute,2,3,mmf-om4,dgx-su2-n27,OSFP3P1,ibc-su2-leaf-r3,P13.0
+C-dgx-su2-n27-R4,compute,2,4,mmf-om4,dgx-su2-n27,OSFP4P1,ibc-su2-leaf-r4,P13.0
+C-dgx-su2-n27-R5,compute,2,5,mmf-om4,dgx-su2-n27,OSFP1P2,ibc-su2-leaf-r5,P13.0
+C-dgx-su2-n27-R6,compute,2,6,mmf-om4,dgx-su2-n27,OSFP2P2,ibc-su2-leaf-r6,P13.0
+C-dgx-su2-n27-R7,compute,2,7,mmf-om4,dgx-su2-n27,OSFP2P1,ibc-su2-leaf-r7,P13.0
+C-dgx-su2-n27-R8,compute,2,8,mmf-om4,dgx-su2-n27,OSFP1P1,ibc-su2-leaf-r8,P13.0
+C-dgx-su2-n28-R1,compute,2,1,mmf-om4,dgx-su2-n28,OSFP4P2,ibc-su2-leaf-r1,P13.1
+C-dgx-su2-n28-R2,compute,2,2,mmf-om4,dgx-su2-n28,OSFP3P2,ibc-su2-leaf-r2,P13.1
+C-dgx-su2-n28-R3,compute,2,3,mmf-om4,dgx-su2-n28,OSFP3P1,ibc-su2-leaf-r3,P13.1
+C-dgx-su2-n28-R4,compute,2,4,mmf-om4,dgx-su2-n28,OSFP4P1,ibc-su2-leaf-r4,P13.1
+C-dgx-su2-n28-R5,compute,2,5,mmf-om4,dgx-su2-n28,OSFP1P2,ibc-su2-leaf-r5,P13.1
+C-dgx-su2-n28-R6,compute,2,6,mmf-om4,dgx-su2-n28,OSFP2P2,ibc-su2-leaf-r6,P13.1
+C-dgx-su2-n28-R7,compute,2,7,mmf-om4,dgx-su2-n28,OSFP2P1,ibc-su2-leaf-r7,P13.1
+C-dgx-su2-n28-R8,compute,2,8,mmf-om4,dgx-su2-n28,OSFP1P1,ibc-su2-leaf-r8,P13.1
+C-dgx-su2-n29-R1,compute,2,1,mmf-om4,dgx-su2-n29,OSFP4P2,ibc-su2-leaf-r1,P14.0
+C-dgx-su2-n29-R2,compute,2,2,mmf-om4,dgx-su2-n29,OSFP3P2,ibc-su2-leaf-r2,P14.0
+C-dgx-su2-n29-R3,compute,2,3,mmf-om4,dgx-su2-n29,OSFP3P1,ibc-su2-leaf-r3,P14.0
+C-dgx-su2-n29-R4,compute,2,4,mmf-om4,dgx-su2-n29,OSFP4P1,ibc-su2-leaf-r4,P14.0
+C-dgx-su2-n29-R5,compute,2,5,mmf-om4,dgx-su2-n29,OSFP1P2,ibc-su2-leaf-r5,P14.0
+C-dgx-su2-n29-R6,compute,2,6,mmf-om4,dgx-su2-n29,OSFP2P2,ibc-su2-leaf-r6,P14.0
+C-dgx-su2-n29-R7,compute,2,7,mmf-om4,dgx-su2-n29,OSFP2P1,ibc-su2-leaf-r7,P14.0
+C-dgx-su2-n29-R8,compute,2,8,mmf-om4,dgx-su2-n29,OSFP1P1,ibc-su2-leaf-r8,P14.0
+C-dgx-su2-n30-R1,compute,2,1,mmf-om4,dgx-su2-n30,OSFP4P2,ibc-su2-leaf-r1,P14.1
+C-dgx-su2-n30-R2,compute,2,2,mmf-om4,dgx-su2-n30,OSFP3P2,ibc-su2-leaf-r2,P14.1
+C-dgx-su2-n30-R3,compute,2,3,mmf-om4,dgx-su2-n30,OSFP3P1,ibc-su2-leaf-r3,P14.1
+C-dgx-su2-n30-R4,compute,2,4,mmf-om4,dgx-su2-n30,OSFP4P1,ibc-su2-leaf-r4,P14.1
+C-dgx-su2-n30-R5,compute,2,5,mmf-om4,dgx-su2-n30,OSFP1P2,ibc-su2-leaf-r5,P14.1
+C-dgx-su2-n30-R6,compute,2,6,mmf-om4,dgx-su2-n30,OSFP2P2,ibc-su2-leaf-r6,P14.1
+C-dgx-su2-n30-R7,compute,2,7,mmf-om4,dgx-su2-n30,OSFP2P1,ibc-su2-leaf-r7,P14.1
+C-dgx-su2-n30-R8,compute,2,8,mmf-om4,dgx-su2-n30,OSFP1P1,ibc-su2-leaf-r8,P14.1
+C-dgx-su2-n31-R1,compute,2,1,mmf-om4,dgx-su2-n31,OSFP4P2,ibc-su2-leaf-r1,P15.0
+C-dgx-su2-n31-R2,compute,2,2,mmf-om4,dgx-su2-n31,OSFP3P2,ibc-su2-leaf-r2,P15.0
+C-dgx-su2-n31-R3,compute,2,3,mmf-om4,dgx-su2-n31,OSFP3P1,ibc-su2-leaf-r3,P15.0
+C-dgx-su2-n31-R4,compute,2,4,mmf-om4,dgx-su2-n31,OSFP4P1,ibc-su2-leaf-r4,P15.0
+C-dgx-su2-n31-R5,compute,2,5,mmf-om4,dgx-su2-n31,OSFP1P2,ibc-su2-leaf-r5,P15.0
+C-dgx-su2-n31-R6,compute,2,6,mmf-om4,dgx-su2-n31,OSFP2P2,ibc-su2-leaf-r6,P15.0
+C-dgx-su2-n31-R7,compute,2,7,mmf-om4,dgx-su2-n31,OSFP2P1,ibc-su2-leaf-r7,P15.0
+C-dgx-su2-n31-R8,compute,2,8,mmf-om4,dgx-su2-n31,OSFP1P1,ibc-su2-leaf-r8,P15.0
+C-ufm-c-01-ib1,compute,2,1,mmf-om4,ufm-c-01,ib1,ibc-su2-leaf-r1,P15.1
+C-ufm-c-01-ib2,compute,2,2,mmf-om4,ufm-c-01,ib2,ibc-su2-leaf-r2,P15.1
+C-ufm-c-02-ib1,compute,2,3,mmf-om4,ufm-c-02,ib1,ibc-su2-leaf-r3,P15.1
+C-ufm-c-02-ib2,compute,2,4,mmf-om4,ufm-c-02,ib2,ibc-su2-leaf-r4,P15.1
+C-ibc-su1-leaf-r1-ibc-spine-01-1,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P16.0,ibc-spine-01,P0.0
+C-ibc-su1-leaf-r1-ibc-spine-01-2,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P16.1,ibc-spine-01,P0.1
+C-ibc-su1-leaf-r1-ibc-spine-01-3,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P17.0,ibc-spine-01,P1.0
+C-ibc-su1-leaf-r1-ibc-spine-01-4,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P17.1,ibc-spine-01,P1.1
+C-ibc-su1-leaf-r1-ibc-spine-02-1,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P18.0,ibc-spine-02,P0.0
+C-ibc-su1-leaf-r1-ibc-spine-02-2,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P18.1,ibc-spine-02,P0.1
+C-ibc-su1-leaf-r1-ibc-spine-02-3,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P19.0,ibc-spine-02,P1.0
+C-ibc-su1-leaf-r1-ibc-spine-02-4,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P19.1,ibc-spine-02,P1.1
+C-ibc-su1-leaf-r1-ibc-spine-03-1,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P20.0,ibc-spine-03,P0.0
+C-ibc-su1-leaf-r1-ibc-spine-03-2,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P20.1,ibc-spine-03,P0.1
+C-ibc-su1-leaf-r1-ibc-spine-03-3,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P21.0,ibc-spine-03,P1.0
+C-ibc-su1-leaf-r1-ibc-spine-03-4,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P21.1,ibc-spine-03,P1.1
+C-ibc-su1-leaf-r1-ibc-spine-04-1,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P22.0,ibc-spine-04,P0.0
+C-ibc-su1-leaf-r1-ibc-spine-04-2,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P22.1,ibc-spine-04,P0.1
+C-ibc-su1-leaf-r1-ibc-spine-04-3,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P23.0,ibc-spine-04,P1.0
+C-ibc-su1-leaf-r1-ibc-spine-04-4,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P23.1,ibc-spine-04,P1.1
+C-ibc-su1-leaf-r1-ibc-spine-05-1,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P24.0,ibc-spine-05,P0.0
+C-ibc-su1-leaf-r1-ibc-spine-05-2,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P24.1,ibc-spine-05,P0.1
+C-ibc-su1-leaf-r1-ibc-spine-05-3,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P25.0,ibc-spine-05,P1.0
+C-ibc-su1-leaf-r1-ibc-spine-05-4,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P25.1,ibc-spine-05,P1.1
+C-ibc-su1-leaf-r1-ibc-spine-06-1,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P26.0,ibc-spine-06,P0.0
+C-ibc-su1-leaf-r1-ibc-spine-06-2,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P26.1,ibc-spine-06,P0.1
+C-ibc-su1-leaf-r1-ibc-spine-06-3,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P27.0,ibc-spine-06,P1.0
+C-ibc-su1-leaf-r1-ibc-spine-06-4,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P27.1,ibc-spine-06,P1.1
+C-ibc-su1-leaf-r1-ibc-spine-07-1,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P28.0,ibc-spine-07,P0.0
+C-ibc-su1-leaf-r1-ibc-spine-07-2,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P28.1,ibc-spine-07,P0.1
+C-ibc-su1-leaf-r1-ibc-spine-07-3,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P29.0,ibc-spine-07,P1.0
+C-ibc-su1-leaf-r1-ibc-spine-07-4,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P29.1,ibc-spine-07,P1.1
+C-ibc-su1-leaf-r1-ibc-spine-08-1,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P30.0,ibc-spine-08,P0.0
+C-ibc-su1-leaf-r1-ibc-spine-08-2,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P30.1,ibc-spine-08,P0.1
+C-ibc-su1-leaf-r1-ibc-spine-08-3,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P31.0,ibc-spine-08,P1.0
+C-ibc-su1-leaf-r1-ibc-spine-08-4,compute,1,1,mmf-om4,ibc-su1-leaf-r1,P31.1,ibc-spine-08,P1.1
+C-ibc-su1-leaf-r2-ibc-spine-01-1,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P16.0,ibc-spine-01,P2.0
+C-ibc-su1-leaf-r2-ibc-spine-01-2,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P16.1,ibc-spine-01,P2.1
+C-ibc-su1-leaf-r2-ibc-spine-01-3,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P17.0,ibc-spine-01,P3.0
+C-ibc-su1-leaf-r2-ibc-spine-01-4,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P17.1,ibc-spine-01,P3.1
+C-ibc-su1-leaf-r2-ibc-spine-02-1,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P18.0,ibc-spine-02,P2.0
+C-ibc-su1-leaf-r2-ibc-spine-02-2,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P18.1,ibc-spine-02,P2.1
+C-ibc-su1-leaf-r2-ibc-spine-02-3,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P19.0,ibc-spine-02,P3.0
+C-ibc-su1-leaf-r2-ibc-spine-02-4,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P19.1,ibc-spine-02,P3.1
+C-ibc-su1-leaf-r2-ibc-spine-03-1,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P20.0,ibc-spine-03,P2.0
+C-ibc-su1-leaf-r2-ibc-spine-03-2,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P20.1,ibc-spine-03,P2.1
+C-ibc-su1-leaf-r2-ibc-spine-03-3,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P21.0,ibc-spine-03,P3.0
+C-ibc-su1-leaf-r2-ibc-spine-03-4,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P21.1,ibc-spine-03,P3.1
+C-ibc-su1-leaf-r2-ibc-spine-04-1,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P22.0,ibc-spine-04,P2.0
+C-ibc-su1-leaf-r2-ibc-spine-04-2,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P22.1,ibc-spine-04,P2.1
+C-ibc-su1-leaf-r2-ibc-spine-04-3,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P23.0,ibc-spine-04,P3.0
+C-ibc-su1-leaf-r2-ibc-spine-04-4,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P23.1,ibc-spine-04,P3.1
+C-ibc-su1-leaf-r2-ibc-spine-05-1,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P24.0,ibc-spine-05,P2.0
+C-ibc-su1-leaf-r2-ibc-spine-05-2,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P24.1,ibc-spine-05,P2.1
+C-ibc-su1-leaf-r2-ibc-spine-05-3,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P25.0,ibc-spine-05,P3.0
+C-ibc-su1-leaf-r2-ibc-spine-05-4,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P25.1,ibc-spine-05,P3.1
+C-ibc-su1-leaf-r2-ibc-spine-06-1,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P26.0,ibc-spine-06,P2.0
+C-ibc-su1-leaf-r2-ibc-spine-06-2,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P26.1,ibc-spine-06,P2.1
+C-ibc-su1-leaf-r2-ibc-spine-06-3,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P27.0,ibc-spine-06,P3.0
+C-ibc-su1-leaf-r2-ibc-spine-06-4,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P27.1,ibc-spine-06,P3.1
+C-ibc-su1-leaf-r2-ibc-spine-07-1,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P28.0,ibc-spine-07,P2.0
+C-ibc-su1-leaf-r2-ibc-spine-07-2,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P28.1,ibc-spine-07,P2.1
+C-ibc-su1-leaf-r2-ibc-spine-07-3,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P29.0,ibc-spine-07,P3.0
+C-ibc-su1-leaf-r2-ibc-spine-07-4,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P29.1,ibc-spine-07,P3.1
+C-ibc-su1-leaf-r2-ibc-spine-08-1,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P30.0,ibc-spine-08,P2.0
+C-ibc-su1-leaf-r2-ibc-spine-08-2,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P30.1,ibc-spine-08,P2.1
+C-ibc-su1-leaf-r2-ibc-spine-08-3,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P31.0,ibc-spine-08,P3.0
+C-ibc-su1-leaf-r2-ibc-spine-08-4,compute,1,2,mmf-om4,ibc-su1-leaf-r2,P31.1,ibc-spine-08,P3.1
+C-ibc-su1-leaf-r3-ibc-spine-01-1,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P16.0,ibc-spine-01,P4.0
+C-ibc-su1-leaf-r3-ibc-spine-01-2,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P16.1,ibc-spine-01,P4.1
+C-ibc-su1-leaf-r3-ibc-spine-01-3,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P17.0,ibc-spine-01,P5.0
+C-ibc-su1-leaf-r3-ibc-spine-01-4,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P17.1,ibc-spine-01,P5.1
+C-ibc-su1-leaf-r3-ibc-spine-02-1,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P18.0,ibc-spine-02,P4.0
+C-ibc-su1-leaf-r3-ibc-spine-02-2,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P18.1,ibc-spine-02,P4.1
+C-ibc-su1-leaf-r3-ibc-spine-02-3,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P19.0,ibc-spine-02,P5.0
+C-ibc-su1-leaf-r3-ibc-spine-02-4,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P19.1,ibc-spine-02,P5.1
+C-ibc-su1-leaf-r3-ibc-spine-03-1,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P20.0,ibc-spine-03,P4.0
+C-ibc-su1-leaf-r3-ibc-spine-03-2,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P20.1,ibc-spine-03,P4.1
+C-ibc-su1-leaf-r3-ibc-spine-03-3,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P21.0,ibc-spine-03,P5.0
+C-ibc-su1-leaf-r3-ibc-spine-03-4,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P21.1,ibc-spine-03,P5.1
+C-ibc-su1-leaf-r3-ibc-spine-04-1,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P22.0,ibc-spine-04,P4.0
+C-ibc-su1-leaf-r3-ibc-spine-04-2,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P22.1,ibc-spine-04,P4.1
+C-ibc-su1-leaf-r3-ibc-spine-04-3,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P23.0,ibc-spine-04,P5.0
+C-ibc-su1-leaf-r3-ibc-spine-04-4,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P23.1,ibc-spine-04,P5.1
+C-ibc-su1-leaf-r3-ibc-spine-05-1,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P24.0,ibc-spine-05,P4.0
+C-ibc-su1-leaf-r3-ibc-spine-05-2,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P24.1,ibc-spine-05,P4.1
+C-ibc-su1-leaf-r3-ibc-spine-05-3,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P25.0,ibc-spine-05,P5.0
+C-ibc-su1-leaf-r3-ibc-spine-05-4,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P25.1,ibc-spine-05,P5.1
+C-ibc-su1-leaf-r3-ibc-spine-06-1,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P26.0,ibc-spine-06,P4.0
+C-ibc-su1-leaf-r3-ibc-spine-06-2,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P26.1,ibc-spine-06,P4.1
+C-ibc-su1-leaf-r3-ibc-spine-06-3,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P27.0,ibc-spine-06,P5.0
+C-ibc-su1-leaf-r3-ibc-spine-06-4,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P27.1,ibc-spine-06,P5.1
+C-ibc-su1-leaf-r3-ibc-spine-07-1,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P28.0,ibc-spine-07,P4.0
+C-ibc-su1-leaf-r3-ibc-spine-07-2,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P28.1,ibc-spine-07,P4.1
+C-ibc-su1-leaf-r3-ibc-spine-07-3,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P29.0,ibc-spine-07,P5.0
+C-ibc-su1-leaf-r3-ibc-spine-07-4,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P29.1,ibc-spine-07,P5.1
+C-ibc-su1-leaf-r3-ibc-spine-08-1,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P30.0,ibc-spine-08,P4.0
+C-ibc-su1-leaf-r3-ibc-spine-08-2,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P30.1,ibc-spine-08,P4.1
+C-ibc-su1-leaf-r3-ibc-spine-08-3,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P31.0,ibc-spine-08,P5.0
+C-ibc-su1-leaf-r3-ibc-spine-08-4,compute,1,3,mmf-om4,ibc-su1-leaf-r3,P31.1,ibc-spine-08,P5.1
+C-ibc-su1-leaf-r4-ibc-spine-01-1,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P16.0,ibc-spine-01,P6.0
+C-ibc-su1-leaf-r4-ibc-spine-01-2,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P16.1,ibc-spine-01,P6.1
+C-ibc-su1-leaf-r4-ibc-spine-01-3,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P17.0,ibc-spine-01,P7.0
+C-ibc-su1-leaf-r4-ibc-spine-01-4,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P17.1,ibc-spine-01,P7.1
+C-ibc-su1-leaf-r4-ibc-spine-02-1,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P18.0,ibc-spine-02,P6.0
+C-ibc-su1-leaf-r4-ibc-spine-02-2,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P18.1,ibc-spine-02,P6.1
+C-ibc-su1-leaf-r4-ibc-spine-02-3,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P19.0,ibc-spine-02,P7.0
+C-ibc-su1-leaf-r4-ibc-spine-02-4,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P19.1,ibc-spine-02,P7.1
+C-ibc-su1-leaf-r4-ibc-spine-03-1,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P20.0,ibc-spine-03,P6.0
+C-ibc-su1-leaf-r4-ibc-spine-03-2,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P20.1,ibc-spine-03,P6.1
+C-ibc-su1-leaf-r4-ibc-spine-03-3,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P21.0,ibc-spine-03,P7.0
+C-ibc-su1-leaf-r4-ibc-spine-03-4,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P21.1,ibc-spine-03,P7.1
+C-ibc-su1-leaf-r4-ibc-spine-04-1,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P22.0,ibc-spine-04,P6.0
+C-ibc-su1-leaf-r4-ibc-spine-04-2,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P22.1,ibc-spine-04,P6.1
+C-ibc-su1-leaf-r4-ibc-spine-04-3,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P23.0,ibc-spine-04,P7.0
+C-ibc-su1-leaf-r4-ibc-spine-04-4,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P23.1,ibc-spine-04,P7.1
+C-ibc-su1-leaf-r4-ibc-spine-05-1,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P24.0,ibc-spine-05,P6.0
+C-ibc-su1-leaf-r4-ibc-spine-05-2,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P24.1,ibc-spine-05,P6.1
+C-ibc-su1-leaf-r4-ibc-spine-05-3,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P25.0,ibc-spine-05,P7.0
+C-ibc-su1-leaf-r4-ibc-spine-05-4,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P25.1,ibc-spine-05,P7.1
+C-ibc-su1-leaf-r4-ibc-spine-06-1,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P26.0,ibc-spine-06,P6.0
+C-ibc-su1-leaf-r4-ibc-spine-06-2,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P26.1,ibc-spine-06,P6.1
+C-ibc-su1-leaf-r4-ibc-spine-06-3,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P27.0,ibc-spine-06,P7.0
+C-ibc-su1-leaf-r4-ibc-spine-06-4,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P27.1,ibc-spine-06,P7.1
+C-ibc-su1-leaf-r4-ibc-spine-07-1,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P28.0,ibc-spine-07,P6.0
+C-ibc-su1-leaf-r4-ibc-spine-07-2,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P28.1,ibc-spine-07,P6.1
+C-ibc-su1-leaf-r4-ibc-spine-07-3,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P29.0,ibc-spine-07,P7.0
+C-ibc-su1-leaf-r4-ibc-spine-07-4,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P29.1,ibc-spine-07,P7.1
+C-ibc-su1-leaf-r4-ibc-spine-08-1,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P30.0,ibc-spine-08,P6.0
+C-ibc-su1-leaf-r4-ibc-spine-08-2,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P30.1,ibc-spine-08,P6.1
+C-ibc-su1-leaf-r4-ibc-spine-08-3,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P31.0,ibc-spine-08,P7.0
+C-ibc-su1-leaf-r4-ibc-spine-08-4,compute,1,4,mmf-om4,ibc-su1-leaf-r4,P31.1,ibc-spine-08,P7.1
+C-ibc-su1-leaf-r5-ibc-spine-01-1,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P16.0,ibc-spine-01,P8.0
+C-ibc-su1-leaf-r5-ibc-spine-01-2,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P16.1,ibc-spine-01,P8.1
+C-ibc-su1-leaf-r5-ibc-spine-01-3,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P17.0,ibc-spine-01,P9.0
+C-ibc-su1-leaf-r5-ibc-spine-01-4,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P17.1,ibc-spine-01,P9.1
+C-ibc-su1-leaf-r5-ibc-spine-02-1,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P18.0,ibc-spine-02,P8.0
+C-ibc-su1-leaf-r5-ibc-spine-02-2,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P18.1,ibc-spine-02,P8.1
+C-ibc-su1-leaf-r5-ibc-spine-02-3,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P19.0,ibc-spine-02,P9.0
+C-ibc-su1-leaf-r5-ibc-spine-02-4,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P19.1,ibc-spine-02,P9.1
+C-ibc-su1-leaf-r5-ibc-spine-03-1,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P20.0,ibc-spine-03,P8.0
+C-ibc-su1-leaf-r5-ibc-spine-03-2,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P20.1,ibc-spine-03,P8.1
+C-ibc-su1-leaf-r5-ibc-spine-03-3,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P21.0,ibc-spine-03,P9.0
+C-ibc-su1-leaf-r5-ibc-spine-03-4,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P21.1,ibc-spine-03,P9.1
+C-ibc-su1-leaf-r5-ibc-spine-04-1,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P22.0,ibc-spine-04,P8.0
+C-ibc-su1-leaf-r5-ibc-spine-04-2,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P22.1,ibc-spine-04,P8.1
+C-ibc-su1-leaf-r5-ibc-spine-04-3,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P23.0,ibc-spine-04,P9.0
+C-ibc-su1-leaf-r5-ibc-spine-04-4,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P23.1,ibc-spine-04,P9.1
+C-ibc-su1-leaf-r5-ibc-spine-05-1,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P24.0,ibc-spine-05,P8.0
+C-ibc-su1-leaf-r5-ibc-spine-05-2,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P24.1,ibc-spine-05,P8.1
+C-ibc-su1-leaf-r5-ibc-spine-05-3,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P25.0,ibc-spine-05,P9.0
+C-ibc-su1-leaf-r5-ibc-spine-05-4,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P25.1,ibc-spine-05,P9.1
+C-ibc-su1-leaf-r5-ibc-spine-06-1,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P26.0,ibc-spine-06,P8.0
+C-ibc-su1-leaf-r5-ibc-spine-06-2,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P26.1,ibc-spine-06,P8.1
+C-ibc-su1-leaf-r5-ibc-spine-06-3,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P27.0,ibc-spine-06,P9.0
+C-ibc-su1-leaf-r5-ibc-spine-06-4,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P27.1,ibc-spine-06,P9.1
+C-ibc-su1-leaf-r5-ibc-spine-07-1,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P28.0,ibc-spine-07,P8.0
+C-ibc-su1-leaf-r5-ibc-spine-07-2,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P28.1,ibc-spine-07,P8.1
+C-ibc-su1-leaf-r5-ibc-spine-07-3,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P29.0,ibc-spine-07,P9.0
+C-ibc-su1-leaf-r5-ibc-spine-07-4,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P29.1,ibc-spine-07,P9.1
+C-ibc-su1-leaf-r5-ibc-spine-08-1,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P30.0,ibc-spine-08,P8.0
+C-ibc-su1-leaf-r5-ibc-spine-08-2,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P30.1,ibc-spine-08,P8.1
+C-ibc-su1-leaf-r5-ibc-spine-08-3,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P31.0,ibc-spine-08,P9.0
+C-ibc-su1-leaf-r5-ibc-spine-08-4,compute,1,5,mmf-om4,ibc-su1-leaf-r5,P31.1,ibc-spine-08,P9.1
+C-ibc-su1-leaf-r6-ibc-spine-01-1,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P16.0,ibc-spine-01,P10.0
+C-ibc-su1-leaf-r6-ibc-spine-01-2,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P16.1,ibc-spine-01,P10.1
+C-ibc-su1-leaf-r6-ibc-spine-01-3,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P17.0,ibc-spine-01,P11.0
+C-ibc-su1-leaf-r6-ibc-spine-01-4,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P17.1,ibc-spine-01,P11.1
+C-ibc-su1-leaf-r6-ibc-spine-02-1,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P18.0,ibc-spine-02,P10.0
+C-ibc-su1-leaf-r6-ibc-spine-02-2,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P18.1,ibc-spine-02,P10.1
+C-ibc-su1-leaf-r6-ibc-spine-02-3,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P19.0,ibc-spine-02,P11.0
+C-ibc-su1-leaf-r6-ibc-spine-02-4,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P19.1,ibc-spine-02,P11.1
+C-ibc-su1-leaf-r6-ibc-spine-03-1,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P20.0,ibc-spine-03,P10.0
+C-ibc-su1-leaf-r6-ibc-spine-03-2,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P20.1,ibc-spine-03,P10.1
+C-ibc-su1-leaf-r6-ibc-spine-03-3,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P21.0,ibc-spine-03,P11.0
+C-ibc-su1-leaf-r6-ibc-spine-03-4,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P21.1,ibc-spine-03,P11.1
+C-ibc-su1-leaf-r6-ibc-spine-04-1,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P22.0,ibc-spine-04,P10.0
+C-ibc-su1-leaf-r6-ibc-spine-04-2,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P22.1,ibc-spine-04,P10.1
+C-ibc-su1-leaf-r6-ibc-spine-04-3,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P23.0,ibc-spine-04,P11.0
+C-ibc-su1-leaf-r6-ibc-spine-04-4,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P23.1,ibc-spine-04,P11.1
+C-ibc-su1-leaf-r6-ibc-spine-05-1,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P24.0,ibc-spine-05,P10.0
+C-ibc-su1-leaf-r6-ibc-spine-05-2,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P24.1,ibc-spine-05,P10.1
+C-ibc-su1-leaf-r6-ibc-spine-05-3,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P25.0,ibc-spine-05,P11.0
+C-ibc-su1-leaf-r6-ibc-spine-05-4,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P25.1,ibc-spine-05,P11.1
+C-ibc-su1-leaf-r6-ibc-spine-06-1,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P26.0,ibc-spine-06,P10.0
+C-ibc-su1-leaf-r6-ibc-spine-06-2,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P26.1,ibc-spine-06,P10.1
+C-ibc-su1-leaf-r6-ibc-spine-06-3,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P27.0,ibc-spine-06,P11.0
+C-ibc-su1-leaf-r6-ibc-spine-06-4,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P27.1,ibc-spine-06,P11.1
+C-ibc-su1-leaf-r6-ibc-spine-07-1,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P28.0,ibc-spine-07,P10.0
+C-ibc-su1-leaf-r6-ibc-spine-07-2,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P28.1,ibc-spine-07,P10.1
+C-ibc-su1-leaf-r6-ibc-spine-07-3,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P29.0,ibc-spine-07,P11.0
+C-ibc-su1-leaf-r6-ibc-spine-07-4,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P29.1,ibc-spine-07,P11.1
+C-ibc-su1-leaf-r6-ibc-spine-08-1,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P30.0,ibc-spine-08,P10.0
+C-ibc-su1-leaf-r6-ibc-spine-08-2,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P30.1,ibc-spine-08,P10.1
+C-ibc-su1-leaf-r6-ibc-spine-08-3,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P31.0,ibc-spine-08,P11.0
+C-ibc-su1-leaf-r6-ibc-spine-08-4,compute,1,6,mmf-om4,ibc-su1-leaf-r6,P31.1,ibc-spine-08,P11.1
+C-ibc-su1-leaf-r7-ibc-spine-01-1,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P16.0,ibc-spine-01,P12.0
+C-ibc-su1-leaf-r7-ibc-spine-01-2,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P16.1,ibc-spine-01,P12.1
+C-ibc-su1-leaf-r7-ibc-spine-01-3,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P17.0,ibc-spine-01,P13.0
+C-ibc-su1-leaf-r7-ibc-spine-01-4,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P17.1,ibc-spine-01,P13.1
+C-ibc-su1-leaf-r7-ibc-spine-02-1,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P18.0,ibc-spine-02,P12.0
+C-ibc-su1-leaf-r7-ibc-spine-02-2,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P18.1,ibc-spine-02,P12.1
+C-ibc-su1-leaf-r7-ibc-spine-02-3,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P19.0,ibc-spine-02,P13.0
+C-ibc-su1-leaf-r7-ibc-spine-02-4,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P19.1,ibc-spine-02,P13.1
+C-ibc-su1-leaf-r7-ibc-spine-03-1,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P20.0,ibc-spine-03,P12.0
+C-ibc-su1-leaf-r7-ibc-spine-03-2,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P20.1,ibc-spine-03,P12.1
+C-ibc-su1-leaf-r7-ibc-spine-03-3,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P21.0,ibc-spine-03,P13.0
+C-ibc-su1-leaf-r7-ibc-spine-03-4,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P21.1,ibc-spine-03,P13.1
+C-ibc-su1-leaf-r7-ibc-spine-04-1,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P22.0,ibc-spine-04,P12.0
+C-ibc-su1-leaf-r7-ibc-spine-04-2,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P22.1,ibc-spine-04,P12.1
+C-ibc-su1-leaf-r7-ibc-spine-04-3,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P23.0,ibc-spine-04,P13.0
+C-ibc-su1-leaf-r7-ibc-spine-04-4,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P23.1,ibc-spine-04,P13.1
+C-ibc-su1-leaf-r7-ibc-spine-05-1,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P24.0,ibc-spine-05,P12.0
+C-ibc-su1-leaf-r7-ibc-spine-05-2,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P24.1,ibc-spine-05,P12.1
+C-ibc-su1-leaf-r7-ibc-spine-05-3,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P25.0,ibc-spine-05,P13.0
+C-ibc-su1-leaf-r7-ibc-spine-05-4,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P25.1,ibc-spine-05,P13.1
+C-ibc-su1-leaf-r7-ibc-spine-06-1,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P26.0,ibc-spine-06,P12.0
+C-ibc-su1-leaf-r7-ibc-spine-06-2,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P26.1,ibc-spine-06,P12.1
+C-ibc-su1-leaf-r7-ibc-spine-06-3,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P27.0,ibc-spine-06,P13.0
+C-ibc-su1-leaf-r7-ibc-spine-06-4,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P27.1,ibc-spine-06,P13.1
+C-ibc-su1-leaf-r7-ibc-spine-07-1,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P28.0,ibc-spine-07,P12.0
+C-ibc-su1-leaf-r7-ibc-spine-07-2,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P28.1,ibc-spine-07,P12.1
+C-ibc-su1-leaf-r7-ibc-spine-07-3,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P29.0,ibc-spine-07,P13.0
+C-ibc-su1-leaf-r7-ibc-spine-07-4,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P29.1,ibc-spine-07,P13.1
+C-ibc-su1-leaf-r7-ibc-spine-08-1,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P30.0,ibc-spine-08,P12.0
+C-ibc-su1-leaf-r7-ibc-spine-08-2,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P30.1,ibc-spine-08,P12.1
+C-ibc-su1-leaf-r7-ibc-spine-08-3,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P31.0,ibc-spine-08,P13.0
+C-ibc-su1-leaf-r7-ibc-spine-08-4,compute,1,7,mmf-om4,ibc-su1-leaf-r7,P31.1,ibc-spine-08,P13.1
+C-ibc-su1-leaf-r8-ibc-spine-01-1,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P16.0,ibc-spine-01,P14.0
+C-ibc-su1-leaf-r8-ibc-spine-01-2,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P16.1,ibc-spine-01,P14.1
+C-ibc-su1-leaf-r8-ibc-spine-01-3,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P17.0,ibc-spine-01,P15.0
+C-ibc-su1-leaf-r8-ibc-spine-01-4,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P17.1,ibc-spine-01,P15.1
+C-ibc-su1-leaf-r8-ibc-spine-02-1,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P18.0,ibc-spine-02,P14.0
+C-ibc-su1-leaf-r8-ibc-spine-02-2,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P18.1,ibc-spine-02,P14.1
+C-ibc-su1-leaf-r8-ibc-spine-02-3,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P19.0,ibc-spine-02,P15.0
+C-ibc-su1-leaf-r8-ibc-spine-02-4,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P19.1,ibc-spine-02,P15.1
+C-ibc-su1-leaf-r8-ibc-spine-03-1,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P20.0,ibc-spine-03,P14.0
+C-ibc-su1-leaf-r8-ibc-spine-03-2,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P20.1,ibc-spine-03,P14.1
+C-ibc-su1-leaf-r8-ibc-spine-03-3,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P21.0,ibc-spine-03,P15.0
+C-ibc-su1-leaf-r8-ibc-spine-03-4,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P21.1,ibc-spine-03,P15.1
+C-ibc-su1-leaf-r8-ibc-spine-04-1,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P22.0,ibc-spine-04,P14.0
+C-ibc-su1-leaf-r8-ibc-spine-04-2,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P22.1,ibc-spine-04,P14.1
+C-ibc-su1-leaf-r8-ibc-spine-04-3,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P23.0,ibc-spine-04,P15.0
+C-ibc-su1-leaf-r8-ibc-spine-04-4,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P23.1,ibc-spine-04,P15.1
+C-ibc-su1-leaf-r8-ibc-spine-05-1,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P24.0,ibc-spine-05,P14.0
+C-ibc-su1-leaf-r8-ibc-spine-05-2,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P24.1,ibc-spine-05,P14.1
+C-ibc-su1-leaf-r8-ibc-spine-05-3,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P25.0,ibc-spine-05,P15.0
+C-ibc-su1-leaf-r8-ibc-spine-05-4,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P25.1,ibc-spine-05,P15.1
+C-ibc-su1-leaf-r8-ibc-spine-06-1,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P26.0,ibc-spine-06,P14.0
+C-ibc-su1-leaf-r8-ibc-spine-06-2,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P26.1,ibc-spine-06,P14.1
+C-ibc-su1-leaf-r8-ibc-spine-06-3,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P27.0,ibc-spine-06,P15.0
+C-ibc-su1-leaf-r8-ibc-spine-06-4,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P27.1,ibc-spine-06,P15.1
+C-ibc-su1-leaf-r8-ibc-spine-07-1,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P28.0,ibc-spine-07,P14.0
+C-ibc-su1-leaf-r8-ibc-spine-07-2,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P28.1,ibc-spine-07,P14.1
+C-ibc-su1-leaf-r8-ibc-spine-07-3,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P29.0,ibc-spine-07,P15.0
+C-ibc-su1-leaf-r8-ibc-spine-07-4,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P29.1,ibc-spine-07,P15.1
+C-ibc-su1-leaf-r8-ibc-spine-08-1,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P30.0,ibc-spine-08,P14.0
+C-ibc-su1-leaf-r8-ibc-spine-08-2,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P30.1,ibc-spine-08,P14.1
+C-ibc-su1-leaf-r8-ibc-spine-08-3,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P31.0,ibc-spine-08,P15.0
+C-ibc-su1-leaf-r8-ibc-spine-08-4,compute,1,8,mmf-om4,ibc-su1-leaf-r8,P31.1,ibc-spine-08,P15.1
+C-ibc-su2-leaf-r1-ibc-spine-01-1,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P16.0,ibc-spine-01,P16.0
+C-ibc-su2-leaf-r1-ibc-spine-01-2,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P16.1,ibc-spine-01,P16.1
+C-ibc-su2-leaf-r1-ibc-spine-01-3,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P17.0,ibc-spine-01,P17.0
+C-ibc-su2-leaf-r1-ibc-spine-01-4,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P17.1,ibc-spine-01,P17.1
+C-ibc-su2-leaf-r1-ibc-spine-02-1,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P18.0,ibc-spine-02,P16.0
+C-ibc-su2-leaf-r1-ibc-spine-02-2,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P18.1,ibc-spine-02,P16.1
+C-ibc-su2-leaf-r1-ibc-spine-02-3,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P19.0,ibc-spine-02,P17.0
+C-ibc-su2-leaf-r1-ibc-spine-02-4,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P19.1,ibc-spine-02,P17.1
+C-ibc-su2-leaf-r1-ibc-spine-03-1,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P20.0,ibc-spine-03,P16.0
+C-ibc-su2-leaf-r1-ibc-spine-03-2,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P20.1,ibc-spine-03,P16.1
+C-ibc-su2-leaf-r1-ibc-spine-03-3,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P21.0,ibc-spine-03,P17.0
+C-ibc-su2-leaf-r1-ibc-spine-03-4,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P21.1,ibc-spine-03,P17.1
+C-ibc-su2-leaf-r1-ibc-spine-04-1,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P22.0,ibc-spine-04,P16.0
+C-ibc-su2-leaf-r1-ibc-spine-04-2,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P22.1,ibc-spine-04,P16.1
+C-ibc-su2-leaf-r1-ibc-spine-04-3,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P23.0,ibc-spine-04,P17.0
+C-ibc-su2-leaf-r1-ibc-spine-04-4,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P23.1,ibc-spine-04,P17.1
+C-ibc-su2-leaf-r1-ibc-spine-05-1,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P24.0,ibc-spine-05,P16.0
+C-ibc-su2-leaf-r1-ibc-spine-05-2,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P24.1,ibc-spine-05,P16.1
+C-ibc-su2-leaf-r1-ibc-spine-05-3,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P25.0,ibc-spine-05,P17.0
+C-ibc-su2-leaf-r1-ibc-spine-05-4,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P25.1,ibc-spine-05,P17.1
+C-ibc-su2-leaf-r1-ibc-spine-06-1,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P26.0,ibc-spine-06,P16.0
+C-ibc-su2-leaf-r1-ibc-spine-06-2,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P26.1,ibc-spine-06,P16.1
+C-ibc-su2-leaf-r1-ibc-spine-06-3,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P27.0,ibc-spine-06,P17.0
+C-ibc-su2-leaf-r1-ibc-spine-06-4,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P27.1,ibc-spine-06,P17.1
+C-ibc-su2-leaf-r1-ibc-spine-07-1,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P28.0,ibc-spine-07,P16.0
+C-ibc-su2-leaf-r1-ibc-spine-07-2,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P28.1,ibc-spine-07,P16.1
+C-ibc-su2-leaf-r1-ibc-spine-07-3,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P29.0,ibc-spine-07,P17.0
+C-ibc-su2-leaf-r1-ibc-spine-07-4,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P29.1,ibc-spine-07,P17.1
+C-ibc-su2-leaf-r1-ibc-spine-08-1,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P30.0,ibc-spine-08,P16.0
+C-ibc-su2-leaf-r1-ibc-spine-08-2,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P30.1,ibc-spine-08,P16.1
+C-ibc-su2-leaf-r1-ibc-spine-08-3,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P31.0,ibc-spine-08,P17.0
+C-ibc-su2-leaf-r1-ibc-spine-08-4,compute,2,1,mmf-om4,ibc-su2-leaf-r1,P31.1,ibc-spine-08,P17.1
+C-ibc-su2-leaf-r2-ibc-spine-01-1,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P16.0,ibc-spine-01,P18.0
+C-ibc-su2-leaf-r2-ibc-spine-01-2,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P16.1,ibc-spine-01,P18.1
+C-ibc-su2-leaf-r2-ibc-spine-01-3,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P17.0,ibc-spine-01,P19.0
+C-ibc-su2-leaf-r2-ibc-spine-01-4,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P17.1,ibc-spine-01,P19.1
+C-ibc-su2-leaf-r2-ibc-spine-02-1,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P18.0,ibc-spine-02,P18.0
+C-ibc-su2-leaf-r2-ibc-spine-02-2,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P18.1,ibc-spine-02,P18.1
+C-ibc-su2-leaf-r2-ibc-spine-02-3,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P19.0,ibc-spine-02,P19.0
+C-ibc-su2-leaf-r2-ibc-spine-02-4,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P19.1,ibc-spine-02,P19.1
+C-ibc-su2-leaf-r2-ibc-spine-03-1,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P20.0,ibc-spine-03,P18.0
+C-ibc-su2-leaf-r2-ibc-spine-03-2,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P20.1,ibc-spine-03,P18.1
+C-ibc-su2-leaf-r2-ibc-spine-03-3,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P21.0,ibc-spine-03,P19.0
+C-ibc-su2-leaf-r2-ibc-spine-03-4,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P21.1,ibc-spine-03,P19.1
+C-ibc-su2-leaf-r2-ibc-spine-04-1,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P22.0,ibc-spine-04,P18.0
+C-ibc-su2-leaf-r2-ibc-spine-04-2,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P22.1,ibc-spine-04,P18.1
+C-ibc-su2-leaf-r2-ibc-spine-04-3,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P23.0,ibc-spine-04,P19.0
+C-ibc-su2-leaf-r2-ibc-spine-04-4,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P23.1,ibc-spine-04,P19.1
+C-ibc-su2-leaf-r2-ibc-spine-05-1,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P24.0,ibc-spine-05,P18.0
+C-ibc-su2-leaf-r2-ibc-spine-05-2,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P24.1,ibc-spine-05,P18.1
+C-ibc-su2-leaf-r2-ibc-spine-05-3,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P25.0,ibc-spine-05,P19.0
+C-ibc-su2-leaf-r2-ibc-spine-05-4,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P25.1,ibc-spine-05,P19.1
+C-ibc-su2-leaf-r2-ibc-spine-06-1,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P26.0,ibc-spine-06,P18.0
+C-ibc-su2-leaf-r2-ibc-spine-06-2,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P26.1,ibc-spine-06,P18.1
+C-ibc-su2-leaf-r2-ibc-spine-06-3,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P27.0,ibc-spine-06,P19.0
+C-ibc-su2-leaf-r2-ibc-spine-06-4,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P27.1,ibc-spine-06,P19.1
+C-ibc-su2-leaf-r2-ibc-spine-07-1,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P28.0,ibc-spine-07,P18.0
+C-ibc-su2-leaf-r2-ibc-spine-07-2,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P28.1,ibc-spine-07,P18.1
+C-ibc-su2-leaf-r2-ibc-spine-07-3,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P29.0,ibc-spine-07,P19.0
+C-ibc-su2-leaf-r2-ibc-spine-07-4,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P29.1,ibc-spine-07,P19.1
+C-ibc-su2-leaf-r2-ibc-spine-08-1,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P30.0,ibc-spine-08,P18.0
+C-ibc-su2-leaf-r2-ibc-spine-08-2,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P30.1,ibc-spine-08,P18.1
+C-ibc-su2-leaf-r2-ibc-spine-08-3,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P31.0,ibc-spine-08,P19.0
+C-ibc-su2-leaf-r2-ibc-spine-08-4,compute,2,2,mmf-om4,ibc-su2-leaf-r2,P31.1,ibc-spine-08,P19.1
+C-ibc-su2-leaf-r3-ibc-spine-01-1,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P16.0,ibc-spine-01,P20.0
+C-ibc-su2-leaf-r3-ibc-spine-01-2,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P16.1,ibc-spine-01,P20.1
+C-ibc-su2-leaf-r3-ibc-spine-01-3,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P17.0,ibc-spine-01,P21.0
+C-ibc-su2-leaf-r3-ibc-spine-01-4,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P17.1,ibc-spine-01,P21.1
+C-ibc-su2-leaf-r3-ibc-spine-02-1,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P18.0,ibc-spine-02,P20.0
+C-ibc-su2-leaf-r3-ibc-spine-02-2,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P18.1,ibc-spine-02,P20.1
+C-ibc-su2-leaf-r3-ibc-spine-02-3,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P19.0,ibc-spine-02,P21.0
+C-ibc-su2-leaf-r3-ibc-spine-02-4,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P19.1,ibc-spine-02,P21.1
+C-ibc-su2-leaf-r3-ibc-spine-03-1,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P20.0,ibc-spine-03,P20.0
+C-ibc-su2-leaf-r3-ibc-spine-03-2,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P20.1,ibc-spine-03,P20.1
+C-ibc-su2-leaf-r3-ibc-spine-03-3,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P21.0,ibc-spine-03,P21.0
+C-ibc-su2-leaf-r3-ibc-spine-03-4,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P21.1,ibc-spine-03,P21.1
+C-ibc-su2-leaf-r3-ibc-spine-04-1,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P22.0,ibc-spine-04,P20.0
+C-ibc-su2-leaf-r3-ibc-spine-04-2,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P22.1,ibc-spine-04,P20.1
+C-ibc-su2-leaf-r3-ibc-spine-04-3,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P23.0,ibc-spine-04,P21.0
+C-ibc-su2-leaf-r3-ibc-spine-04-4,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P23.1,ibc-spine-04,P21.1
+C-ibc-su2-leaf-r3-ibc-spine-05-1,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P24.0,ibc-spine-05,P20.0
+C-ibc-su2-leaf-r3-ibc-spine-05-2,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P24.1,ibc-spine-05,P20.1
+C-ibc-su2-leaf-r3-ibc-spine-05-3,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P25.0,ibc-spine-05,P21.0
+C-ibc-su2-leaf-r3-ibc-spine-05-4,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P25.1,ibc-spine-05,P21.1
+C-ibc-su2-leaf-r3-ibc-spine-06-1,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P26.0,ibc-spine-06,P20.0
+C-ibc-su2-leaf-r3-ibc-spine-06-2,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P26.1,ibc-spine-06,P20.1
+C-ibc-su2-leaf-r3-ibc-spine-06-3,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P27.0,ibc-spine-06,P21.0
+C-ibc-su2-leaf-r3-ibc-spine-06-4,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P27.1,ibc-spine-06,P21.1
+C-ibc-su2-leaf-r3-ibc-spine-07-1,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P28.0,ibc-spine-07,P20.0
+C-ibc-su2-leaf-r3-ibc-spine-07-2,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P28.1,ibc-spine-07,P20.1
+C-ibc-su2-leaf-r3-ibc-spine-07-3,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P29.0,ibc-spine-07,P21.0
+C-ibc-su2-leaf-r3-ibc-spine-07-4,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P29.1,ibc-spine-07,P21.1
+C-ibc-su2-leaf-r3-ibc-spine-08-1,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P30.0,ibc-spine-08,P20.0
+C-ibc-su2-leaf-r3-ibc-spine-08-2,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P30.1,ibc-spine-08,P20.1
+C-ibc-su2-leaf-r3-ibc-spine-08-3,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P31.0,ibc-spine-08,P21.0
+C-ibc-su2-leaf-r3-ibc-spine-08-4,compute,2,3,mmf-om4,ibc-su2-leaf-r3,P31.1,ibc-spine-08,P21.1
+C-ibc-su2-leaf-r4-ibc-spine-01-1,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P16.0,ibc-spine-01,P22.0
+C-ibc-su2-leaf-r4-ibc-spine-01-2,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P16.1,ibc-spine-01,P22.1
+C-ibc-su2-leaf-r4-ibc-spine-01-3,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P17.0,ibc-spine-01,P23.0
+C-ibc-su2-leaf-r4-ibc-spine-01-4,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P17.1,ibc-spine-01,P23.1
+C-ibc-su2-leaf-r4-ibc-spine-02-1,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P18.0,ibc-spine-02,P22.0
+C-ibc-su2-leaf-r4-ibc-spine-02-2,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P18.1,ibc-spine-02,P22.1
+C-ibc-su2-leaf-r4-ibc-spine-02-3,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P19.0,ibc-spine-02,P23.0
+C-ibc-su2-leaf-r4-ibc-spine-02-4,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P19.1,ibc-spine-02,P23.1
+C-ibc-su2-leaf-r4-ibc-spine-03-1,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P20.0,ibc-spine-03,P22.0
+C-ibc-su2-leaf-r4-ibc-spine-03-2,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P20.1,ibc-spine-03,P22.1
+C-ibc-su2-leaf-r4-ibc-spine-03-3,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P21.0,ibc-spine-03,P23.0
+C-ibc-su2-leaf-r4-ibc-spine-03-4,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P21.1,ibc-spine-03,P23.1
+C-ibc-su2-leaf-r4-ibc-spine-04-1,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P22.0,ibc-spine-04,P22.0
+C-ibc-su2-leaf-r4-ibc-spine-04-2,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P22.1,ibc-spine-04,P22.1
+C-ibc-su2-leaf-r4-ibc-spine-04-3,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P23.0,ibc-spine-04,P23.0
+C-ibc-su2-leaf-r4-ibc-spine-04-4,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P23.1,ibc-spine-04,P23.1
+C-ibc-su2-leaf-r4-ibc-spine-05-1,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P24.0,ibc-spine-05,P22.0
+C-ibc-su2-leaf-r4-ibc-spine-05-2,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P24.1,ibc-spine-05,P22.1
+C-ibc-su2-leaf-r4-ibc-spine-05-3,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P25.0,ibc-spine-05,P23.0
+C-ibc-su2-leaf-r4-ibc-spine-05-4,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P25.1,ibc-spine-05,P23.1
+C-ibc-su2-leaf-r4-ibc-spine-06-1,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P26.0,ibc-spine-06,P22.0
+C-ibc-su2-leaf-r4-ibc-spine-06-2,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P26.1,ibc-spine-06,P22.1
+C-ibc-su2-leaf-r4-ibc-spine-06-3,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P27.0,ibc-spine-06,P23.0
+C-ibc-su2-leaf-r4-ibc-spine-06-4,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P27.1,ibc-spine-06,P23.1
+C-ibc-su2-leaf-r4-ibc-spine-07-1,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P28.0,ibc-spine-07,P22.0
+C-ibc-su2-leaf-r4-ibc-spine-07-2,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P28.1,ibc-spine-07,P22.1
+C-ibc-su2-leaf-r4-ibc-spine-07-3,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P29.0,ibc-spine-07,P23.0
+C-ibc-su2-leaf-r4-ibc-spine-07-4,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P29.1,ibc-spine-07,P23.1
+C-ibc-su2-leaf-r4-ibc-spine-08-1,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P30.0,ibc-spine-08,P22.0
+C-ibc-su2-leaf-r4-ibc-spine-08-2,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P30.1,ibc-spine-08,P22.1
+C-ibc-su2-leaf-r4-ibc-spine-08-3,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P31.0,ibc-spine-08,P23.0
+C-ibc-su2-leaf-r4-ibc-spine-08-4,compute,2,4,mmf-om4,ibc-su2-leaf-r4,P31.1,ibc-spine-08,P23.1
+C-ibc-su2-leaf-r5-ibc-spine-01-1,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P16.0,ibc-spine-01,P24.0
+C-ibc-su2-leaf-r5-ibc-spine-01-2,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P16.1,ibc-spine-01,P24.1
+C-ibc-su2-leaf-r5-ibc-spine-01-3,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P17.0,ibc-spine-01,P25.0
+C-ibc-su2-leaf-r5-ibc-spine-01-4,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P17.1,ibc-spine-01,P25.1
+C-ibc-su2-leaf-r5-ibc-spine-02-1,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P18.0,ibc-spine-02,P24.0
+C-ibc-su2-leaf-r5-ibc-spine-02-2,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P18.1,ibc-spine-02,P24.1
+C-ibc-su2-leaf-r5-ibc-spine-02-3,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P19.0,ibc-spine-02,P25.0
+C-ibc-su2-leaf-r5-ibc-spine-02-4,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P19.1,ibc-spine-02,P25.1
+C-ibc-su2-leaf-r5-ibc-spine-03-1,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P20.0,ibc-spine-03,P24.0
+C-ibc-su2-leaf-r5-ibc-spine-03-2,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P20.1,ibc-spine-03,P24.1
+C-ibc-su2-leaf-r5-ibc-spine-03-3,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P21.0,ibc-spine-03,P25.0
+C-ibc-su2-leaf-r5-ibc-spine-03-4,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P21.1,ibc-spine-03,P25.1
+C-ibc-su2-leaf-r5-ibc-spine-04-1,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P22.0,ibc-spine-04,P24.0
+C-ibc-su2-leaf-r5-ibc-spine-04-2,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P22.1,ibc-spine-04,P24.1
+C-ibc-su2-leaf-r5-ibc-spine-04-3,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P23.0,ibc-spine-04,P25.0
+C-ibc-su2-leaf-r5-ibc-spine-04-4,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P23.1,ibc-spine-04,P25.1
+C-ibc-su2-leaf-r5-ibc-spine-05-1,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P24.0,ibc-spine-05,P24.0
+C-ibc-su2-leaf-r5-ibc-spine-05-2,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P24.1,ibc-spine-05,P24.1
+C-ibc-su2-leaf-r5-ibc-spine-05-3,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P25.0,ibc-spine-05,P25.0
+C-ibc-su2-leaf-r5-ibc-spine-05-4,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P25.1,ibc-spine-05,P25.1
+C-ibc-su2-leaf-r5-ibc-spine-06-1,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P26.0,ibc-spine-06,P24.0
+C-ibc-su2-leaf-r5-ibc-spine-06-2,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P26.1,ibc-spine-06,P24.1
+C-ibc-su2-leaf-r5-ibc-spine-06-3,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P27.0,ibc-spine-06,P25.0
+C-ibc-su2-leaf-r5-ibc-spine-06-4,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P27.1,ibc-spine-06,P25.1
+C-ibc-su2-leaf-r5-ibc-spine-07-1,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P28.0,ibc-spine-07,P24.0
+C-ibc-su2-leaf-r5-ibc-spine-07-2,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P28.1,ibc-spine-07,P24.1
+C-ibc-su2-leaf-r5-ibc-spine-07-3,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P29.0,ibc-spine-07,P25.0
+C-ibc-su2-leaf-r5-ibc-spine-07-4,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P29.1,ibc-spine-07,P25.1
+C-ibc-su2-leaf-r5-ibc-spine-08-1,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P30.0,ibc-spine-08,P24.0
+C-ibc-su2-leaf-r5-ibc-spine-08-2,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P30.1,ibc-spine-08,P24.1
+C-ibc-su2-leaf-r5-ibc-spine-08-3,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P31.0,ibc-spine-08,P25.0
+C-ibc-su2-leaf-r5-ibc-spine-08-4,compute,2,5,mmf-om4,ibc-su2-leaf-r5,P31.1,ibc-spine-08,P25.1
+C-ibc-su2-leaf-r6-ibc-spine-01-1,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P16.0,ibc-spine-01,P26.0
+C-ibc-su2-leaf-r6-ibc-spine-01-2,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P16.1,ibc-spine-01,P26.1
+C-ibc-su2-leaf-r6-ibc-spine-01-3,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P17.0,ibc-spine-01,P27.0
+C-ibc-su2-leaf-r6-ibc-spine-01-4,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P17.1,ibc-spine-01,P27.1
+C-ibc-su2-leaf-r6-ibc-spine-02-1,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P18.0,ibc-spine-02,P26.0
+C-ibc-su2-leaf-r6-ibc-spine-02-2,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P18.1,ibc-spine-02,P26.1
+C-ibc-su2-leaf-r6-ibc-spine-02-3,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P19.0,ibc-spine-02,P27.0
+C-ibc-su2-leaf-r6-ibc-spine-02-4,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P19.1,ibc-spine-02,P27.1
+C-ibc-su2-leaf-r6-ibc-spine-03-1,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P20.0,ibc-spine-03,P26.0
+C-ibc-su2-leaf-r6-ibc-spine-03-2,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P20.1,ibc-spine-03,P26.1
+C-ibc-su2-leaf-r6-ibc-spine-03-3,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P21.0,ibc-spine-03,P27.0
+C-ibc-su2-leaf-r6-ibc-spine-03-4,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P21.1,ibc-spine-03,P27.1
+C-ibc-su2-leaf-r6-ibc-spine-04-1,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P22.0,ibc-spine-04,P26.0
+C-ibc-su2-leaf-r6-ibc-spine-04-2,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P22.1,ibc-spine-04,P26.1
+C-ibc-su2-leaf-r6-ibc-spine-04-3,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P23.0,ibc-spine-04,P27.0
+C-ibc-su2-leaf-r6-ibc-spine-04-4,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P23.1,ibc-spine-04,P27.1
+C-ibc-su2-leaf-r6-ibc-spine-05-1,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P24.0,ibc-spine-05,P26.0
+C-ibc-su2-leaf-r6-ibc-spine-05-2,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P24.1,ibc-spine-05,P26.1
+C-ibc-su2-leaf-r6-ibc-spine-05-3,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P25.0,ibc-spine-05,P27.0
+C-ibc-su2-leaf-r6-ibc-spine-05-4,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P25.1,ibc-spine-05,P27.1
+C-ibc-su2-leaf-r6-ibc-spine-06-1,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P26.0,ibc-spine-06,P26.0
+C-ibc-su2-leaf-r6-ibc-spine-06-2,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P26.1,ibc-spine-06,P26.1
+C-ibc-su2-leaf-r6-ibc-spine-06-3,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P27.0,ibc-spine-06,P27.0
+C-ibc-su2-leaf-r6-ibc-spine-06-4,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P27.1,ibc-spine-06,P27.1
+C-ibc-su2-leaf-r6-ibc-spine-07-1,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P28.0,ibc-spine-07,P26.0
+C-ibc-su2-leaf-r6-ibc-spine-07-2,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P28.1,ibc-spine-07,P26.1
+C-ibc-su2-leaf-r6-ibc-spine-07-3,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P29.0,ibc-spine-07,P27.0
+C-ibc-su2-leaf-r6-ibc-spine-07-4,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P29.1,ibc-spine-07,P27.1
+C-ibc-su2-leaf-r6-ibc-spine-08-1,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P30.0,ibc-spine-08,P26.0
+C-ibc-su2-leaf-r6-ibc-spine-08-2,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P30.1,ibc-spine-08,P26.1
+C-ibc-su2-leaf-r6-ibc-spine-08-3,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P31.0,ibc-spine-08,P27.0
+C-ibc-su2-leaf-r6-ibc-spine-08-4,compute,2,6,mmf-om4,ibc-su2-leaf-r6,P31.1,ibc-spine-08,P27.1
+C-ibc-su2-leaf-r7-ibc-spine-01-1,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P16.0,ibc-spine-01,P28.0
+C-ibc-su2-leaf-r7-ibc-spine-01-2,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P16.1,ibc-spine-01,P28.1
+C-ibc-su2-leaf-r7-ibc-spine-01-3,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P17.0,ibc-spine-01,P29.0
+C-ibc-su2-leaf-r7-ibc-spine-01-4,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P17.1,ibc-spine-01,P29.1
+C-ibc-su2-leaf-r7-ibc-spine-02-1,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P18.0,ibc-spine-02,P28.0
+C-ibc-su2-leaf-r7-ibc-spine-02-2,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P18.1,ibc-spine-02,P28.1
+C-ibc-su2-leaf-r7-ibc-spine-02-3,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P19.0,ibc-spine-02,P29.0
+C-ibc-su2-leaf-r7-ibc-spine-02-4,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P19.1,ibc-spine-02,P29.1
+C-ibc-su2-leaf-r7-ibc-spine-03-1,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P20.0,ibc-spine-03,P28.0
+C-ibc-su2-leaf-r7-ibc-spine-03-2,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P20.1,ibc-spine-03,P28.1
+C-ibc-su2-leaf-r7-ibc-spine-03-3,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P21.0,ibc-spine-03,P29.0
+C-ibc-su2-leaf-r7-ibc-spine-03-4,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P21.1,ibc-spine-03,P29.1
+C-ibc-su2-leaf-r7-ibc-spine-04-1,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P22.0,ibc-spine-04,P28.0
+C-ibc-su2-leaf-r7-ibc-spine-04-2,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P22.1,ibc-spine-04,P28.1
+C-ibc-su2-leaf-r7-ibc-spine-04-3,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P23.0,ibc-spine-04,P29.0
+C-ibc-su2-leaf-r7-ibc-spine-04-4,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P23.1,ibc-spine-04,P29.1
+C-ibc-su2-leaf-r7-ibc-spine-05-1,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P24.0,ibc-spine-05,P28.0
+C-ibc-su2-leaf-r7-ibc-spine-05-2,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P24.1,ibc-spine-05,P28.1
+C-ibc-su2-leaf-r7-ibc-spine-05-3,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P25.0,ibc-spine-05,P29.0
+C-ibc-su2-leaf-r7-ibc-spine-05-4,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P25.1,ibc-spine-05,P29.1
+C-ibc-su2-leaf-r7-ibc-spine-06-1,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P26.0,ibc-spine-06,P28.0
+C-ibc-su2-leaf-r7-ibc-spine-06-2,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P26.1,ibc-spine-06,P28.1
+C-ibc-su2-leaf-r7-ibc-spine-06-3,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P27.0,ibc-spine-06,P29.0
+C-ibc-su2-leaf-r7-ibc-spine-06-4,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P27.1,ibc-spine-06,P29.1
+C-ibc-su2-leaf-r7-ibc-spine-07-1,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P28.0,ibc-spine-07,P28.0
+C-ibc-su2-leaf-r7-ibc-spine-07-2,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P28.1,ibc-spine-07,P28.1
+C-ibc-su2-leaf-r7-ibc-spine-07-3,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P29.0,ibc-spine-07,P29.0
+C-ibc-su2-leaf-r7-ibc-spine-07-4,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P29.1,ibc-spine-07,P29.1
+C-ibc-su2-leaf-r7-ibc-spine-08-1,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P30.0,ibc-spine-08,P28.0
+C-ibc-su2-leaf-r7-ibc-spine-08-2,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P30.1,ibc-spine-08,P28.1
+C-ibc-su2-leaf-r7-ibc-spine-08-3,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P31.0,ibc-spine-08,P29.0
+C-ibc-su2-leaf-r7-ibc-spine-08-4,compute,2,7,mmf-om4,ibc-su2-leaf-r7,P31.1,ibc-spine-08,P29.1
+C-ibc-su2-leaf-r8-ibc-spine-01-1,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P16.0,ibc-spine-01,P30.0
+C-ibc-su2-leaf-r8-ibc-spine-01-2,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P16.1,ibc-spine-01,P30.1
+C-ibc-su2-leaf-r8-ibc-spine-01-3,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P17.0,ibc-spine-01,P31.0
+C-ibc-su2-leaf-r8-ibc-spine-01-4,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P17.1,ibc-spine-01,P31.1
+C-ibc-su2-leaf-r8-ibc-spine-02-1,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P18.0,ibc-spine-02,P30.0
+C-ibc-su2-leaf-r8-ibc-spine-02-2,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P18.1,ibc-spine-02,P30.1
+C-ibc-su2-leaf-r8-ibc-spine-02-3,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P19.0,ibc-spine-02,P31.0
+C-ibc-su2-leaf-r8-ibc-spine-02-4,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P19.1,ibc-spine-02,P31.1
+C-ibc-su2-leaf-r8-ibc-spine-03-1,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P20.0,ibc-spine-03,P30.0
+C-ibc-su2-leaf-r8-ibc-spine-03-2,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P20.1,ibc-spine-03,P30.1
+C-ibc-su2-leaf-r8-ibc-spine-03-3,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P21.0,ibc-spine-03,P31.0
+C-ibc-su2-leaf-r8-ibc-spine-03-4,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P21.1,ibc-spine-03,P31.1
+C-ibc-su2-leaf-r8-ibc-spine-04-1,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P22.0,ibc-spine-04,P30.0
+C-ibc-su2-leaf-r8-ibc-spine-04-2,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P22.1,ibc-spine-04,P30.1
+C-ibc-su2-leaf-r8-ibc-spine-04-3,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P23.0,ibc-spine-04,P31.0
+C-ibc-su2-leaf-r8-ibc-spine-04-4,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P23.1,ibc-spine-04,P31.1
+C-ibc-su2-leaf-r8-ibc-spine-05-1,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P24.0,ibc-spine-05,P30.0
+C-ibc-su2-leaf-r8-ibc-spine-05-2,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P24.1,ibc-spine-05,P30.1
+C-ibc-su2-leaf-r8-ibc-spine-05-3,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P25.0,ibc-spine-05,P31.0
+C-ibc-su2-leaf-r8-ibc-spine-05-4,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P25.1,ibc-spine-05,P31.1
+C-ibc-su2-leaf-r8-ibc-spine-06-1,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P26.0,ibc-spine-06,P30.0
+C-ibc-su2-leaf-r8-ibc-spine-06-2,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P26.1,ibc-spine-06,P30.1
+C-ibc-su2-leaf-r8-ibc-spine-06-3,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P27.0,ibc-spine-06,P31.0
+C-ibc-su2-leaf-r8-ibc-spine-06-4,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P27.1,ibc-spine-06,P31.1
+C-ibc-su2-leaf-r8-ibc-spine-07-1,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P28.0,ibc-spine-07,P30.0
+C-ibc-su2-leaf-r8-ibc-spine-07-2,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P28.1,ibc-spine-07,P30.1
+C-ibc-su2-leaf-r8-ibc-spine-07-3,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P29.0,ibc-spine-07,P31.0
+C-ibc-su2-leaf-r8-ibc-spine-07-4,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P29.1,ibc-spine-07,P31.1
+C-ibc-su2-leaf-r8-ibc-spine-08-1,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P30.0,ibc-spine-08,P30.0
+C-ibc-su2-leaf-r8-ibc-spine-08-2,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P30.1,ibc-spine-08,P30.1
+C-ibc-su2-leaf-r8-ibc-spine-08-3,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P31.0,ibc-spine-08,P31.0
+C-ibc-su2-leaf-r8-ibc-spine-08-4,compute,2,8,mmf-om4,ibc-su2-leaf-r8,P31.1,ibc-spine-08,P31.1
+S-dgx-su1-n01-A,storage,1,,mmf-om4,dgx-su1-n01,Slot1P1,ibs-leaf-01,P0.0
+S-dgx-su1-n01-B,storage,1,,mmf-om4,dgx-su1-n01,Slot2P1,ibs-leaf-02,P0.0
+S-dgx-su1-n02-A,storage,1,,mmf-om4,dgx-su1-n02,Slot1P1,ibs-leaf-01,P0.1
+S-dgx-su1-n02-B,storage,1,,mmf-om4,dgx-su1-n02,Slot2P1,ibs-leaf-02,P0.1
+S-dgx-su1-n03-A,storage,1,,mmf-om4,dgx-su1-n03,Slot1P1,ibs-leaf-01,P1.0
+S-dgx-su1-n03-B,storage,1,,mmf-om4,dgx-su1-n03,Slot2P1,ibs-leaf-02,P1.0
+S-dgx-su1-n04-A,storage,1,,mmf-om4,dgx-su1-n04,Slot1P1,ibs-leaf-01,P1.1
+S-dgx-su1-n04-B,storage,1,,mmf-om4,dgx-su1-n04,Slot2P1,ibs-leaf-02,P1.1
+S-dgx-su1-n05-A,storage,1,,mmf-om4,dgx-su1-n05,Slot1P1,ibs-leaf-01,P2.0
+S-dgx-su1-n05-B,storage,1,,mmf-om4,dgx-su1-n05,Slot2P1,ibs-leaf-02,P2.0
+S-dgx-su1-n06-A,storage,1,,mmf-om4,dgx-su1-n06,Slot1P1,ibs-leaf-01,P2.1
+S-dgx-su1-n06-B,storage,1,,mmf-om4,dgx-su1-n06,Slot2P1,ibs-leaf-02,P2.1
+S-dgx-su1-n07-A,storage,1,,mmf-om4,dgx-su1-n07,Slot1P1,ibs-leaf-01,P3.0
+S-dgx-su1-n07-B,storage,1,,mmf-om4,dgx-su1-n07,Slot2P1,ibs-leaf-02,P3.0
+S-dgx-su1-n08-A,storage,1,,mmf-om4,dgx-su1-n08,Slot1P1,ibs-leaf-01,P3.1
+S-dgx-su1-n08-B,storage,1,,mmf-om4,dgx-su1-n08,Slot2P1,ibs-leaf-02,P3.1
+S-dgx-su1-n09-A,storage,1,,mmf-om4,dgx-su1-n09,Slot1P1,ibs-leaf-01,P4.0
+S-dgx-su1-n09-B,storage,1,,mmf-om4,dgx-su1-n09,Slot2P1,ibs-leaf-02,P4.0
+S-dgx-su1-n10-A,storage,1,,mmf-om4,dgx-su1-n10,Slot1P1,ibs-leaf-01,P4.1
+S-dgx-su1-n10-B,storage,1,,mmf-om4,dgx-su1-n10,Slot2P1,ibs-leaf-02,P4.1
+S-dgx-su1-n11-A,storage,1,,mmf-om4,dgx-su1-n11,Slot1P1,ibs-leaf-01,P5.0
+S-dgx-su1-n11-B,storage,1,,mmf-om4,dgx-su1-n11,Slot2P1,ibs-leaf-02,P5.0
+S-dgx-su1-n12-A,storage,1,,mmf-om4,dgx-su1-n12,Slot1P1,ibs-leaf-01,P5.1
+S-dgx-su1-n12-B,storage,1,,mmf-om4,dgx-su1-n12,Slot2P1,ibs-leaf-02,P5.1
+S-dgx-su1-n13-A,storage,1,,mmf-om4,dgx-su1-n13,Slot1P1,ibs-leaf-01,P6.0
+S-dgx-su1-n13-B,storage,1,,mmf-om4,dgx-su1-n13,Slot2P1,ibs-leaf-02,P6.0
+S-dgx-su1-n14-A,storage,1,,mmf-om4,dgx-su1-n14,Slot1P1,ibs-leaf-01,P6.1
+S-dgx-su1-n14-B,storage,1,,mmf-om4,dgx-su1-n14,Slot2P1,ibs-leaf-02,P6.1
+S-dgx-su1-n15-A,storage,1,,mmf-om4,dgx-su1-n15,Slot1P1,ibs-leaf-01,P7.0
+S-dgx-su1-n15-B,storage,1,,mmf-om4,dgx-su1-n15,Slot2P1,ibs-leaf-02,P7.0
+S-dgx-su1-n16-A,storage,1,,mmf-om4,dgx-su1-n16,Slot1P1,ibs-leaf-01,P7.1
+S-dgx-su1-n16-B,storage,1,,mmf-om4,dgx-su1-n16,Slot2P1,ibs-leaf-02,P7.1
+S-dgx-su1-n17-A,storage,1,,mmf-om4,dgx-su1-n17,Slot1P1,ibs-leaf-01,P8.0
+S-dgx-su1-n17-B,storage,1,,mmf-om4,dgx-su1-n17,Slot2P1,ibs-leaf-02,P8.0
+S-dgx-su1-n18-A,storage,1,,mmf-om4,dgx-su1-n18,Slot1P1,ibs-leaf-01,P8.1
+S-dgx-su1-n18-B,storage,1,,mmf-om4,dgx-su1-n18,Slot2P1,ibs-leaf-02,P8.1
+S-dgx-su1-n19-A,storage,1,,mmf-om4,dgx-su1-n19,Slot1P1,ibs-leaf-01,P9.0
+S-dgx-su1-n19-B,storage,1,,mmf-om4,dgx-su1-n19,Slot2P1,ibs-leaf-02,P9.0
+S-dgx-su1-n20-A,storage,1,,mmf-om4,dgx-su1-n20,Slot1P1,ibs-leaf-01,P9.1
+S-dgx-su1-n20-B,storage,1,,mmf-om4,dgx-su1-n20,Slot2P1,ibs-leaf-02,P9.1
+S-dgx-su1-n21-A,storage,1,,mmf-om4,dgx-su1-n21,Slot1P1,ibs-leaf-01,P10.0
+S-dgx-su1-n21-B,storage,1,,mmf-om4,dgx-su1-n21,Slot2P1,ibs-leaf-02,P10.0
+S-dgx-su1-n22-A,storage,1,,mmf-om4,dgx-su1-n22,Slot1P1,ibs-leaf-01,P10.1
+S-dgx-su1-n22-B,storage,1,,mmf-om4,dgx-su1-n22,Slot2P1,ibs-leaf-02,P10.1
+S-dgx-su1-n23-A,storage,1,,mmf-om4,dgx-su1-n23,Slot1P1,ibs-leaf-01,P11.0
+S-dgx-su1-n23-B,storage,1,,mmf-om4,dgx-su1-n23,Slot2P1,ibs-leaf-02,P11.0
+S-dgx-su1-n24-A,storage,1,,mmf-om4,dgx-su1-n24,Slot1P1,ibs-leaf-01,P11.1
+S-dgx-su1-n24-B,storage,1,,mmf-om4,dgx-su1-n24,Slot2P1,ibs-leaf-02,P11.1
+S-dgx-su1-n25-A,storage,1,,mmf-om4,dgx-su1-n25,Slot1P1,ibs-leaf-01,P12.0
+S-dgx-su1-n25-B,storage,1,,mmf-om4,dgx-su1-n25,Slot2P1,ibs-leaf-02,P12.0
+S-dgx-su1-n26-A,storage,1,,mmf-om4,dgx-su1-n26,Slot1P1,ibs-leaf-01,P12.1
+S-dgx-su1-n26-B,storage,1,,mmf-om4,dgx-su1-n26,Slot2P1,ibs-leaf-02,P12.1
+S-dgx-su1-n27-A,storage,1,,mmf-om4,dgx-su1-n27,Slot1P1,ibs-leaf-01,P13.0
+S-dgx-su1-n27-B,storage,1,,mmf-om4,dgx-su1-n27,Slot2P1,ibs-leaf-02,P13.0
+S-dgx-su1-n28-A,storage,1,,mmf-om4,dgx-su1-n28,Slot1P1,ibs-leaf-01,P13.1
+S-dgx-su1-n28-B,storage,1,,mmf-om4,dgx-su1-n28,Slot2P1,ibs-leaf-02,P13.1
+S-dgx-su1-n29-A,storage,1,,mmf-om4,dgx-su1-n29,Slot1P1,ibs-leaf-01,P14.0
+S-dgx-su1-n29-B,storage,1,,mmf-om4,dgx-su1-n29,Slot2P1,ibs-leaf-02,P14.0
+S-dgx-su1-n30-A,storage,1,,mmf-om4,dgx-su1-n30,Slot1P1,ibs-leaf-01,P14.1
+S-dgx-su1-n30-B,storage,1,,mmf-om4,dgx-su1-n30,Slot2P1,ibs-leaf-02,P14.1
+S-dgx-su1-n31-A,storage,1,,mmf-om4,dgx-su1-n31,Slot1P1,ibs-leaf-01,P15.0
+S-dgx-su1-n31-B,storage,1,,mmf-om4,dgx-su1-n31,Slot2P1,ibs-leaf-02,P15.0
+S-dgx-su1-n32-A,storage,1,,mmf-om4,dgx-su1-n32,Slot1P1,ibs-leaf-01,P15.1
+S-dgx-su1-n32-B,storage,1,,mmf-om4,dgx-su1-n32,Slot2P1,ibs-leaf-02,P15.1
+S-dgx-su2-n01-A,storage,2,,mmf-om4,dgx-su2-n01,Slot1P1,ibs-leaf-03,P0.0
+S-dgx-su2-n01-B,storage,2,,mmf-om4,dgx-su2-n01,Slot2P1,ibs-leaf-04,P0.0
+S-dgx-su2-n02-A,storage,2,,mmf-om4,dgx-su2-n02,Slot1P1,ibs-leaf-03,P0.1
+S-dgx-su2-n02-B,storage,2,,mmf-om4,dgx-su2-n02,Slot2P1,ibs-leaf-04,P0.1
+S-dgx-su2-n03-A,storage,2,,mmf-om4,dgx-su2-n03,Slot1P1,ibs-leaf-03,P1.0
+S-dgx-su2-n03-B,storage,2,,mmf-om4,dgx-su2-n03,Slot2P1,ibs-leaf-04,P1.0
+S-dgx-su2-n04-A,storage,2,,mmf-om4,dgx-su2-n04,Slot1P1,ibs-leaf-03,P1.1
+S-dgx-su2-n04-B,storage,2,,mmf-om4,dgx-su2-n04,Slot2P1,ibs-leaf-04,P1.1
+S-dgx-su2-n05-A,storage,2,,mmf-om4,dgx-su2-n05,Slot1P1,ibs-leaf-03,P2.0
+S-dgx-su2-n05-B,storage,2,,mmf-om4,dgx-su2-n05,Slot2P1,ibs-leaf-04,P2.0
+S-dgx-su2-n06-A,storage,2,,mmf-om4,dgx-su2-n06,Slot1P1,ibs-leaf-03,P2.1
+S-dgx-su2-n06-B,storage,2,,mmf-om4,dgx-su2-n06,Slot2P1,ibs-leaf-04,P2.1
+S-dgx-su2-n07-A,storage,2,,mmf-om4,dgx-su2-n07,Slot1P1,ibs-leaf-03,P3.0
+S-dgx-su2-n07-B,storage,2,,mmf-om4,dgx-su2-n07,Slot2P1,ibs-leaf-04,P3.0
+S-dgx-su2-n08-A,storage,2,,mmf-om4,dgx-su2-n08,Slot1P1,ibs-leaf-03,P3.1
+S-dgx-su2-n08-B,storage,2,,mmf-om4,dgx-su2-n08,Slot2P1,ibs-leaf-04,P3.1
+S-dgx-su2-n09-A,storage,2,,mmf-om4,dgx-su2-n09,Slot1P1,ibs-leaf-03,P4.0
+S-dgx-su2-n09-B,storage,2,,mmf-om4,dgx-su2-n09,Slot2P1,ibs-leaf-04,P4.0
+S-dgx-su2-n10-A,storage,2,,mmf-om4,dgx-su2-n10,Slot1P1,ibs-leaf-03,P4.1
+S-dgx-su2-n10-B,storage,2,,mmf-om4,dgx-su2-n10,Slot2P1,ibs-leaf-04,P4.1
+S-dgx-su2-n11-A,storage,2,,mmf-om4,dgx-su2-n11,Slot1P1,ibs-leaf-03,P5.0
+S-dgx-su2-n11-B,storage,2,,mmf-om4,dgx-su2-n11,Slot2P1,ibs-leaf-04,P5.0
+S-dgx-su2-n12-A,storage,2,,mmf-om4,dgx-su2-n12,Slot1P1,ibs-leaf-03,P5.1
+S-dgx-su2-n12-B,storage,2,,mmf-om4,dgx-su2-n12,Slot2P1,ibs-leaf-04,P5.1
+S-dgx-su2-n13-A,storage,2,,mmf-om4,dgx-su2-n13,Slot1P1,ibs-leaf-03,P6.0
+S-dgx-su2-n13-B,storage,2,,mmf-om4,dgx-su2-n13,Slot2P1,ibs-leaf-04,P6.0
+S-dgx-su2-n14-A,storage,2,,mmf-om4,dgx-su2-n14,Slot1P1,ibs-leaf-03,P6.1
+S-dgx-su2-n14-B,storage,2,,mmf-om4,dgx-su2-n14,Slot2P1,ibs-leaf-04,P6.1
+S-dgx-su2-n15-A,storage,2,,mmf-om4,dgx-su2-n15,Slot1P1,ibs-leaf-03,P7.0
+S-dgx-su2-n15-B,storage,2,,mmf-om4,dgx-su2-n15,Slot2P1,ibs-leaf-04,P7.0
+S-dgx-su2-n16-A,storage,2,,mmf-om4,dgx-su2-n16,Slot1P1,ibs-leaf-03,P7.1
+S-dgx-su2-n16-B,storage,2,,mmf-om4,dgx-su2-n16,Slot2P1,ibs-leaf-04,P7.1
+S-dgx-su2-n17-A,storage,2,,mmf-om4,dgx-su2-n17,Slot1P1,ibs-leaf-03,P8.0
+S-dgx-su2-n17-B,storage,2,,mmf-om4,dgx-su2-n17,Slot2P1,ibs-leaf-04,P8.0
+S-dgx-su2-n18-A,storage,2,,mmf-om4,dgx-su2-n18,Slot1P1,ibs-leaf-03,P8.1
+S-dgx-su2-n18-B,storage,2,,mmf-om4,dgx-su2-n18,Slot2P1,ibs-leaf-04,P8.1
+S-dgx-su2-n19-A,storage,2,,mmf-om4,dgx-su2-n19,Slot1P1,ibs-leaf-03,P9.0
+S-dgx-su2-n19-B,storage,2,,mmf-om4,dgx-su2-n19,Slot2P1,ibs-leaf-04,P9.0
+S-dgx-su2-n20-A,storage,2,,mmf-om4,dgx-su2-n20,Slot1P1,ibs-leaf-03,P9.1
+S-dgx-su2-n20-B,storage,2,,mmf-om4,dgx-su2-n20,Slot2P1,ibs-leaf-04,P9.1
+S-dgx-su2-n21-A,storage,2,,mmf-om4,dgx-su2-n21,Slot1P1,ibs-leaf-03,P10.0
+S-dgx-su2-n21-B,storage,2,,mmf-om4,dgx-su2-n21,Slot2P1,ibs-leaf-04,P10.0
+S-dgx-su2-n22-A,storage,2,,mmf-om4,dgx-su2-n22,Slot1P1,ibs-leaf-03,P10.1
+S-dgx-su2-n22-B,storage,2,,mmf-om4,dgx-su2-n22,Slot2P1,ibs-leaf-04,P10.1
+S-dgx-su2-n23-A,storage,2,,mmf-om4,dgx-su2-n23,Slot1P1,ibs-leaf-03,P11.0
+S-dgx-su2-n23-B,storage,2,,mmf-om4,dgx-su2-n23,Slot2P1,ibs-leaf-04,P11.0
+S-dgx-su2-n24-A,storage,2,,mmf-om4,dgx-su2-n24,Slot1P1,ibs-leaf-03,P11.1
+S-dgx-su2-n24-B,storage,2,,mmf-om4,dgx-su2-n24,Slot2P1,ibs-leaf-04,P11.1
+S-dgx-su2-n25-A,storage,2,,mmf-om4,dgx-su2-n25,Slot1P1,ibs-leaf-03,P12.0
+S-dgx-su2-n25-B,storage,2,,mmf-om4,dgx-su2-n25,Slot2P1,ibs-leaf-04,P12.0
+S-dgx-su2-n26-A,storage,2,,mmf-om4,dgx-su2-n26,Slot1P1,ibs-leaf-03,P12.1
+S-dgx-su2-n26-B,storage,2,,mmf-om4,dgx-su2-n26,Slot2P1,ibs-leaf-04,P12.1
+S-dgx-su2-n27-A,storage,2,,mmf-om4,dgx-su2-n27,Slot1P1,ibs-leaf-03,P13.0
+S-dgx-su2-n27-B,storage,2,,mmf-om4,dgx-su2-n27,Slot2P1,ibs-leaf-04,P13.0
+S-dgx-su2-n28-A,storage,2,,mmf-om4,dgx-su2-n28,Slot1P1,ibs-leaf-03,P13.1
+S-dgx-su2-n28-B,storage,2,,mmf-om4,dgx-su2-n28,Slot2P1,ibs-leaf-04,P13.1
+S-dgx-su2-n29-A,storage,2,,mmf-om4,dgx-su2-n29,Slot1P1,ibs-leaf-03,P14.0
+S-dgx-su2-n29-B,storage,2,,mmf-om4,dgx-su2-n29,Slot2P1,ibs-leaf-04,P14.0
+S-dgx-su2-n30-A,storage,2,,mmf-om4,dgx-su2-n30,Slot1P1,ibs-leaf-03,P14.1
+S-dgx-su2-n30-B,storage,2,,mmf-om4,dgx-su2-n30,Slot2P1,ibs-leaf-04,P14.1
+S-dgx-su2-n31-A,storage,2,,mmf-om4,dgx-su2-n31,Slot1P1,ibs-leaf-03,P15.0
+S-dgx-su2-n31-B,storage,2,,mmf-om4,dgx-su2-n31,Slot2P1,ibs-leaf-04,P15.0
+S-ddn-01-1,storage,,,mmf-om4,ibs-leaf-05,P0.0,ddn-01,ib1+ib2
+S-ddn-01-2,storage,,,mmf-om4,ibs-leaf-05,P0.1,ddn-01,ib3+ib4
+S-ddn-01-3,storage,,,mmf-om4,ibs-leaf-05,P1.0,ddn-01,ib5+ib6
+S-ddn-01-4,storage,,,mmf-om4,ibs-leaf-05,P1.1,ddn-01,ib7+ib8
+S-ddn-02-1,storage,,,mmf-om4,ibs-leaf-05,P2.0,ddn-02,ib1+ib2
+S-ddn-02-2,storage,,,mmf-om4,ibs-leaf-05,P2.1,ddn-02,ib3+ib4
+S-ddn-02-3,storage,,,mmf-om4,ibs-leaf-05,P3.0,ddn-02,ib5+ib6
+S-ddn-02-4,storage,,,mmf-om4,ibs-leaf-05,P3.1,ddn-02,ib7+ib8
+S-ddn-03-1,storage,,,mmf-om4,ibs-leaf-05,P4.0,ddn-03,ib1+ib2
+S-ddn-03-2,storage,,,mmf-om4,ibs-leaf-05,P4.1,ddn-03,ib3+ib4
+S-ddn-03-3,storage,,,mmf-om4,ibs-leaf-05,P5.0,ddn-03,ib5+ib6
+S-ddn-03-4,storage,,,mmf-om4,ibs-leaf-05,P5.1,ddn-03,ib7+ib8
+S-ddn-04-1,storage,,,mmf-om4,ibs-leaf-05,P6.0,ddn-04,ib1+ib2
+S-ddn-04-2,storage,,,mmf-om4,ibs-leaf-05,P6.1,ddn-04,ib3+ib4
+S-ddn-04-3,storage,,,mmf-om4,ibs-leaf-05,P7.0,ddn-04,ib5+ib6
+S-ddn-04-4,storage,,,mmf-om4,ibs-leaf-05,P7.1,ddn-04,ib7+ib8
+S-ufm-s-01-ib1,storage,,,mmf-om4,ufm-s-01,ib1,ibs-leaf-05,P8.0
+S-ufm-s-01-ib2,storage,,,mmf-om4,ufm-s-01,ib2,ibs-leaf-05,P8.1
+S-ufm-s-02-ib1,storage,,,mmf-om4,ufm-s-02,ib1,ibs-leaf-05,P9.0
+S-ufm-s-02-ib2,storage,,,mmf-om4,ufm-s-02,ib2,ibs-leaf-05,P9.1
+S-bcm-head-01-vpi1,storage,,,mmf-om4,bcm-head-01,vpi1,ibs-leaf-05,P10.0
+S-bcm-head-01-vpi2,storage,,,mmf-om4,bcm-head-01,vpi2,ibs-leaf-05,P10.1
+S-bcm-head-02-vpi1,storage,,,mmf-om4,bcm-head-02,vpi1,ibs-leaf-05,P11.0
+S-bcm-head-02-vpi2,storage,,,mmf-om4,bcm-head-02,vpi2,ibs-leaf-05,P11.1
+S-slurm-ctl-01-vpi1,storage,,,mmf-om4,slurm-ctl-01,vpi1,ibs-leaf-05,P12.0
+S-slurm-ctl-01-vpi2,storage,,,mmf-om4,slurm-ctl-01,vpi2,ibs-leaf-05,P12.1
+S-slurm-login-01-vpi1,storage,,,mmf-om4,slurm-login-01,vpi1,ibs-leaf-05,P13.0
+S-slurm-login-01-vpi2,storage,,,mmf-om4,slurm-login-01,vpi2,ibs-leaf-05,P13.1
+S-slurm-login-02-vpi1,storage,,,mmf-om4,slurm-login-02,vpi1,ibs-leaf-05,P14.0
+S-slurm-login-02-vpi2,storage,,,mmf-om4,slurm-login-02,vpi2,ibs-leaf-05,P14.1
+S-ibs-leaf-01-ibs-spine-01-1,storage,,,mmf-om4,ibs-leaf-01,P20.0,ibs-spine-01,P0.0
+S-ibs-leaf-01-ibs-spine-01-2,storage,,,mmf-om4,ibs-leaf-01,P20.1,ibs-spine-01,P0.1
+S-ibs-leaf-01-ibs-spine-01-3,storage,,,mmf-om4,ibs-leaf-01,P21.0,ibs-spine-01,P1.0
+S-ibs-leaf-01-ibs-spine-01-4,storage,,,mmf-om4,ibs-leaf-01,P21.1,ibs-spine-01,P1.1
+S-ibs-leaf-01-ibs-spine-01-5,storage,,,mmf-om4,ibs-leaf-01,P22.0,ibs-spine-01,P2.0
+S-ibs-leaf-01-ibs-spine-01-6,storage,,,mmf-om4,ibs-leaf-01,P22.1,ibs-spine-01,P2.1
+S-ibs-leaf-01-ibs-spine-01-7,storage,,,mmf-om4,ibs-leaf-01,P23.0,ibs-spine-01,P3.0
+S-ibs-leaf-01-ibs-spine-01-8,storage,,,mmf-om4,ibs-leaf-01,P23.1,ibs-spine-01,P3.1
+S-ibs-leaf-01-ibs-spine-01-9,storage,,,mmf-om4,ibs-leaf-01,P24.0,ibs-spine-01,P4.0
+S-ibs-leaf-01-ibs-spine-01-10,storage,,,mmf-om4,ibs-leaf-01,P24.1,ibs-spine-01,P4.1
+S-ibs-leaf-01-ibs-spine-01-11,storage,,,mmf-om4,ibs-leaf-01,P25.0,ibs-spine-01,P5.0
+S-ibs-leaf-01-ibs-spine-01-12,storage,,,mmf-om4,ibs-leaf-01,P25.1,ibs-spine-01,P5.1
+S-ibs-leaf-01-ibs-spine-02-1,storage,,,mmf-om4,ibs-leaf-01,P26.0,ibs-spine-02,P0.0
+S-ibs-leaf-01-ibs-spine-02-2,storage,,,mmf-om4,ibs-leaf-01,P26.1,ibs-spine-02,P0.1
+S-ibs-leaf-01-ibs-spine-02-3,storage,,,mmf-om4,ibs-leaf-01,P27.0,ibs-spine-02,P1.0
+S-ibs-leaf-01-ibs-spine-02-4,storage,,,mmf-om4,ibs-leaf-01,P27.1,ibs-spine-02,P1.1
+S-ibs-leaf-01-ibs-spine-02-5,storage,,,mmf-om4,ibs-leaf-01,P28.0,ibs-spine-02,P2.0
+S-ibs-leaf-01-ibs-spine-02-6,storage,,,mmf-om4,ibs-leaf-01,P28.1,ibs-spine-02,P2.1
+S-ibs-leaf-01-ibs-spine-02-7,storage,,,mmf-om4,ibs-leaf-01,P29.0,ibs-spine-02,P3.0
+S-ibs-leaf-01-ibs-spine-02-8,storage,,,mmf-om4,ibs-leaf-01,P29.1,ibs-spine-02,P3.1
+S-ibs-leaf-01-ibs-spine-02-9,storage,,,mmf-om4,ibs-leaf-01,P30.0,ibs-spine-02,P4.0
+S-ibs-leaf-01-ibs-spine-02-10,storage,,,mmf-om4,ibs-leaf-01,P30.1,ibs-spine-02,P4.1
+S-ibs-leaf-01-ibs-spine-02-11,storage,,,mmf-om4,ibs-leaf-01,P31.0,ibs-spine-02,P5.0
+S-ibs-leaf-01-ibs-spine-02-12,storage,,,mmf-om4,ibs-leaf-01,P31.1,ibs-spine-02,P5.1
+S-ibs-leaf-02-ibs-spine-01-1,storage,,,mmf-om4,ibs-leaf-02,P20.0,ibs-spine-01,P6.0
+S-ibs-leaf-02-ibs-spine-01-2,storage,,,mmf-om4,ibs-leaf-02,P20.1,ibs-spine-01,P6.1
+S-ibs-leaf-02-ibs-spine-01-3,storage,,,mmf-om4,ibs-leaf-02,P21.0,ibs-spine-01,P7.0
+S-ibs-leaf-02-ibs-spine-01-4,storage,,,mmf-om4,ibs-leaf-02,P21.1,ibs-spine-01,P7.1
+S-ibs-leaf-02-ibs-spine-01-5,storage,,,mmf-om4,ibs-leaf-02,P22.0,ibs-spine-01,P8.0
+S-ibs-leaf-02-ibs-spine-01-6,storage,,,mmf-om4,ibs-leaf-02,P22.1,ibs-spine-01,P8.1
+S-ibs-leaf-02-ibs-spine-01-7,storage,,,mmf-om4,ibs-leaf-02,P23.0,ibs-spine-01,P9.0
+S-ibs-leaf-02-ibs-spine-01-8,storage,,,mmf-om4,ibs-leaf-02,P23.1,ibs-spine-01,P9.1
+S-ibs-leaf-02-ibs-spine-01-9,storage,,,mmf-om4,ibs-leaf-02,P24.0,ibs-spine-01,P10.0
+S-ibs-leaf-02-ibs-spine-01-10,storage,,,mmf-om4,ibs-leaf-02,P24.1,ibs-spine-01,P10.1
+S-ibs-leaf-02-ibs-spine-01-11,storage,,,mmf-om4,ibs-leaf-02,P25.0,ibs-spine-01,P11.0
+S-ibs-leaf-02-ibs-spine-01-12,storage,,,mmf-om4,ibs-leaf-02,P25.1,ibs-spine-01,P11.1
+S-ibs-leaf-02-ibs-spine-02-1,storage,,,mmf-om4,ibs-leaf-02,P26.0,ibs-spine-02,P6.0
+S-ibs-leaf-02-ibs-spine-02-2,storage,,,mmf-om4,ibs-leaf-02,P26.1,ibs-spine-02,P6.1
+S-ibs-leaf-02-ibs-spine-02-3,storage,,,mmf-om4,ibs-leaf-02,P27.0,ibs-spine-02,P7.0
+S-ibs-leaf-02-ibs-spine-02-4,storage,,,mmf-om4,ibs-leaf-02,P27.1,ibs-spine-02,P7.1
+S-ibs-leaf-02-ibs-spine-02-5,storage,,,mmf-om4,ibs-leaf-02,P28.0,ibs-spine-02,P8.0
+S-ibs-leaf-02-ibs-spine-02-6,storage,,,mmf-om4,ibs-leaf-02,P28.1,ibs-spine-02,P8.1
+S-ibs-leaf-02-ibs-spine-02-7,storage,,,mmf-om4,ibs-leaf-02,P29.0,ibs-spine-02,P9.0
+S-ibs-leaf-02-ibs-spine-02-8,storage,,,mmf-om4,ibs-leaf-02,P29.1,ibs-spine-02,P9.1
+S-ibs-leaf-02-ibs-spine-02-9,storage,,,mmf-om4,ibs-leaf-02,P30.0,ibs-spine-02,P10.0
+S-ibs-leaf-02-ibs-spine-02-10,storage,,,mmf-om4,ibs-leaf-02,P30.1,ibs-spine-02,P10.1
+S-ibs-leaf-02-ibs-spine-02-11,storage,,,mmf-om4,ibs-leaf-02,P31.0,ibs-spine-02,P11.0
+S-ibs-leaf-02-ibs-spine-02-12,storage,,,mmf-om4,ibs-leaf-02,P31.1,ibs-spine-02,P11.1
+S-ibs-leaf-03-ibs-spine-01-1,storage,,,mmf-om4,ibs-leaf-03,P20.0,ibs-spine-01,P12.0
+S-ibs-leaf-03-ibs-spine-01-2,storage,,,mmf-om4,ibs-leaf-03,P20.1,ibs-spine-01,P12.1
+S-ibs-leaf-03-ibs-spine-01-3,storage,,,mmf-om4,ibs-leaf-03,P21.0,ibs-spine-01,P13.0
+S-ibs-leaf-03-ibs-spine-01-4,storage,,,mmf-om4,ibs-leaf-03,P21.1,ibs-spine-01,P13.1
+S-ibs-leaf-03-ibs-spine-01-5,storage,,,mmf-om4,ibs-leaf-03,P22.0,ibs-spine-01,P14.0
+S-ibs-leaf-03-ibs-spine-01-6,storage,,,mmf-om4,ibs-leaf-03,P22.1,ibs-spine-01,P14.1
+S-ibs-leaf-03-ibs-spine-01-7,storage,,,mmf-om4,ibs-leaf-03,P23.0,ibs-spine-01,P15.0
+S-ibs-leaf-03-ibs-spine-01-8,storage,,,mmf-om4,ibs-leaf-03,P23.1,ibs-spine-01,P15.1
+S-ibs-leaf-03-ibs-spine-01-9,storage,,,mmf-om4,ibs-leaf-03,P24.0,ibs-spine-01,P16.0
+S-ibs-leaf-03-ibs-spine-01-10,storage,,,mmf-om4,ibs-leaf-03,P24.1,ibs-spine-01,P16.1
+S-ibs-leaf-03-ibs-spine-01-11,storage,,,mmf-om4,ibs-leaf-03,P25.0,ibs-spine-01,P17.0
+S-ibs-leaf-03-ibs-spine-01-12,storage,,,mmf-om4,ibs-leaf-03,P25.1,ibs-spine-01,P17.1
+S-ibs-leaf-03-ibs-spine-02-1,storage,,,mmf-om4,ibs-leaf-03,P26.0,ibs-spine-02,P12.0
+S-ibs-leaf-03-ibs-spine-02-2,storage,,,mmf-om4,ibs-leaf-03,P26.1,ibs-spine-02,P12.1
+S-ibs-leaf-03-ibs-spine-02-3,storage,,,mmf-om4,ibs-leaf-03,P27.0,ibs-spine-02,P13.0
+S-ibs-leaf-03-ibs-spine-02-4,storage,,,mmf-om4,ibs-leaf-03,P27.1,ibs-spine-02,P13.1
+S-ibs-leaf-03-ibs-spine-02-5,storage,,,mmf-om4,ibs-leaf-03,P28.0,ibs-spine-02,P14.0
+S-ibs-leaf-03-ibs-spine-02-6,storage,,,mmf-om4,ibs-leaf-03,P28.1,ibs-spine-02,P14.1
+S-ibs-leaf-03-ibs-spine-02-7,storage,,,mmf-om4,ibs-leaf-03,P29.0,ibs-spine-02,P15.0
+S-ibs-leaf-03-ibs-spine-02-8,storage,,,mmf-om4,ibs-leaf-03,P29.1,ibs-spine-02,P15.1
+S-ibs-leaf-03-ibs-spine-02-9,storage,,,mmf-om4,ibs-leaf-03,P30.0,ibs-spine-02,P16.0
+S-ibs-leaf-03-ibs-spine-02-10,storage,,,mmf-om4,ibs-leaf-03,P30.1,ibs-spine-02,P16.1
+S-ibs-leaf-03-ibs-spine-02-11,storage,,,mmf-om4,ibs-leaf-03,P31.0,ibs-spine-02,P17.0
+S-ibs-leaf-03-ibs-spine-02-12,storage,,,mmf-om4,ibs-leaf-03,P31.1,ibs-spine-02,P17.1
+S-ibs-leaf-04-ibs-spine-01-1,storage,,,mmf-om4,ibs-leaf-04,P20.0,ibs-spine-01,P18.0
+S-ibs-leaf-04-ibs-spine-01-2,storage,,,mmf-om4,ibs-leaf-04,P20.1,ibs-spine-01,P18.1
+S-ibs-leaf-04-ibs-spine-01-3,storage,,,mmf-om4,ibs-leaf-04,P21.0,ibs-spine-01,P19.0
+S-ibs-leaf-04-ibs-spine-01-4,storage,,,mmf-om4,ibs-leaf-04,P21.1,ibs-spine-01,P19.1
+S-ibs-leaf-04-ibs-spine-01-5,storage,,,mmf-om4,ibs-leaf-04,P22.0,ibs-spine-01,P20.0
+S-ibs-leaf-04-ibs-spine-01-6,storage,,,mmf-om4,ibs-leaf-04,P22.1,ibs-spine-01,P20.1
+S-ibs-leaf-04-ibs-spine-01-7,storage,,,mmf-om4,ibs-leaf-04,P23.0,ibs-spine-01,P21.0
+S-ibs-leaf-04-ibs-spine-01-8,storage,,,mmf-om4,ibs-leaf-04,P23.1,ibs-spine-01,P21.1
+S-ibs-leaf-04-ibs-spine-01-9,storage,,,mmf-om4,ibs-leaf-04,P24.0,ibs-spine-01,P22.0
+S-ibs-leaf-04-ibs-spine-01-10,storage,,,mmf-om4,ibs-leaf-04,P24.1,ibs-spine-01,P22.1
+S-ibs-leaf-04-ibs-spine-01-11,storage,,,mmf-om4,ibs-leaf-04,P25.0,ibs-spine-01,P23.0
+S-ibs-leaf-04-ibs-spine-01-12,storage,,,mmf-om4,ibs-leaf-04,P25.1,ibs-spine-01,P23.1
+S-ibs-leaf-04-ibs-spine-02-1,storage,,,mmf-om4,ibs-leaf-04,P26.0,ibs-spine-02,P18.0
+S-ibs-leaf-04-ibs-spine-02-2,storage,,,mmf-om4,ibs-leaf-04,P26.1,ibs-spine-02,P18.1
+S-ibs-leaf-04-ibs-spine-02-3,storage,,,mmf-om4,ibs-leaf-04,P27.0,ibs-spine-02,P19.0
+S-ibs-leaf-04-ibs-spine-02-4,storage,,,mmf-om4,ibs-leaf-04,P27.1,ibs-spine-02,P19.1
+S-ibs-leaf-04-ibs-spine-02-5,storage,,,mmf-om4,ibs-leaf-04,P28.0,ibs-spine-02,P20.0
+S-ibs-leaf-04-ibs-spine-02-6,storage,,,mmf-om4,ibs-leaf-04,P28.1,ibs-spine-02,P20.1
+S-ibs-leaf-04-ibs-spine-02-7,storage,,,mmf-om4,ibs-leaf-04,P29.0,ibs-spine-02,P21.0
+S-ibs-leaf-04-ibs-spine-02-8,storage,,,mmf-om4,ibs-leaf-04,P29.1,ibs-spine-02,P21.1
+S-ibs-leaf-04-ibs-spine-02-9,storage,,,mmf-om4,ibs-leaf-04,P30.0,ibs-spine-02,P22.0
+S-ibs-leaf-04-ibs-spine-02-10,storage,,,mmf-om4,ibs-leaf-04,P30.1,ibs-spine-02,P22.1
+S-ibs-leaf-04-ibs-spine-02-11,storage,,,mmf-om4,ibs-leaf-04,P31.0,ibs-spine-02,P23.0
+S-ibs-leaf-04-ibs-spine-02-12,storage,,,mmf-om4,ibs-leaf-04,P31.1,ibs-spine-02,P23.1
+S-ibs-leaf-05-ibs-spine-01-1,storage,,,mmf-om4,ibs-leaf-05,P24.0,ibs-spine-01,P24.0
+S-ibs-leaf-05-ibs-spine-01-2,storage,,,mmf-om4,ibs-leaf-05,P24.1,ibs-spine-01,P24.1
+S-ibs-leaf-05-ibs-spine-01-3,storage,,,mmf-om4,ibs-leaf-05,P25.0,ibs-spine-01,P25.0
+S-ibs-leaf-05-ibs-spine-01-4,storage,,,mmf-om4,ibs-leaf-05,P25.1,ibs-spine-01,P25.1
+S-ibs-leaf-05-ibs-spine-01-5,storage,,,mmf-om4,ibs-leaf-05,P26.0,ibs-spine-01,P26.0
+S-ibs-leaf-05-ibs-spine-01-6,storage,,,mmf-om4,ibs-leaf-05,P26.1,ibs-spine-01,P26.1
+S-ibs-leaf-05-ibs-spine-01-7,storage,,,mmf-om4,ibs-leaf-05,P27.0,ibs-spine-01,P27.0
+S-ibs-leaf-05-ibs-spine-01-8,storage,,,mmf-om4,ibs-leaf-05,P27.1,ibs-spine-01,P27.1
+S-ibs-leaf-05-ibs-spine-02-1,storage,,,mmf-om4,ibs-leaf-05,P28.0,ibs-spine-02,P24.0
+S-ibs-leaf-05-ibs-spine-02-2,storage,,,mmf-om4,ibs-leaf-05,P28.1,ibs-spine-02,P24.1
+S-ibs-leaf-05-ibs-spine-02-3,storage,,,mmf-om4,ibs-leaf-05,P29.0,ibs-spine-02,P25.0
+S-ibs-leaf-05-ibs-spine-02-4,storage,,,mmf-om4,ibs-leaf-05,P29.1,ibs-spine-02,P25.1
+S-ibs-leaf-05-ibs-spine-02-5,storage,,,mmf-om4,ibs-leaf-05,P30.0,ibs-spine-02,P26.0
+S-ibs-leaf-05-ibs-spine-02-6,storage,,,mmf-om4,ibs-leaf-05,P30.1,ibs-spine-02,P26.1
+S-ibs-leaf-05-ibs-spine-02-7,storage,,,mmf-om4,ibs-leaf-05,P31.0,ibs-spine-02,P27.0
+S-ibs-leaf-05-ibs-spine-02-8,storage,,,mmf-om4,ibs-leaf-05,P31.1,ibs-spine-02,P27.1
+I-dgx-su1-n01-A,inband,1,,aoc,dgx-su1-n01,Slot1P2,inb-su1-leaf-a,swp1
+I-dgx-su1-n01-B,inband,1,,aoc,dgx-su1-n01,Slot2P2,inb-su1-leaf-b,swp1
+I-dgx-su1-n02-A,inband,1,,aoc,dgx-su1-n02,Slot1P2,inb-su1-leaf-a,swp2
+I-dgx-su1-n02-B,inband,1,,aoc,dgx-su1-n02,Slot2P2,inb-su1-leaf-b,swp2
+I-dgx-su1-n03-A,inband,1,,aoc,dgx-su1-n03,Slot1P2,inb-su1-leaf-a,swp3
+I-dgx-su1-n03-B,inband,1,,aoc,dgx-su1-n03,Slot2P2,inb-su1-leaf-b,swp3
+I-dgx-su1-n04-A,inband,1,,aoc,dgx-su1-n04,Slot1P2,inb-su1-leaf-a,swp4
+I-dgx-su1-n04-B,inband,1,,aoc,dgx-su1-n04,Slot2P2,inb-su1-leaf-b,swp4
+I-dgx-su1-n05-A,inband,1,,aoc,dgx-su1-n05,Slot1P2,inb-su1-leaf-a,swp5
+I-dgx-su1-n05-B,inband,1,,aoc,dgx-su1-n05,Slot2P2,inb-su1-leaf-b,swp5
+I-dgx-su1-n06-A,inband,1,,aoc,dgx-su1-n06,Slot1P2,inb-su1-leaf-a,swp6
+I-dgx-su1-n06-B,inband,1,,aoc,dgx-su1-n06,Slot2P2,inb-su1-leaf-b,swp6
+I-dgx-su1-n07-A,inband,1,,aoc,dgx-su1-n07,Slot1P2,inb-su1-leaf-a,swp7
+I-dgx-su1-n07-B,inband,1,,aoc,dgx-su1-n07,Slot2P2,inb-su1-leaf-b,swp7
+I-dgx-su1-n08-A,inband,1,,aoc,dgx-su1-n08,Slot1P2,inb-su1-leaf-a,swp8
+I-dgx-su1-n08-B,inband,1,,aoc,dgx-su1-n08,Slot2P2,inb-su1-leaf-b,swp8
+I-dgx-su1-n09-A,inband,1,,aoc,dgx-su1-n09,Slot1P2,inb-su1-leaf-a,swp9
+I-dgx-su1-n09-B,inband,1,,aoc,dgx-su1-n09,Slot2P2,inb-su1-leaf-b,swp9
+I-dgx-su1-n10-A,inband,1,,aoc,dgx-su1-n10,Slot1P2,inb-su1-leaf-a,swp10
+I-dgx-su1-n10-B,inband,1,,aoc,dgx-su1-n10,Slot2P2,inb-su1-leaf-b,swp10
+I-dgx-su1-n11-A,inband,1,,aoc,dgx-su1-n11,Slot1P2,inb-su1-leaf-a,swp11
+I-dgx-su1-n11-B,inband,1,,aoc,dgx-su1-n11,Slot2P2,inb-su1-leaf-b,swp11
+I-dgx-su1-n12-A,inband,1,,aoc,dgx-su1-n12,Slot1P2,inb-su1-leaf-a,swp12
+I-dgx-su1-n12-B,inband,1,,aoc,dgx-su1-n12,Slot2P2,inb-su1-leaf-b,swp12
+I-dgx-su1-n13-A,inband,1,,aoc,dgx-su1-n13,Slot1P2,inb-su1-leaf-a,swp13
+I-dgx-su1-n13-B,inband,1,,aoc,dgx-su1-n13,Slot2P2,inb-su1-leaf-b,swp13
+I-dgx-su1-n14-A,inband,1,,aoc,dgx-su1-n14,Slot1P2,inb-su1-leaf-a,swp14
+I-dgx-su1-n14-B,inband,1,,aoc,dgx-su1-n14,Slot2P2,inb-su1-leaf-b,swp14
+I-dgx-su1-n15-A,inband,1,,aoc,dgx-su1-n15,Slot1P2,inb-su1-leaf-a,swp15
+I-dgx-su1-n15-B,inband,1,,aoc,dgx-su1-n15,Slot2P2,inb-su1-leaf-b,swp15
+I-dgx-su1-n16-A,inband,1,,aoc,dgx-su1-n16,Slot1P2,inb-su1-leaf-a,swp16
+I-dgx-su1-n16-B,inband,1,,aoc,dgx-su1-n16,Slot2P2,inb-su1-leaf-b,swp16
+I-dgx-su1-n17-A,inband,1,,aoc,dgx-su1-n17,Slot1P2,inb-su1-leaf-a,swp17
+I-dgx-su1-n17-B,inband,1,,aoc,dgx-su1-n17,Slot2P2,inb-su1-leaf-b,swp17
+I-dgx-su1-n18-A,inband,1,,aoc,dgx-su1-n18,Slot1P2,inb-su1-leaf-a,swp18
+I-dgx-su1-n18-B,inband,1,,aoc,dgx-su1-n18,Slot2P2,inb-su1-leaf-b,swp18
+I-dgx-su1-n19-A,inband,1,,aoc,dgx-su1-n19,Slot1P2,inb-su1-leaf-a,swp19
+I-dgx-su1-n19-B,inband,1,,aoc,dgx-su1-n19,Slot2P2,inb-su1-leaf-b,swp19
+I-dgx-su1-n20-A,inband,1,,aoc,dgx-su1-n20,Slot1P2,inb-su1-leaf-a,swp20
+I-dgx-su1-n20-B,inband,1,,aoc,dgx-su1-n20,Slot2P2,inb-su1-leaf-b,swp20
+I-dgx-su1-n21-A,inband,1,,aoc,dgx-su1-n21,Slot1P2,inb-su1-leaf-a,swp21
+I-dgx-su1-n21-B,inband,1,,aoc,dgx-su1-n21,Slot2P2,inb-su1-leaf-b,swp21
+I-dgx-su1-n22-A,inband,1,,aoc,dgx-su1-n22,Slot1P2,inb-su1-leaf-a,swp22
+I-dgx-su1-n22-B,inband,1,,aoc,dgx-su1-n22,Slot2P2,inb-su1-leaf-b,swp22
+I-dgx-su1-n23-A,inband,1,,aoc,dgx-su1-n23,Slot1P2,inb-su1-leaf-a,swp23
+I-dgx-su1-n23-B,inband,1,,aoc,dgx-su1-n23,Slot2P2,inb-su1-leaf-b,swp23
+I-dgx-su1-n24-A,inband,1,,aoc,dgx-su1-n24,Slot1P2,inb-su1-leaf-a,swp24
+I-dgx-su1-n24-B,inband,1,,aoc,dgx-su1-n24,Slot2P2,inb-su1-leaf-b,swp24
+I-dgx-su1-n25-A,inband,1,,aoc,dgx-su1-n25,Slot1P2,inb-su1-leaf-a,swp25
+I-dgx-su1-n25-B,inband,1,,aoc,dgx-su1-n25,Slot2P2,inb-su1-leaf-b,swp25
+I-dgx-su1-n26-A,inband,1,,aoc,dgx-su1-n26,Slot1P2,inb-su1-leaf-a,swp26
+I-dgx-su1-n26-B,inband,1,,aoc,dgx-su1-n26,Slot2P2,inb-su1-leaf-b,swp26
+I-dgx-su1-n27-A,inband,1,,aoc,dgx-su1-n27,Slot1P2,inb-su1-leaf-a,swp27
+I-dgx-su1-n27-B,inband,1,,aoc,dgx-su1-n27,Slot2P2,inb-su1-leaf-b,swp27
+I-dgx-su1-n28-A,inband,1,,aoc,dgx-su1-n28,Slot1P2,inb-su1-leaf-a,swp28
+I-dgx-su1-n28-B,inband,1,,aoc,dgx-su1-n28,Slot2P2,inb-su1-leaf-b,swp28
+I-dgx-su1-n29-A,inband,1,,aoc,dgx-su1-n29,Slot1P2,inb-su1-leaf-a,swp29
+I-dgx-su1-n29-B,inband,1,,aoc,dgx-su1-n29,Slot2P2,inb-su1-leaf-b,swp29
+I-dgx-su1-n30-A,inband,1,,aoc,dgx-su1-n30,Slot1P2,inb-su1-leaf-a,swp30
+I-dgx-su1-n30-B,inband,1,,aoc,dgx-su1-n30,Slot2P2,inb-su1-leaf-b,swp30
+I-dgx-su1-n31-A,inband,1,,aoc,dgx-su1-n31,Slot1P2,inb-su1-leaf-a,swp31
+I-dgx-su1-n31-B,inband,1,,aoc,dgx-su1-n31,Slot2P2,inb-su1-leaf-b,swp31
+I-dgx-su1-n32-A,inband,1,,aoc,dgx-su1-n32,Slot1P2,inb-su1-leaf-a,swp32
+I-dgx-su1-n32-B,inband,1,,aoc,dgx-su1-n32,Slot2P2,inb-su1-leaf-b,swp32
+I-dgx-su2-n01-A,inband,2,,aoc,dgx-su2-n01,Slot1P2,inb-su2-leaf-a,swp1
+I-dgx-su2-n01-B,inband,2,,aoc,dgx-su2-n01,Slot2P2,inb-su2-leaf-b,swp1
+I-dgx-su2-n02-A,inband,2,,aoc,dgx-su2-n02,Slot1P2,inb-su2-leaf-a,swp2
+I-dgx-su2-n02-B,inband,2,,aoc,dgx-su2-n02,Slot2P2,inb-su2-leaf-b,swp2
+I-dgx-su2-n03-A,inband,2,,aoc,dgx-su2-n03,Slot1P2,inb-su2-leaf-a,swp3
+I-dgx-su2-n03-B,inband,2,,aoc,dgx-su2-n03,Slot2P2,inb-su2-leaf-b,swp3
+I-dgx-su2-n04-A,inband,2,,aoc,dgx-su2-n04,Slot1P2,inb-su2-leaf-a,swp4
+I-dgx-su2-n04-B,inband,2,,aoc,dgx-su2-n04,Slot2P2,inb-su2-leaf-b,swp4
+I-dgx-su2-n05-A,inband,2,,aoc,dgx-su2-n05,Slot1P2,inb-su2-leaf-a,swp5
+I-dgx-su2-n05-B,inband,2,,aoc,dgx-su2-n05,Slot2P2,inb-su2-leaf-b,swp5
+I-dgx-su2-n06-A,inband,2,,aoc,dgx-su2-n06,Slot1P2,inb-su2-leaf-a,swp6
+I-dgx-su2-n06-B,inband,2,,aoc,dgx-su2-n06,Slot2P2,inb-su2-leaf-b,swp6
+I-dgx-su2-n07-A,inband,2,,aoc,dgx-su2-n07,Slot1P2,inb-su2-leaf-a,swp7
+I-dgx-su2-n07-B,inband,2,,aoc,dgx-su2-n07,Slot2P2,inb-su2-leaf-b,swp7
+I-dgx-su2-n08-A,inband,2,,aoc,dgx-su2-n08,Slot1P2,inb-su2-leaf-a,swp8
+I-dgx-su2-n08-B,inband,2,,aoc,dgx-su2-n08,Slot2P2,inb-su2-leaf-b,swp8
+I-dgx-su2-n09-A,inband,2,,aoc,dgx-su2-n09,Slot1P2,inb-su2-leaf-a,swp9
+I-dgx-su2-n09-B,inband,2,,aoc,dgx-su2-n09,Slot2P2,inb-su2-leaf-b,swp9
+I-dgx-su2-n10-A,inband,2,,aoc,dgx-su2-n10,Slot1P2,inb-su2-leaf-a,swp10
+I-dgx-su2-n10-B,inband,2,,aoc,dgx-su2-n10,Slot2P2,inb-su2-leaf-b,swp10
+I-dgx-su2-n11-A,inband,2,,aoc,dgx-su2-n11,Slot1P2,inb-su2-leaf-a,swp11
+I-dgx-su2-n11-B,inband,2,,aoc,dgx-su2-n11,Slot2P2,inb-su2-leaf-b,swp11
+I-dgx-su2-n12-A,inband,2,,aoc,dgx-su2-n12,Slot1P2,inb-su2-leaf-a,swp12
+I-dgx-su2-n12-B,inband,2,,aoc,dgx-su2-n12,Slot2P2,inb-su2-leaf-b,swp12
+I-dgx-su2-n13-A,inband,2,,aoc,dgx-su2-n13,Slot1P2,inb-su2-leaf-a,swp13
+I-dgx-su2-n13-B,inband,2,,aoc,dgx-su2-n13,Slot2P2,inb-su2-leaf-b,swp13
+I-dgx-su2-n14-A,inband,2,,aoc,dgx-su2-n14,Slot1P2,inb-su2-leaf-a,swp14
+I-dgx-su2-n14-B,inband,2,,aoc,dgx-su2-n14,Slot2P2,inb-su2-leaf-b,swp14
+I-dgx-su2-n15-A,inband,2,,aoc,dgx-su2-n15,Slot1P2,inb-su2-leaf-a,swp15
+I-dgx-su2-n15-B,inband,2,,aoc,dgx-su2-n15,Slot2P2,inb-su2-leaf-b,swp15
+I-dgx-su2-n16-A,inband,2,,aoc,dgx-su2-n16,Slot1P2,inb-su2-leaf-a,swp16
+I-dgx-su2-n16-B,inband,2,,aoc,dgx-su2-n16,Slot2P2,inb-su2-leaf-b,swp16
+I-dgx-su2-n17-A,inband,2,,aoc,dgx-su2-n17,Slot1P2,inb-su2-leaf-a,swp17
+I-dgx-su2-n17-B,inband,2,,aoc,dgx-su2-n17,Slot2P2,inb-su2-leaf-b,swp17
+I-dgx-su2-n18-A,inband,2,,aoc,dgx-su2-n18,Slot1P2,inb-su2-leaf-a,swp18
+I-dgx-su2-n18-B,inband,2,,aoc,dgx-su2-n18,Slot2P2,inb-su2-leaf-b,swp18
+I-dgx-su2-n19-A,inband,2,,aoc,dgx-su2-n19,Slot1P2,inb-su2-leaf-a,swp19
+I-dgx-su2-n19-B,inband,2,,aoc,dgx-su2-n19,Slot2P2,inb-su2-leaf-b,swp19
+I-dgx-su2-n20-A,inband,2,,aoc,dgx-su2-n20,Slot1P2,inb-su2-leaf-a,swp20
+I-dgx-su2-n20-B,inband,2,,aoc,dgx-su2-n20,Slot2P2,inb-su2-leaf-b,swp20
+I-dgx-su2-n21-A,inband,2,,aoc,dgx-su2-n21,Slot1P2,inb-su2-leaf-a,swp21
+I-dgx-su2-n21-B,inband,2,,aoc,dgx-su2-n21,Slot2P2,inb-su2-leaf-b,swp21
+I-dgx-su2-n22-A,inband,2,,aoc,dgx-su2-n22,Slot1P2,inb-su2-leaf-a,swp22
+I-dgx-su2-n22-B,inband,2,,aoc,dgx-su2-n22,Slot2P2,inb-su2-leaf-b,swp22
+I-dgx-su2-n23-A,inband,2,,aoc,dgx-su2-n23,Slot1P2,inb-su2-leaf-a,swp23
+I-dgx-su2-n23-B,inband,2,,aoc,dgx-su2-n23,Slot2P2,inb-su2-leaf-b,swp23
+I-dgx-su2-n24-A,inband,2,,aoc,dgx-su2-n24,Slot1P2,inb-su2-leaf-a,swp24
+I-dgx-su2-n24-B,inband,2,,aoc,dgx-su2-n24,Slot2P2,inb-su2-leaf-b,swp24
+I-dgx-su2-n25-A,inband,2,,aoc,dgx-su2-n25,Slot1P2,inb-su2-leaf-a,swp25
+I-dgx-su2-n25-B,inband,2,,aoc,dgx-su2-n25,Slot2P2,inb-su2-leaf-b,swp25
+I-dgx-su2-n26-A,inband,2,,aoc,dgx-su2-n26,Slot1P2,inb-su2-leaf-a,swp26
+I-dgx-su2-n26-B,inband,2,,aoc,dgx-su2-n26,Slot2P2,inb-su2-leaf-b,swp26
+I-dgx-su2-n27-A,inband,2,,aoc,dgx-su2-n27,Slot1P2,inb-su2-leaf-a,swp27
+I-dgx-su2-n27-B,inband,2,,aoc,dgx-su2-n27,Slot2P2,inb-su2-leaf-b,swp27
+I-dgx-su2-n28-A,inband,2,,aoc,dgx-su2-n28,Slot1P2,inb-su2-leaf-a,swp28
+I-dgx-su2-n28-B,inband,2,,aoc,dgx-su2-n28,Slot2P2,inb-su2-leaf-b,swp28
+I-dgx-su2-n29-A,inband,2,,aoc,dgx-su2-n29,Slot1P2,inb-su2-leaf-a,swp29
+I-dgx-su2-n29-B,inband,2,,aoc,dgx-su2-n29,Slot2P2,inb-su2-leaf-b,swp29
+I-dgx-su2-n30-A,inband,2,,aoc,dgx-su2-n30,Slot1P2,inb-su2-leaf-a,swp30
+I-dgx-su2-n30-B,inband,2,,aoc,dgx-su2-n30,Slot2P2,inb-su2-leaf-b,swp30
+I-dgx-su2-n31-A,inband,2,,aoc,dgx-su2-n31,Slot1P2,inb-su2-leaf-a,swp31
+I-dgx-su2-n31-B,inband,2,,aoc,dgx-su2-n31,Slot2P2,inb-su2-leaf-b,swp31
+I-bcm-head-01-vpi3,inband,,,aoc,bcm-head-01,vpi3,inb-su1-leaf-a,swp33
+I-bcm-head-01-vpi4,inband,,,aoc,bcm-head-01,vpi4,inb-su1-leaf-b,swp33
+I-bcm-head-02-vpi3,inband,,,aoc,bcm-head-02,vpi3,inb-su2-leaf-a,swp33
+I-bcm-head-02-vpi4,inband,,,aoc,bcm-head-02,vpi4,inb-su2-leaf-b,swp33
+I-slurm-ctl-01-vpi3,inband,,,aoc,slurm-ctl-01,vpi3,inb-su1-leaf-a,swp34
+I-slurm-ctl-01-vpi4,inband,,,aoc,slurm-ctl-01,vpi4,inb-su1-leaf-b,swp34
+I-slurm-login-01-vpi3,inband,,,aoc,slurm-login-01,vpi3,inb-su2-leaf-a,swp34
+I-slurm-login-01-vpi4,inband,,,aoc,slurm-login-01,vpi4,inb-su2-leaf-b,swp34
+I-slurm-login-02-vpi3,inband,,,aoc,slurm-login-02,vpi3,inb-su1-leaf-a,swp35
+I-slurm-login-02-vpi4,inband,,,aoc,slurm-login-02,vpi4,inb-su1-leaf-b,swp35
+I-ISL-inb-su1-leaf-a-inb-su1-leaf-b-1,inband,,,dac-passive,inb-su1-leaf-a,swp64,inb-su1-leaf-b,swp64
+I-ISL-inb-su1-leaf-a-inb-su1-leaf-b-2,inband,,,dac-passive,inb-su1-leaf-a,swp63,inb-su1-leaf-b,swp63
+I-ISL-inb-su2-leaf-a-inb-su2-leaf-b-1,inband,,,dac-passive,inb-su2-leaf-a,swp64,inb-su2-leaf-b,swp64
+I-ISL-inb-su2-leaf-a-inb-su2-leaf-b-2,inband,,,dac-passive,inb-su2-leaf-a,swp63,inb-su2-leaf-b,swp63
+I-ISL-inb-spine-01-inb-spine-02-1,inband,,,dac-passive,inb-spine-01,swp64,inb-spine-02,swp64
+I-ISL-inb-spine-01-inb-spine-02-2,inband,,,dac-passive,inb-spine-01,swp63,inb-spine-02,swp63
+I-inb-su1-leaf-a-inb-spine-01-1,inband,,,aoc,inb-su1-leaf-a,swp62,inb-spine-01,swp1
+I-inb-su1-leaf-a-inb-spine-01-2,inband,,,aoc,inb-su1-leaf-a,swp61,inb-spine-01,swp2
+I-inb-su1-leaf-a-inb-spine-02-1,inband,,,aoc,inb-su1-leaf-a,swp60,inb-spine-02,swp1
+I-inb-su1-leaf-a-inb-spine-02-2,inband,,,aoc,inb-su1-leaf-a,swp59,inb-spine-02,swp2
+I-inb-su1-leaf-b-inb-spine-01-1,inband,,,aoc,inb-su1-leaf-b,swp62,inb-spine-01,swp3
+I-inb-su1-leaf-b-inb-spine-01-2,inband,,,aoc,inb-su1-leaf-b,swp61,inb-spine-01,swp4
+I-inb-su1-leaf-b-inb-spine-02-1,inband,,,aoc,inb-su1-leaf-b,swp60,inb-spine-02,swp3
+I-inb-su1-leaf-b-inb-spine-02-2,inband,,,aoc,inb-su1-leaf-b,swp59,inb-spine-02,swp4
+I-inb-su2-leaf-a-inb-spine-01-1,inband,,,aoc,inb-su2-leaf-a,swp62,inb-spine-01,swp5
+I-inb-su2-leaf-a-inb-spine-01-2,inband,,,aoc,inb-su2-leaf-a,swp61,inb-spine-01,swp6
+I-inb-su2-leaf-a-inb-spine-02-1,inband,,,aoc,inb-su2-leaf-a,swp60,inb-spine-02,swp5
+I-inb-su2-leaf-a-inb-spine-02-2,inband,,,aoc,inb-su2-leaf-a,swp59,inb-spine-02,swp6
+I-inb-su2-leaf-b-inb-spine-01-1,inband,,,aoc,inb-su2-leaf-b,swp62,inb-spine-01,swp7
+I-inb-su2-leaf-b-inb-spine-01-2,inband,,,aoc,inb-su2-leaf-b,swp61,inb-spine-01,swp8
+I-inb-su2-leaf-b-inb-spine-02-1,inband,,,aoc,inb-su2-leaf-b,swp60,inb-spine-02,swp7
+I-inb-su2-leaf-b-inb-spine-02-2,inband,,,aoc,inb-su2-leaf-b,swp59,inb-spine-02,swp8
+I-inb-spine-01-core1,inband,,,smf-os2,inb-spine-01,swp9,dc-core-demarc,core1
+I-inb-spine-02-core2,inband,,,smf-os2,inb-spine-02,swp9,dc-core-demarc,core2
+I-inb-spine-01-core3,inband,,,smf-os2,inb-spine-01,swp10,dc-core-demarc,core3
+I-inb-spine-02-core4,inband,,,smf-os2,inb-spine-02,swp10,dc-core-demarc,core4
+I-inb-spine-01-core5,inband,,,aoc,inb-spine-01,swp11,dc-core-demarc,core5
+I-inb-spine-02-core6,inband,,,aoc,inb-spine-02,swp11,dc-core-demarc,core6
+I-inb-spine-01-core7,inband,,,aoc,inb-spine-01,swp12,dc-core-demarc,core7
+I-inb-spine-02-core8,inband,,,aoc,inb-spine-02,swp12,dc-core-demarc,core8
+I-inb-spine-01-core9,inband,,,aoc,inb-spine-01,swp13,dc-core-demarc,core9
+I-inb-spine-02-core10,inband,,,aoc,inb-spine-02,swp13,dc-core-demarc,core10
+I-inb-spine-01-core11,inband,,,aoc,inb-spine-01,swp14,dc-core-demarc,core11
+I-inb-spine-02-core12,inband,,,aoc,inb-spine-02,swp14,dc-core-demarc,core12
+I-vast-cbox-01-cn1-fe1,inband,,,aoc,vast-cbox-01,cn1-fe1,inb-spine-01,swp15
+I-vast-cbox-01-cn1-fe2,inband,,,aoc,vast-cbox-01,cn1-fe2,inb-spine-02,swp15
+I-vast-cbox-01-cn2-fe1,inband,,,aoc,vast-cbox-01,cn2-fe1,inb-spine-01,swp16
+I-vast-cbox-01-cn2-fe2,inband,,,aoc,vast-cbox-01,cn2-fe2,inb-spine-02,swp16
+I-vast-cbox-01-cn3-fe1,inband,,,aoc,vast-cbox-01,cn3-fe1,inb-spine-01,swp17
+I-vast-cbox-01-cn3-fe2,inband,,,aoc,vast-cbox-01,cn3-fe2,inb-spine-02,swp17
+I-vast-cbox-01-cn4-fe1,inband,,,aoc,vast-cbox-01,cn4-fe1,inb-spine-01,swp18
+I-vast-cbox-01-cn4-fe2,inband,,,aoc,vast-cbox-01,cn4-fe2,inb-spine-02,swp18
+I-vast-cbox-02-cn1-fe1,inband,,,aoc,vast-cbox-02,cn1-fe1,inb-spine-01,swp19
+I-vast-cbox-02-cn1-fe2,inband,,,aoc,vast-cbox-02,cn1-fe2,inb-spine-02,swp19
+I-vast-cbox-02-cn2-fe1,inband,,,aoc,vast-cbox-02,cn2-fe1,inb-spine-01,swp20
+I-vast-cbox-02-cn2-fe2,inband,,,aoc,vast-cbox-02,cn2-fe2,inb-spine-02,swp20
+I-vast-cbox-02-cn3-fe1,inband,,,aoc,vast-cbox-02,cn3-fe1,inb-spine-01,swp21
+I-vast-cbox-02-cn3-fe2,inband,,,aoc,vast-cbox-02,cn3-fe2,inb-spine-02,swp21
+I-vast-cbox-02-cn4-fe1,inband,,,aoc,vast-cbox-02,cn4-fe1,inb-spine-01,swp22
+I-vast-cbox-02-cn4-fe2,inband,,,aoc,vast-cbox-02,cn4-fe2,inb-spine-02,swp22
+I-vast-cbox-03-cn1-fe1,inband,,,aoc,vast-cbox-03,cn1-fe1,inb-spine-01,swp23
+I-vast-cbox-03-cn1-fe2,inband,,,aoc,vast-cbox-03,cn1-fe2,inb-spine-02,swp23
+I-vast-cbox-03-cn2-fe1,inband,,,aoc,vast-cbox-03,cn2-fe1,inb-spine-01,swp24
+I-vast-cbox-03-cn2-fe2,inband,,,aoc,vast-cbox-03,cn2-fe2,inb-spine-02,swp24
+I-vast-cbox-03-cn3-fe1,inband,,,aoc,vast-cbox-03,cn3-fe1,inb-spine-01,swp25
+I-vast-cbox-03-cn3-fe2,inband,,,aoc,vast-cbox-03,cn3-fe2,inb-spine-02,swp25
+I-vast-cbox-03-cn4-fe1,inband,,,aoc,vast-cbox-03,cn4-fe1,inb-spine-01,swp26
+I-vast-cbox-03-cn4-fe2,inband,,,aoc,vast-cbox-03,cn4-fe2,inb-spine-02,swp26
+I-vast-cbox-04-cn1-fe1,inband,,,aoc,vast-cbox-04,cn1-fe1,inb-spine-01,swp27
+I-vast-cbox-04-cn1-fe2,inband,,,aoc,vast-cbox-04,cn1-fe2,inb-spine-02,swp27
+I-vast-cbox-04-cn2-fe1,inband,,,aoc,vast-cbox-04,cn2-fe1,inb-spine-01,swp28
+I-vast-cbox-04-cn2-fe2,inband,,,aoc,vast-cbox-04,cn2-fe2,inb-spine-02,swp28
+I-vast-cbox-04-cn3-fe1,inband,,,aoc,vast-cbox-04,cn3-fe1,inb-spine-01,swp29
+I-vast-cbox-04-cn3-fe2,inband,,,aoc,vast-cbox-04,cn3-fe2,inb-spine-02,swp29
+I-vast-cbox-04-cn4-fe1,inband,,,aoc,vast-cbox-04,cn4-fe1,inb-spine-01,swp30
+I-vast-cbox-04-cn4-fe2,inband,,,aoc,vast-cbox-04,cn4-fe2,inb-spine-02,swp30
+I-vast-cbox-05-cn1-fe1,inband,,,aoc,vast-cbox-05,cn1-fe1,inb-spine-01,swp31
+I-vast-cbox-05-cn1-fe2,inband,,,aoc,vast-cbox-05,cn1-fe2,inb-spine-02,swp31
+I-vast-cbox-05-cn2-fe1,inband,,,aoc,vast-cbox-05,cn2-fe1,inb-spine-01,swp32
+I-vast-cbox-05-cn2-fe2,inband,,,aoc,vast-cbox-05,cn2-fe2,inb-spine-02,swp32
+I-vast-cbox-05-cn3-fe1,inband,,,aoc,vast-cbox-05,cn3-fe1,inb-spine-01,swp33
+I-vast-cbox-05-cn3-fe2,inband,,,aoc,vast-cbox-05,cn3-fe2,inb-spine-02,swp33
+I-vast-cbox-05-cn4-fe1,inband,,,aoc,vast-cbox-05,cn4-fe1,inb-spine-01,swp34
+I-vast-cbox-05-cn4-fe2,inband,,,aoc,vast-cbox-05,cn4-fe2,inb-spine-02,swp34
+V-vast-cbox-01-cn1-be1,storage-eth,,,dac-passive,vast-cbox-01,cn1-be1,vast-be-a,swp1
+V-vast-cbox-01-cn1-be2,storage-eth,,,dac-passive,vast-cbox-01,cn1-be2,vast-be-b,swp1
+V-vast-cbox-01-cn2-be1,storage-eth,,,dac-passive,vast-cbox-01,cn2-be1,vast-be-a,swp2
+V-vast-cbox-01-cn2-be2,storage-eth,,,dac-passive,vast-cbox-01,cn2-be2,vast-be-b,swp2
+V-vast-cbox-01-cn3-be1,storage-eth,,,dac-passive,vast-cbox-01,cn3-be1,vast-be-a,swp3
+V-vast-cbox-01-cn3-be2,storage-eth,,,dac-passive,vast-cbox-01,cn3-be2,vast-be-b,swp3
+V-vast-cbox-01-cn4-be1,storage-eth,,,dac-passive,vast-cbox-01,cn4-be1,vast-be-a,swp4
+V-vast-cbox-01-cn4-be2,storage-eth,,,dac-passive,vast-cbox-01,cn4-be2,vast-be-b,swp4
+V-vast-cbox-02-cn1-be1,storage-eth,,,dac-passive,vast-cbox-02,cn1-be1,vast-be-a,swp5
+V-vast-cbox-02-cn1-be2,storage-eth,,,dac-passive,vast-cbox-02,cn1-be2,vast-be-b,swp5
+V-vast-cbox-02-cn2-be1,storage-eth,,,dac-passive,vast-cbox-02,cn2-be1,vast-be-a,swp6
+V-vast-cbox-02-cn2-be2,storage-eth,,,dac-passive,vast-cbox-02,cn2-be2,vast-be-b,swp6
+V-vast-cbox-02-cn3-be1,storage-eth,,,dac-passive,vast-cbox-02,cn3-be1,vast-be-a,swp7
+V-vast-cbox-02-cn3-be2,storage-eth,,,dac-passive,vast-cbox-02,cn3-be2,vast-be-b,swp7
+V-vast-cbox-02-cn4-be1,storage-eth,,,dac-passive,vast-cbox-02,cn4-be1,vast-be-a,swp8
+V-vast-cbox-02-cn4-be2,storage-eth,,,dac-passive,vast-cbox-02,cn4-be2,vast-be-b,swp8
+V-vast-cbox-03-cn1-be1,storage-eth,,,dac-passive,vast-cbox-03,cn1-be1,vast-be-a,swp9
+V-vast-cbox-03-cn1-be2,storage-eth,,,dac-passive,vast-cbox-03,cn1-be2,vast-be-b,swp9
+V-vast-cbox-03-cn2-be1,storage-eth,,,dac-passive,vast-cbox-03,cn2-be1,vast-be-a,swp10
+V-vast-cbox-03-cn2-be2,storage-eth,,,dac-passive,vast-cbox-03,cn2-be2,vast-be-b,swp10
+V-vast-cbox-03-cn3-be1,storage-eth,,,dac-passive,vast-cbox-03,cn3-be1,vast-be-a,swp11
+V-vast-cbox-03-cn3-be2,storage-eth,,,dac-passive,vast-cbox-03,cn3-be2,vast-be-b,swp11
+V-vast-cbox-03-cn4-be1,storage-eth,,,dac-passive,vast-cbox-03,cn4-be1,vast-be-a,swp12
+V-vast-cbox-03-cn4-be2,storage-eth,,,dac-passive,vast-cbox-03,cn4-be2,vast-be-b,swp12
+V-vast-cbox-04-cn1-be1,storage-eth,,,dac-passive,vast-cbox-04,cn1-be1,vast-be-a,swp13
+V-vast-cbox-04-cn1-be2,storage-eth,,,dac-passive,vast-cbox-04,cn1-be2,vast-be-b,swp13
+V-vast-cbox-04-cn2-be1,storage-eth,,,dac-passive,vast-cbox-04,cn2-be1,vast-be-a,swp14
+V-vast-cbox-04-cn2-be2,storage-eth,,,dac-passive,vast-cbox-04,cn2-be2,vast-be-b,swp14
+V-vast-cbox-04-cn3-be1,storage-eth,,,dac-passive,vast-cbox-04,cn3-be1,vast-be-a,swp15
+V-vast-cbox-04-cn3-be2,storage-eth,,,dac-passive,vast-cbox-04,cn3-be2,vast-be-b,swp15
+V-vast-cbox-04-cn4-be1,storage-eth,,,dac-passive,vast-cbox-04,cn4-be1,vast-be-a,swp16
+V-vast-cbox-04-cn4-be2,storage-eth,,,dac-passive,vast-cbox-04,cn4-be2,vast-be-b,swp16
+V-vast-cbox-05-cn1-be1,storage-eth,,,dac-passive,vast-cbox-05,cn1-be1,vast-be-a,swp17
+V-vast-cbox-05-cn1-be2,storage-eth,,,dac-passive,vast-cbox-05,cn1-be2,vast-be-b,swp17
+V-vast-cbox-05-cn2-be1,storage-eth,,,dac-passive,vast-cbox-05,cn2-be1,vast-be-a,swp18
+V-vast-cbox-05-cn2-be2,storage-eth,,,dac-passive,vast-cbox-05,cn2-be2,vast-be-b,swp18
+V-vast-cbox-05-cn3-be1,storage-eth,,,dac-passive,vast-cbox-05,cn3-be1,vast-be-a,swp19
+V-vast-cbox-05-cn3-be2,storage-eth,,,dac-passive,vast-cbox-05,cn3-be2,vast-be-b,swp19
+V-vast-cbox-05-cn4-be1,storage-eth,,,dac-passive,vast-cbox-05,cn4-be1,vast-be-a,swp20
+V-vast-cbox-05-cn4-be2,storage-eth,,,dac-passive,vast-cbox-05,cn4-be2,vast-be-b,swp20
+V-vast-dbox-01-c1-p1,storage-eth,,,dac-passive,vast-dbox-01,c1-p1,vast-be-a,swp21
+V-vast-dbox-01-c1-p2,storage-eth,,,dac-passive,vast-dbox-01,c1-p2,vast-be-b,swp21
+V-vast-dbox-01-c2-p1,storage-eth,,,dac-passive,vast-dbox-01,c2-p1,vast-be-a,swp22
+V-vast-dbox-01-c2-p2,storage-eth,,,dac-passive,vast-dbox-01,c2-p2,vast-be-b,swp22
+V-vast-dbox-02-c1-p1,storage-eth,,,dac-passive,vast-dbox-02,c1-p1,vast-be-a,swp23
+V-vast-dbox-02-c1-p2,storage-eth,,,dac-passive,vast-dbox-02,c1-p2,vast-be-b,swp23
+V-vast-dbox-02-c2-p1,storage-eth,,,dac-passive,vast-dbox-02,c2-p1,vast-be-a,swp24
+V-vast-dbox-02-c2-p2,storage-eth,,,dac-passive,vast-dbox-02,c2-p2,vast-be-b,swp24
+V-vast-dbox-03-c1-p1,storage-eth,,,dac-passive,vast-dbox-03,c1-p1,vast-be-a,swp25
+V-vast-dbox-03-c1-p2,storage-eth,,,dac-passive,vast-dbox-03,c1-p2,vast-be-b,swp25
+V-vast-dbox-03-c2-p1,storage-eth,,,dac-passive,vast-dbox-03,c2-p1,vast-be-a,swp26
+V-vast-dbox-03-c2-p2,storage-eth,,,dac-passive,vast-dbox-03,c2-p2,vast-be-b,swp26
+V-vast-dbox-04-c1-p1,storage-eth,,,dac-passive,vast-dbox-04,c1-p1,vast-be-a,swp27
+V-vast-dbox-04-c1-p2,storage-eth,,,dac-passive,vast-dbox-04,c1-p2,vast-be-b,swp27
+V-vast-dbox-04-c2-p1,storage-eth,,,dac-passive,vast-dbox-04,c2-p1,vast-be-a,swp28
+V-vast-dbox-04-c2-p2,storage-eth,,,dac-passive,vast-dbox-04,c2-p2,vast-be-b,swp28
+V-ISL-1,storage-eth,,,dac-passive,vast-be-a,swp64,vast-be-b,swp64
+V-ISL-2,storage-eth,,,dac-passive,vast-be-a,swp63,vast-be-b,swp63
+O-dgx-su1-n01-BMC,oob,,,cat5e,dgx-su1-n01,BMC,oob-sw-01,swp1
+O-dgx-su1-n02-BMC,oob,,,cat5e,dgx-su1-n02,BMC,oob-sw-01,swp2
+O-dgx-su1-n03-BMC,oob,,,cat5e,dgx-su1-n03,BMC,oob-sw-01,swp3
+O-dgx-su1-n04-BMC,oob,,,cat5e,dgx-su1-n04,BMC,oob-sw-01,swp4
+O-dgx-su1-n05-BMC,oob,,,cat5e,dgx-su1-n05,BMC,oob-sw-01,swp5
+O-dgx-su1-n06-BMC,oob,,,cat5e,dgx-su1-n06,BMC,oob-sw-01,swp6
+O-dgx-su1-n07-BMC,oob,,,cat5e,dgx-su1-n07,BMC,oob-sw-01,swp7
+O-dgx-su1-n08-BMC,oob,,,cat5e,dgx-su1-n08,BMC,oob-sw-01,swp8
+O-dgx-su1-n09-BMC,oob,,,cat5e,dgx-su1-n09,BMC,oob-sw-01,swp9
+O-dgx-su1-n10-BMC,oob,,,cat5e,dgx-su1-n10,BMC,oob-sw-01,swp10
+O-dgx-su1-n11-BMC,oob,,,cat5e,dgx-su1-n11,BMC,oob-sw-01,swp11
+O-dgx-su1-n12-BMC,oob,,,cat5e,dgx-su1-n12,BMC,oob-sw-01,swp12
+O-dgx-su1-n13-BMC,oob,,,cat5e,dgx-su1-n13,BMC,oob-sw-01,swp13
+O-dgx-su1-n14-BMC,oob,,,cat5e,dgx-su1-n14,BMC,oob-sw-01,swp14
+O-dgx-su1-n15-BMC,oob,,,cat5e,dgx-su1-n15,BMC,oob-sw-01,swp15
+O-dgx-su1-n16-BMC,oob,,,cat5e,dgx-su1-n16,BMC,oob-sw-01,swp16
+O-dgx-su1-n17-BMC,oob,,,cat5e,dgx-su1-n17,BMC,oob-sw-01,swp17
+O-dgx-su1-n18-BMC,oob,,,cat5e,dgx-su1-n18,BMC,oob-sw-01,swp18
+O-dgx-su1-n19-BMC,oob,,,cat5e,dgx-su1-n19,BMC,oob-sw-01,swp19
+O-dgx-su1-n20-BMC,oob,,,cat5e,dgx-su1-n20,BMC,oob-sw-01,swp20
+O-dgx-su1-n21-BMC,oob,,,cat5e,dgx-su1-n21,BMC,oob-sw-01,swp21
+O-dgx-su1-n22-BMC,oob,,,cat5e,dgx-su1-n22,BMC,oob-sw-01,swp22
+O-dgx-su1-n23-BMC,oob,,,cat5e,dgx-su1-n23,BMC,oob-sw-01,swp23
+O-dgx-su1-n24-BMC,oob,,,cat5e,dgx-su1-n24,BMC,oob-sw-01,swp24
+O-dgx-su1-n25-BMC,oob,,,cat5e,dgx-su1-n25,BMC,oob-sw-01,swp25
+O-dgx-su1-n26-BMC,oob,,,cat5e,dgx-su1-n26,BMC,oob-sw-01,swp26
+O-dgx-su1-n27-BMC,oob,,,cat5e,dgx-su1-n27,BMC,oob-sw-01,swp27
+O-dgx-su1-n28-BMC,oob,,,cat5e,dgx-su1-n28,BMC,oob-sw-01,swp28
+O-dgx-su1-n29-BMC,oob,,,cat5e,dgx-su1-n29,BMC,oob-sw-01,swp29
+O-dgx-su1-n30-BMC,oob,,,cat5e,dgx-su1-n30,BMC,oob-sw-01,swp30
+O-dgx-su1-n31-BMC,oob,,,cat5e,dgx-su1-n31,BMC,oob-sw-01,swp31
+O-dgx-su1-n32-BMC,oob,,,cat5e,dgx-su1-n32,BMC,oob-sw-01,swp32
+O-dgx-su2-n01-BMC,oob,,,cat5e,dgx-su2-n01,BMC,oob-sw-01,swp33
+O-dgx-su2-n02-BMC,oob,,,cat5e,dgx-su2-n02,BMC,oob-sw-01,swp34
+O-dgx-su2-n03-BMC,oob,,,cat5e,dgx-su2-n03,BMC,oob-sw-01,swp35
+O-dgx-su2-n04-BMC,oob,,,cat5e,dgx-su2-n04,BMC,oob-sw-01,swp36
+O-dgx-su2-n05-BMC,oob,,,cat5e,dgx-su2-n05,BMC,oob-sw-01,swp37
+O-dgx-su2-n06-BMC,oob,,,cat5e,dgx-su2-n06,BMC,oob-sw-01,swp38
+O-dgx-su2-n07-BMC,oob,,,cat5e,dgx-su2-n07,BMC,oob-sw-01,swp39
+O-dgx-su2-n08-BMC,oob,,,cat5e,dgx-su2-n08,BMC,oob-sw-01,swp40
+O-dgx-su2-n09-BMC,oob,,,cat5e,dgx-su2-n09,BMC,oob-sw-01,swp41
+O-dgx-su2-n10-BMC,oob,,,cat5e,dgx-su2-n10,BMC,oob-sw-01,swp42
+O-dgx-su2-n11-BMC,oob,,,cat5e,dgx-su2-n11,BMC,oob-sw-01,swp43
+O-dgx-su2-n12-BMC,oob,,,cat5e,dgx-su2-n12,BMC,oob-sw-01,swp44
+O-dgx-su2-n13-BMC,oob,,,cat5e,dgx-su2-n13,BMC,oob-sw-01,swp45
+O-dgx-su2-n14-BMC,oob,,,cat5e,dgx-su2-n14,BMC,oob-sw-01,swp46
+O-dgx-su2-n15-BMC,oob,,,cat5e,dgx-su2-n15,BMC,oob-sw-01,swp47
+O-dgx-su2-n16-BMC,oob,,,cat5e,dgx-su2-n16,BMC,oob-sw-01,swp48
+O-dgx-su2-n17-BMC,oob,,,cat5e,dgx-su2-n17,BMC,oob-sw-02,swp1
+O-dgx-su2-n18-BMC,oob,,,cat5e,dgx-su2-n18,BMC,oob-sw-02,swp2
+O-dgx-su2-n19-BMC,oob,,,cat5e,dgx-su2-n19,BMC,oob-sw-02,swp3
+O-dgx-su2-n20-BMC,oob,,,cat5e,dgx-su2-n20,BMC,oob-sw-02,swp4
+O-dgx-su2-n21-BMC,oob,,,cat5e,dgx-su2-n21,BMC,oob-sw-02,swp5
+O-dgx-su2-n22-BMC,oob,,,cat5e,dgx-su2-n22,BMC,oob-sw-02,swp6
+O-dgx-su2-n23-BMC,oob,,,cat5e,dgx-su2-n23,BMC,oob-sw-02,swp7
+O-dgx-su2-n24-BMC,oob,,,cat5e,dgx-su2-n24,BMC,oob-sw-02,swp8
+O-dgx-su2-n25-BMC,oob,,,cat5e,dgx-su2-n25,BMC,oob-sw-02,swp9
+O-dgx-su2-n26-BMC,oob,,,cat5e,dgx-su2-n26,BMC,oob-sw-02,swp10
+O-dgx-su2-n27-BMC,oob,,,cat5e,dgx-su2-n27,BMC,oob-sw-02,swp11
+O-dgx-su2-n28-BMC,oob,,,cat5e,dgx-su2-n28,BMC,oob-sw-02,swp12
+O-dgx-su2-n29-BMC,oob,,,cat5e,dgx-su2-n29,BMC,oob-sw-02,swp13
+O-dgx-su2-n30-BMC,oob,,,cat5e,dgx-su2-n30,BMC,oob-sw-02,swp14
+O-dgx-su2-n31-BMC,oob,,,cat5e,dgx-su2-n31,BMC,oob-sw-02,swp15
+O-bcm-head-01-iDRAC91,oob,,,cat5e,bcm-head-01,iDRAC9 1,oob-sw-02,swp16
+O-bcm-head-02-iDRAC91,oob,,,cat5e,bcm-head-02,iDRAC9 1,oob-sw-02,swp17
+O-slurm-ctl-01-iDRAC91,oob,,,cat5e,slurm-ctl-01,iDRAC9 1,oob-sw-02,swp18
+O-slurm-login-01-iDRAC91,oob,,,cat5e,slurm-login-01,iDRAC9 1,oob-sw-02,swp19
+O-slurm-login-02-iDRAC91,oob,,,cat5e,slurm-login-02,iDRAC9 1,oob-sw-02,swp20
+O-ufm-c-01-mgmt0,oob,,,cat5e,ufm-c-01,mgmt0,oob-sw-02,swp21
+O-ufm-c-02-mgmt0,oob,,,cat5e,ufm-c-02,mgmt0,oob-sw-02,swp22
+O-ufm-s-01-mgmt0,oob,,,cat5e,ufm-s-01,mgmt0,oob-sw-02,swp23
+O-ufm-s-02-mgmt0,oob,,,cat5e,ufm-s-02,mgmt0,oob-sw-02,swp24
+O-ddn-01-mgmt1,oob,,,cat5e,ddn-01,mgmt1,oob-sw-02,swp25
+O-ddn-01-mgmt2,oob,,,cat5e,ddn-01,mgmt2,oob-sw-02,swp26
+O-ddn-02-mgmt1,oob,,,cat5e,ddn-02,mgmt1,oob-sw-02,swp27
+O-ddn-02-mgmt2,oob,,,cat5e,ddn-02,mgmt2,oob-sw-02,swp28
+O-ddn-03-mgmt1,oob,,,cat5e,ddn-03,mgmt1,oob-sw-02,swp29
+O-ddn-03-mgmt2,oob,,,cat5e,ddn-03,mgmt2,oob-sw-02,swp30
+O-ddn-04-mgmt1,oob,,,cat5e,ddn-04,mgmt1,oob-sw-02,swp31
+O-ddn-04-mgmt2,oob,,,cat5e,ddn-04,mgmt2,oob-sw-02,swp32
+O-vast-cbox-01-cn1-bmc,oob,,,cat5e,vast-cbox-01,cn1-bmc,oob-sw-02,swp33
+O-vast-cbox-01-cn2-bmc,oob,,,cat5e,vast-cbox-01,cn2-bmc,oob-sw-02,swp34
+O-vast-cbox-01-cn3-bmc,oob,,,cat5e,vast-cbox-01,cn3-bmc,oob-sw-02,swp35
+O-vast-cbox-01-cn4-bmc,oob,,,cat5e,vast-cbox-01,cn4-bmc,oob-sw-02,swp36
+O-vast-cbox-02-cn1-bmc,oob,,,cat5e,vast-cbox-02,cn1-bmc,oob-sw-02,swp37
+O-vast-cbox-02-cn2-bmc,oob,,,cat5e,vast-cbox-02,cn2-bmc,oob-sw-02,swp38
+O-vast-cbox-02-cn3-bmc,oob,,,cat5e,vast-cbox-02,cn3-bmc,oob-sw-02,swp39
+O-vast-cbox-02-cn4-bmc,oob,,,cat5e,vast-cbox-02,cn4-bmc,oob-sw-02,swp40
+O-vast-cbox-03-cn1-bmc,oob,,,cat5e,vast-cbox-03,cn1-bmc,oob-sw-02,swp41
+O-vast-cbox-03-cn2-bmc,oob,,,cat5e,vast-cbox-03,cn2-bmc,oob-sw-02,swp42
+O-vast-cbox-03-cn3-bmc,oob,,,cat5e,vast-cbox-03,cn3-bmc,oob-sw-02,swp43
+O-vast-cbox-03-cn4-bmc,oob,,,cat5e,vast-cbox-03,cn4-bmc,oob-sw-02,swp44
+O-vast-cbox-04-cn1-bmc,oob,,,cat5e,vast-cbox-04,cn1-bmc,oob-sw-02,swp45
+O-vast-cbox-04-cn2-bmc,oob,,,cat5e,vast-cbox-04,cn2-bmc,oob-sw-02,swp46
+O-vast-cbox-04-cn3-bmc,oob,,,cat5e,vast-cbox-04,cn3-bmc,oob-sw-02,swp47
+O-vast-cbox-04-cn4-bmc,oob,,,cat5e,vast-cbox-04,cn4-bmc,oob-sw-02,swp48
+O-vast-cbox-05-cn1-bmc,oob,,,cat5e,vast-cbox-05,cn1-bmc,oob-sw-03,swp1
+O-vast-cbox-05-cn2-bmc,oob,,,cat5e,vast-cbox-05,cn2-bmc,oob-sw-03,swp2
+O-vast-cbox-05-cn3-bmc,oob,,,cat5e,vast-cbox-05,cn3-bmc,oob-sw-03,swp3
+O-vast-cbox-05-cn4-bmc,oob,,,cat5e,vast-cbox-05,cn4-bmc,oob-sw-03,swp4
+O-vast-dbox-01-c1-bmc,oob,,,cat5e,vast-dbox-01,c1-bmc,oob-sw-03,swp5
+O-vast-dbox-01-c2-bmc,oob,,,cat5e,vast-dbox-01,c2-bmc,oob-sw-03,swp6
+O-vast-dbox-02-c1-bmc,oob,,,cat5e,vast-dbox-02,c1-bmc,oob-sw-03,swp7
+O-vast-dbox-02-c2-bmc,oob,,,cat5e,vast-dbox-02,c2-bmc,oob-sw-03,swp8
+O-vast-dbox-03-c1-bmc,oob,,,cat5e,vast-dbox-03,c1-bmc,oob-sw-03,swp9
+O-vast-dbox-03-c2-bmc,oob,,,cat5e,vast-dbox-03,c2-bmc,oob-sw-03,swp10
+O-vast-dbox-04-c1-bmc,oob,,,cat5e,vast-dbox-04,c1-bmc,oob-sw-03,swp11
+O-vast-dbox-04-c2-bmc,oob,,,cat5e,vast-dbox-04,c2-bmc,oob-sw-03,swp12
+O-ibc-su1-leaf-r1-mgmt0,oob,,,cat5e,ibc-su1-leaf-r1,mgmt0,oob-sw-03,swp13
+O-ibc-su1-leaf-r2-mgmt0,oob,,,cat5e,ibc-su1-leaf-r2,mgmt0,oob-sw-03,swp14
+O-ibc-su1-leaf-r3-mgmt0,oob,,,cat5e,ibc-su1-leaf-r3,mgmt0,oob-sw-03,swp15
+O-ibc-su1-leaf-r4-mgmt0,oob,,,cat5e,ibc-su1-leaf-r4,mgmt0,oob-sw-03,swp16
+O-ibc-su1-leaf-r5-mgmt0,oob,,,cat5e,ibc-su1-leaf-r5,mgmt0,oob-sw-03,swp17
+O-ibc-su1-leaf-r6-mgmt0,oob,,,cat5e,ibc-su1-leaf-r6,mgmt0,oob-sw-03,swp18
+O-ibc-su1-leaf-r7-mgmt0,oob,,,cat5e,ibc-su1-leaf-r7,mgmt0,oob-sw-03,swp19
+O-ibc-su1-leaf-r8-mgmt0,oob,,,cat5e,ibc-su1-leaf-r8,mgmt0,oob-sw-03,swp20
+O-ibc-spine-01-mgmt0,oob,,,cat5e,ibc-spine-01,mgmt0,oob-sw-03,swp21
+O-ibc-spine-02-mgmt0,oob,,,cat5e,ibc-spine-02,mgmt0,oob-sw-03,swp22
+O-ibc-spine-03-mgmt0,oob,,,cat5e,ibc-spine-03,mgmt0,oob-sw-03,swp23
+O-ibc-spine-04-mgmt0,oob,,,cat5e,ibc-spine-04,mgmt0,oob-sw-03,swp24
+O-ibc-su2-leaf-r1-mgmt0,oob,,,cat5e,ibc-su2-leaf-r1,mgmt0,oob-sw-03,swp25
+O-ibc-su2-leaf-r2-mgmt0,oob,,,cat5e,ibc-su2-leaf-r2,mgmt0,oob-sw-03,swp26
+O-ibc-su2-leaf-r3-mgmt0,oob,,,cat5e,ibc-su2-leaf-r3,mgmt0,oob-sw-03,swp27
+O-ibc-su2-leaf-r4-mgmt0,oob,,,cat5e,ibc-su2-leaf-r4,mgmt0,oob-sw-03,swp28
+O-ibc-su2-leaf-r5-mgmt0,oob,,,cat5e,ibc-su2-leaf-r5,mgmt0,oob-sw-03,swp29
+O-ibc-su2-leaf-r6-mgmt0,oob,,,cat5e,ibc-su2-leaf-r6,mgmt0,oob-sw-03,swp30
+O-ibc-su2-leaf-r7-mgmt0,oob,,,cat5e,ibc-su2-leaf-r7,mgmt0,oob-sw-03,swp31
+O-ibc-su2-leaf-r8-mgmt0,oob,,,cat5e,ibc-su2-leaf-r8,mgmt0,oob-sw-03,swp32
+O-ibc-spine-05-mgmt0,oob,,,cat5e,ibc-spine-05,mgmt0,oob-sw-03,swp33
+O-ibc-spine-06-mgmt0,oob,,,cat5e,ibc-spine-06,mgmt0,oob-sw-03,swp34
+O-ibc-spine-07-mgmt0,oob,,,cat5e,ibc-spine-07,mgmt0,oob-sw-03,swp35
+O-ibc-spine-08-mgmt0,oob,,,cat5e,ibc-spine-08,mgmt0,oob-sw-03,swp36
+O-ibs-leaf-01-mgmt0,oob,,,cat5e,ibs-leaf-01,mgmt0,oob-sw-03,swp37
+O-ibs-leaf-02-mgmt0,oob,,,cat5e,ibs-leaf-02,mgmt0,oob-sw-03,swp38
+O-ibs-leaf-03-mgmt0,oob,,,cat5e,ibs-leaf-03,mgmt0,oob-sw-03,swp39
+O-ibs-leaf-04-mgmt0,oob,,,cat5e,ibs-leaf-04,mgmt0,oob-sw-03,swp40
+O-ibs-leaf-05-mgmt0,oob,,,cat5e,ibs-leaf-05,mgmt0,oob-sw-03,swp41
+O-ibs-spine-01-mgmt0,oob,,,cat5e,ibs-spine-01,mgmt0,oob-sw-03,swp42
+O-ibs-spine-02-mgmt0,oob,,,cat5e,ibs-spine-02,mgmt0,oob-sw-03,swp43
+O-inb-su1-leaf-a-eth0,oob,,,cat5e,inb-su1-leaf-a,eth0,oob-sw-03,swp44
+O-inb-su1-leaf-b-eth0,oob,,,cat5e,inb-su1-leaf-b,eth0,oob-sw-03,swp45
+O-inb-su2-leaf-a-eth0,oob,,,cat5e,inb-su2-leaf-a,eth0,oob-sw-03,swp46
+O-inb-su2-leaf-b-eth0,oob,,,cat5e,inb-su2-leaf-b,eth0,oob-sw-03,swp47
+O-inb-spine-01-eth0,oob,,,cat5e,inb-spine-01,eth0,oob-sw-03,swp48
+O-inb-spine-02-eth0,oob,,,cat5e,inb-spine-02,eth0,oob-sw-04,swp1
+O-vast-be-a-eth0,oob,,,cat5e,vast-be-a,eth0,oob-sw-04,swp2
+O-vast-be-b-eth0,oob,,,cat5e,vast-be-b,eth0,oob-sw-04,swp3
+O-dgx-su1-r01-pdu-a-eth1,oob,,,cat5e,dgx-su1-r01-pdu-a,eth1,oob-sw-04,swp4
+O-dgx-su1-r01-pdu-b-eth1,oob,,,cat5e,dgx-su1-r01-pdu-b,eth1,oob-sw-04,swp5
+O-dgx-su1-r01-pdu-c-eth1,oob,,,cat5e,dgx-su1-r01-pdu-c,eth1,oob-sw-04,swp6
+O-dgx-su1-r02-pdu-a-eth1,oob,,,cat5e,dgx-su1-r02-pdu-a,eth1,oob-sw-04,swp7
+O-dgx-su1-r02-pdu-b-eth1,oob,,,cat5e,dgx-su1-r02-pdu-b,eth1,oob-sw-04,swp8
+O-dgx-su1-r02-pdu-c-eth1,oob,,,cat5e,dgx-su1-r02-pdu-c,eth1,oob-sw-04,swp9
+O-dgx-su1-r03-pdu-a-eth1,oob,,,cat5e,dgx-su1-r03-pdu-a,eth1,oob-sw-04,swp10
+O-dgx-su1-r03-pdu-b-eth1,oob,,,cat5e,dgx-su1-r03-pdu-b,eth1,oob-sw-04,swp11
+O-dgx-su1-r03-pdu-c-eth1,oob,,,cat5e,dgx-su1-r03-pdu-c,eth1,oob-sw-04,swp12
+O-dgx-su1-r04-pdu-a-eth1,oob,,,cat5e,dgx-su1-r04-pdu-a,eth1,oob-sw-04,swp13
+O-dgx-su1-r04-pdu-b-eth1,oob,,,cat5e,dgx-su1-r04-pdu-b,eth1,oob-sw-04,swp14
+O-dgx-su1-r04-pdu-c-eth1,oob,,,cat5e,dgx-su1-r04-pdu-c,eth1,oob-sw-04,swp15
+O-dgx-su1-r05-pdu-a-eth1,oob,,,cat5e,dgx-su1-r05-pdu-a,eth1,oob-sw-04,swp16
+O-dgx-su1-r05-pdu-b-eth1,oob,,,cat5e,dgx-su1-r05-pdu-b,eth1,oob-sw-04,swp17
+O-dgx-su1-r05-pdu-c-eth1,oob,,,cat5e,dgx-su1-r05-pdu-c,eth1,oob-sw-04,swp18
+O-dgx-su1-r06-pdu-a-eth1,oob,,,cat5e,dgx-su1-r06-pdu-a,eth1,oob-sw-04,swp19
+O-dgx-su1-r06-pdu-b-eth1,oob,,,cat5e,dgx-su1-r06-pdu-b,eth1,oob-sw-04,swp20
+O-dgx-su1-r06-pdu-c-eth1,oob,,,cat5e,dgx-su1-r06-pdu-c,eth1,oob-sw-04,swp21
+O-dgx-su1-r07-pdu-a-eth1,oob,,,cat5e,dgx-su1-r07-pdu-a,eth1,oob-sw-04,swp22
+O-dgx-su1-r07-pdu-b-eth1,oob,,,cat5e,dgx-su1-r07-pdu-b,eth1,oob-sw-04,swp23
+O-dgx-su1-r07-pdu-c-eth1,oob,,,cat5e,dgx-su1-r07-pdu-c,eth1,oob-sw-04,swp24
+O-dgx-su1-r08-pdu-a-eth1,oob,,,cat5e,dgx-su1-r08-pdu-a,eth1,oob-sw-04,swp25
+O-dgx-su1-r08-pdu-b-eth1,oob,,,cat5e,dgx-su1-r08-pdu-b,eth1,oob-sw-04,swp26
+O-dgx-su1-r08-pdu-c-eth1,oob,,,cat5e,dgx-su1-r08-pdu-c,eth1,oob-sw-04,swp27
+O-dgx-su1-r09-pdu-a-eth1,oob,,,cat5e,dgx-su1-r09-pdu-a,eth1,oob-sw-04,swp28
+O-dgx-su1-r09-pdu-b-eth1,oob,,,cat5e,dgx-su1-r09-pdu-b,eth1,oob-sw-04,swp29
+O-dgx-su1-r09-pdu-c-eth1,oob,,,cat5e,dgx-su1-r09-pdu-c,eth1,oob-sw-04,swp30
+O-dgx-su1-r10-pdu-a-eth1,oob,,,cat5e,dgx-su1-r10-pdu-a,eth1,oob-sw-04,swp31
+O-dgx-su1-r10-pdu-b-eth1,oob,,,cat5e,dgx-su1-r10-pdu-b,eth1,oob-sw-04,swp32
+O-dgx-su1-r10-pdu-c-eth1,oob,,,cat5e,dgx-su1-r10-pdu-c,eth1,oob-sw-04,swp33
+O-dgx-su1-r11-pdu-a-eth1,oob,,,cat5e,dgx-su1-r11-pdu-a,eth1,oob-sw-04,swp34
+O-dgx-su1-r11-pdu-b-eth1,oob,,,cat5e,dgx-su1-r11-pdu-b,eth1,oob-sw-04,swp35
+O-dgx-su1-r11-pdu-c-eth1,oob,,,cat5e,dgx-su1-r11-pdu-c,eth1,oob-sw-04,swp36
+O-dgx-su1-r12-pdu-a-eth1,oob,,,cat5e,dgx-su1-r12-pdu-a,eth1,oob-sw-04,swp37
+O-dgx-su1-r12-pdu-b-eth1,oob,,,cat5e,dgx-su1-r12-pdu-b,eth1,oob-sw-04,swp38
+O-dgx-su1-r12-pdu-c-eth1,oob,,,cat5e,dgx-su1-r12-pdu-c,eth1,oob-sw-04,swp39
+O-dgx-su1-r13-pdu-a-eth1,oob,,,cat5e,dgx-su1-r13-pdu-a,eth1,oob-sw-04,swp40
+O-dgx-su1-r13-pdu-b-eth1,oob,,,cat5e,dgx-su1-r13-pdu-b,eth1,oob-sw-04,swp41
+O-dgx-su1-r13-pdu-c-eth1,oob,,,cat5e,dgx-su1-r13-pdu-c,eth1,oob-sw-04,swp42
+O-dgx-su1-r14-pdu-a-eth1,oob,,,cat5e,dgx-su1-r14-pdu-a,eth1,oob-sw-04,swp43
+O-dgx-su1-r14-pdu-b-eth1,oob,,,cat5e,dgx-su1-r14-pdu-b,eth1,oob-sw-04,swp44
+O-dgx-su1-r14-pdu-c-eth1,oob,,,cat5e,dgx-su1-r14-pdu-c,eth1,oob-sw-04,swp45
+O-dgx-su1-r15-pdu-a-eth1,oob,,,cat5e,dgx-su1-r15-pdu-a,eth1,oob-sw-04,swp46
+O-dgx-su1-r15-pdu-b-eth1,oob,,,cat5e,dgx-su1-r15-pdu-b,eth1,oob-sw-04,swp47
+O-dgx-su1-r15-pdu-c-eth1,oob,,,cat5e,dgx-su1-r15-pdu-c,eth1,oob-sw-04,swp48
+O-dgx-su1-r16-pdu-a-eth1,oob,,,cat5e,dgx-su1-r16-pdu-a,eth1,oob-sw-05,swp1
+O-dgx-su1-r16-pdu-b-eth1,oob,,,cat5e,dgx-su1-r16-pdu-b,eth1,oob-sw-05,swp2
+O-dgx-su1-r16-pdu-c-eth1,oob,,,cat5e,dgx-su1-r16-pdu-c,eth1,oob-sw-05,swp3
+O-dgx-su2-r01-pdu-a-eth1,oob,,,cat5e,dgx-su2-r01-pdu-a,eth1,oob-sw-05,swp4
+O-dgx-su2-r01-pdu-b-eth1,oob,,,cat5e,dgx-su2-r01-pdu-b,eth1,oob-sw-05,swp5
+O-dgx-su2-r01-pdu-c-eth1,oob,,,cat5e,dgx-su2-r01-pdu-c,eth1,oob-sw-05,swp6
+O-dgx-su2-r02-pdu-a-eth1,oob,,,cat5e,dgx-su2-r02-pdu-a,eth1,oob-sw-05,swp7
+O-dgx-su2-r02-pdu-b-eth1,oob,,,cat5e,dgx-su2-r02-pdu-b,eth1,oob-sw-05,swp8
+O-dgx-su2-r02-pdu-c-eth1,oob,,,cat5e,dgx-su2-r02-pdu-c,eth1,oob-sw-05,swp9
+O-dgx-su2-r03-pdu-a-eth1,oob,,,cat5e,dgx-su2-r03-pdu-a,eth1,oob-sw-05,swp10
+O-dgx-su2-r03-pdu-b-eth1,oob,,,cat5e,dgx-su2-r03-pdu-b,eth1,oob-sw-05,swp11
+O-dgx-su2-r03-pdu-c-eth1,oob,,,cat5e,dgx-su2-r03-pdu-c,eth1,oob-sw-05,swp12
+O-dgx-su2-r04-pdu-a-eth1,oob,,,cat5e,dgx-su2-r04-pdu-a,eth1,oob-sw-05,swp13
+O-dgx-su2-r04-pdu-b-eth1,oob,,,cat5e,dgx-su2-r04-pdu-b,eth1,oob-sw-05,swp14
+O-dgx-su2-r04-pdu-c-eth1,oob,,,cat5e,dgx-su2-r04-pdu-c,eth1,oob-sw-05,swp15
+O-dgx-su2-r05-pdu-a-eth1,oob,,,cat5e,dgx-su2-r05-pdu-a,eth1,oob-sw-05,swp16
+O-dgx-su2-r05-pdu-b-eth1,oob,,,cat5e,dgx-su2-r05-pdu-b,eth1,oob-sw-05,swp17
+O-dgx-su2-r05-pdu-c-eth1,oob,,,cat5e,dgx-su2-r05-pdu-c,eth1,oob-sw-05,swp18
+O-dgx-su2-r06-pdu-a-eth1,oob,,,cat5e,dgx-su2-r06-pdu-a,eth1,oob-sw-05,swp19
+O-dgx-su2-r06-pdu-b-eth1,oob,,,cat5e,dgx-su2-r06-pdu-b,eth1,oob-sw-05,swp20
+O-dgx-su2-r06-pdu-c-eth1,oob,,,cat5e,dgx-su2-r06-pdu-c,eth1,oob-sw-05,swp21
+O-dgx-su2-r07-pdu-a-eth1,oob,,,cat5e,dgx-su2-r07-pdu-a,eth1,oob-sw-05,swp22
+O-dgx-su2-r07-pdu-b-eth1,oob,,,cat5e,dgx-su2-r07-pdu-b,eth1,oob-sw-05,swp23
+O-dgx-su2-r07-pdu-c-eth1,oob,,,cat5e,dgx-su2-r07-pdu-c,eth1,oob-sw-05,swp24
+O-dgx-su2-r08-pdu-a-eth1,oob,,,cat5e,dgx-su2-r08-pdu-a,eth1,oob-sw-05,swp25
+O-dgx-su2-r08-pdu-b-eth1,oob,,,cat5e,dgx-su2-r08-pdu-b,eth1,oob-sw-05,swp26
+O-dgx-su2-r08-pdu-c-eth1,oob,,,cat5e,dgx-su2-r08-pdu-c,eth1,oob-sw-05,swp27
+O-dgx-su2-r09-pdu-a-eth1,oob,,,cat5e,dgx-su2-r09-pdu-a,eth1,oob-sw-05,swp28
+O-dgx-su2-r09-pdu-b-eth1,oob,,,cat5e,dgx-su2-r09-pdu-b,eth1,oob-sw-05,swp29
+O-dgx-su2-r09-pdu-c-eth1,oob,,,cat5e,dgx-su2-r09-pdu-c,eth1,oob-sw-05,swp30
+O-dgx-su2-r10-pdu-a-eth1,oob,,,cat5e,dgx-su2-r10-pdu-a,eth1,oob-sw-05,swp31
+O-dgx-su2-r10-pdu-b-eth1,oob,,,cat5e,dgx-su2-r10-pdu-b,eth1,oob-sw-05,swp32
+O-dgx-su2-r10-pdu-c-eth1,oob,,,cat5e,dgx-su2-r10-pdu-c,eth1,oob-sw-05,swp33
+O-dgx-su2-r11-pdu-a-eth1,oob,,,cat5e,dgx-su2-r11-pdu-a,eth1,oob-sw-05,swp34
+O-dgx-su2-r11-pdu-b-eth1,oob,,,cat5e,dgx-su2-r11-pdu-b,eth1,oob-sw-05,swp35
+O-dgx-su2-r11-pdu-c-eth1,oob,,,cat5e,dgx-su2-r11-pdu-c,eth1,oob-sw-05,swp36
+O-dgx-su2-r12-pdu-a-eth1,oob,,,cat5e,dgx-su2-r12-pdu-a,eth1,oob-sw-05,swp37
+O-dgx-su2-r12-pdu-b-eth1,oob,,,cat5e,dgx-su2-r12-pdu-b,eth1,oob-sw-05,swp38
+O-dgx-su2-r12-pdu-c-eth1,oob,,,cat5e,dgx-su2-r12-pdu-c,eth1,oob-sw-05,swp39
+O-dgx-su2-r13-pdu-a-eth1,oob,,,cat5e,dgx-su2-r13-pdu-a,eth1,oob-sw-05,swp40
+O-dgx-su2-r13-pdu-b-eth1,oob,,,cat5e,dgx-su2-r13-pdu-b,eth1,oob-sw-05,swp41
+O-dgx-su2-r13-pdu-c-eth1,oob,,,cat5e,dgx-su2-r13-pdu-c,eth1,oob-sw-05,swp42
+O-dgx-su2-r14-pdu-a-eth1,oob,,,cat5e,dgx-su2-r14-pdu-a,eth1,oob-sw-05,swp43
+O-dgx-su2-r14-pdu-b-eth1,oob,,,cat5e,dgx-su2-r14-pdu-b,eth1,oob-sw-05,swp44
+O-dgx-su2-r14-pdu-c-eth1,oob,,,cat5e,dgx-su2-r14-pdu-c,eth1,oob-sw-05,swp45
+O-dgx-su2-r15-pdu-a-eth1,oob,,,cat5e,dgx-su2-r15-pdu-a,eth1,oob-sw-05,swp46
+O-dgx-su2-r15-pdu-b-eth1,oob,,,cat5e,dgx-su2-r15-pdu-b,eth1,oob-sw-05,swp47
+O-dgx-su2-r15-pdu-c-eth1,oob,,,cat5e,dgx-su2-r15-pdu-c,eth1,oob-sw-05,swp48
+O-dgx-su2-r16-pdu-a-eth1,oob,,,cat5e,dgx-su2-r16-pdu-a,eth1,oob-sw-06,swp1
+O-dgx-su2-r16-pdu-b-eth1,oob,,,cat5e,dgx-su2-r16-pdu-b,eth1,oob-sw-06,swp2
+O-dgx-su2-r16-pdu-c-eth1,oob,,,cat5e,dgx-su2-r16-pdu-c,eth1,oob-sw-06,swp3
+O-mgmt-r01-pdu-a-eth1,oob,,,cat5e,mgmt-r01-pdu-a,eth1,oob-sw-06,swp4
+O-mgmt-r01-pdu-b-eth1,oob,,,cat5e,mgmt-r01-pdu-b,eth1,oob-sw-06,swp5
+O-mgmt-r02-pdu-a-eth1,oob,,,cat5e,mgmt-r02-pdu-a,eth1,oob-sw-06,swp6
+O-mgmt-r02-pdu-b-eth1,oob,,,cat5e,mgmt-r02-pdu-b,eth1,oob-sw-06,swp7
+O-mgmt-r03-pdu-a-eth1,oob,,,cat5e,mgmt-r03-pdu-a,eth1,oob-sw-06,swp8
+O-mgmt-r03-pdu-b-eth1,oob,,,cat5e,mgmt-r03-pdu-b,eth1,oob-sw-06,swp9
+O-mgmt-r04-pdu-a-eth1,oob,,,cat5e,mgmt-r04-pdu-a,eth1,oob-sw-06,swp10
+O-mgmt-r04-pdu-b-eth1,oob,,,cat5e,mgmt-r04-pdu-b,eth1,oob-sw-06,swp11
+O-stor-r01-pdu-a-eth1,oob,,,cat5e,stor-r01-pdu-a,eth1,oob-sw-06,swp12
+O-stor-r01-pdu-b-eth1,oob,,,cat5e,stor-r01-pdu-b,eth1,oob-sw-06,swp13
+O-stor-r02-pdu-a-eth1,oob,,,cat5e,stor-r02-pdu-a,eth1,oob-sw-06,swp14
+O-stor-r02-pdu-b-eth1,oob,,,cat5e,stor-r02-pdu-b,eth1,oob-sw-06,swp15
+I-oob-sw-01-inb-spine-01,oob,,,aoc,oob-sw-01,swp49,inb-spine-01,swp35
+I-oob-sw-01-inb-spine-02,oob,,,aoc,oob-sw-01,swp50,inb-spine-02,swp35
+I-oob-sw-02-inb-spine-01,oob,,,aoc,oob-sw-02,swp49,inb-spine-01,swp36
+I-oob-sw-02-inb-spine-02,oob,,,aoc,oob-sw-02,swp50,inb-spine-02,swp36
+I-oob-sw-03-inb-spine-01,oob,,,aoc,oob-sw-03,swp49,inb-spine-01,swp37
+I-oob-sw-03-inb-spine-02,oob,,,aoc,oob-sw-03,swp50,inb-spine-02,swp37
+I-oob-sw-04-inb-spine-01,oob,,,aoc,oob-sw-04,swp49,inb-spine-01,swp38
+I-oob-sw-04-inb-spine-02,oob,,,aoc,oob-sw-04,swp50,inb-spine-02,swp38
+I-oob-sw-05-inb-spine-01,oob,,,aoc,oob-sw-05,swp49,inb-spine-01,swp39
+I-oob-sw-05-inb-spine-02,oob,,,aoc,oob-sw-05,swp50,inb-spine-02,swp39
+I-oob-sw-06-inb-spine-01,oob,,,aoc,oob-sw-06,swp49,inb-spine-01,swp40
+I-oob-sw-06-inb-spine-02,oob,,,aoc,oob-sw-06,swp50,inb-spine-02,swp40
+H-ufm-c-01-ufm-c-02,mgmt,,,cat5e,ufm-c-01,ha0,ufm-c-02,ha0
+H-ufm-s-01-ufm-s-02,mgmt,,,cat5e,ufm-s-01,ha0,ufm-s-02,ha0
+P-bcm-head-01-psu1,power,,,power,bcm-head-01,psu1,mgmt-r03-pdu-a,Outlet 3
+P-bcm-head-01-psu2,power,,,power,bcm-head-01,psu2,mgmt-r03-pdu-b,Outlet 3
+P-bcm-head-02-psu1,power,,,power,bcm-head-02,psu1,mgmt-r03-pdu-a,Outlet 4
+P-bcm-head-02-psu2,power,,,power,bcm-head-02,psu2,mgmt-r03-pdu-b,Outlet 4
+P-ddn-01-psu1,power,,,power,ddn-01,psu1,stor-r01-pdu-a,Outlet 1
+P-ddn-01-psu2,power,,,power,ddn-01,psu2,stor-r01-pdu-b,Outlet 1
+P-ddn-02-psu1,power,,,power,ddn-02,psu1,stor-r01-pdu-a,Outlet 2
+P-ddn-02-psu2,power,,,power,ddn-02,psu2,stor-r01-pdu-b,Outlet 2
+P-ddn-03-psu1,power,,,power,ddn-03,psu1,stor-r01-pdu-a,Outlet 7
+P-ddn-03-psu2,power,,,power,ddn-03,psu2,stor-r01-pdu-b,Outlet 7
+P-ddn-04-psu1,power,,,power,ddn-04,psu1,stor-r01-pdu-a,Outlet 8
+P-ddn-04-psu2,power,,,power,ddn-04,psu2,stor-r01-pdu-b,Outlet 8
+P-dgx-su1-n01-PSU1,power,,,power,dgx-su1-n01,PSU1,dgx-su1-r01-pdu-a,C19-1
+P-dgx-su1-n01-PSU2,power,,,power,dgx-su1-n01,PSU2,dgx-su1-r01-pdu-a,C19-2
+P-dgx-su1-n01-PSU3,power,,,power,dgx-su1-n01,PSU3,dgx-su1-r01-pdu-b,C19-1
+P-dgx-su1-n01-PSU4,power,,,power,dgx-su1-n01,PSU4,dgx-su1-r01-pdu-b,C19-2
+P-dgx-su1-n01-PSU5,power,,,power,dgx-su1-n01,PSU5,dgx-su1-r01-pdu-c,C19-1
+P-dgx-su1-n01-PSU6,power,,,power,dgx-su1-n01,PSU6,dgx-su1-r01-pdu-c,C19-2
+P-dgx-su1-n02-PSU1,power,,,power,dgx-su1-n02,PSU1,dgx-su1-r01-pdu-a,C19-3
+P-dgx-su1-n02-PSU2,power,,,power,dgx-su1-n02,PSU2,dgx-su1-r01-pdu-a,C19-4
+P-dgx-su1-n02-PSU3,power,,,power,dgx-su1-n02,PSU3,dgx-su1-r01-pdu-b,C19-3
+P-dgx-su1-n02-PSU4,power,,,power,dgx-su1-n02,PSU4,dgx-su1-r01-pdu-b,C19-4
+P-dgx-su1-n02-PSU5,power,,,power,dgx-su1-n02,PSU5,dgx-su1-r01-pdu-c,C19-3
+P-dgx-su1-n02-PSU6,power,,,power,dgx-su1-n02,PSU6,dgx-su1-r01-pdu-c,C19-4
+P-dgx-su1-n03-PSU1,power,,,power,dgx-su1-n03,PSU1,dgx-su1-r02-pdu-a,C19-1
+P-dgx-su1-n03-PSU2,power,,,power,dgx-su1-n03,PSU2,dgx-su1-r02-pdu-a,C19-2
+P-dgx-su1-n03-PSU3,power,,,power,dgx-su1-n03,PSU3,dgx-su1-r02-pdu-b,C19-1
+P-dgx-su1-n03-PSU4,power,,,power,dgx-su1-n03,PSU4,dgx-su1-r02-pdu-b,C19-2
+P-dgx-su1-n03-PSU5,power,,,power,dgx-su1-n03,PSU5,dgx-su1-r02-pdu-c,C19-1
+P-dgx-su1-n03-PSU6,power,,,power,dgx-su1-n03,PSU6,dgx-su1-r02-pdu-c,C19-2
+P-dgx-su1-n04-PSU1,power,,,power,dgx-su1-n04,PSU1,dgx-su1-r02-pdu-a,C19-3
+P-dgx-su1-n04-PSU2,power,,,power,dgx-su1-n04,PSU2,dgx-su1-r02-pdu-a,C19-4
+P-dgx-su1-n04-PSU3,power,,,power,dgx-su1-n04,PSU3,dgx-su1-r02-pdu-b,C19-3
+P-dgx-su1-n04-PSU4,power,,,power,dgx-su1-n04,PSU4,dgx-su1-r02-pdu-b,C19-4
+P-dgx-su1-n04-PSU5,power,,,power,dgx-su1-n04,PSU5,dgx-su1-r02-pdu-c,C19-3
+P-dgx-su1-n04-PSU6,power,,,power,dgx-su1-n04,PSU6,dgx-su1-r02-pdu-c,C19-4
+P-dgx-su1-n05-PSU1,power,,,power,dgx-su1-n05,PSU1,dgx-su1-r03-pdu-a,C19-1
+P-dgx-su1-n05-PSU2,power,,,power,dgx-su1-n05,PSU2,dgx-su1-r03-pdu-a,C19-2
+P-dgx-su1-n05-PSU3,power,,,power,dgx-su1-n05,PSU3,dgx-su1-r03-pdu-b,C19-1
+P-dgx-su1-n05-PSU4,power,,,power,dgx-su1-n05,PSU4,dgx-su1-r03-pdu-b,C19-2
+P-dgx-su1-n05-PSU5,power,,,power,dgx-su1-n05,PSU5,dgx-su1-r03-pdu-c,C19-1
+P-dgx-su1-n05-PSU6,power,,,power,dgx-su1-n05,PSU6,dgx-su1-r03-pdu-c,C19-2
+P-dgx-su1-n06-PSU1,power,,,power,dgx-su1-n06,PSU1,dgx-su1-r03-pdu-a,C19-3
+P-dgx-su1-n06-PSU2,power,,,power,dgx-su1-n06,PSU2,dgx-su1-r03-pdu-a,C19-4
+P-dgx-su1-n06-PSU3,power,,,power,dgx-su1-n06,PSU3,dgx-su1-r03-pdu-b,C19-3
+P-dgx-su1-n06-PSU4,power,,,power,dgx-su1-n06,PSU4,dgx-su1-r03-pdu-b,C19-4
+P-dgx-su1-n06-PSU5,power,,,power,dgx-su1-n06,PSU5,dgx-su1-r03-pdu-c,C19-3
+P-dgx-su1-n06-PSU6,power,,,power,dgx-su1-n06,PSU6,dgx-su1-r03-pdu-c,C19-4
+P-dgx-su1-n07-PSU1,power,,,power,dgx-su1-n07,PSU1,dgx-su1-r04-pdu-a,C19-1
+P-dgx-su1-n07-PSU2,power,,,power,dgx-su1-n07,PSU2,dgx-su1-r04-pdu-a,C19-2
+P-dgx-su1-n07-PSU3,power,,,power,dgx-su1-n07,PSU3,dgx-su1-r04-pdu-b,C19-1
+P-dgx-su1-n07-PSU4,power,,,power,dgx-su1-n07,PSU4,dgx-su1-r04-pdu-b,C19-2
+P-dgx-su1-n07-PSU5,power,,,power,dgx-su1-n07,PSU5,dgx-su1-r04-pdu-c,C19-1
+P-dgx-su1-n07-PSU6,power,,,power,dgx-su1-n07,PSU6,dgx-su1-r04-pdu-c,C19-2
+P-dgx-su1-n08-PSU1,power,,,power,dgx-su1-n08,PSU1,dgx-su1-r04-pdu-a,C19-3
+P-dgx-su1-n08-PSU2,power,,,power,dgx-su1-n08,PSU2,dgx-su1-r04-pdu-a,C19-4
+P-dgx-su1-n08-PSU3,power,,,power,dgx-su1-n08,PSU3,dgx-su1-r04-pdu-b,C19-3
+P-dgx-su1-n08-PSU4,power,,,power,dgx-su1-n08,PSU4,dgx-su1-r04-pdu-b,C19-4
+P-dgx-su1-n08-PSU5,power,,,power,dgx-su1-n08,PSU5,dgx-su1-r04-pdu-c,C19-3
+P-dgx-su1-n08-PSU6,power,,,power,dgx-su1-n08,PSU6,dgx-su1-r04-pdu-c,C19-4
+P-dgx-su1-n09-PSU1,power,,,power,dgx-su1-n09,PSU1,dgx-su1-r05-pdu-a,C19-1
+P-dgx-su1-n09-PSU2,power,,,power,dgx-su1-n09,PSU2,dgx-su1-r05-pdu-a,C19-2
+P-dgx-su1-n09-PSU3,power,,,power,dgx-su1-n09,PSU3,dgx-su1-r05-pdu-b,C19-1
+P-dgx-su1-n09-PSU4,power,,,power,dgx-su1-n09,PSU4,dgx-su1-r05-pdu-b,C19-2
+P-dgx-su1-n09-PSU5,power,,,power,dgx-su1-n09,PSU5,dgx-su1-r05-pdu-c,C19-1
+P-dgx-su1-n09-PSU6,power,,,power,dgx-su1-n09,PSU6,dgx-su1-r05-pdu-c,C19-2
+P-dgx-su1-n10-PSU1,power,,,power,dgx-su1-n10,PSU1,dgx-su1-r05-pdu-a,C19-3
+P-dgx-su1-n10-PSU2,power,,,power,dgx-su1-n10,PSU2,dgx-su1-r05-pdu-a,C19-4
+P-dgx-su1-n10-PSU3,power,,,power,dgx-su1-n10,PSU3,dgx-su1-r05-pdu-b,C19-3
+P-dgx-su1-n10-PSU4,power,,,power,dgx-su1-n10,PSU4,dgx-su1-r05-pdu-b,C19-4
+P-dgx-su1-n10-PSU5,power,,,power,dgx-su1-n10,PSU5,dgx-su1-r05-pdu-c,C19-3
+P-dgx-su1-n10-PSU6,power,,,power,dgx-su1-n10,PSU6,dgx-su1-r05-pdu-c,C19-4
+P-dgx-su1-n11-PSU1,power,,,power,dgx-su1-n11,PSU1,dgx-su1-r06-pdu-a,C19-1
+P-dgx-su1-n11-PSU2,power,,,power,dgx-su1-n11,PSU2,dgx-su1-r06-pdu-a,C19-2
+P-dgx-su1-n11-PSU3,power,,,power,dgx-su1-n11,PSU3,dgx-su1-r06-pdu-b,C19-1
+P-dgx-su1-n11-PSU4,power,,,power,dgx-su1-n11,PSU4,dgx-su1-r06-pdu-b,C19-2
+P-dgx-su1-n11-PSU5,power,,,power,dgx-su1-n11,PSU5,dgx-su1-r06-pdu-c,C19-1
+P-dgx-su1-n11-PSU6,power,,,power,dgx-su1-n11,PSU6,dgx-su1-r06-pdu-c,C19-2
+P-dgx-su1-n12-PSU1,power,,,power,dgx-su1-n12,PSU1,dgx-su1-r06-pdu-a,C19-3
+P-dgx-su1-n12-PSU2,power,,,power,dgx-su1-n12,PSU2,dgx-su1-r06-pdu-a,C19-4
+P-dgx-su1-n12-PSU3,power,,,power,dgx-su1-n12,PSU3,dgx-su1-r06-pdu-b,C19-3
+P-dgx-su1-n12-PSU4,power,,,power,dgx-su1-n12,PSU4,dgx-su1-r06-pdu-b,C19-4
+P-dgx-su1-n12-PSU5,power,,,power,dgx-su1-n12,PSU5,dgx-su1-r06-pdu-c,C19-3
+P-dgx-su1-n12-PSU6,power,,,power,dgx-su1-n12,PSU6,dgx-su1-r06-pdu-c,C19-4
+P-dgx-su1-n13-PSU1,power,,,power,dgx-su1-n13,PSU1,dgx-su1-r07-pdu-a,C19-1
+P-dgx-su1-n13-PSU2,power,,,power,dgx-su1-n13,PSU2,dgx-su1-r07-pdu-a,C19-2
+P-dgx-su1-n13-PSU3,power,,,power,dgx-su1-n13,PSU3,dgx-su1-r07-pdu-b,C19-1
+P-dgx-su1-n13-PSU4,power,,,power,dgx-su1-n13,PSU4,dgx-su1-r07-pdu-b,C19-2
+P-dgx-su1-n13-PSU5,power,,,power,dgx-su1-n13,PSU5,dgx-su1-r07-pdu-c,C19-1
+P-dgx-su1-n13-PSU6,power,,,power,dgx-su1-n13,PSU6,dgx-su1-r07-pdu-c,C19-2
+P-dgx-su1-n14-PSU1,power,,,power,dgx-su1-n14,PSU1,dgx-su1-r07-pdu-a,C19-3
+P-dgx-su1-n14-PSU2,power,,,power,dgx-su1-n14,PSU2,dgx-su1-r07-pdu-a,C19-4
+P-dgx-su1-n14-PSU3,power,,,power,dgx-su1-n14,PSU3,dgx-su1-r07-pdu-b,C19-3
+P-dgx-su1-n14-PSU4,power,,,power,dgx-su1-n14,PSU4,dgx-su1-r07-pdu-b,C19-4
+P-dgx-su1-n14-PSU5,power,,,power,dgx-su1-n14,PSU5,dgx-su1-r07-pdu-c,C19-3
+P-dgx-su1-n14-PSU6,power,,,power,dgx-su1-n14,PSU6,dgx-su1-r07-pdu-c,C19-4
+P-dgx-su1-n15-PSU1,power,,,power,dgx-su1-n15,PSU1,dgx-su1-r08-pdu-a,C19-1
+P-dgx-su1-n15-PSU2,power,,,power,dgx-su1-n15,PSU2,dgx-su1-r08-pdu-a,C19-2
+P-dgx-su1-n15-PSU3,power,,,power,dgx-su1-n15,PSU3,dgx-su1-r08-pdu-b,C19-1
+P-dgx-su1-n15-PSU4,power,,,power,dgx-su1-n15,PSU4,dgx-su1-r08-pdu-b,C19-2
+P-dgx-su1-n15-PSU5,power,,,power,dgx-su1-n15,PSU5,dgx-su1-r08-pdu-c,C19-1
+P-dgx-su1-n15-PSU6,power,,,power,dgx-su1-n15,PSU6,dgx-su1-r08-pdu-c,C19-2
+P-dgx-su1-n16-PSU1,power,,,power,dgx-su1-n16,PSU1,dgx-su1-r08-pdu-a,C19-3
+P-dgx-su1-n16-PSU2,power,,,power,dgx-su1-n16,PSU2,dgx-su1-r08-pdu-a,C19-4
+P-dgx-su1-n16-PSU3,power,,,power,dgx-su1-n16,PSU3,dgx-su1-r08-pdu-b,C19-3
+P-dgx-su1-n16-PSU4,power,,,power,dgx-su1-n16,PSU4,dgx-su1-r08-pdu-b,C19-4
+P-dgx-su1-n16-PSU5,power,,,power,dgx-su1-n16,PSU5,dgx-su1-r08-pdu-c,C19-3
+P-dgx-su1-n16-PSU6,power,,,power,dgx-su1-n16,PSU6,dgx-su1-r08-pdu-c,C19-4
+P-dgx-su1-n17-PSU1,power,,,power,dgx-su1-n17,PSU1,dgx-su1-r09-pdu-a,C19-1
+P-dgx-su1-n17-PSU2,power,,,power,dgx-su1-n17,PSU2,dgx-su1-r09-pdu-a,C19-2
+P-dgx-su1-n17-PSU3,power,,,power,dgx-su1-n17,PSU3,dgx-su1-r09-pdu-b,C19-1
+P-dgx-su1-n17-PSU4,power,,,power,dgx-su1-n17,PSU4,dgx-su1-r09-pdu-b,C19-2
+P-dgx-su1-n17-PSU5,power,,,power,dgx-su1-n17,PSU5,dgx-su1-r09-pdu-c,C19-1
+P-dgx-su1-n17-PSU6,power,,,power,dgx-su1-n17,PSU6,dgx-su1-r09-pdu-c,C19-2
+P-dgx-su1-n18-PSU1,power,,,power,dgx-su1-n18,PSU1,dgx-su1-r09-pdu-a,C19-3
+P-dgx-su1-n18-PSU2,power,,,power,dgx-su1-n18,PSU2,dgx-su1-r09-pdu-a,C19-4
+P-dgx-su1-n18-PSU3,power,,,power,dgx-su1-n18,PSU3,dgx-su1-r09-pdu-b,C19-3
+P-dgx-su1-n18-PSU4,power,,,power,dgx-su1-n18,PSU4,dgx-su1-r09-pdu-b,C19-4
+P-dgx-su1-n18-PSU5,power,,,power,dgx-su1-n18,PSU5,dgx-su1-r09-pdu-c,C19-3
+P-dgx-su1-n18-PSU6,power,,,power,dgx-su1-n18,PSU6,dgx-su1-r09-pdu-c,C19-4
+P-dgx-su1-n19-PSU1,power,,,power,dgx-su1-n19,PSU1,dgx-su1-r10-pdu-a,C19-1
+P-dgx-su1-n19-PSU2,power,,,power,dgx-su1-n19,PSU2,dgx-su1-r10-pdu-a,C19-2
+P-dgx-su1-n19-PSU3,power,,,power,dgx-su1-n19,PSU3,dgx-su1-r10-pdu-b,C19-1
+P-dgx-su1-n19-PSU4,power,,,power,dgx-su1-n19,PSU4,dgx-su1-r10-pdu-b,C19-2
+P-dgx-su1-n19-PSU5,power,,,power,dgx-su1-n19,PSU5,dgx-su1-r10-pdu-c,C19-1
+P-dgx-su1-n19-PSU6,power,,,power,dgx-su1-n19,PSU6,dgx-su1-r10-pdu-c,C19-2
+P-dgx-su1-n20-PSU1,power,,,power,dgx-su1-n20,PSU1,dgx-su1-r10-pdu-a,C19-3
+P-dgx-su1-n20-PSU2,power,,,power,dgx-su1-n20,PSU2,dgx-su1-r10-pdu-a,C19-4
+P-dgx-su1-n20-PSU3,power,,,power,dgx-su1-n20,PSU3,dgx-su1-r10-pdu-b,C19-3
+P-dgx-su1-n20-PSU4,power,,,power,dgx-su1-n20,PSU4,dgx-su1-r10-pdu-b,C19-4
+P-dgx-su1-n20-PSU5,power,,,power,dgx-su1-n20,PSU5,dgx-su1-r10-pdu-c,C19-3
+P-dgx-su1-n20-PSU6,power,,,power,dgx-su1-n20,PSU6,dgx-su1-r10-pdu-c,C19-4
+P-dgx-su1-n21-PSU1,power,,,power,dgx-su1-n21,PSU1,dgx-su1-r11-pdu-a,C19-1
+P-dgx-su1-n21-PSU2,power,,,power,dgx-su1-n21,PSU2,dgx-su1-r11-pdu-a,C19-2
+P-dgx-su1-n21-PSU3,power,,,power,dgx-su1-n21,PSU3,dgx-su1-r11-pdu-b,C19-1
+P-dgx-su1-n21-PSU4,power,,,power,dgx-su1-n21,PSU4,dgx-su1-r11-pdu-b,C19-2
+P-dgx-su1-n21-PSU5,power,,,power,dgx-su1-n21,PSU5,dgx-su1-r11-pdu-c,C19-1
+P-dgx-su1-n21-PSU6,power,,,power,dgx-su1-n21,PSU6,dgx-su1-r11-pdu-c,C19-2
+P-dgx-su1-n22-PSU1,power,,,power,dgx-su1-n22,PSU1,dgx-su1-r11-pdu-a,C19-3
+P-dgx-su1-n22-PSU2,power,,,power,dgx-su1-n22,PSU2,dgx-su1-r11-pdu-a,C19-4
+P-dgx-su1-n22-PSU3,power,,,power,dgx-su1-n22,PSU3,dgx-su1-r11-pdu-b,C19-3
+P-dgx-su1-n22-PSU4,power,,,power,dgx-su1-n22,PSU4,dgx-su1-r11-pdu-b,C19-4
+P-dgx-su1-n22-PSU5,power,,,power,dgx-su1-n22,PSU5,dgx-su1-r11-pdu-c,C19-3
+P-dgx-su1-n22-PSU6,power,,,power,dgx-su1-n22,PSU6,dgx-su1-r11-pdu-c,C19-4
+P-dgx-su1-n23-PSU1,power,,,power,dgx-su1-n23,PSU1,dgx-su1-r12-pdu-a,C19-1
+P-dgx-su1-n23-PSU2,power,,,power,dgx-su1-n23,PSU2,dgx-su1-r12-pdu-a,C19-2
+P-dgx-su1-n23-PSU3,power,,,power,dgx-su1-n23,PSU3,dgx-su1-r12-pdu-b,C19-1
+P-dgx-su1-n23-PSU4,power,,,power,dgx-su1-n23,PSU4,dgx-su1-r12-pdu-b,C19-2
+P-dgx-su1-n23-PSU5,power,,,power,dgx-su1-n23,PSU5,dgx-su1-r12-pdu-c,C19-1
+P-dgx-su1-n23-PSU6,power,,,power,dgx-su1-n23,PSU6,dgx-su1-r12-pdu-c,C19-2
+P-dgx-su1-n24-PSU1,power,,,power,dgx-su1-n24,PSU1,dgx-su1-r12-pdu-a,C19-3
+P-dgx-su1-n24-PSU2,power,,,power,dgx-su1-n24,PSU2,dgx-su1-r12-pdu-a,C19-4
+P-dgx-su1-n24-PSU3,power,,,power,dgx-su1-n24,PSU3,dgx-su1-r12-pdu-b,C19-3
+P-dgx-su1-n24-PSU4,power,,,power,dgx-su1-n24,PSU4,dgx-su1-r12-pdu-b,C19-4
+P-dgx-su1-n24-PSU5,power,,,power,dgx-su1-n24,PSU5,dgx-su1-r12-pdu-c,C19-3
+P-dgx-su1-n24-PSU6,power,,,power,dgx-su1-n24,PSU6,dgx-su1-r12-pdu-c,C19-4
+P-dgx-su1-n25-PSU1,power,,,power,dgx-su1-n25,PSU1,dgx-su1-r13-pdu-a,C19-1
+P-dgx-su1-n25-PSU2,power,,,power,dgx-su1-n25,PSU2,dgx-su1-r13-pdu-a,C19-2
+P-dgx-su1-n25-PSU3,power,,,power,dgx-su1-n25,PSU3,dgx-su1-r13-pdu-b,C19-1
+P-dgx-su1-n25-PSU4,power,,,power,dgx-su1-n25,PSU4,dgx-su1-r13-pdu-b,C19-2
+P-dgx-su1-n25-PSU5,power,,,power,dgx-su1-n25,PSU5,dgx-su1-r13-pdu-c,C19-1
+P-dgx-su1-n25-PSU6,power,,,power,dgx-su1-n25,PSU6,dgx-su1-r13-pdu-c,C19-2
+P-dgx-su1-n26-PSU1,power,,,power,dgx-su1-n26,PSU1,dgx-su1-r13-pdu-a,C19-3
+P-dgx-su1-n26-PSU2,power,,,power,dgx-su1-n26,PSU2,dgx-su1-r13-pdu-a,C19-4
+P-dgx-su1-n26-PSU3,power,,,power,dgx-su1-n26,PSU3,dgx-su1-r13-pdu-b,C19-3
+P-dgx-su1-n26-PSU4,power,,,power,dgx-su1-n26,PSU4,dgx-su1-r13-pdu-b,C19-4
+P-dgx-su1-n26-PSU5,power,,,power,dgx-su1-n26,PSU5,dgx-su1-r13-pdu-c,C19-3
+P-dgx-su1-n26-PSU6,power,,,power,dgx-su1-n26,PSU6,dgx-su1-r13-pdu-c,C19-4
+P-dgx-su1-n27-PSU1,power,,,power,dgx-su1-n27,PSU1,dgx-su1-r14-pdu-a,C19-1
+P-dgx-su1-n27-PSU2,power,,,power,dgx-su1-n27,PSU2,dgx-su1-r14-pdu-a,C19-2
+P-dgx-su1-n27-PSU3,power,,,power,dgx-su1-n27,PSU3,dgx-su1-r14-pdu-b,C19-1
+P-dgx-su1-n27-PSU4,power,,,power,dgx-su1-n27,PSU4,dgx-su1-r14-pdu-b,C19-2
+P-dgx-su1-n27-PSU5,power,,,power,dgx-su1-n27,PSU5,dgx-su1-r14-pdu-c,C19-1
+P-dgx-su1-n27-PSU6,power,,,power,dgx-su1-n27,PSU6,dgx-su1-r14-pdu-c,C19-2
+P-dgx-su1-n28-PSU1,power,,,power,dgx-su1-n28,PSU1,dgx-su1-r14-pdu-a,C19-3
+P-dgx-su1-n28-PSU2,power,,,power,dgx-su1-n28,PSU2,dgx-su1-r14-pdu-a,C19-4
+P-dgx-su1-n28-PSU3,power,,,power,dgx-su1-n28,PSU3,dgx-su1-r14-pdu-b,C19-3
+P-dgx-su1-n28-PSU4,power,,,power,dgx-su1-n28,PSU4,dgx-su1-r14-pdu-b,C19-4
+P-dgx-su1-n28-PSU5,power,,,power,dgx-su1-n28,PSU5,dgx-su1-r14-pdu-c,C19-3
+P-dgx-su1-n28-PSU6,power,,,power,dgx-su1-n28,PSU6,dgx-su1-r14-pdu-c,C19-4
+P-dgx-su1-n29-PSU1,power,,,power,dgx-su1-n29,PSU1,dgx-su1-r15-pdu-a,C19-1
+P-dgx-su1-n29-PSU2,power,,,power,dgx-su1-n29,PSU2,dgx-su1-r15-pdu-a,C19-2
+P-dgx-su1-n29-PSU3,power,,,power,dgx-su1-n29,PSU3,dgx-su1-r15-pdu-b,C19-1
+P-dgx-su1-n29-PSU4,power,,,power,dgx-su1-n29,PSU4,dgx-su1-r15-pdu-b,C19-2
+P-dgx-su1-n29-PSU5,power,,,power,dgx-su1-n29,PSU5,dgx-su1-r15-pdu-c,C19-1
+P-dgx-su1-n29-PSU6,power,,,power,dgx-su1-n29,PSU6,dgx-su1-r15-pdu-c,C19-2
+P-dgx-su1-n30-PSU1,power,,,power,dgx-su1-n30,PSU1,dgx-su1-r15-pdu-a,C19-3
+P-dgx-su1-n30-PSU2,power,,,power,dgx-su1-n30,PSU2,dgx-su1-r15-pdu-a,C19-4
+P-dgx-su1-n30-PSU3,power,,,power,dgx-su1-n30,PSU3,dgx-su1-r15-pdu-b,C19-3
+P-dgx-su1-n30-PSU4,power,,,power,dgx-su1-n30,PSU4,dgx-su1-r15-pdu-b,C19-4
+P-dgx-su1-n30-PSU5,power,,,power,dgx-su1-n30,PSU5,dgx-su1-r15-pdu-c,C19-3
+P-dgx-su1-n30-PSU6,power,,,power,dgx-su1-n30,PSU6,dgx-su1-r15-pdu-c,C19-4
+P-dgx-su1-n31-PSU1,power,,,power,dgx-su1-n31,PSU1,dgx-su1-r16-pdu-a,C19-1
+P-dgx-su1-n31-PSU2,power,,,power,dgx-su1-n31,PSU2,dgx-su1-r16-pdu-a,C19-2
+P-dgx-su1-n31-PSU3,power,,,power,dgx-su1-n31,PSU3,dgx-su1-r16-pdu-b,C19-1
+P-dgx-su1-n31-PSU4,power,,,power,dgx-su1-n31,PSU4,dgx-su1-r16-pdu-b,C19-2
+P-dgx-su1-n31-PSU5,power,,,power,dgx-su1-n31,PSU5,dgx-su1-r16-pdu-c,C19-1
+P-dgx-su1-n31-PSU6,power,,,power,dgx-su1-n31,PSU6,dgx-su1-r16-pdu-c,C19-2
+P-dgx-su1-n32-PSU1,power,,,power,dgx-su1-n32,PSU1,dgx-su1-r16-pdu-a,C19-3
+P-dgx-su1-n32-PSU2,power,,,power,dgx-su1-n32,PSU2,dgx-su1-r16-pdu-a,C19-4
+P-dgx-su1-n32-PSU3,power,,,power,dgx-su1-n32,PSU3,dgx-su1-r16-pdu-b,C19-3
+P-dgx-su1-n32-PSU4,power,,,power,dgx-su1-n32,PSU4,dgx-su1-r16-pdu-b,C19-4
+P-dgx-su1-n32-PSU5,power,,,power,dgx-su1-n32,PSU5,dgx-su1-r16-pdu-c,C19-3
+P-dgx-su1-n32-PSU6,power,,,power,dgx-su1-n32,PSU6,dgx-su1-r16-pdu-c,C19-4
+P-dgx-su2-n01-PSU1,power,,,power,dgx-su2-n01,PSU1,dgx-su2-r01-pdu-a,C19-1
+P-dgx-su2-n01-PSU2,power,,,power,dgx-su2-n01,PSU2,dgx-su2-r01-pdu-a,C19-2
+P-dgx-su2-n01-PSU3,power,,,power,dgx-su2-n01,PSU3,dgx-su2-r01-pdu-b,C19-1
+P-dgx-su2-n01-PSU4,power,,,power,dgx-su2-n01,PSU4,dgx-su2-r01-pdu-b,C19-2
+P-dgx-su2-n01-PSU5,power,,,power,dgx-su2-n01,PSU5,dgx-su2-r01-pdu-c,C19-1
+P-dgx-su2-n01-PSU6,power,,,power,dgx-su2-n01,PSU6,dgx-su2-r01-pdu-c,C19-2
+P-dgx-su2-n02-PSU1,power,,,power,dgx-su2-n02,PSU1,dgx-su2-r01-pdu-a,C19-3
+P-dgx-su2-n02-PSU2,power,,,power,dgx-su2-n02,PSU2,dgx-su2-r01-pdu-a,C19-4
+P-dgx-su2-n02-PSU3,power,,,power,dgx-su2-n02,PSU3,dgx-su2-r01-pdu-b,C19-3
+P-dgx-su2-n02-PSU4,power,,,power,dgx-su2-n02,PSU4,dgx-su2-r01-pdu-b,C19-4
+P-dgx-su2-n02-PSU5,power,,,power,dgx-su2-n02,PSU5,dgx-su2-r01-pdu-c,C19-3
+P-dgx-su2-n02-PSU6,power,,,power,dgx-su2-n02,PSU6,dgx-su2-r01-pdu-c,C19-4
+P-dgx-su2-n03-PSU1,power,,,power,dgx-su2-n03,PSU1,dgx-su2-r02-pdu-a,C19-1
+P-dgx-su2-n03-PSU2,power,,,power,dgx-su2-n03,PSU2,dgx-su2-r02-pdu-a,C19-2
+P-dgx-su2-n03-PSU3,power,,,power,dgx-su2-n03,PSU3,dgx-su2-r02-pdu-b,C19-1
+P-dgx-su2-n03-PSU4,power,,,power,dgx-su2-n03,PSU4,dgx-su2-r02-pdu-b,C19-2
+P-dgx-su2-n03-PSU5,power,,,power,dgx-su2-n03,PSU5,dgx-su2-r02-pdu-c,C19-1
+P-dgx-su2-n03-PSU6,power,,,power,dgx-su2-n03,PSU6,dgx-su2-r02-pdu-c,C19-2
+P-dgx-su2-n04-PSU1,power,,,power,dgx-su2-n04,PSU1,dgx-su2-r02-pdu-a,C19-3
+P-dgx-su2-n04-PSU2,power,,,power,dgx-su2-n04,PSU2,dgx-su2-r02-pdu-a,C19-4
+P-dgx-su2-n04-PSU3,power,,,power,dgx-su2-n04,PSU3,dgx-su2-r02-pdu-b,C19-3
+P-dgx-su2-n04-PSU4,power,,,power,dgx-su2-n04,PSU4,dgx-su2-r02-pdu-b,C19-4
+P-dgx-su2-n04-PSU5,power,,,power,dgx-su2-n04,PSU5,dgx-su2-r02-pdu-c,C19-3
+P-dgx-su2-n04-PSU6,power,,,power,dgx-su2-n04,PSU6,dgx-su2-r02-pdu-c,C19-4
+P-dgx-su2-n05-PSU1,power,,,power,dgx-su2-n05,PSU1,dgx-su2-r03-pdu-a,C19-1
+P-dgx-su2-n05-PSU2,power,,,power,dgx-su2-n05,PSU2,dgx-su2-r03-pdu-a,C19-2
+P-dgx-su2-n05-PSU3,power,,,power,dgx-su2-n05,PSU3,dgx-su2-r03-pdu-b,C19-1
+P-dgx-su2-n05-PSU4,power,,,power,dgx-su2-n05,PSU4,dgx-su2-r03-pdu-b,C19-2
+P-dgx-su2-n05-PSU5,power,,,power,dgx-su2-n05,PSU5,dgx-su2-r03-pdu-c,C19-1
+P-dgx-su2-n05-PSU6,power,,,power,dgx-su2-n05,PSU6,dgx-su2-r03-pdu-c,C19-2
+P-dgx-su2-n06-PSU1,power,,,power,dgx-su2-n06,PSU1,dgx-su2-r03-pdu-a,C19-3
+P-dgx-su2-n06-PSU2,power,,,power,dgx-su2-n06,PSU2,dgx-su2-r03-pdu-a,C19-4
+P-dgx-su2-n06-PSU3,power,,,power,dgx-su2-n06,PSU3,dgx-su2-r03-pdu-b,C19-3
+P-dgx-su2-n06-PSU4,power,,,power,dgx-su2-n06,PSU4,dgx-su2-r03-pdu-b,C19-4
+P-dgx-su2-n06-PSU5,power,,,power,dgx-su2-n06,PSU5,dgx-su2-r03-pdu-c,C19-3
+P-dgx-su2-n06-PSU6,power,,,power,dgx-su2-n06,PSU6,dgx-su2-r03-pdu-c,C19-4
+P-dgx-su2-n07-PSU1,power,,,power,dgx-su2-n07,PSU1,dgx-su2-r04-pdu-a,C19-1
+P-dgx-su2-n07-PSU2,power,,,power,dgx-su2-n07,PSU2,dgx-su2-r04-pdu-a,C19-2
+P-dgx-su2-n07-PSU3,power,,,power,dgx-su2-n07,PSU3,dgx-su2-r04-pdu-b,C19-1
+P-dgx-su2-n07-PSU4,power,,,power,dgx-su2-n07,PSU4,dgx-su2-r04-pdu-b,C19-2
+P-dgx-su2-n07-PSU5,power,,,power,dgx-su2-n07,PSU5,dgx-su2-r04-pdu-c,C19-1
+P-dgx-su2-n07-PSU6,power,,,power,dgx-su2-n07,PSU6,dgx-su2-r04-pdu-c,C19-2
+P-dgx-su2-n08-PSU1,power,,,power,dgx-su2-n08,PSU1,dgx-su2-r04-pdu-a,C19-3
+P-dgx-su2-n08-PSU2,power,,,power,dgx-su2-n08,PSU2,dgx-su2-r04-pdu-a,C19-4
+P-dgx-su2-n08-PSU3,power,,,power,dgx-su2-n08,PSU3,dgx-su2-r04-pdu-b,C19-3
+P-dgx-su2-n08-PSU4,power,,,power,dgx-su2-n08,PSU4,dgx-su2-r04-pdu-b,C19-4
+P-dgx-su2-n08-PSU5,power,,,power,dgx-su2-n08,PSU5,dgx-su2-r04-pdu-c,C19-3
+P-dgx-su2-n08-PSU6,power,,,power,dgx-su2-n08,PSU6,dgx-su2-r04-pdu-c,C19-4
+P-dgx-su2-n09-PSU1,power,,,power,dgx-su2-n09,PSU1,dgx-su2-r05-pdu-a,C19-1
+P-dgx-su2-n09-PSU2,power,,,power,dgx-su2-n09,PSU2,dgx-su2-r05-pdu-a,C19-2
+P-dgx-su2-n09-PSU3,power,,,power,dgx-su2-n09,PSU3,dgx-su2-r05-pdu-b,C19-1
+P-dgx-su2-n09-PSU4,power,,,power,dgx-su2-n09,PSU4,dgx-su2-r05-pdu-b,C19-2
+P-dgx-su2-n09-PSU5,power,,,power,dgx-su2-n09,PSU5,dgx-su2-r05-pdu-c,C19-1
+P-dgx-su2-n09-PSU6,power,,,power,dgx-su2-n09,PSU6,dgx-su2-r05-pdu-c,C19-2
+P-dgx-su2-n10-PSU1,power,,,power,dgx-su2-n10,PSU1,dgx-su2-r05-pdu-a,C19-3
+P-dgx-su2-n10-PSU2,power,,,power,dgx-su2-n10,PSU2,dgx-su2-r05-pdu-a,C19-4
+P-dgx-su2-n10-PSU3,power,,,power,dgx-su2-n10,PSU3,dgx-su2-r05-pdu-b,C19-3
+P-dgx-su2-n10-PSU4,power,,,power,dgx-su2-n10,PSU4,dgx-su2-r05-pdu-b,C19-4
+P-dgx-su2-n10-PSU5,power,,,power,dgx-su2-n10,PSU5,dgx-su2-r05-pdu-c,C19-3
+P-dgx-su2-n10-PSU6,power,,,power,dgx-su2-n10,PSU6,dgx-su2-r05-pdu-c,C19-4
+P-dgx-su2-n11-PSU1,power,,,power,dgx-su2-n11,PSU1,dgx-su2-r06-pdu-a,C19-1
+P-dgx-su2-n11-PSU2,power,,,power,dgx-su2-n11,PSU2,dgx-su2-r06-pdu-a,C19-2
+P-dgx-su2-n11-PSU3,power,,,power,dgx-su2-n11,PSU3,dgx-su2-r06-pdu-b,C19-1
+P-dgx-su2-n11-PSU4,power,,,power,dgx-su2-n11,PSU4,dgx-su2-r06-pdu-b,C19-2
+P-dgx-su2-n11-PSU5,power,,,power,dgx-su2-n11,PSU5,dgx-su2-r06-pdu-c,C19-1
+P-dgx-su2-n11-PSU6,power,,,power,dgx-su2-n11,PSU6,dgx-su2-r06-pdu-c,C19-2
+P-dgx-su2-n12-PSU1,power,,,power,dgx-su2-n12,PSU1,dgx-su2-r06-pdu-a,C19-3
+P-dgx-su2-n12-PSU2,power,,,power,dgx-su2-n12,PSU2,dgx-su2-r06-pdu-a,C19-4
+P-dgx-su2-n12-PSU3,power,,,power,dgx-su2-n12,PSU3,dgx-su2-r06-pdu-b,C19-3
+P-dgx-su2-n12-PSU4,power,,,power,dgx-su2-n12,PSU4,dgx-su2-r06-pdu-b,C19-4
+P-dgx-su2-n12-PSU5,power,,,power,dgx-su2-n12,PSU5,dgx-su2-r06-pdu-c,C19-3
+P-dgx-su2-n12-PSU6,power,,,power,dgx-su2-n12,PSU6,dgx-su2-r06-pdu-c,C19-4
+P-dgx-su2-n13-PSU1,power,,,power,dgx-su2-n13,PSU1,dgx-su2-r07-pdu-a,C19-1
+P-dgx-su2-n13-PSU2,power,,,power,dgx-su2-n13,PSU2,dgx-su2-r07-pdu-a,C19-2
+P-dgx-su2-n13-PSU3,power,,,power,dgx-su2-n13,PSU3,dgx-su2-r07-pdu-b,C19-1
+P-dgx-su2-n13-PSU4,power,,,power,dgx-su2-n13,PSU4,dgx-su2-r07-pdu-b,C19-2
+P-dgx-su2-n13-PSU5,power,,,power,dgx-su2-n13,PSU5,dgx-su2-r07-pdu-c,C19-1
+P-dgx-su2-n13-PSU6,power,,,power,dgx-su2-n13,PSU6,dgx-su2-r07-pdu-c,C19-2
+P-dgx-su2-n14-PSU1,power,,,power,dgx-su2-n14,PSU1,dgx-su2-r07-pdu-a,C19-3
+P-dgx-su2-n14-PSU2,power,,,power,dgx-su2-n14,PSU2,dgx-su2-r07-pdu-a,C19-4
+P-dgx-su2-n14-PSU3,power,,,power,dgx-su2-n14,PSU3,dgx-su2-r07-pdu-b,C19-3
+P-dgx-su2-n14-PSU4,power,,,power,dgx-su2-n14,PSU4,dgx-su2-r07-pdu-b,C19-4
+P-dgx-su2-n14-PSU5,power,,,power,dgx-su2-n14,PSU5,dgx-su2-r07-pdu-c,C19-3
+P-dgx-su2-n14-PSU6,power,,,power,dgx-su2-n14,PSU6,dgx-su2-r07-pdu-c,C19-4
+P-dgx-su2-n15-PSU1,power,,,power,dgx-su2-n15,PSU1,dgx-su2-r08-pdu-a,C19-1
+P-dgx-su2-n15-PSU2,power,,,power,dgx-su2-n15,PSU2,dgx-su2-r08-pdu-a,C19-2
+P-dgx-su2-n15-PSU3,power,,,power,dgx-su2-n15,PSU3,dgx-su2-r08-pdu-b,C19-1
+P-dgx-su2-n15-PSU4,power,,,power,dgx-su2-n15,PSU4,dgx-su2-r08-pdu-b,C19-2
+P-dgx-su2-n15-PSU5,power,,,power,dgx-su2-n15,PSU5,dgx-su2-r08-pdu-c,C19-1
+P-dgx-su2-n15-PSU6,power,,,power,dgx-su2-n15,PSU6,dgx-su2-r08-pdu-c,C19-2
+P-dgx-su2-n16-PSU1,power,,,power,dgx-su2-n16,PSU1,dgx-su2-r08-pdu-a,C19-3
+P-dgx-su2-n16-PSU2,power,,,power,dgx-su2-n16,PSU2,dgx-su2-r08-pdu-a,C19-4
+P-dgx-su2-n16-PSU3,power,,,power,dgx-su2-n16,PSU3,dgx-su2-r08-pdu-b,C19-3
+P-dgx-su2-n16-PSU4,power,,,power,dgx-su2-n16,PSU4,dgx-su2-r08-pdu-b,C19-4
+P-dgx-su2-n16-PSU5,power,,,power,dgx-su2-n16,PSU5,dgx-su2-r08-pdu-c,C19-3
+P-dgx-su2-n16-PSU6,power,,,power,dgx-su2-n16,PSU6,dgx-su2-r08-pdu-c,C19-4
+P-dgx-su2-n17-PSU1,power,,,power,dgx-su2-n17,PSU1,dgx-su2-r09-pdu-a,C19-1
+P-dgx-su2-n17-PSU2,power,,,power,dgx-su2-n17,PSU2,dgx-su2-r09-pdu-a,C19-2
+P-dgx-su2-n17-PSU3,power,,,power,dgx-su2-n17,PSU3,dgx-su2-r09-pdu-b,C19-1
+P-dgx-su2-n17-PSU4,power,,,power,dgx-su2-n17,PSU4,dgx-su2-r09-pdu-b,C19-2
+P-dgx-su2-n17-PSU5,power,,,power,dgx-su2-n17,PSU5,dgx-su2-r09-pdu-c,C19-1
+P-dgx-su2-n17-PSU6,power,,,power,dgx-su2-n17,PSU6,dgx-su2-r09-pdu-c,C19-2
+P-dgx-su2-n18-PSU1,power,,,power,dgx-su2-n18,PSU1,dgx-su2-r09-pdu-a,C19-3
+P-dgx-su2-n18-PSU2,power,,,power,dgx-su2-n18,PSU2,dgx-su2-r09-pdu-a,C19-4
+P-dgx-su2-n18-PSU3,power,,,power,dgx-su2-n18,PSU3,dgx-su2-r09-pdu-b,C19-3
+P-dgx-su2-n18-PSU4,power,,,power,dgx-su2-n18,PSU4,dgx-su2-r09-pdu-b,C19-4
+P-dgx-su2-n18-PSU5,power,,,power,dgx-su2-n18,PSU5,dgx-su2-r09-pdu-c,C19-3
+P-dgx-su2-n18-PSU6,power,,,power,dgx-su2-n18,PSU6,dgx-su2-r09-pdu-c,C19-4
+P-dgx-su2-n19-PSU1,power,,,power,dgx-su2-n19,PSU1,dgx-su2-r10-pdu-a,C19-1
+P-dgx-su2-n19-PSU2,power,,,power,dgx-su2-n19,PSU2,dgx-su2-r10-pdu-a,C19-2
+P-dgx-su2-n19-PSU3,power,,,power,dgx-su2-n19,PSU3,dgx-su2-r10-pdu-b,C19-1
+P-dgx-su2-n19-PSU4,power,,,power,dgx-su2-n19,PSU4,dgx-su2-r10-pdu-b,C19-2
+P-dgx-su2-n19-PSU5,power,,,power,dgx-su2-n19,PSU5,dgx-su2-r10-pdu-c,C19-1
+P-dgx-su2-n19-PSU6,power,,,power,dgx-su2-n19,PSU6,dgx-su2-r10-pdu-c,C19-2
+P-dgx-su2-n20-PSU1,power,,,power,dgx-su2-n20,PSU1,dgx-su2-r10-pdu-a,C19-3
+P-dgx-su2-n20-PSU2,power,,,power,dgx-su2-n20,PSU2,dgx-su2-r10-pdu-a,C19-4
+P-dgx-su2-n20-PSU3,power,,,power,dgx-su2-n20,PSU3,dgx-su2-r10-pdu-b,C19-3
+P-dgx-su2-n20-PSU4,power,,,power,dgx-su2-n20,PSU4,dgx-su2-r10-pdu-b,C19-4
+P-dgx-su2-n20-PSU5,power,,,power,dgx-su2-n20,PSU5,dgx-su2-r10-pdu-c,C19-3
+P-dgx-su2-n20-PSU6,power,,,power,dgx-su2-n20,PSU6,dgx-su2-r10-pdu-c,C19-4
+P-dgx-su2-n21-PSU1,power,,,power,dgx-su2-n21,PSU1,dgx-su2-r11-pdu-a,C19-1
+P-dgx-su2-n21-PSU2,power,,,power,dgx-su2-n21,PSU2,dgx-su2-r11-pdu-a,C19-2
+P-dgx-su2-n21-PSU3,power,,,power,dgx-su2-n21,PSU3,dgx-su2-r11-pdu-b,C19-1
+P-dgx-su2-n21-PSU4,power,,,power,dgx-su2-n21,PSU4,dgx-su2-r11-pdu-b,C19-2
+P-dgx-su2-n21-PSU5,power,,,power,dgx-su2-n21,PSU5,dgx-su2-r11-pdu-c,C19-1
+P-dgx-su2-n21-PSU6,power,,,power,dgx-su2-n21,PSU6,dgx-su2-r11-pdu-c,C19-2
+P-dgx-su2-n22-PSU1,power,,,power,dgx-su2-n22,PSU1,dgx-su2-r11-pdu-a,C19-3
+P-dgx-su2-n22-PSU2,power,,,power,dgx-su2-n22,PSU2,dgx-su2-r11-pdu-a,C19-4
+P-dgx-su2-n22-PSU3,power,,,power,dgx-su2-n22,PSU3,dgx-su2-r11-pdu-b,C19-3
+P-dgx-su2-n22-PSU4,power,,,power,dgx-su2-n22,PSU4,dgx-su2-r11-pdu-b,C19-4
+P-dgx-su2-n22-PSU5,power,,,power,dgx-su2-n22,PSU5,dgx-su2-r11-pdu-c,C19-3
+P-dgx-su2-n22-PSU6,power,,,power,dgx-su2-n22,PSU6,dgx-su2-r11-pdu-c,C19-4
+P-dgx-su2-n23-PSU1,power,,,power,dgx-su2-n23,PSU1,dgx-su2-r12-pdu-a,C19-1
+P-dgx-su2-n23-PSU2,power,,,power,dgx-su2-n23,PSU2,dgx-su2-r12-pdu-a,C19-2
+P-dgx-su2-n23-PSU3,power,,,power,dgx-su2-n23,PSU3,dgx-su2-r12-pdu-b,C19-1
+P-dgx-su2-n23-PSU4,power,,,power,dgx-su2-n23,PSU4,dgx-su2-r12-pdu-b,C19-2
+P-dgx-su2-n23-PSU5,power,,,power,dgx-su2-n23,PSU5,dgx-su2-r12-pdu-c,C19-1
+P-dgx-su2-n23-PSU6,power,,,power,dgx-su2-n23,PSU6,dgx-su2-r12-pdu-c,C19-2
+P-dgx-su2-n24-PSU1,power,,,power,dgx-su2-n24,PSU1,dgx-su2-r12-pdu-a,C19-3
+P-dgx-su2-n24-PSU2,power,,,power,dgx-su2-n24,PSU2,dgx-su2-r12-pdu-a,C19-4
+P-dgx-su2-n24-PSU3,power,,,power,dgx-su2-n24,PSU3,dgx-su2-r12-pdu-b,C19-3
+P-dgx-su2-n24-PSU4,power,,,power,dgx-su2-n24,PSU4,dgx-su2-r12-pdu-b,C19-4
+P-dgx-su2-n24-PSU5,power,,,power,dgx-su2-n24,PSU5,dgx-su2-r12-pdu-c,C19-3
+P-dgx-su2-n24-PSU6,power,,,power,dgx-su2-n24,PSU6,dgx-su2-r12-pdu-c,C19-4
+P-dgx-su2-n25-PSU1,power,,,power,dgx-su2-n25,PSU1,dgx-su2-r13-pdu-a,C19-1
+P-dgx-su2-n25-PSU2,power,,,power,dgx-su2-n25,PSU2,dgx-su2-r13-pdu-a,C19-2
+P-dgx-su2-n25-PSU3,power,,,power,dgx-su2-n25,PSU3,dgx-su2-r13-pdu-b,C19-1
+P-dgx-su2-n25-PSU4,power,,,power,dgx-su2-n25,PSU4,dgx-su2-r13-pdu-b,C19-2
+P-dgx-su2-n25-PSU5,power,,,power,dgx-su2-n25,PSU5,dgx-su2-r13-pdu-c,C19-1
+P-dgx-su2-n25-PSU6,power,,,power,dgx-su2-n25,PSU6,dgx-su2-r13-pdu-c,C19-2
+P-dgx-su2-n26-PSU1,power,,,power,dgx-su2-n26,PSU1,dgx-su2-r13-pdu-a,C19-3
+P-dgx-su2-n26-PSU2,power,,,power,dgx-su2-n26,PSU2,dgx-su2-r13-pdu-a,C19-4
+P-dgx-su2-n26-PSU3,power,,,power,dgx-su2-n26,PSU3,dgx-su2-r13-pdu-b,C19-3
+P-dgx-su2-n26-PSU4,power,,,power,dgx-su2-n26,PSU4,dgx-su2-r13-pdu-b,C19-4
+P-dgx-su2-n26-PSU5,power,,,power,dgx-su2-n26,PSU5,dgx-su2-r13-pdu-c,C19-3
+P-dgx-su2-n26-PSU6,power,,,power,dgx-su2-n26,PSU6,dgx-su2-r13-pdu-c,C19-4
+P-dgx-su2-n27-PSU1,power,,,power,dgx-su2-n27,PSU1,dgx-su2-r14-pdu-a,C19-1
+P-dgx-su2-n27-PSU2,power,,,power,dgx-su2-n27,PSU2,dgx-su2-r14-pdu-a,C19-2
+P-dgx-su2-n27-PSU3,power,,,power,dgx-su2-n27,PSU3,dgx-su2-r14-pdu-b,C19-1
+P-dgx-su2-n27-PSU4,power,,,power,dgx-su2-n27,PSU4,dgx-su2-r14-pdu-b,C19-2
+P-dgx-su2-n27-PSU5,power,,,power,dgx-su2-n27,PSU5,dgx-su2-r14-pdu-c,C19-1
+P-dgx-su2-n27-PSU6,power,,,power,dgx-su2-n27,PSU6,dgx-su2-r14-pdu-c,C19-2
+P-dgx-su2-n28-PSU1,power,,,power,dgx-su2-n28,PSU1,dgx-su2-r14-pdu-a,C19-3
+P-dgx-su2-n28-PSU2,power,,,power,dgx-su2-n28,PSU2,dgx-su2-r14-pdu-a,C19-4
+P-dgx-su2-n28-PSU3,power,,,power,dgx-su2-n28,PSU3,dgx-su2-r14-pdu-b,C19-3
+P-dgx-su2-n28-PSU4,power,,,power,dgx-su2-n28,PSU4,dgx-su2-r14-pdu-b,C19-4
+P-dgx-su2-n28-PSU5,power,,,power,dgx-su2-n28,PSU5,dgx-su2-r14-pdu-c,C19-3
+P-dgx-su2-n28-PSU6,power,,,power,dgx-su2-n28,PSU6,dgx-su2-r14-pdu-c,C19-4
+P-dgx-su2-n29-PSU1,power,,,power,dgx-su2-n29,PSU1,dgx-su2-r15-pdu-a,C19-1
+P-dgx-su2-n29-PSU2,power,,,power,dgx-su2-n29,PSU2,dgx-su2-r15-pdu-a,C19-2
+P-dgx-su2-n29-PSU3,power,,,power,dgx-su2-n29,PSU3,dgx-su2-r15-pdu-b,C19-1
+P-dgx-su2-n29-PSU4,power,,,power,dgx-su2-n29,PSU4,dgx-su2-r15-pdu-b,C19-2
+P-dgx-su2-n29-PSU5,power,,,power,dgx-su2-n29,PSU5,dgx-su2-r15-pdu-c,C19-1
+P-dgx-su2-n29-PSU6,power,,,power,dgx-su2-n29,PSU6,dgx-su2-r15-pdu-c,C19-2
+P-dgx-su2-n30-PSU1,power,,,power,dgx-su2-n30,PSU1,dgx-su2-r15-pdu-a,C19-3
+P-dgx-su2-n30-PSU2,power,,,power,dgx-su2-n30,PSU2,dgx-su2-r15-pdu-a,C19-4
+P-dgx-su2-n30-PSU3,power,,,power,dgx-su2-n30,PSU3,dgx-su2-r15-pdu-b,C19-3
+P-dgx-su2-n30-PSU4,power,,,power,dgx-su2-n30,PSU4,dgx-su2-r15-pdu-b,C19-4
+P-dgx-su2-n30-PSU5,power,,,power,dgx-su2-n30,PSU5,dgx-su2-r15-pdu-c,C19-3
+P-dgx-su2-n30-PSU6,power,,,power,dgx-su2-n30,PSU6,dgx-su2-r15-pdu-c,C19-4
+P-dgx-su2-n31-PSU1,power,,,power,dgx-su2-n31,PSU1,dgx-su2-r16-pdu-a,C19-1
+P-dgx-su2-n31-PSU2,power,,,power,dgx-su2-n31,PSU2,dgx-su2-r16-pdu-a,C19-2
+P-dgx-su2-n31-PSU3,power,,,power,dgx-su2-n31,PSU3,dgx-su2-r16-pdu-b,C19-1
+P-dgx-su2-n31-PSU4,power,,,power,dgx-su2-n31,PSU4,dgx-su2-r16-pdu-b,C19-2
+P-dgx-su2-n31-PSU5,power,,,power,dgx-su2-n31,PSU5,dgx-su2-r16-pdu-c,C19-1
+P-dgx-su2-n31-PSU6,power,,,power,dgx-su2-n31,PSU6,dgx-su2-r16-pdu-c,C19-2
+P-ibc-spine-01-psu1,power,,,power,ibc-spine-01,psu1,mgmt-r01-pdu-a,Outlet 3
+P-ibc-spine-01-psu2,power,,,power,ibc-spine-01,psu2,mgmt-r01-pdu-b,Outlet 3
+P-ibc-spine-02-psu1,power,,,power,ibc-spine-02,psu1,mgmt-r01-pdu-a,Outlet 4
+P-ibc-spine-02-psu2,power,,,power,ibc-spine-02,psu2,mgmt-r01-pdu-b,Outlet 4
+P-ibc-spine-03-psu1,power,,,power,ibc-spine-03,psu1,mgmt-r01-pdu-a,Outlet 5
+P-ibc-spine-03-psu2,power,,,power,ibc-spine-03,psu2,mgmt-r01-pdu-b,Outlet 5
+P-ibc-spine-04-psu1,power,,,power,ibc-spine-04,psu1,mgmt-r01-pdu-a,Outlet 6
+P-ibc-spine-04-psu2,power,,,power,ibc-spine-04,psu2,mgmt-r01-pdu-b,Outlet 6
+P-ibc-spine-05-psu1,power,,,power,ibc-spine-05,psu1,mgmt-r02-pdu-a,Outlet 3
+P-ibc-spine-05-psu2,power,,,power,ibc-spine-05,psu2,mgmt-r02-pdu-b,Outlet 3
+P-ibc-spine-06-psu1,power,,,power,ibc-spine-06,psu1,mgmt-r02-pdu-a,Outlet 4
+P-ibc-spine-06-psu2,power,,,power,ibc-spine-06,psu2,mgmt-r02-pdu-b,Outlet 4
+P-ibc-spine-07-psu1,power,,,power,ibc-spine-07,psu1,mgmt-r02-pdu-a,Outlet 5
+P-ibc-spine-07-psu2,power,,,power,ibc-spine-07,psu2,mgmt-r02-pdu-b,Outlet 5
+P-ibc-spine-08-psu1,power,,,power,ibc-spine-08,psu1,mgmt-r02-pdu-a,Outlet 6
+P-ibc-spine-08-psu2,power,,,power,ibc-spine-08,psu2,mgmt-r02-pdu-b,Outlet 6
+P-ibc-su1-leaf-r1-psu1,power,,,power,ibc-su1-leaf-r1,psu1,mgmt-r01-pdu-a,Outlet 9
+P-ibc-su1-leaf-r1-psu2,power,,,power,ibc-su1-leaf-r1,psu2,mgmt-r01-pdu-b,Outlet 9
+P-ibc-su1-leaf-r2-psu1,power,,,power,ibc-su1-leaf-r2,psu1,mgmt-r01-pdu-a,Outlet 10
+P-ibc-su1-leaf-r2-psu2,power,,,power,ibc-su1-leaf-r2,psu2,mgmt-r01-pdu-b,Outlet 10
+P-ibc-su1-leaf-r3-psu1,power,,,power,ibc-su1-leaf-r3,psu1,mgmt-r01-pdu-a,Outlet 11
+P-ibc-su1-leaf-r3-psu2,power,,,power,ibc-su1-leaf-r3,psu2,mgmt-r01-pdu-b,Outlet 11
+P-ibc-su1-leaf-r4-psu1,power,,,power,ibc-su1-leaf-r4,psu1,mgmt-r01-pdu-a,Outlet 12
+P-ibc-su1-leaf-r4-psu2,power,,,power,ibc-su1-leaf-r4,psu2,mgmt-r01-pdu-b,Outlet 12
+P-ibc-su1-leaf-r5-psu1,power,,,power,ibc-su1-leaf-r5,psu1,mgmt-r01-pdu-a,Outlet 15
+P-ibc-su1-leaf-r5-psu2,power,,,power,ibc-su1-leaf-r5,psu2,mgmt-r01-pdu-b,Outlet 15
+P-ibc-su1-leaf-r6-psu1,power,,,power,ibc-su1-leaf-r6,psu1,mgmt-r01-pdu-a,Outlet 16
+P-ibc-su1-leaf-r6-psu2,power,,,power,ibc-su1-leaf-r6,psu2,mgmt-r01-pdu-b,Outlet 16
+P-ibc-su1-leaf-r7-psu1,power,,,power,ibc-su1-leaf-r7,psu1,mgmt-r01-pdu-a,Outlet 17
+P-ibc-su1-leaf-r7-psu2,power,,,power,ibc-su1-leaf-r7,psu2,mgmt-r01-pdu-b,Outlet 17
+P-ibc-su1-leaf-r8-psu1,power,,,power,ibc-su1-leaf-r8,psu1,mgmt-r01-pdu-a,Outlet 18
+P-ibc-su1-leaf-r8-psu2,power,,,power,ibc-su1-leaf-r8,psu2,mgmt-r01-pdu-b,Outlet 18
+P-ibc-su2-leaf-r1-psu1,power,,,power,ibc-su2-leaf-r1,psu1,mgmt-r02-pdu-a,Outlet 9
+P-ibc-su2-leaf-r1-psu2,power,,,power,ibc-su2-leaf-r1,psu2,mgmt-r02-pdu-b,Outlet 9
+P-ibc-su2-leaf-r2-psu1,power,,,power,ibc-su2-leaf-r2,psu1,mgmt-r02-pdu-a,Outlet 10
+P-ibc-su2-leaf-r2-psu2,power,,,power,ibc-su2-leaf-r2,psu2,mgmt-r02-pdu-b,Outlet 10
+P-ibc-su2-leaf-r3-psu1,power,,,power,ibc-su2-leaf-r3,psu1,mgmt-r02-pdu-a,Outlet 11
+P-ibc-su2-leaf-r3-psu2,power,,,power,ibc-su2-leaf-r3,psu2,mgmt-r02-pdu-b,Outlet 11
+P-ibc-su2-leaf-r4-psu1,power,,,power,ibc-su2-leaf-r4,psu1,mgmt-r02-pdu-a,Outlet 12
+P-ibc-su2-leaf-r4-psu2,power,,,power,ibc-su2-leaf-r4,psu2,mgmt-r02-pdu-b,Outlet 12
+P-ibc-su2-leaf-r5-psu1,power,,,power,ibc-su2-leaf-r5,psu1,mgmt-r02-pdu-a,Outlet 15
+P-ibc-su2-leaf-r5-psu2,power,,,power,ibc-su2-leaf-r5,psu2,mgmt-r02-pdu-b,Outlet 15
+P-ibc-su2-leaf-r6-psu1,power,,,power,ibc-su2-leaf-r6,psu1,mgmt-r02-pdu-a,Outlet 16
+P-ibc-su2-leaf-r6-psu2,power,,,power,ibc-su2-leaf-r6,psu2,mgmt-r02-pdu-b,Outlet 16
+P-ibc-su2-leaf-r7-psu1,power,,,power,ibc-su2-leaf-r7,psu1,mgmt-r02-pdu-a,Outlet 17
+P-ibc-su2-leaf-r7-psu2,power,,,power,ibc-su2-leaf-r7,psu2,mgmt-r02-pdu-b,Outlet 17
+P-ibc-su2-leaf-r8-psu1,power,,,power,ibc-su2-leaf-r8,psu1,mgmt-r02-pdu-a,Outlet 18
+P-ibc-su2-leaf-r8-psu2,power,,,power,ibc-su2-leaf-r8,psu2,mgmt-r02-pdu-b,Outlet 18
+P-ibs-leaf-01-psu1,power,,,power,ibs-leaf-01,psu1,mgmt-r04-pdu-a,Outlet 3
+P-ibs-leaf-01-psu2,power,,,power,ibs-leaf-01,psu2,mgmt-r04-pdu-b,Outlet 3
+P-ibs-leaf-02-psu1,power,,,power,ibs-leaf-02,psu1,mgmt-r04-pdu-a,Outlet 4
+P-ibs-leaf-02-psu2,power,,,power,ibs-leaf-02,psu2,mgmt-r04-pdu-b,Outlet 4
+P-ibs-leaf-03-psu1,power,,,power,ibs-leaf-03,psu1,mgmt-r04-pdu-a,Outlet 5
+P-ibs-leaf-03-psu2,power,,,power,ibs-leaf-03,psu2,mgmt-r04-pdu-b,Outlet 5
+P-ibs-leaf-04-psu1,power,,,power,ibs-leaf-04,psu1,mgmt-r04-pdu-a,Outlet 6
+P-ibs-leaf-04-psu2,power,,,power,ibs-leaf-04,psu2,mgmt-r04-pdu-b,Outlet 6
+P-ibs-leaf-05-psu1,power,,,power,ibs-leaf-05,psu1,mgmt-r04-pdu-a,Outlet 9
+P-ibs-leaf-05-psu2,power,,,power,ibs-leaf-05,psu2,mgmt-r04-pdu-b,Outlet 9
+P-ibs-spine-01-psu1,power,,,power,ibs-spine-01,psu1,mgmt-r04-pdu-a,Outlet 10
+P-ibs-spine-01-psu2,power,,,power,ibs-spine-01,psu2,mgmt-r04-pdu-b,Outlet 10
+P-ibs-spine-02-psu1,power,,,power,ibs-spine-02,psu1,mgmt-r04-pdu-a,Outlet 11
+P-ibs-spine-02-psu2,power,,,power,ibs-spine-02,psu2,mgmt-r04-pdu-b,Outlet 11
+P-inb-spine-01-psu0,power,,,power,inb-spine-01,psu0,mgmt-r03-pdu-a,Outlet 5
+P-inb-spine-01-psu1,power,,,power,inb-spine-01,psu1,mgmt-r03-pdu-b,Outlet 5
+P-inb-spine-02-psu0,power,,,power,inb-spine-02,psu0,mgmt-r03-pdu-a,Outlet 6
+P-inb-spine-02-psu1,power,,,power,inb-spine-02,psu1,mgmt-r03-pdu-b,Outlet 6
+P-inb-su1-leaf-a-psu0,power,,,power,inb-su1-leaf-a,psu0,mgmt-r03-pdu-a,Outlet 9
+P-inb-su1-leaf-a-psu1,power,,,power,inb-su1-leaf-a,psu1,mgmt-r03-pdu-b,Outlet 9
+P-inb-su1-leaf-b-psu0,power,,,power,inb-su1-leaf-b,psu0,mgmt-r03-pdu-a,Outlet 10
+P-inb-su1-leaf-b-psu1,power,,,power,inb-su1-leaf-b,psu1,mgmt-r03-pdu-b,Outlet 10
+P-inb-su2-leaf-a-psu0,power,,,power,inb-su2-leaf-a,psu0,mgmt-r03-pdu-a,Outlet 11
+P-inb-su2-leaf-a-psu1,power,,,power,inb-su2-leaf-a,psu1,mgmt-r03-pdu-b,Outlet 11
+P-inb-su2-leaf-b-psu0,power,,,power,inb-su2-leaf-b,psu0,mgmt-r03-pdu-a,Outlet 12
+P-inb-su2-leaf-b-psu1,power,,,power,inb-su2-leaf-b,psu1,mgmt-r03-pdu-b,Outlet 12
+P-oob-sw-01-psu1,power,,,power,oob-sw-01,psu1,mgmt-r04-pdu-a,Outlet 12
+P-oob-sw-01-psu2,power,,,power,oob-sw-01,psu2,mgmt-r04-pdu-b,Outlet 12
+P-oob-sw-02-psu1,power,,,power,oob-sw-02,psu1,mgmt-r04-pdu-a,Outlet 15
+P-oob-sw-02-psu2,power,,,power,oob-sw-02,psu2,mgmt-r04-pdu-b,Outlet 15
+P-oob-sw-03-psu1,power,,,power,oob-sw-03,psu1,mgmt-r04-pdu-a,Outlet 16
+P-oob-sw-03-psu2,power,,,power,oob-sw-03,psu2,mgmt-r04-pdu-b,Outlet 16
+P-oob-sw-04-psu1,power,,,power,oob-sw-04,psu1,mgmt-r04-pdu-a,Outlet 17
+P-oob-sw-04-psu2,power,,,power,oob-sw-04,psu2,mgmt-r04-pdu-b,Outlet 17
+P-oob-sw-05-psu1,power,,,power,oob-sw-05,psu1,mgmt-r04-pdu-a,Outlet 18
+P-oob-sw-05-psu2,power,,,power,oob-sw-05,psu2,mgmt-r04-pdu-b,Outlet 18
+P-oob-sw-06-psu1,power,,,power,oob-sw-06,psu1,mgmt-r04-pdu-a,Outlet 21
+P-oob-sw-06-psu2,power,,,power,oob-sw-06,psu2,mgmt-r04-pdu-b,Outlet 21
+P-slurm-ctl-01-psu1,power,,,power,slurm-ctl-01,psu1,mgmt-r03-pdu-a,Outlet 15
+P-slurm-ctl-01-psu2,power,,,power,slurm-ctl-01,psu2,mgmt-r03-pdu-b,Outlet 15
+P-slurm-login-01-psu1,power,,,power,slurm-login-01,psu1,mgmt-r03-pdu-a,Outlet 16
+P-slurm-login-01-psu2,power,,,power,slurm-login-01,psu2,mgmt-r03-pdu-b,Outlet 16
+P-slurm-login-02-psu1,power,,,power,slurm-login-02,psu1,mgmt-r03-pdu-a,Outlet 17
+P-slurm-login-02-psu2,power,,,power,slurm-login-02,psu2,mgmt-r03-pdu-b,Outlet 17
+P-ufm-c-01-psu1,power,,,power,ufm-c-01,psu1,mgmt-r01-pdu-a,Outlet 21
+P-ufm-c-01-psu2,power,,,power,ufm-c-01,psu2,mgmt-r01-pdu-b,Outlet 21
+P-ufm-c-02-psu1,power,,,power,ufm-c-02,psu1,mgmt-r02-pdu-a,Outlet 21
+P-ufm-c-02-psu2,power,,,power,ufm-c-02,psu2,mgmt-r02-pdu-b,Outlet 21
+P-ufm-s-01-psu1,power,,,power,ufm-s-01,psu1,mgmt-r04-pdu-a,Outlet 22
+P-ufm-s-01-psu2,power,,,power,ufm-s-01,psu2,mgmt-r04-pdu-b,Outlet 22
+P-ufm-s-02-psu1,power,,,power,ufm-s-02,psu1,mgmt-r04-pdu-a,Outlet 23
+P-ufm-s-02-psu2,power,,,power,ufm-s-02,psu2,mgmt-r04-pdu-b,Outlet 23
+P-vast-be-a-psu0,power,,,power,vast-be-a,psu0,stor-r02-pdu-a,Outlet 3
+P-vast-be-a-psu1,power,,,power,vast-be-a,psu1,stor-r02-pdu-b,Outlet 3
+P-vast-be-b-psu0,power,,,power,vast-be-b,psu0,stor-r02-pdu-a,Outlet 4
+P-vast-be-b-psu1,power,,,power,vast-be-b,psu1,stor-r02-pdu-b,Outlet 4
+P-vast-cbox-01-psu1,power,,,power,vast-cbox-01,psu1,stor-r02-pdu-a,Outlet 5
+P-vast-cbox-01-psu2,power,,,power,vast-cbox-01,psu2,stor-r02-pdu-b,Outlet 5
+P-vast-cbox-02-psu1,power,,,power,vast-cbox-02,psu1,stor-r02-pdu-a,Outlet 6
+P-vast-cbox-02-psu2,power,,,power,vast-cbox-02,psu2,stor-r02-pdu-b,Outlet 6
+P-vast-cbox-03-psu1,power,,,power,vast-cbox-03,psu1,stor-r02-pdu-a,Outlet 9
+P-vast-cbox-03-psu2,power,,,power,vast-cbox-03,psu2,stor-r02-pdu-b,Outlet 9
+P-vast-cbox-04-psu1,power,,,power,vast-cbox-04,psu1,stor-r02-pdu-a,Outlet 10
+P-vast-cbox-04-psu2,power,,,power,vast-cbox-04,psu2,stor-r02-pdu-b,Outlet 10
+P-vast-cbox-05-psu1,power,,,power,vast-cbox-05,psu1,stor-r02-pdu-a,Outlet 11
+P-vast-cbox-05-psu2,power,,,power,vast-cbox-05,psu2,stor-r02-pdu-b,Outlet 11
+P-vast-dbox-01-psu1,power,,,power,vast-dbox-01,psu1,stor-r02-pdu-a,Outlet 12
+P-vast-dbox-01-psu2,power,,,power,vast-dbox-01,psu2,stor-r02-pdu-b,Outlet 12
+P-vast-dbox-02-psu1,power,,,power,vast-dbox-02,psu1,stor-r02-pdu-a,Outlet 15
+P-vast-dbox-02-psu2,power,,,power,vast-dbox-02,psu2,stor-r02-pdu-b,Outlet 15
+P-vast-dbox-03-psu1,power,,,power,vast-dbox-03,psu1,stor-r02-pdu-a,Outlet 16
+P-vast-dbox-03-psu2,power,,,power,vast-dbox-03,psu2,stor-r02-pdu-b,Outlet 16
+P-vast-dbox-04-psu1,power,,,power,vast-dbox-04,psu1,stor-r02-pdu-a,Outlet 17
+P-vast-dbox-04-psu2,power,,,power,vast-dbox-04,psu2,stor-r02-pdu-b,Outlet 17

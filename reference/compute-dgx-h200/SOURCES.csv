@@ -1,0 +1,13 @@
+path,url,publisher,kind,terms,retrieved
+media/dgx-h100-h200-front-with-bezel.png,https://docs.nvidia.com/dgx/dgxh100-user-guide/_images/dgx-h100-with-bezel.png,NVIDIA,diagram,vendor marketing material — internal reference only,2026-09-30
+media/dgx-h100-h200-front-bezel-removed.png,https://docs.nvidia.com/dgx/dgxh100-user-guide/_images/dgx-h100-front-view.png,NVIDIA,diagram,vendor marketing material — internal reference only,2026-09-30
+media/dgx-h100-h200-rear-panel-modules.png,https://docs.nvidia.com/dgx/dgxh100-user-guide/_images/dgx-h100-rear-panel-modules.png,NVIDIA,diagram,vendor marketing material — internal reference only,2026-09-30
+media/dgx-h100-h200-rear-network-ports.png,https://docs.nvidia.com/dgx/dgxh100-user-guide/_images/dgx-h100-port-view.png,NVIDIA,diagram,vendor marketing material — internal reference only,2026-09-30
+media/dgx-h100-h200-motherboard-tray-components.png,https://docs.nvidia.com/dgx/dgxh100-user-guide/_images/dgx-h100-mb-tray-comp.png,NVIDIA,diagram,vendor marketing material — internal reference only,2026-09-30
+media/dgx-h100-h200-gpu-tray-components.png,https://docs.nvidia.com/dgx/dgxh100-user-guide/_images/dgx-h100-gpu-tray.png,NVIDIA,diagram,vendor marketing material — internal reference only,2026-09-30
+media/dgx-h100-h200-storage-network-diagram.png,https://docs.nvidia.com/dgx/dgxh100-user-guide/_images/dgx-h100-storage-nw.png,NVIDIA,diagram,vendor marketing material — internal reference only,2026-09-30
+media/dgx-h100-h200-network-modules.png,https://docs.nvidia.com/dgx/dgxh100-user-guide/_images/network-modules-2.png,NVIDIA,diagram,vendor marketing material — internal reference only,2026-09-30
+media/dgx-h100-h200-system-topology.png,https://docs.nvidia.com/dgx/dgxh100-user-guide/_images/dgx-h100-system-topology.png,NVIDIA,diagram,vendor marketing material — internal reference only,2026-09-30
+media/nvidia-dgx-bezel-metal-foam-texture.jpg,https://www.nvidia.com/content/dam/en-zz/Solutions/data-center/dgx-platform/73466-dgx-platform-og.jpg,NVIDIA,photo,vendor marketing material — internal reference only,2026-09-30
+media/dgx-h200-datasheet-megware-mirror.pdf,https://www.megware.com/fileadmin/user_upload/LandingPage%20NVIDIA/NVIDIA_DGX_H200_Datasheet.pdf,NVIDIA (mirrored by MEGWARE),pdf,vendor marketing material — internal reference only,2026-09-30
+media/dgx-superpod-h200-ra-11336-001.pdf,https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-h200/latest/_downloads/bbd08041e98eb913619944ead1f92373/RA-11336-001-DSPH200-ReferenceArch.pdf,NVIDIA,pdf,vendor marketing material — internal reference only,2026-09-30

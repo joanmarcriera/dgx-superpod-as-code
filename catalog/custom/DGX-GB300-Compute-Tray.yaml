@@ -1,0 +1,26 @@
+# NVIDIA DGX GB300 compute tray (one of 18 per NVL72 rack) — custom, not in the library.
+# Source: DGX SuperPOD GB300 RA (docs.nvidia.com/pdf/dgx-spod-gb300-ra.pdf), "Compute Tray"
+# + Fig. 3 front panel: 2x GB300 Superchip (4x B300 GPU, 2x Grace), "four ConnectX-8 NICs
+# ... (800Gbps)" = 4 "Compute XDR OSFP", one BlueField-3 BF3240 "2x400Gbps" ("Bluefield
+# QSFP" x2), RJ45 "BMC", "Bluefield BMC" and "LOM NIC". Rear: liquid, DC busbar, NVLink
+# blind-mate (Fig. 4). Port NAMES are ours (the RA labels functions, not netdev names).
+# NVL1..9 = NVLink cartridge links to the 9 switch trays (each GPU has 1 link to each of the
+# 18 NVLink chips, RA "NVLink Switch Tray"; one NetBox link per tray pair).
+# CHOICE (not in RA): 1U; DC busbar draw 7,000 W allocated per tray.
+manufacturer: Nvidia
+model: DGX GB300 Compute Tray
+slug: nvidia-dgx-gb300-compute-tray
+u_height: 1
+is_full_depth: true
+airflow: front-to-rear
+comments: 4x B300 + 2x Grace. Custom definition — see catalog/custom/README.md.
+interfaces:
+  - {name: "CX8-{1..4}", label: "Compute XDR OSFP (rail)", type: 800gbase-x-osfp}
+  - {name: BF3-P1, label: "BlueField-3 p1 (storage 400G)", type: 400gbase-x-qsfp112}
+  - {name: BF3-P2, label: "BlueField-3 p2 (in-band)", type: 400gbase-x-qsfp112}
+  - {name: BMC, type: 1000base-t, mgmt_only: true}
+  - {name: BF3-BMC, label: "BlueField BMC", type: 1000base-t, mgmt_only: true}
+  - {name: LOM, label: "LOM NIC", type: 1000base-t, mgmt_only: true}
+  - {name: "NVL{1..9}", label: "NVLink to switch tray", type: other}
+power-ports:
+  - {name: DC-IN, label: "48 V busbar", type: dc-terminal, allocated_draw: 7000}

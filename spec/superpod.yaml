@@ -1,0 +1,131 @@
+# DGX SuperPOD design spec — the source of truth. Numbers cite docs/ra-notes.md rows.
+# Scale by changing `compute.sus` (1–4) or `compute.gpu_gen` (h100|h200); everything
+# else is derived by src/dgxnb/topology.py. B200/GB200 need a new RA (not modelled).
+
+name: dgx-superpod-512
+tag: dgx-superpod-512
+description: 2-SU NVIDIA DGX SuperPOD (RA-11336-001 V2, DGX H200), modelled as IaC
+
+tenancy:
+  group: clients
+  tenant: dgx-design
+  tenant_name: DGX Design
+
+site:
+  region: dgx-lab               # fictional
+  region_name: DGX Lab
+  slug: dgx-lab-01
+  name: DGX Lab 01
+  location: hall-1
+  location_name: Data Hall 1
+
+compute:
+  gpu_gen: h200                 # device type: nvidia-dgx-<gen>
+  sus: 2                        # RA Table 4 supports 1–4 in a two-tier fabric
+  nodes_per_su: 32              # RA "SUs of 32 DGX H200 systems" (1.1)
+  gpus_per_node: 8              # RA Table 1 (1.2)
+  ufm_displaced_nodes: 1        # RA Table 4 footnote 1: one DGX per pod (1.4)
+  rails: 8                      # 8x NDR400 per node, rail-optimised (2.1)
+
+storage:                        # tier 1 — parallel FS on the storage IB fabric
+  appliance_type: ddn-ai400x2t  # CHOICE: DDN AI400X2T, NVIDIA-certified for Hopper SuperPOD
+  appliance_prefix: ddn         #   (docs/design-choices.md §Storage)
+  hps_appliances: 4             # CHOICE: 4 × ≥90 R / 65 W GB/s (DDN H100 RA) ≥ NVIDIA "Best"
+                                #   for 2 SU (250 R / 124 W GB/s, RA Table 5.2 ×2)
+  hps_ports_per_switch_port: 2  # NDR 400G -> 2x200G splitter (3.9)
+  hps_switch_ports: 4           # 8 × NDR200 per AI400X2T (DDN H100 RA) = 4 splitters
+  rack: stor-r01
+  dgx_leaf_downlinks: 32        # per DGX-facing storage leaf
+  dgx_leaf_uplinks: 24          # 32:24 = 4:3 (3.3)
+
+nas:                            # tier 2 — VAST Data on Ethernet (NFS/S3), RA "NFS" on in-band
+  cbox: 5                       # CHOICE: VAST NCP RA "Better" 4-SU (10 CBox + 8 DBox) halved
+  dbox: 4                       #   to 2 SU (docs/design-choices.md §Storage)
+  backend_switches: 2           # VAST's private NVMe-oF pair (SN4600C, CHOICE)
+  rack: stor-r02
+
+inband:
+  leaves_per_su: 2              # one MLAG pair per SU (4.6)
+  spines: 2                     # RA Fig. 3 "In-Band Spines" (4.5)
+  leaf_uplinks_per_spine: 2
+  isl_per_pair: 2               # RA Table 8: 6 ISL = 3 pairs x 2 (4.5)
+  dc_uplinks: 12                # RA H200 Table 8: 4 CWDM4 + 8 "Core DC" (4.4)
+
+oob:
+  ports_per_switch: 48          # SN2201 48x RJ45 (5.1)
+  uplinks_per_switch: 2         # "Two uplinks per OOB to in-band" (5.4)
+
+mgmt_servers:                   # RA H200 Table 7: 5 management servers (6.4); roles = CHOICE
+  - bcm-head-01
+  - bcm-head-02
+  - slurm-ctl-01
+  - slurm-login-01
+  - slurm-login-02
+
+ufm:                            # RA Table 7: 4 appliances; 2 per fabric (6.2)
+  compute: [ufm-c-01, ufm-c-02]
+  storage: [ufm-s-01, ufm-s-02]
+
+racks:
+  u_height: 48                  # DCG §4: >= 48U, 600 x 1200 mm (8.8)
+  width_mm: 600
+  depth_mm: 1200
+  dgx_per_rack: 2               # derived from the budget below; RA H200 Fig. 2 (8.1)
+  dgx_positions: [3, 14]        # DCG §4.8: start at RU3, 3U gap between systems
+  budget_kw_dgx_rack: 25        # RA H200 Fig. 2 "exceeds 25 kW" -> design cap
+  budget_kw_mgmt_rack: 21.8     # 2N: one 415 V/32 A/3φ circuit carries all (8.3)
+  mgmt_racks: 4                 # DCG §1.4: two per SU (8.5)
+  storage_racks: [stor-r01, stor-r02]   # CHOICE: DDN rack, VAST rack (2N like mgmt racks)
+
+# Data-hall layout — CHOICE (the RA/DCG give no 2-SU hall plan); see docs/design-choices.md.
+# One row per SU, back to back around one contained hot aisle; each SU's leaf rack sits
+# mid-row so node->leaf runs stay short. Used by the floor plan and the Blender scene.
+hall:
+  cold_aisle_mm: 1220           # DCG: cold aisle ≥ 1,219 mm (reference/facility)
+  hot_aisle_mm: 1200            # DCG: aisles ≥ 914 mm
+  note: "Air-cooled H200 (no CDU): hot-aisle containment with end doors and roof panels, cold supply from CRAH/fan walls at the row ends; overhead Starline busway per power path (A/B/C), ladder rack and yellow fibre raceway above each row."
+  rows:
+    - name: A                   # SU 1
+      front: up                 # front doors face the upper cold aisle
+      racks: [dgx-su1-r01, dgx-su1-r02, dgx-su1-r03, dgx-su1-r04, dgx-su1-r05, dgx-su1-r06, dgx-su1-r07, dgx-su1-r08, mgmt-r01, mgmt-r03, stor-r01, dgx-su1-r09, dgx-su1-r10, dgx-su1-r11, dgx-su1-r12, dgx-su1-r13, dgx-su1-r14, dgx-su1-r15, dgx-su1-r16]
+    - name: B                   # SU 2
+      front: down
+      racks: [dgx-su2-r01, dgx-su2-r02, dgx-su2-r03, dgx-su2-r04, dgx-su2-r05, dgx-su2-r06, dgx-su2-r07, dgx-su2-r08, mgmt-r02, mgmt-r04, stor-r02, dgx-su2-r09, dgx-su2-r10, dgx-su2-r11, dgx-su2-r12, dgx-su2-r13, dgx-su2-r14, dgx-su2-r15, dgx-su2-r16]
+
+power:
+  panels: [A, B, C]             # three discrete sources (8.4)
+  voltage: 415
+  amperage: 32
+  phase: three-phase
+  max_utilization: 100          # DCG Table 8: 32 A rows at 100 % derating
+  pdus_per_dgx_rack: 3          # each rPDU feeds 2 of 6 PSUs (8.4)
+  dgx_pdu_type: raritan-px3-5878i2r-3u   # RA Table 7 part; horizontal 3U (-Q1 sibling), 18 C19 + 6 C13
+  dgx_pdu_positions: [40, 43, 46]        # 3 x 3U = 9U at the top (RU40-48); DGX stay at RU3/RU14 (DCG §4.8)
+  pdus_per_mgmt_rack: 2
+
+ipam:                           # 10.200.0.0/14 — avoids common private ranges
+  container: 10.200.0.0/14      # global container covering the four VRF blocks
+  inband: {vrf: dgx-inband, prefix: 10.200.0.0/22, vlan: 100}
+  oob:
+    vrf: dgx-oob
+    prefix: 10.201.0.0/22
+    vlan: 200
+    ranges: {bmc: 10.201.0.0/24, netdev: 10.201.1.0/24, pdu: 10.201.2.0/24}
+  ib_compute: {vrf: dgx-ib-compute, prefix: 10.202.0.0/22}   # one /25 per rail
+  ib_storage: {vrf: dgx-ib-storage, prefix: 10.203.0.0/23}
+
+# Render / cabling colours — CHOICE. NVIDIA prescribes no per-fabric colours: jackets are
+# what the parts ship in (LinkX: aqua multimode, black DAC, yellow single-mode — see
+# reference/network/README.md §7); fabrics are told apart by cable-tie/label colour, as the
+# NVIDIA cabling guide recommends, using the same palette as the draw.io pages.
+render:
+  fabric_colours:               # {jacket, tie} per fabric (hex)
+    compute:     {jacket: "#00A7B5", tie: rail}      # tie = rail colour (drawio.RAIL)
+    storage:     {jacket: "#00A7B5", tie: "#9467BD"}
+    inband:      {jacket: "#00A7B5", tie: "#FF7F0E"}
+    storage-eth: {jacket: "#00A7B5", tie: "#9467BD"}
+    oob:         {jacket: "#9CA3AF", tie: "#8C564B"} # Cat5e (RA Table 8)
+    mgmt:        {jacket: "#111111", tie: "#E377C2"} # UFM back-to-back DAC
+  dc_uplink_jacket: "#F5C400"                         # single-mode, to the DC core
+  power_feed_colours: {A: "#C62828", B: "#1565C0", C: "#2E7D32"}   # A red / B blue (OCP convention), C green (no standard; CHOICE)
+  mpo_apc_shell: "#3DAE2B"

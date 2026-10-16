@@ -1,0 +1,304 @@
+# Device library for the Blender build — physical envelope, look and references per
+# device-type slug used in docs/scene.json. Curated from reference/<pack>/README.md
+# ("Blender modelling notes"). Dimensions are mm as W × H × D (depth front-to-back).
+# Colours marked "est" are visual estimates from vendor figures, not vendor specs.
+# `refs` paths are relative to reference/ (media is local-only; rebuild with fetch.py).
+
+rack:                                   # APC NetShelter SX AR3307B2 (AR3307 successor)
+  size: [600, 2258, 1200]
+  u1_from_floor: 100                    # = spec racks.rack_u0_mm default; plinth/casters
+  rails: {width_in: 19, colour: "#9A9DA0"}
+  body: {colour: "#1B1B1D", finish: matt powder coat, roughness: 0.5}
+  doors: none                           # DCG: doors not recommended; side panels ON
+  blanking_panels: {colour: "#1B1B1D", everywhere_empty: true}
+  refs: [facility/media/nvidia-dcg-h100-fig12-cabinet-dimensions.png,
+         facility/media/commons-datacenter-server-racks-row.jpg]
+  notes: facility/README.md "Blender modelling notes"
+
+nvidia-dgx-h200:                        # 8U, 130.45 kg
+  size: [482.3, 356, 897.1]
+  front: >
+    Champagne/tan ears and bezel frame (#B5A58A est); recessed metal-foam face
+    (#6B5636 with #CDBFA5 highlights, reads dark olive-bronze) spanning x 0.06–0.95;
+    tall rounded NVIDIA logo pad at x 0.075–0.22 (logo rotated 90°; OMIT the logo on
+    published renders unless approved); power/UID/fault LEDs on the right ear at y 0.21/0.27/0.325.
+  rear: >
+    Top 60 %: GPU tray with light-silver hex-perforated exhaust grille (#D4D6D8).
+    y 0.60–0.86: motherboard tray — 4 twin-port OSFP cages in one row at x 0.37–0.61
+    (flat-top MMA4Z00-NS-FLT transceivers, 2 aqua fibres each), dual-port QSFP112 cards
+    left (x 0.02–0.31) and right (x 0.62–0.90), BMC RJ45 at x 0.38 on the bottom strip.
+    Bottom row y 0.875–0.995: 6 PSUs across the width, black C20 inlets, yellow-green
+    release tabs (#B5D335).
+  leds: {power: green, uid: blue, fault: amber}
+  refs: [compute-dgx-h200/media/dgx-h100-h200-front-with-bezel.png,
+         compute-dgx-h200/media/dgx-h100-h200-front-bezel-removed.png,
+         compute-dgx-h200/media/dgx-h100-h200-rear-panel-modules.png,
+         compute-dgx-h200/media/nvidia-dgx-bezel-metal-foam-texture.jpg]
+  notes: compute-dgx-h200/README.md "Blender modelling notes" (fractions ±0.02)
+
+nvidia-qm9700:                          # Quantum-2 NDR IB, 1U, 64 × 400G in 32 OSFP cages
+  size: [438, 43.6, 660]
+  front: "Black bezel (#1A1A1A est); two rows of 16 OSFP cages (#3A3F44); finned-top twin OSFP transceivers with 2 aqua MPO fibres each in used cages."
+  rear: "PSU at each end (C14, blue latch), 7 fan modules between with tan pull labels (#C8A400 est); airflow dots blue (-F, P2C)."
+  refs: [network/media/qm9700-doc-img1.png, network/media/qm9700-doc-img4.png]
+  notes: network/README.md §1
+
+mellanox-sn4600c:                       # Spectrum 100GbE, 2U, 64 × QSFP28
+  size: [428, 88, 566]
+  front: "Black perforated bezel (#15171A est); 2 rows of 16 double-stacked QSFP28 blocks; MGT/console RJ45 far right; small status LEDs left."
+  rear: "PSU each end, 3 large fan modules with blue latches (#2B44C8 est)."
+  refs: [network/media/sn4600c-doc-front.png, network/media/sn4600c-doc-rear.png]
+  notes: network/README.md §2 (also used for the VAST backend pair)
+
+nvidia-sn2201:                          # 1GbE OOB, 1U, 48 × RJ45 + 4 × QSFP28 (Cat5e, grey)
+  size: [428, 43.9, 432]
+  front: "Dark grey (#2B2F33 est); 48 RJ45 in 2 rows; 4 QSFP28 uplinks right."
+  refs: [network/media/sn2201-doc-front.png, network/media/sn2201-doc-rear.png]
+
+nvidia-ufm-appliance-3-1:               # UFM Enterprise Appliance 3.1 (MUA960B), 1U
+  size: [482, 42.8, 809]
+  front: "Black 1U server chassis with silver edge (#1C1C1E est), drive bays, status LEDs."
+  refs: [network/media/ufm-ent-appliance-front.png]
+  notes: "Rear image not found — model a generic 1U server rear with 2 ConnectX-7 OSFP cards."
+
+dell-poweredge-r750:                    # BCM head nodes / Slurm, 2U
+  size: [482, 86.8, 758]                # Dell spec values, NOT in the reference packs — verify
+  front: "Black bezel with Dell honeycomb grille, 2.5\" drive bays behind."
+  notes: "Not researched in depth; keep it plain."
+
+ddn-ai400x2t:                           # tier-1 storage, 2U
+  size: [446, 87, 856]                  # AI400X3 envelope (X2T not published) — same chassis family
+  front: >
+    Glossy black sculpted bezel (#141414 est) with elongated oval cut-outs filled with
+    amber perforated mesh (#C98A1E est); the last, larger oval holds a white "ddn" logo
+    plate (omit on published renders unless approved). Steel ears (#8C8F93) with side vents.
+  refs: [storage/media/ddn-ai400x3-series-product.png]
+  notes: storage/README.md "Blender modelling notes — DDN"
+
+vast-cbox:                              # tier-2 storage, 2U, 4 CNodes
+  size: [440, 87, 800]                  # CHOICE — CBox dimensions NOT FOUND
+  front: "Generic 2U 4-node server: 4 node sleds, black, small status LEDs."
+  notes: "No image found; keep generic and plain."
+
+vast-dbox-df3015v2:                     # tier-2 storage, 1U Ceres, 338 TB raw
+  size: [438, 43.5, 900]
+  front: "Left ear, 11 vertical E1.L bays (#0B0B0B), central 3-fan module (#555A5F) with yellow LEDs (#E6D800), 11 more bays, right ear (#9A9A9A)."
+  rear: "Two BF-3 canisters with salmon handles (#E8A8A0), 2 QSFP112 each; PSUs at the outer ends."
+  refs: [storage/media/vast-ceres-v2-front.png, storage/media/vast-ceres-v2-rear.png,
+         storage/media/vast-ceres-v2-dimensions.png]
+
+raritan-px3-5730-v2:                    # 0U vertical rPDU at the rear (model: PX3-5747V-V2 envelope)
+  size: [109, 1780, 80]                 # W × H(length) × D
+  colour: "#141414"
+  cord_tags: {A: "#C62828", B: "#1565C0", C: "#2E7D32"}
+  inlet: "IEC 60309 3P+N+E, red (#C8102E) for 400/415 V"
+  refs: [facility/media/raritan-px3-5747v-v2-spec-p1.jpg]
+
+raritan-px3-5878i2r-3u:                 # 3U HORIZONTAL rPDU, DGX racks (RA Table 7; sibling -Q1 is 3U)
+  # Real unit: 19" x 3U horizontal (model unpublished). Blender still draws it as the vertical
+  # 0U stand-in below (layout.py only supports rear-0U PDUs) -- known gap, scene.py.
+  size: [109, 1780, 80]
+  colour: "#141414"
+  cord_tags: {A: "#C62828", B: "#1565C0", C: "#2E7D32"}
+  inlet: "IEC 60309 3P+N+E, red (#C8102E) for 400/415 V"
+  refs: [facility/media/raritan-px3-5747v-v2-spec-p1.jpg]
+
+hall:
+  floor: {colour: "#8C8F94", texture: brand-and-3d/media/textures/polyhaven_concrete_floor_painted}
+  hot_aisle_containment: {panels: "#DFE6EA", alpha: 0.3, frame: "#1B1B1D", end_doors: true, roof: true}
+  busway: {type: Starline T5, section_mm: [111, 128], colour: "#B8BCC0", count_per_row: 3}
+  fibre_raceway: {section_mm: [167, 113], colour: "#F2C200"}
+  ladder_rack: {colour: "#1B1B1D"}
+  crah: "Fan walls at both ends of the cold aisles (dimensions NOT FOUND; block 2.2 m high)."
+  hdri: brand-and-3d/media/hdri/empty_warehouse_01_2k.hdr
+  lighting: "Cool white LED linear fixtures above the cold aisles (5000 K), dim hot aisle."
+
+# ---------------------------------------------------------------------------------------
+# GB300 NVL72 pod (reference/compute-dgx-gb300/README.md "Blender modelling notes"). Tray and
+# shelf sizes are Lenovo's for the same MGX family: NVIDIA publishes none for DGX-branded trays.
+
+nvl72_rack:                             # NVIDIA MGX / ORV3-derived 48 RU rack, GB200/GB300 NVL72
+  size: [600, 2236, 1068]               # LUG p.6, HC25, Cheval agree; Lenovo LP says 2294 H (unexplained)
+  rear_extension_frame_depth: 132       # bolt-on; overall depth 1200 with it
+  u1_from_floor: NOT FOUND              # base/plinth height not published; ~4 RU of blank filler sit below the lower shelves
+  rails: {width_in: 19, pitch_mm: 44.45, ru: 48, colour: "#9A9DA0"}   # 19" EIA full-length rails on an OCP ORV3 frame (NOT 21" OU)
+  body: {colour: "#1E1E20", finish: satin black powder coat, roughness: 0.5}   # est
+  doors: none                           # side panels + black rear "bezel" (cable-management fingers); seismic-bracing wedge plinth
+  elevation_top_down: >
+    ~2 RU blank; 2 x SN2201 (champagne shroud); 4 x power shelf; 10 x compute tray; 9 x NVLink switch
+    tray; 8 x compute tray; leakage drip pan; 4 x power shelf; ~4 RU blank filler.
+    27 RU of trays contiguous (NVIDIA figure + Hot Chips 2025 + Lenovo LUG Fig 11 agree). Absolute U numbers NOT FOUND.
+  busbar: {count: 1, rating: "1400 A / 50 V DC", x_frac_from_rear: 0.50, width_mm: "~36 (est from LUG Fig 12)", depth_mm: NOT FOUND, colour: "#2A2A2C"}
+  manifolds: >
+    2 vertical blind-mate, stainless per Lenovo spec (black in NVIDIA renders); from the rear the LEFT
+    one is return/hot (x ~0.11), the RIGHT one supply/cold (x ~0.885) (inferred from tray QD sides); bottom-feed
+    puts 4 large FD83 hose connectors at y 0.84-0.97. Pipe diameter NOT FOUND.
+  cable_cartridges: "4 vertical, two each side of the busbar, spanning the 27 RU tray block (x 0.12-0.88, y 0.24-0.76 of rack height)"
+  weight_kg: {structure: 185, full_solution: "~1580 (Lenovo, dry/wet NOT stated)"}
+  refs: [compute-dgx-gb300/media/nvidia-dgx-gb300-rack-front-elevation.png,
+         compute-dgx-gb300/media/nvidia-dgx-gb300-rack-rear-exploded.png,
+         compute-dgx-gb300/media/nvidia-blog-gb200-nvl72-ocp-submission-highlights.png,
+         compute-dgx-gb300/media/cheval-orv3-mgx-rack-with-132mm-extension.png,
+         compute-dgx-gb300/media/nvidia-hotchips2025-norton-gb200-gb300-case-study.pdf,
+         compute-dgx-gb300/media/lenovo-gb300-nvl72-user-guide.pdf]
+  notes: compute-dgx-gb300/README.md "Rack" table + "Rack rear"
+
+nvidia-dgx-gb300-compute-tray:          # 1U, 4 x B300 + 2 x Grace, liquid + air cooled, 29 kg
+  size: [438, 43.6, 766]                # 483 W across the EIA flanges/handles; 799 D including rear QDs (Lenovo)
+  front: >
+    Champagne-bronze faceplate (#85765C est, highlights #B5A58A) with bent-loop handle at each end (x 0-0.075 and
+    0.935-1.0). Left square-hole module: 2 XDR OSFP cages x 0.103-0.150 / 0.193-0.240 (y 0.62-0.875) + in-band RJ45
+    x 0.272-0.308. E1.S block x 0.347-0.590 (8 slots, 4 pairs). Front-IO board x 0.60-0.66 (BMC RJ45 x 0.602-0.629,
+    USB, DP, LEDs). Right BlueField module x 0.669-0.93: BF BMC RJ45 x 0.715-0.751 + 2 QSFP x 0.785-0.868 (y 0.13-0.38),
+    2 XDR OSFP x 0.700-0.746 / 0.788-0.834 (y 0.62-0.87). 4 OSFP cages are black, empty in the render.
+  rear: >
+    Light-silver plate (#D4D6D8). Seen from the rear: coolant OUTLET QD far left (x 0.04, ~20 mm round, y 0.37);
+    4 blind-mate NVLink blocks x 0.095-0.234, 0.262-0.408, 0.579-0.727, 0.751-0.900 (black housings, y 0.15-0.87);
+    DC busbar clip at centre x 0.458-0.524 (full height); coolant INLET QD far right (x 0.96).
+  leds: {power: green, uid: blue, fault: amber, nvlink_health: green}
+  weight_kg: 29
+  refs: [compute-dgx-gb300/media/nvidia-dgx-gb300-compute-tray-front.png,
+         compute-dgx-gb300/media/nvidia-dgx-gb300-compute-tray-iso.png,
+         compute-dgx-gb300/media/nvidia-dgx-gb300-compute-tray-top.png,
+         compute-dgx-gb300/media/nvidia-dgx-spod-gb300-ra.pdf,
+         compute-dgx-gb300/media/lenovo-gb300-nvl72-product-guide-lp2357.pdf]
+  notes: "compute-dgx-gb300/README.md 'Compute tray front / rear'. NVIDIA DGX-branded mm dimensions NOT FOUND (Lenovo 7DLZ values)."
+
+nvidia-dgx-gb300-nvlink-switch-tray:    # 1U, 2 x NVLink switch chips, fully liquid-cooled, 17 kg, NO front data ports
+  size: [438, 43.6, 770]                # 483 W across handles
+  front: >
+    Same champagne faceplate (#85765C est) and handles (x 0-0.058 / 0.94-1.0). Left module only: power/reset/ID LEDs
+    at x 0.085/0.105/0.127 (y ~0.25), status + 4 NVLink LEDs x 0.154-0.186, USB-A x 0.278-0.305; RJ45 row y 0.57-0.85:
+    console x 0.081-0.114, BMC x 0.127-0.163, ComE1 x 0.175-0.212, ComE0 x 0.225-0.261, leak-detect x 0.275-0.309.
+    Right 60 % (x 0.332-0.935) is a blank champagne panel with a pull tab at x ~0.93, y 0.28-0.75.
+  rear: >
+    Same as the compute tray: return QD left, 2 + 2 blind-mate cartridge connector blocks, busbar clip centre,
+    supply QD right (Lenovo LUG Fig 8). Top view shows a silver lid, hot outlet top-left, cold inlet bottom-left.
+  leds: {power: green, status: green/amber, nvlink_health: green}
+  weight_kg: 17
+  refs: [compute-dgx-gb300/media/nvidia-dgx-spod-gb300-ra.pdf,
+         compute-dgx-gb300/media/nvidia-dgx-gb300-nvlink-switch-tray-top.png,
+         compute-dgx-gb300/media/lenovo-gb300-nvl72-user-guide.pdf]
+  notes: "compute-dgx-gb300/README.md 'NVLink switch tray front'. RA Fig 6 (PDF p.11) is the only front view; no DGX mm dimensions (Lenovo 7DJY)."
+
+nvidia-dgx-gb300-power-shelf:           # 1U, 6 x 5.5 kW = 33 kW, 50 V DC to the busbar; 8 per DGX rack (4 top, 4 bottom)
+  size: [448, 43.6, 718.5]              # Lenovo LP p.36 (same as facility/README.md §6); weight NOT FOUND
+  front: >
+    All black (#2E2E2E est). Ears x 0-0.06 and 0.95-1.0. PMC board x 0.06-0.10 with one RJ45 (x 0.069-0.092, y 0.29-0.64)
+    and a red reset pin (x 0.085, y 0.79). Six PSU modules at x centres 0.169, 0.308, 0.448, 0.589, 0.73, 0.876,
+    each ~0.135 wide, round fan behind square-hole mesh, two green LEDs top-left, black pull handle on the right edge.
+  rear: >
+    Seen from the rear: 7-pin AC whip connector x 0.17-0.31; 50 V busbar connector centre x 0.46-0.52; 2 stacked
+    RJ45 (daisy-chain / current sharing) x 0.86-0.89.
+  leds: {psu_power: green, psu_health: green/amber, pmc: green/amber}
+  refs: [compute-dgx-gb300/media/nvidia-dgx-gb-power-shelf-front.png,
+         compute-dgx-gb300/media/lenovo-gb300-nvl72-user-guide.pdf,
+         facility/media/lenovo-gb300-nvl72-rack-front-p6.jpg]
+  notes: "compute-dgx-gb300/README.md 'Power shelf'. Weight NOT FOUND."
+
+nvidia-q3400-rd:                        # Quantum-X800 144 x 800G XDR (72 twin OSFP cages), 4U, DC/busbar powered (= Q3401-RD, inferred)
+  size: [438, 175, 852]                 # Q3401-RD 175 x 438 x 852, 57.2 kg; Q3400-RA is 177.8 x 438 x 850, 60 kg
+  front: >
+    Black faceplate (#202121 est in the RA figure; light gold #DBBC93 in the newer doc render). 3 groups x 4 cage-columns
+    at x 0.145-0.361 / 0.396-0.611 / 0.646-0.861; 3 tiers x 2 rows at y 0.087-0.169 & 0.192-0.272, 0.411-0.498 & 0.517-0.603,
+    0.741-0.820 & 0.843-0.922 = 72 twin-port cages; square-hole vent bands between tiers. Single FNM (UFM) OSFP at
+    x 0.052-0.107, y 0.85-0.93; USB-A + console + 2 RJ45 bottom-right x 0.89-0.96, y 0.79-0.92.
+  rear: >
+    RD: 8 black fan modules (2 rows x 4; x 0.013-0.20, 0.21-0.395, 0.61-0.79, 0.805-0.99) with teal LEDs, centre block
+    x 0.40-0.60 with one DC busbar connector (x 0.47-0.53, y 0.16-0.39). No PSUs. (RA variant: 4 PSUs each end + 10 fans.)
+  airflow: "spec says 'Reverse air flow'; direction NOT FOUND"
+  power: {max_w: 6327, dc: "48-54 V", typical_w: NOT FOUND}
+  noise_dba: 78.4
+  weight_kg: 57.2
+  refs: [compute-dgx-gb300/media/nvidia-q3401-rd-front.png,
+         compute-dgx-gb300/media/nvidia-q3401-rd-rear.png,
+         compute-dgx-gb300/media/nvidia-q3400-ra-front.png,
+         compute-dgx-gb300/media/nvidia-q3400-ra-rear.png,
+         compute-dgx-gb300/media/nvidia-dgx-spod-gb300-ra.pdf]
+  notes: "compute-dgx-gb300/README.md 'Q3400-RD'. RA prints 'Q3400-RD' (Fig 10, PDF p.21) but NVIDIA's hardware manual names the DC part Q3401-RD."
+
+nvidia-sn5600:                          # Spectrum-4, 2U, 64 x 800G OSFP + 1 SFP28; the RA names the DC variant SN5600D
+  size: [438, 88, 781]                  # SN5600D 88 x 438 x 781 (853 with busbar plug), 18.5 kg; AC SN5600 is 720 D (745 with fan levers), 23.5 kg
+  front: >
+    Black perforated faceplate (#202121 est; champagne end ears #857A60 in the RA figure). 4 groups x 4 cell-columns
+    at x 0.05-0.273 / 0.28-0.495 / 0.503-0.715 / 0.7225-0.9375; two cell rows y 0.17-0.52 and 0.59-0.92, each cell =
+    2 stacked OSFP cages (16 x 2 x 2 = 64). SFP28 #65 x 0.01-0.05, y 0.59-0.70; USB-A x 0.945; 2 stacked RJ45 (MGT,
+    console) x 0.96-0.99, y 0.35-0.65; LED/button cluster top-right.
+  rear: >
+    D: 4 black fan modules (x 0.022-0.208, 0.218-0.39, 0.59-0.77, 0.78-0.965), centre panel x 0.41-0.59 with one DC busbar
+    plug (x 0.46-0.54, y 0.01-0.47). AC SN5600: PSU at each end (C20-style inlet, green LED) + 4 fans with champagne pull bars.
+  power: {dc: "48 V (40-60)", typical_w: 940, max_w: NOT FOUND}
+  weight_kg: 18.5
+  noise_dba: NOT FOUND
+  airflow: NOT FOUND
+  refs: [compute-dgx-gb300/media/nvidia-sn5600d-front.png,
+         compute-dgx-gb300/media/nvidia-sn5600d-rear.png,
+         compute-dgx-gb300/media/nvidia-sn5600-front.png,
+         compute-dgx-gb300/media/nvidia-sn5600-rear.png]
+  notes: "compute-dgx-gb300/README.md 'SN5600 / SN5600D'. Replaces mellanox-sn4600c-style 2U entries for the 800G leaves."
+
+# ---------------------------------------------------------------------------------------
+# Cooling (reference/cooling-schneider/README.md §6 "Blender modelling notes"). Vendor
+# dimensions are cited there; anything a datasheet does not give is NOT FOUND + the estimate.
+
+motivair-chilleddoor-m8-48u-600:        # active RDHx on every row-A and gb-mgmt rack (spec cooling.loops.rdhx)
+  size: [600, 2258, 363]                # W = rack width; D = "Depth 14.3" in (CD25); H NOT FOUND -> assumed = rack height
+  mount: rear-door                      # replaces the rack's rear door on an interface frame (IOM); hinged, closed in the render
+  hinge: "physical side NOT FOUND (IOM: hose cut-out on the hinged side). CHOICE: hinge on the LEFT seen from the rear, latch + stainless control strip on the right"
+  swing_deg: 95                         # CD25 "95-degree door swing" (IOM: 0-90)
+  fans: {count: 5, layout: "vertical column behind the mesh", max_w: 840}
+  coil: "aluminium-finned copper, full-face behind a perforated mesh; blue LED glow inside (normal), red = alarm (CRAY p.4)"
+  hoses: {bore_in: 1, connections: top, colour: "#111111", coupling: "#B0B4B8"}   # MOT hoses page; top feed (QS)
+  body: {colour: "#151517", finish: matt powder coat, roughness: 0.5}                # est
+  control_strip: {colour: "#B9BCC0", width_frac: 0.25, hmi: "#101012"}             # brushed stainless door on the latch side (est)
+  weight_kg: NOT FOUND
+  refs: [cooling-schneider/media/motivair-chilleddoor-render.jpg,
+         cooling-schneider/media/motivair-chilleddoor-brochure-se-2025.pdf,
+         cooling-schneider/media/motivair-chilleddoor-hoses.png]
+
+nvidia-nvl72-coolant-manifold:          # the NVL72 rack's own rear supply/return manifolds (2 vertical strips) + QDs
+  size: [600, 1900, 60]                 # strips ~1900 H (est, GB300 pack "Manifolds"); pipe diameter NOT FOUND -> 60 mm est
+  mount: rear-manifold
+  strips: {left_frac: 0.11, right_frac: 0.885, note: "from the rear: LEFT = return/hot, RIGHT = supply/cold (inferred from tray QD sides)"}
+  hose_connections: "4 x FD83 (2 per manifold), top-feed here (spec); knob centres at x ~0.36 / ~0.64 of the rack width"
+  colour: "#B8BCC0"                     # stainless per the Lenovo spec (NVIDIA renders show black #1E1E20) — CHOICE: stainless
+  qd: {per_tray: 2, colour: "#C9CCD0"}
+  refs: [compute-dgx-gb300/media/lenovo-gb300-nvl72-user-guide.pdf, compute-dgx-gb300/media/nvidia-dgx-gb300-rack-rear-exploded.png]
+
+motivair-mcdu-40:                       # RDHx-loop CDU (2 x, N+1)
+  size: [914, 2045, 1565]               # "Width" 36 in = front face, "Length" 61-5/8 in read as depth (CDU26; inference noted in the pack)
+  body: {colour: "#0D0D10", finish: satin powder coat}           # est
+  front: "Touch HMI at chest height, chrome rotary handle (#C8C8C8), dotted blue LED lattice graphic, louvred plinth vent"
+  connections: {size_in: 4, position: top}                       # "top or bottom" (CDU26); top here (overhead headers)
+  weight_kg: NOT FOUND
+  refs: [cooling-schneider/media/motivair-mcdu-floor-render.jpg, cooling-schneider/media/motivair-cdu-brochure-2026.pdf]
+
+motivair-mcdu-45:                       # DLC-loop CDU (2 x, N+1)
+  size: [915, 2330, 1220]               # 36.02 W x 91.73 H x 48.03 L in (CDU26)
+  body: {colour: "#0D0D10", finish: satin powder coat}
+  front: "as MCDU-40"
+  connections: {size_in: 3, position: top}
+  weight_kg: NOT FOUND
+  refs: [cooling-schneider/media/motivair-mcdu-floor-render.jpg, cooling-schneider/media/motivair-cdu-brochure-2026.pdf]
+
+uniflair-bcef-0903a:                    # plant module (3 x, N+1), outside the hall wall
+  size: [2200, 2531, 10720]             # W x H x D: the 10720 mm length (UNI21 'Lenght') runs along the hall wall (= spec plant.depth_mm); 14 EC fans on the roof
+  body: {colour: "#D6D6D2", finish: epoxy powder paint}          # photo reads light grey; BREF spec says RAL 9022 — est
+  roof_fans: {count: 14, layout: "2 x 7 along the length", colour: "#1A1A1A"}
+  coils: "V-shaped coil banks along both flanks (free-cooling coils + condenser)"
+  weight_kg: NOT FOUND
+  refs: [cooling-schneider/media/uniflair-free-cooling-chiller.jpg, cooling-schneider/media/uniflair-chillers-catalog-2021.pdf]
+
+uniflair-hdcv-4600a-ht:                 # perimeter CRAH for the NVL72 residual air (2 x, N+1)
+  size: [2570, 2510, 865]               # L x H x D (ROOM p.41)
+  body: {colour: "#F4F4F0", finish: "RAL 9003 epoxy-polyester"}
+  front: "Full-height panels, 7 in touch display top-left; underfloor fans (modelled as a bottom grille + front supply grille)"
+  weight_kg: NOT FOUND
+  refs: [cooling-schneider/media/uniflair-room-cooling-catalog.pdf]
+
+generic-coolant-header:                 # overhead supply/return mains per row and loop (stand-in; NetBox has no pipe)
+  pipe: {dn: 125, od_mm: 139.7, insulation_mm: 30, colour: "#D9D9D6"}    # DN125 CHOICE (<= 1.5 m/s); jacketed insulation, est
+  bands: "colour bands + flow arrows every 3 m per spec cooling.colours (see docs/design-choices.md for the standard used)"
+  branch: {valve: "isolation ball valve, lever handle, per port (MOT manifold page)", hose_bore_in: 1}
+  drip_tray: "aluminium drip pan under each branch (MOT manifold page: 'aluminum drip pan')"
+  refs: [cooling-schneider/media/motivair-chilleddoor-underfloor-manifold.png]

@@ -1,0 +1,557 @@
+{
+ "gen": "B300",
+ "variant": "Quantum-X800 XDR InfiniBand compute fabric, AC power (standard EIA racks/PDUs)",
+ "ra": {
+  "title": "NVIDIA SuperPOD with DGX B300 Systems, NVIDIA Quantum-X800 InfiniBand switching and AC Power Reference Architecture",
+  "doc_id": "RA-11339-001 V01",
+  "version": "V01",
+  "date": "2025-07-23",
+  "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/index.html"
+ },
+ "system": {
+  "name": "DGX B300",
+  "gpus_per_system": 8,
+  "gpu": "NVIDIA B300 Blackwell Ultra (8x)",
+  "gpu_memory_total_gb": 2304,
+  "u_height": 10,
+  "max_power_kw": 14.5,
+  "cooling": "air",
+  "psus": "12 x 3.2 kW AC PSUs, 200-240 VAC, 12 AC inlets (16 A each)",
+  "weight_kg": 168,
+  "compute_nics": {
+   "count": 8,
+   "speed_gbps": 800,
+   "type": "NVIDIA ConnectX-8 (8 x OSFP, 800 Gb/s IB/Ethernet; 2 OSFP cages x 4 ports on rear tray)"
+  },
+  "storage_inband_nics": "2 x dual-port NVIDIA BlueField-3 DPU (B3240), 400 Gb/s; each DPU has 1 in-band mgmt QSFP + 1 storage QSFP (=2 storage + 2 in-band ports/system)",
+  "bmc": "BMC 1 GbE RJ-45 (Redfish/IPMI/KVM); plus host LAN 1GbE RJ-45 and BMC ports on each BlueField (XDR RA: both BF3 BMCs to OOB)"
+ },
+ "su": {
+  "systems_per_su": 72,
+  "note_on_ufm_displacement": "RA: 'UFM 3.5 nodes are connected to four (4) FNM ports on the Q3400 switches' (Fig 7 shows C-UFM 1/2 cabled to Leaf-08-0x). No statement that UFM displaces DGX node ports; 72-node SU maps to 72 downlinks per leaf.",
+  "systems_per_rack": 4,
+  "racks_per_su": 18,
+  "rack_power_kw": 56,
+  "mgmt_racks": "Fig 3 (1 SU mgmt equipment, 8 racks wide): 4 Q3400 spine, 8 Q3400 leaf, 10 SN2201 OOB, 4 DGX storage leaf, 4 DGX storage spine, 2 inband leaf, 2 inband spine, 2 UFM, 7 Mission Control nodes, 8 storage appliances. Table 7 (8 SU): 144 DGX racks + 48 switch/mgmt racks, 19in standard AC (Legrand NVIDPD13 or equiv)"
+ },
+ "compute_fabric": {
+  "tech": "NVIDIA Quantum-X800 XDR 800 Gbps InfiniBand, rail-optimized full fat-tree, 2-layer (no core); 1 x 800G XDR per NIC, spine uplinks 2 x 800G shown in Fig 7",
+  "switch_model": "NVIDIA Quantum-X800 Q3400-RA - P/N 920-9B36F-00RX-8S0 (AC)",
+  "switch_ports": null,
+  "rails": 8,
+  "leaves_per_su": 8,
+  "su_table": [
+   {
+    "sus": 1,
+    "nodes": 72,
+    "gpus": 576,
+    "leaves": 8,
+    "spines": 4,
+    "core": null,
+    "node_leaf_cables": 576,
+    "leaf_spine_cables": 576,
+    "spine_core_cables": null
+   },
+   {
+    "sus": 2,
+    "nodes": 144,
+    "gpus": 1152,
+    "leaves": 16,
+    "spines": 8,
+    "core": null,
+    "node_leaf_cables": 1152,
+    "leaf_spine_cables": 1152,
+    "spine_core_cables": null
+   },
+   {
+    "sus": 4,
+    "nodes": 288,
+    "gpus": 2304,
+    "leaves": 32,
+    "spines": 18,
+    "core": null,
+    "node_leaf_cables": 2304,
+    "leaf_spine_cables": 2304,
+    "spine_core_cables": null
+   },
+   {
+    "sus": 8,
+    "nodes": 576,
+    "gpus": 4608,
+    "leaves": 64,
+    "spines": 36,
+    "core": null,
+    "node_leaf_cables": 4608,
+    "leaf_spine_cables": 4608,
+    "spine_core_cables": null
+   },
+   {
+    "sus": 18,
+    "nodes": 1296,
+    "gpus": 9216,
+    "leaves": 144,
+    "spines": 72,
+    "core": null,
+    "node_leaf_cables": 10368,
+    "leaf_spine_cables": 10368,
+    "spine_core_cables": null
+   }
+  ],
+  "oversubscription": "Non-blocking fat-tree implied; not numerically stated"
+ },
+ "storage_fabric": {
+  "tech": "InfiniBand NDR 400G (MQM9700/9701) or Ethernet RoCE (SN5610/SN5600D); per-node I/O must exceed 80 GBps (per SU for Ethernet wording)",
+  "switch_model": "IB: MQM9700-NS2R (AC)/MQM9701-NS2R (DC); Eth: SN5610 (AC)/SN5600D (DC)",
+  "counts": "8-SU/576-node Table 7: Eth storage: 16 DGX-side leaf + 4 storage-side leaf + 12 spine SN5610; IB storage: 16 DGX-side leaf + 8 storage-side leaf + 8 spine NDR (920-9B210-00FN-0M0)",
+  "ports_per_system": 2,
+  "ratio": "Storage devices 1:1 port:uplink; DGX connections oversubscribed near 4:3"
+ },
+ "inband": {
+  "tech": "Ethernet, VXLAN/EVPN segmented",
+  "switch_model": "NVIDIA SN5610 (AC)",
+  "counts": "8-SU Table 7: 6 inband leaf + 2 inband spine",
+  "ports_per_system": 2,
+  "speed": "400G BF3 ports (1152 x 400G transceivers for BF3240 over 576 nodes = 2 storage + 2 inband per node); RA text: 200 Gbps bonded"
+ },
+ "oob": {
+  "switch_model": "NVIDIA SN2201",
+  "counts": "8-SU Table 7: 69 x SN2201; 3290 RJ45 Cat6; 138 x 100G DR1"
+ },
+ "mgmt_plane": {
+  "ufm": "2 x UFM 3.5 appliances (C-UFM 1/2) on four FNM ports of Q3400 switches; manage IB storage and compute fabric",
+  "bcm_or_mgmt_nodes": "NVIDIA Mission Control (incl. BCM + Run:ai): BCM HA 2 nodes, K8s mgmt 3 nodes, Slurm login 2 nodes = 7 AC-powered x86 control nodes (Dell validated)",
+  "other": "Customer edge/user storage: NFS 100-400 GbE with 100G SerDes required"
+ },
+ "major_components_table": [
+  {
+   "count": 576,
+   "component": "DGX B300 (AC)",
+   "model": "DGXB300-AC",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 144,
+   "component": "19in standard AC rack, AIE, for DGX nodes",
+   "model": "Legrand NVIDPD13 or equivalent",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 48,
+   "component": "19in standard AC rack for switches and management",
+   "model": "Legrand NVIDPD13 or equivalent",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 432,
+   "component": "DGX rPDU for standard rack",
+   "model": "Raritan PX3-5091R-P1Q2R1A5 or equiv",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 96,
+   "component": "Mgmt vertical PDU",
+   "model": "Raritan PX3-5747V-V2 or equiv",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 7,
+   "component": "AC x86 control nodes for Mission Control",
+   "model": "Dell validated control plane nodes",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 64,
+   "component": "IB XDR Q3400-RA compute leafs AC",
+   "model": "920-9B36F-00RX-8S0",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 36,
+   "component": "IB XDR Q3400-RA compute spines AC",
+   "model": "920-9B36F-00RX-8S0",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 16,
+   "component": "SP4 SN5610 Eth storage leafs DGX side",
+   "model": "920-9N42F-00RI-3C1",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 4,
+   "component": "SP4 SN5610 Eth storage leafs storage side",
+   "model": "920-9N42F-00RI-3C1",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 12,
+   "component": "SP4 SN5610 Eth storage spines",
+   "model": "920-9N42F-00RI-3C1",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 16,
+   "component": "NDR IB storage leaf DGX side",
+   "model": "920-9B210-00FN-0M0",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 8,
+   "component": "NDR IB storage leaf storage side",
+   "model": "920-9B210-00FN-0M0",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 8,
+   "component": "NDR IB storage spines",
+   "model": "920-9B210-00FN-0M0",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 2,
+   "component": "UFM appliance 3.5",
+   "model": "920-9B020-00RA-0D0",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 6,
+   "component": "SP4 SN5610 Inband leafs",
+   "model": "920-9N42F-00RI-3C1",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 2,
+   "component": "SP4 SN5610 Inband spines",
+   "model": "920-9N42F-00RI-3C1",
+   "config_size": "8 SU"
+  },
+  {
+   "count": 69,
+   "component": "SN2201 (OOB)",
+   "model": "920-9N110-00R1-0C0",
+   "config_size": "8 SU"
+  }
+ ],
+ "cables_table": [
+  {
+   "count": 4608,
+   "component": "Transceivers on DGX (compute)",
+   "connection": "DGX-side",
+   "model": "980-9IATO-00XM00"
+  },
+  {
+   "count": 2034,
+   "component": "Twin port OSFP transceivers",
+   "connection": "Compute leaf <-> DGX",
+   "model": "980-9IAH1-00XM00"
+  },
+  {
+   "count": 4608,
+   "component": "Twin port OSFP transceivers",
+   "connection": "Compute leaf <-> spine",
+   "model": "980-9IAH1-00XM00"
+  },
+  {
+   "count": 4608,
+   "component": "DGX-Leaf cable (compute)",
+   "connection": "DGX to compute leaf",
+   "model": "980-9I570-00N030"
+  },
+  {
+   "count": 4608,
+   "component": "Leaf-Spine cable (compute)",
+   "connection": "compute leaf to spine",
+   "model": "980-9I570-00N030"
+  },
+  {
+   "count": 1152,
+   "component": "DGX-Leaf cable (Eth storage)",
+   "connection": "DGX BF3 to storage leaf",
+   "model": "980-9I570-00N030"
+  },
+  {
+   "count": 1120,
+   "component": "Leaf-Spine cable (Eth storage)",
+   "connection": "storage leaf to spine",
+   "model": "980-9I570-00N030"
+  },
+  {
+   "count": 648,
+   "component": "Leaf cable (IB storage)",
+   "connection": "IB storage leaf",
+   "model": "980-9I570-00N030"
+  },
+  {
+   "count": 512,
+   "component": "Leaf-Spine cable (IB storage)",
+   "connection": "IB storage leaf to spine",
+   "model": "980-9I570-00N030"
+  },
+  {
+   "count": 589,
+   "component": "DGX, Mgmt-Leaf cable (inband)",
+   "connection": "DGX/mgmt to inband leaf",
+   "model": "980-9I557-00N030"
+  },
+  {
+   "count": 48,
+   "component": "Leaf-Spine cable (inband)",
+   "connection": "inband leaf to spine",
+   "model": "980-9I570-00N030"
+  },
+  {
+   "count": 138,
+   "component": "100G DR1 transceiver (SN2201 @OOB)",
+   "connection": "OOB uplink",
+   "model": "980-9I042-00C000"
+  }
+ ],
+ "storage_perf": [
+  {
+   "metric": "Single SU aggregate read (GBps) [good=Standard, better=Enhanced]",
+   "good": 80,
+   "better": 250,
+   "best": null
+  },
+  {
+   "metric": "Single SU aggregate write (GBps)",
+   "good": 40,
+   "better": 124,
+   "best": null
+  },
+  {
+   "metric": "8 SU aggregate read (GBps)",
+   "good": 640,
+   "better": 2000,
+   "best": null
+  },
+  {
+   "metric": "8 SU aggregate write (GBps)",
+   "good": 320,
+   "better": 992,
+   "best": null
+  }
+ ],
+ "power_cooling": {
+  "rack_power_kw_options": "RA: ~56 kW per 4-system rack (3 x 2U rPDUs per rack); DC guide AC low-density: 2 systems/rack 30 kW avg / 39.4 kW peak, air cooled; DC busbar 4/rack 58/76 kW",
+  "preferred_supply": "AC: 200-240 VAC, 12 x 3.2 kW PSUs per system, three 2U rPDUs per rack for redundancy; busbar variant is a separate RA",
+  "airflow_or_liquid_notes": "Air-cooled (AC PSU version 1500 CFM @70% PWM); RA notes you may need to reduce DGX per rack depending on DC capability; 4/rack needs additional power and cooling capacity"
+ },
+ "citations": [
+  {
+   "field": "system.gpu",
+   "value": "8 x NVIDIA B300 Blackwell Ultra",
+   "url": "https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html",
+   "section": "Feature Summary",
+   "quote": "8 x NVIDIA B300 Blackwell Ultra GPUs"
+  },
+  {
+   "field": "system.gpu_memory_total_gb",
+   "value": 2304,
+   "url": "https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html",
+   "section": "Feature Summary",
+   "quote": "8 x 288 GB = 2.3 TB total"
+  },
+  {
+   "field": "system.gpus_per_system",
+   "value": 8,
+   "url": "https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html",
+   "section": "Feature Summary",
+   "quote": "8 x NVIDIA B300 Blackwell Ultra GPUs"
+  },
+  {
+   "field": "system.u_height",
+   "value": 10,
+   "url": "https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html",
+   "section": "Physical and Operational Specifications",
+   "quote": "Rack Units 10 RU"
+  },
+  {
+   "field": "system.max_power_kw",
+   "value": 14.5,
+   "url": "https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html",
+   "section": "Physical and Operational Specifications",
+   "quote": "Power consumption 14.5 kW"
+  },
+  {
+   "field": "system.max_power_kw(peak)",
+   "value": 19,
+   "url": "https://docs.nvidia.com/dgx-pdf/data-center-best-practices-with-dgx-b300-v1.pdf",
+   "section": "DGX B300 System Specifications",
+   "quote": "Estimated Peak System Power 19 kW (DC busbar) / 19.7 kW (AC)"
+  },
+  {
+   "field": "system.weight_kg",
+   "value": 123,
+   "url": "https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html",
+   "section": "Physical and Operational Specifications",
+   "quote": "Busbar: 271.17 lb (123 kg); PSU: 370.38 lbs (168 kg)"
+  },
+  {
+   "field": "system.compute_nics.count/speed",
+   "value": 8,
+   "url": "https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html",
+   "section": "Feature Summary",
+   "quote": "8 x OSFP ports provide connectivity to 8 x NVIDIA ConnectX-8 cards (cluster network) 8 x 800 Gb/s InfiniBand/Ethernet"
+  },
+  {
+   "field": "system.storage_inband_nics",
+   "value": "2 x dual-port BF3 400G",
+   "url": "https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html",
+   "section": "Feature Summary",
+   "quote": "2 x dual-port NVIDIA BlueField-3 DPUs (storage and management networks) 2 x 400 Gb/s InfiniBand/Ethernet"
+  },
+  {
+   "field": "system.psus",
+   "value": "12 x 3.2 kW (AC)",
+   "url": "https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html",
+   "section": "Physical and Operational Specifications",
+   "quote": "Power supplies 12 x 3.2 kW; Voltage PSU: 200-240 VAC Busbar: 54 VDC"
+  },
+  {
+   "field": "system.cooling",
+   "value": null,
+   "url": "https://docs.nvidia.com/dgx-pdf/data-center-best-practices-with-dgx-b300-v1.pdf",
+   "section": "DGX B300 System Specifications",
+   "quote": "Cooling Media: Active Rear Door Heat Exchanger (DC busbar) / Air (AC Rack PDU)"
+  },
+  {
+   "field": "ra.doc_id",
+   "value": "RA-11339-001 V01",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/index.html",
+   "section": "title page",
+   "quote": "Document Number RA-11339-001 V01 Publication Date 2025-07-23"
+  },
+  {
+   "field": "su.systems_per_su",
+   "value": 72,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/abstract.html",
+   "section": "Abstract",
+   "quote": "each SU contains 72 DGX B300 systems"
+  },
+  {
+   "field": "su.systems_per_rack",
+   "value": 4,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/dgx-superpod-architecture.html",
+   "section": "DGX SuperPOD Architecture",
+   "quote": "In our reference design, four DGX B300 fit within a single rack. The rack-level power consumption per rack is ~56kW."
+  },
+  {
+   "field": "su.racks_per_su",
+   "value": 18,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/dgx-superpod-architecture.html",
+   "section": "Figure 2 (image4.jpeg)",
+   "quote": "Figure 2 shows 72 x NVIDIA DGX B300 PS systems in standard racks (figure: 18 racks x 4)"
+  },
+  {
+   "field": "rack.pdu",
+   "value": 3,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/dgx-superpod-architecture.html",
+   "section": "DGX SuperPOD Architecture",
+   "quote": "each with three (3) 2U rack PDUs for maximum redundancy"
+  },
+  {
+   "field": "su_table",
+   "value": "1/72/576/8/4/576/576",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/dgx-superpod-architecture.html",
+   "section": "Table 3",
+   "quote": "1 | 72 | 576 | 8 | 4 | 576 | 576"
+  },
+  {
+   "field": "su_table",
+   "value": "18 SU",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/dgx-superpod-architecture.html",
+   "section": "Table 3",
+   "quote": "18 | 1296 | 9216 | 144 | 72 | 10368 | 10368"
+  },
+  {
+   "field": "su_table",
+   "value": "8 SU",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/dgx-superpod-architecture.html",
+   "section": "Table 3",
+   "quote": "8 | 576 | 4608 | 64 | 36 | 4608 | 4608"
+  },
+  {
+   "field": "compute_fabric.rails",
+   "value": 8,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/network-fabrics.html",
+   "section": "Compute Fabric",
+   "quote": "Each group of 72 nodes is rail-aligned. (Fig 5/7: Leaf-01-01..08 = 8 leaves per SU)"
+  },
+  {
+   "field": "compute_fabric.ufm",
+   "value": 4,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/network-fabrics.html",
+   "section": "Compute Fabric",
+   "quote": "UFM 3.5 nodes are connected to four (4) FNM ports on the Q3400 switches."
+  },
+  {
+   "field": "storage_perf",
+   "value": "80/250/40/124/640/2000/320/992",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/storage-architecture.html",
+   "section": "Table 5",
+   "quote": "Single SU aggregate system read 80 250 ... 8 SU aggregate system write 320 992"
+  },
+  {
+   "field": "storage_fabric.ratio",
+   "value": "4:3",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/network-fabrics.html",
+   "section": "Ethernet Storage Fabric",
+   "quote": "slightly oversubscribed with a ratio near 4:3"
+  },
+  {
+   "field": "major_components",
+   "value": "8 SU 576 nodes",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/components.html",
+   "section": "Table 7",
+   "quote": "576 | DGX B300 | DGXB300-AC; 64 | IB XDR (Q3400-RA) - Compute Leafs - AC; 36 | ... Compute Spines - AC"
+  },
+  {
+   "field": "cables",
+   "value": "4608",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/components.html",
+   "section": "Table 7",
+   "quote": "4608 | DGX-Leaf Cable | 980-9I570-00N030; 4608 | Leaf-Spine Cable"
+  },
+  {
+   "field": "oob",
+   "value": 69,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/components.html",
+   "section": "Table 7",
+   "quote": "69 | SN2201 | 920-9N110-00R1-0C0 ... 3290 | Total RJ45 Count | Cat6"
+  },
+  {
+   "field": "mgmt_nodes",
+   "value": 7,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/management-servers.html",
+   "section": "Management Server Quantities",
+   "quote": "Base Command Manager in High Availability (HA): 2 Nodes ... K8s Management Server: 3 Nodes ... SLURM Login Nodes, 2 Nodes"
+  },
+  {
+   "field": "rack_power_kw",
+   "value": 56,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-b300-xdr/latest/dgx-superpod-architecture.html",
+   "section": "DGX SuperPOD Architecture",
+   "quote": "The rack-level power consumption per rack is ~56kW"
+  },
+  {
+   "field": "system.weight_kg(AC)",
+   "value": 168,
+   "url": "https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html",
+   "section": "Physical and Operational Specifications",
+   "quote": "System weight PSU: 370.38 lbs (168 kg)"
+  }
+ ],
+ "ambiguities": [
+  "Second of TWO B300 RAs (see b300.json for Spectrum-X/busbar, 64/SU). Metadata differs: this RA is RA-11339-001 dated 2025-07-23.",
+  "Table 3 row for 18 SU lists GPU count 9216 but 1296 nodes x 8 = 10368 (cable count column shows 10368); 9216 stored as printed. Also 4 SU spines = 18 (not 16) in table.",
+  "Table 7 compute: '2034' twin-port OSFP transceivers on leaf<->DGX is likely a typo for 2304 (4608 NIC ports / 2 per twin-port); stored as printed.",
+  "Table 7 caption calls the DGX B300 'B300-AC' and racks Legrand NVIDPD13; 4 systems/rack at ~56 kW is 'reference'; text cautions to reduce density per data-center capability.",
+  "Storage fabric per-node requirement: 'exceed 80 GBps' per node (IB) vs '80 GBps per SU' (Ethernet) - inconsistent wording; Table 5 gives 80 GBps aggregate per SU.",
+  "Switch port radix for Q3400-RA not in RA text (leaf must carry 72 down + 72 up at 800G by topology). UFM connects to four FNM ports; no node displacement stated.",
+  "Fabric SU dimension 72 (cable/leaf counts follow 8 leaves x 72 links) with 18 DGX racks per SU vs DC guide 'up to 72 (XDR) or 64 (Spectrum-X)' - consistent.",
+  "GPU memory: RA 2.1 TB vs user guide 2.3 TB (2304 GB used). Inband 200 Gbps bonded in text vs 400G BF3 ports in user guide.",
+  "Cooling: AC version is air-cooled; 'cooling' set 'air'. weight 168 kg is PSU variant system weight. max_power 14.5 kW (UG); peak 19.7 kW (DC guide).",
+  "Rack power ~56 kW from RA (AC, 4 systems/rack) whereas DC guide only gives 2/rack AC rack (30 kW avg, 39.4 kW peak); 4/rack AC at 56 kW implies 3 rPDUs, not stated in DC guide."
+ ]
+}

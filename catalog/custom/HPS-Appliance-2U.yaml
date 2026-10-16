@@ -1,0 +1,17 @@
+# Generic high-performance storage (HPS) appliance — custom, vendor-neutral like the RA
+# ("Count and cable type required depend on specific storage selected", RA Table 8 fn 2).
+# Sizing from DCG Table 4 ("Storage: Varies, typical example" 2,880 W avg / 3,600 W peak)
+# and RA Table 8 (48 NDR 2x200G storage cables for the typical 6 units = 8 per unit,
+# i.e. 16 NDR200 ports).
+manufacturer: Generic
+model: HPS Appliance 2U
+slug: generic-hps-appliance-2u
+u_height: 2
+is_full_depth: true
+airflow: front-to-rear
+interfaces:
+  - {name: "ib{1..16}", label: "NDR200", type: 200gbase-x-qsfp56}
+  - {name: "mgmt{1..2}", type: 1000base-t, mgmt_only: true}
+power-ports:
+  - {name: psu1, type: iec-60320-c14, maximum_draw: 3600, allocated_draw: 1800}
+  - {name: psu2, type: iec-60320-c14, maximum_draw: 3600, allocated_draw: 1800}

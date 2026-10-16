@@ -1,0 +1,184 @@
+# Mixed DGX SuperPOD — the third design: one DGX H200 SU and one DGX GB300 NVL72 SU in one
+# data hall on one Schneider Electric chilled-water plant. Site dgx-lab-03, tag
+# dgx-superpod-mixed; dgx-lab-01/02 are untouched.
+#
+# No NVIDIA RA covers a mixed pod, so the COMPOSITION is a CHOICE (docs/design-choices.md
+# "Mixed pod"). Each pod is exactly its own RA design — this file does not restate them, it
+# points at spec/superpod.yaml and spec/gb300-su.yaml (src/dgxnb/specload.py merges the
+# overrides) — and the pods keep their own compute / storage / management fabrics, UFMs and
+# BCM. SHARED and nothing else: site and hall, power distribution, the cooling plant, the
+# DC-core demarc, and the VAST tier-2 NAS (reached from the GB300 pod through the DC core).
+# Builder: src/dgxnb/topology_mixed.py. Citations: docs/ra-notes-mixed.md.
+kind: mixed
+name: dgx-superpod-mixed
+tag: dgx-superpod-mixed
+description: Mixed DGX SuperPOD — 1 SU DGX H200 (31 nodes, RDHx) + 1 SU DGX GB300 NVL72 (576 GPUs, DLC) on one Schneider chilled-water plant, modelled as IaC
+
+tenancy: {group: clients, tenant: dgx-design, tenant_name: DGX Design}   # shared with dgx-lab-01/02
+
+site:
+  region: dgx-lab
+  region_name: DGX Lab
+  slug: dgx-lab-03
+  name: DGX Lab 03 (mixed H200 + GB300, liquid)
+  location: hall-1
+  location_name: Data Hall 1
+
+pods:
+  h200:                          # SU 1 — RA-11336-001 V2 1-SU row: 31 DGX H200 = 248 GPUs (ra-notes 1.3/1.4)
+    from: superpod.yaml
+    override:
+      compute: {sus: 1}
+      racks: {mgmt_racks: 3}     # DCG 2/SU + 1: compute IB · in-band/BCM · storage IB/OOB (ra-notes-mixed M.2)
+      hall: null                 # the hall is defined once, below
+      render: null
+      ipam:                      # own VRFs + container: the pod's plan already exists at dgx-lab-01 (enforce_unique)
+        container: 10.220.0.0/14
+        inband: {vrf: mx-inband, prefix: 10.220.0.0/22, vlan: 100}
+        oob:
+          vrf: mx-oob
+          prefix: 10.221.0.0/22
+          vlan: 200
+          ranges: {bmc: 10.221.0.0/24, netdev: 10.221.1.0/24, pdu: 10.221.2.0/24}
+        ib_compute: {vrf: mx-ib-compute, prefix: 10.222.0.0/22}
+        ib_storage: {vrf: mx-ib-storage, prefix: 10.223.0.0/23}
+  gb300:                         # SU 2 — RA-GB300 1 SU: 8 × NVL72 = 144 trays = 576 GPUs (ra-notes-gb300 G.1-G.3)
+    from: gb300-su.yaml
+    override:
+      ethernet:
+        hps_appliances: 0        # CHOICE: the generic HPS appliances are dropped for VAST tier 2 (shared)
+        storage_leaves: 0        # CHOICE: RA "starting at 2" storage leaves exist to attach in-pod appliances; none here
+        demarc: {name: dc-core-demarc, first_port: 13}   # shared demarc: H200 uses core1-12, GB300 core13-14
+      ipam:                      # own VRFs + container (the GB300 plan already exists at dgx-lab-02)
+        container: 10.224.0.0/15
+        oob: {vrf: mxgb-oob, prefix: 10.224.0.0/22, vlan: 300}
+        inband: {vrf: mxgb-inband, prefix: 10.224.8.0/24, vlan: 310}
+        storage: {vrf: mxgb-storage, prefix: 10.224.16.0/23, vlan: 320}
+        ib_compute: {vrf: mxgb-ib-compute, prefix: 10.225.0.0/22}
+
+racks:                           # shared envelope for the hall and the 3D scene (both pods: 48U 600 × 1200)
+  u_height: 48
+  width_mm: 600
+  depth_mm: 1200
+
+# Data hall — CHOICE (no RA covers the mix; ra-notes-mixed M.5). Row A = the whole H200 SU
+# (16 DGX racks, 3 mgmt, DDN, VAST); row B = the 8 NVL72 + 4 GB300 mgmt racks, back to back.
+# Row B is 9 rack positions shorter: that footprint takes the CDUs (cooling.cdu_slots).
+hall:
+  cold_aisle_mm: 1220            # DCG: cold aisle ≥ 1,219 mm
+  hot_aisle_mm: 1950             # rear aisle between rack envelopes = 1,220 clear + 2 × 363 mm ChilledDoor depth (both rows carry doors: row A all, row B mgmt racks)
+  rear_aisle_clear_mm: 1220      # what must stay clear BEHIND the ChilledDoors (DCG: aisles ≥ 914, cold ≥ 1,219; CHOICE ≥ 1,219 here)
+  containment: none              # CHOICE: RDHx return room-neutral air; no roof/end doors (docs/design-choices.md "Mixed pod")
+  end_clear_mm: 3200             # room: clear floor beyond the row ends (CDU block side ends at the hall wall)
+  side_clear_mm: 1800            # room: walkway beyond each cold aisle
+  wall_mm: 200
+  note: "Row A: DGX H200 with Motivair ChilledDoor RDHx on every rack; row B: DGX GB300 NVL72 on direct liquid, GB300 mgmt racks on RDHx; CDUs at the row-B end, overhead coolant headers behind each row, Uniflair plant outside the +X hall wall, two HDCV CRAHs at the cold-aisle ends for the NVL72 residual air; overhead Starline busway per path (A/B/C), ladder rack and fibre raceway above each row. No aisle containment."
+  rows:
+    - name: A                    # SU 1 (H200): leaf rack mid-row keeps node->leaf runs short
+      front: up
+      racks: [dgx-su1-r01, dgx-su1-r02, dgx-su1-r03, dgx-su1-r04, dgx-su1-r05, dgx-su1-r06, dgx-su1-r07, dgx-su1-r08, mgmt-r01, mgmt-r02, stor-r01, stor-r02, mgmt-r03, dgx-su1-r09, dgx-su1-r10, dgx-su1-r11, dgx-su1-r12, dgx-su1-r13, dgx-su1-r14, dgx-su1-r15, dgx-su1-r16]
+    - name: B                    # SU 2 (GB300)
+      front: down
+      racks: [gb-su1-r01, gb-su1-r02, gb-su1-r03, gb-su1-r04, gb-mgmt-r01, gb-mgmt-r02, gb-mgmt-r03, gb-mgmt-r04, gb-su1-r05, gb-su1-r06, gb-su1-r07, gb-su1-r08]
+
+# Cooling — every vendor number cites reference/cooling-schneider/README.md (cs:§n) and the
+# loop temperatures the Schneider/NVIDIA reference-design notes; the modelling is CHOICE (docs/design-choices.md
+# "Mixed pod"). src/dgxnb/cooling.py sizes the CDUs from the racks' peak power.
+cooling:
+  colours: {supply: "#1565C0", return: "#C62828", basic: "#5C6B2E"}   # CHOICE: BS 1710:2014 gives water services a GREEN basic colour (BS 4800 12 D 45 ~ #5C6B2E) and tells flow from return by text/arrows only (reference-design notes §3); blue/red code bands are the render's cue
+  panel: PP-M                    # mechanical power panel (CHOICE): CDUs, CRAHs and the plant
+  feeds:                         # CHOICE: one dedicated feed per unit; sizes cover the cited draws
+    cdu: {voltage: 415, amperage: 32, phase: three-phase}     # MCDU-40 15.4 A / MCDU-45 20.3 A at 400 V (cs:§2)
+    crah: {voltage: 415, amperage: 32, phase: three-phase}    # HDCV fan power NOT FOUND
+    plant: {voltage: 415, amperage: 630, phase: three-phase}  # BCEF 0903A absorbed 284 kW at 15/10 C (cs:§3) -> 395 A at 415 V (derived)
+  plant:                         # one Uniflair block outside the wall: 3 modules, N+1
+    header: hdr-fws              # facility-water supply/return mains (generic-coolant-header stand-in)
+    type: uniflair-bcef-0903a
+    units: [plant-01, plant-02, plant-03]
+    kw_each: 965.1               # cs:§3 "Cooling capacity (3) 965.1" at 15/10 C water, 20 % glycol, 35 C ambient
+    spare: 1                     # N+1 at the plant (CHOICE; DCG "size cooling to N (two circuits)")
+    fws_supply_c: 10             # cs:§3 rating condition (3): "water temperatures 15/10 °C" — supply 10, return 15
+    fws_return_c: 15
+    absorbed_kw_each: 284.23     # cs:§3 "Absorbed power (3)(4)"
+    power_port: A
+    width_mm: 2200               # module footprint: cs:§3 "Depth 2200"; the 10720 mm length runs along the wall
+    depth_mm: 10720
+    height_mm: 2531
+    clear_mm: 1500               # gap between the hall wall and the block (CHOICE, service access)
+  residual_air:                  # the ~10 % of NVL72 heat that leaves as air (ra-notes-mixed C.3) — CHOICE: HDCV CRAH, N+1
+    type: uniflair-hdcv-4600a-ht
+    units: [crah-01, crah-02]
+    kw_each: 109.5               # cs:§4 HT coil at 20/30 C — lower bound at our colder water
+    spare: 1
+    power_port: A
+    width_mm: 2570
+    depth_mm: 865
+    height_mm: 2510
+    position: cold-aisle-ends    # one unit at the -X end of each cold aisle, blowing along it (CHOICE)
+  cdu_slots: {row: B, gap_mm: 300}   # CDUs take the 9 rack positions row B leaves free, after its last rack
+  headers:
+    z_mm: 3300                   # above the ladder rack (2.92 m, blender/README.md), below the 4.0 m ceiling (CHOICE)
+    y_behind_rear_mm: {supply: 460, return: 610}   # behind the rack rear face: clears the 363 mm doors; supply nearer the racks
+    fws_z_mm: 3550               # facility-water mains over the rear-aisle centre line, above the loop headers
+  leak_detection: {type: netbotz-leak-rope, model: NBES0308, per_row: true, note: "cs:§5 NetBotz Leak Rope 6 m + NBES0309 extensions to 30.5 m; one rope along each row rear at floor level (CHOICE)"}
+  aux_kw: 49.6                   # CDU absorbed power rejected into the water: 2 x 10.7 + 2 x 14.1 kVA (cs:§2 FLA, derived)
+  loops:
+    rdhx:                        # row A (every H200 rack) + the GB300 management racks in row B
+      label: RDHx loop — Motivair ChilledDoor
+      unit:
+        kind: door
+        type: motivair-chilleddoor-m8-48u-600
+        suffix: rdhx
+        kw: 30                   # cs:§1 M8 nominal 30 kW at 12.8-18.3 C supply water (100 % water); 1.4x over the 21.2 kW worst rack
+        fan_w: 840               # cs:§1 "Max Watts 840" — fans add their heat to the loop
+        depth_mm: 363            # cs:§1 "Depth 14.3" in
+        liquid_fraction: 1.0     # a door captures the rack's whole exhaust (CHOICE; room-neutral)
+        max_lpm: 87              # cs:§1 "GPM (Range) 0 - 23" = 87 l/min
+      racks: {rows: [A, B], without_role: gb-compute-tray}
+      cdu:
+        type: motivair-mcdu-40
+        kw: 842.51               # cs:§2 R4: primary 7.2 C, secondary 15.6/28.9 C (nearest printed rating to this loop)
+        spare: 1
+        power_port: A
+        width_mm: 914
+        depth_mm: 1565
+        height_mm: 2045
+        sec_lpm: 908             # cs:§2 nominal secondary 240 GPM
+      tcs_supply_c: 18           # <= 18.3 C door rating band (cs:§1); >= dew point + 2 K (HPE QS); no Schneider RD figure reachable (reference-design notes §1)
+      tcs_return_c: 28
+      header: {dn: 125, rated_lpm: 1100, offset_mm: 0}     # CHOICE: DN125 at <= 1.5 m/s = 1,104 l/min (derived); offset = lateral order of the loop headers behind a row
+    dlc:                         # the 8 NVL72 racks: cold plates, in-rack manifolds, blind-mate QDs
+      label: DLC loop — DGX GB300 NVL72
+      unit:
+        kind: manifold
+        type: nvidia-nvl72-coolant-manifold
+        suffix: cdm
+        liquid_fraction: 0.9     # ~90 % liquid / ~10 % air (reference/facility §4, Lenovo LP; ra-notes-mixed C.2)
+        max_lpm: 177             # Lenovo LUG water table: 177 LPM at 45 C supply (compute-dgx-gb300 §Rack "Coolant flow")
+      racks: {with_role: gb-compute-tray}
+      cdu:
+        type: motivair-mcdu-45
+        kw: 1081                 # cs:§2 R4 — LOWER BOUND: our approach (10 -> 35 C) is far larger than R4's 8.3 K
+        spare: 1
+        power_port: A
+        width_mm: 915
+        depth_mm: 1220
+        height_mm: 2330
+        sec_lpm: 1166            # cs:§2 nominal secondary 308 GPM
+      tcs_supply_c: 35           # Lenovo GB300 water table row: 35 C supply needs >= 89 LPM per rack (reference-design notes §2); NVIDIA's own figure NOT FOUND
+      tcs_return_c: 50
+      header: {dn: 125, rated_lpm: 1100, offset_mm: 300}   # sits outboard of the rdhx header behind row B
+
+# Render colours: the H200 palette (spec/superpod.yaml) plus NVLink and the coolant loops.
+render:
+  fabric_colours:
+    compute:     {jacket: "#00A7B5", tie: rail}
+    storage:     {jacket: "#00A7B5", tie: "#9467BD"}
+    inband:      {jacket: "#00A7B5", tie: "#FF7F0E"}
+    storage-eth: {jacket: "#00A7B5", tie: "#9467BD"}
+    oob:         {jacket: "#9CA3AF", tie: "#8C564B"}
+    mgmt:        {jacket: "#111111", tie: "#E377C2"}
+    nvlink:      {jacket: "#111111", tie: "#2CA02C"}   # in-rack cartridge links (blind-mate; drawn only when traced)
+  dc_uplink_jacket: "#F5C400"
+  power_feed_colours: {A: "#C62828", B: "#1565C0", C: "#2E7D32"}
+  mpo_apc_shell: "#3DAE2B"

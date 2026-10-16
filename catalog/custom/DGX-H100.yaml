@@ -1,0 +1,6 @@
+# NVIDIA DGX H100 — same chassis, ports and power as the DGX H200 (UG covers both);
+# only the GPUs differ (8x H100 80 GB, 640 GB HBM3). Inherits everything else.
+extends: nvidia-dgx-h200
+model: DGX H100
+slug: nvidia-dgx-h100
+comments: 8x H100 80 GB (640 GB HBM3). Custom definition — see catalog/custom/README.md.

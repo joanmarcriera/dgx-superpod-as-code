@@ -1,0 +1,22 @@
+# Motivair (Schneider Electric) MCDU-45 floor-standing coolant distribution unit — custom.
+# Sources (reference/cooling-schneider/README.md §2, CDU26 = CDU brochure 2026):
+#   headline "up to 1.5 MW"; rated 1081 kW at R4 (7.2 C primary, 15.6/28.9 C secondary,
+#   ~8.3 K approach, derived) — used as the LOWER BOUND for the DLC loop, whose approach is
+#   larger; 1567 kW at R1 (32.2 C primary, 45/65 C secondary, 25 % PG); nominal flow 308 /
+#   308 GPM; 3 in connections; 91.73 x 48.03 x 36.02 in = 2330 H x 1220 D x 915 W mm; dual
+#   pumps; 380-480 V 3ph A/B, 20.3 A at 400 V (14.1 kVA, derived); weight NOT FOUND.
+manufacturer: Motivair
+model: MCDU-45
+slug: motivair-mcdu-45
+u_height: 0
+is_full_depth: false
+comments: Floor-standing CDU, 1081 kW at R4 (lower bound for a 35 C loop), 2330 x 915 x 1220 mm. Custom definition — see catalog/custom/README.md.
+interfaces:
+  - {name: PRI-S, label: "primary supply (from plant), 3 in", type: other}
+  - {name: PRI-R, label: "primary return (to plant), 3 in", type: other}
+  - {name: SEC-S, label: "secondary supply (to header), 3 in", type: other}
+  - {name: SEC-R, label: "secondary return (from header), 3 in", type: other}
+  - {name: mgmt0, label: "PLC BACnet/Modbus", type: 1000base-t, mgmt_only: true}
+power-ports:
+  - {name: A, label: "feed A, 400 V 3ph", type: hardwired, maximum_draw: 14100, allocated_draw: 7050}
+  - {name: B, label: "feed B, 400 V 3ph", type: hardwired, maximum_draw: 14100, allocated_draw: 7050}

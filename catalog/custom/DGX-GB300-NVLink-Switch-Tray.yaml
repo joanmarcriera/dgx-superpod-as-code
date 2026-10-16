@@ -1,0 +1,15 @@
+# NVLink switch tray (9 per NVL72 rack) — custom. RA-GB300 "NVLink Switch Tray": 2 NVLink
+# switch chips per tray; "two COMe RJ45 ports for NVOS and one BMC module ... one RJ45 port".
+# NVL1..18 = one link to each compute tray. CHOICE: 1U, 1,000 W allocated.
+manufacturer: Nvidia
+model: DGX GB300 NVLink Switch Tray
+slug: nvidia-dgx-gb300-nvlink-switch-tray
+u_height: 1
+is_full_depth: true
+airflow: front-to-rear
+interfaces:
+  - {name: "NVL{1..18}", label: "NVLink to compute tray", type: other}
+  - {name: "COMe{1..2}", label: "NVOS management", type: 1000base-t, mgmt_only: true}
+  - {name: BMC, type: 1000base-t, mgmt_only: true}
+power-ports:
+  - {name: DC-IN, label: "48 V busbar", type: dc-terminal, allocated_draw: 1000}

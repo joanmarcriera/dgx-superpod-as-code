@@ -1,0 +1,8 @@
+# PX3 rPDUs have a 1GbE management port (RA: OOB connects "rack PDUs"). Upstream omits it.
+# Inlet: 415 V / 32 A three-phase = 21.8 kW circuit (DCG Table 8).
+add:
+  interfaces:
+    - {name: eth1, label: "Ethernet 1", type: 1000base-t, mgmt_only: true}
+update:
+  power-ports:
+    "Inlet I1": {maximum_draw: 21800}

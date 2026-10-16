@@ -1,0 +1,11 @@
+# GB300 Ethernet fabric (RA-GB300 "Ethernet Fabric"): SN5600 ports run as 2x400G breakouts
+# to BlueField-3 ("connected to the BlueField BF3240 dual-port card at a 400Gbps") and
+# 400G uplinks ("24 links at 400 Gbps"). Breakout lanes are modelled as swp<N>s<0|1>.
+# Power: not in RA or the library -> CHOICE 1,500 W peak (allocated_draw = peak / 2).
+add:
+  interfaces:
+    - {name: "swp{1..64}s0", label: "400G lane 0", type: 400gbase-x-osfp}
+    - {name: "swp{1..64}s1", label: "400G lane 1", type: 400gbase-x-osfp}
+  power-ports:
+    - {name: psu1, type: iec-60320-c14, maximum_draw: 1500, allocated_draw: 750}
+    - {name: psu2, type: iec-60320-c14, maximum_draw: 1500, allocated_draw: 750}

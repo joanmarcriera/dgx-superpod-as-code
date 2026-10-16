@@ -1,0 +1,21 @@
+# Schneider Electric Uniflair HDCV 4600A HT — perimeter chilled-water CRAH with underfloor
+# fans and the high-temperature (HT) coil. Custom.
+# Sources (reference/cooling-schneider/README.md §4, ROOM = Uniflair Room Cooling catalogue):
+# "Net sensible cooling capacity ... 109.5" kW for the HT coil at 20/30 C water, 36 C room,
+# 20 % glycol ("specifically designed for high water temperatures (20°C up to 30°C)");
+# 2570 L x 865 D x 2510 H mm; RAL 9003 panels. At the colder facility water used here
+# (15/10 C) the capacity is higher, so 109.5 kW is a lower bound. Fan power NOT FOUND.
+# Non-racked (role cooling-crah), at the cold-aisle end of the hall; SUPPLY/RETURN connect
+# to the facility-water header directly (no CDU: a CRAH is standard chilled-water kit).
+manufacturer: Schneider Electric
+model: Uniflair HDCV 4600A HT
+slug: uniflair-hdcv-4600a-ht
+u_height: 0
+is_full_depth: false
+comments: CRAH, 109.5 kW net sensible at 20/30 C water (lower bound here); 2570 x 865 x 2510 mm. Custom definition — see catalog/custom/README.md.
+interfaces:
+  - {name: SUPPLY, label: "chilled water in (from FWS header)", type: other}
+  - {name: RETURN, label: "chilled water out (to FWS header)", type: other}
+  - {name: mgmt0, label: "BMS Modbus/BACnet", type: 1000base-t, mgmt_only: true}
+power-ports:
+  - {name: A, label: "feed, 400 V 3ph", type: hardwired}

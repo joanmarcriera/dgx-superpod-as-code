@@ -1,0 +1,23 @@
+# VAST Data CBox — 2U enclosure of 4 stateless CNodes (VAST NCP RA, June 2024; reference/
+# storage/README.md). Per CNode: ConnectX-7 dual-port front (client/NFS side) and a
+# ConnectX-6 dual-port back (NVMe-oF to the DBoxes through the VAST backend switches), plus
+# a BMC. 2,100 W active per CBox (same RA); PSU count/rating NOT FOUND -> 2 × 1,300 W CHOICE.
+manufacturer: VAST Data
+model: CBox (4 CNodes)
+slug: vast-cbox
+u_height: 2
+is_full_depth: true
+airflow: front-to-rear
+interfaces:
+  - {name: "cn1-fe{1..2}", label: "CX-7 front", type: 200gbase-x-qsfp56}
+  - {name: "cn2-fe{1..2}", label: "CX-7 front", type: 200gbase-x-qsfp56}
+  - {name: "cn3-fe{1..2}", label: "CX-7 front", type: 200gbase-x-qsfp56}
+  - {name: "cn4-fe{1..2}", label: "CX-7 front", type: 200gbase-x-qsfp56}
+  - {name: "cn1-be{1..2}", label: "CX-6 back", type: 100gbase-x-qsfp28}
+  - {name: "cn2-be{1..2}", label: "CX-6 back", type: 100gbase-x-qsfp28}
+  - {name: "cn3-be{1..2}", label: "CX-6 back", type: 100gbase-x-qsfp28}
+  - {name: "cn4-be{1..2}", label: "CX-6 back", type: 100gbase-x-qsfp28}
+  - {name: "cn{1..4}-bmc", type: 1000base-t, mgmt_only: true}
+power-ports:
+  - {name: psu1, type: iec-60320-c14, maximum_draw: 1300, allocated_draw: 1050}
+  - {name: psu2, type: iec-60320-c14, maximum_draw: 1300, allocated_draw: 1050}

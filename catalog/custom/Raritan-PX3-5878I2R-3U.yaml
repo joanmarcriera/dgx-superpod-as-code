@@ -1,0 +1,24 @@
+# Raritan PX3-5878I2R-P1Q2R1A15D5 — the DGX-rack rPDU named in RA-11336-001 Table 7 (the
+# model itself is not published). Modelled on its nearest published sibling, -Q1: a
+# HORIZONTAL 3U inline-metered unit with 18 x C19 + 6 x C13, 415 V three-phase inlet
+# (docs/design-choices.md §6.1, decided 2026-10-16). Three per DGX rack = 9U (DCG Table 8
+# note 2: each rPDU feeds 2 of the 6 DGX PSUs). 1GbE management port per RA §5 (OOB
+# connects rack PDUs). Inlet budget 21.8 kW = one 415 V/32 A/3φ circuit (DCG Table 8).
+manufacturer: Raritan
+model: PX3-5878I2R-P1Q2R1A15D5
+slug: raritan-px3-5878i2r-3u
+part_number: PX3-5878I2R-P1Q2R1A15D5
+u_height: 3
+is_full_depth: false
+airflow: passive
+console-ports:
+  - {name: Console, type: rj-45}
+interfaces:
+  - {name: eth1, label: "Ethernet 1", type: 1000base-t, mgmt_only: true}
+power-ports:
+  - {name: Inlet I1, type: iec-60309-3p-n-e-6h, maximum_draw: 21800}
+power-outlets:
+  - {name: "C19-{1..6}",   type: iec-60320-c19, power_port: Inlet I1, feed_leg: A}
+  - {name: "C19-{7..12}",  type: iec-60320-c19, power_port: Inlet I1, feed_leg: B}
+  - {name: "C19-{13..18}", type: iec-60320-c19, power_port: Inlet I1, feed_leg: C}
+  - {name: "C13-{1..6}",   type: iec-60320-c13, power_port: Inlet I1, feed_leg: A}

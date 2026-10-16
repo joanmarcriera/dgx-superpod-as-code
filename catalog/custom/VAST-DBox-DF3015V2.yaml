@@ -1,0 +1,16 @@
+# VAST Data Ceres DBox DF-3015V2 — 1U, 338 TB raw (22 × E1.L NAND + 8 × U.2 SCM), two
+# BlueField-3 canisters each with 2 × 200GbE QSFP112 and an RJ45 BMC; 2 × 1,600 W PSU;
+# 850 W max (kb.vastdata.com DF-3015V2/DF-3060V2 datasheet; reference/storage/README.md).
+manufacturer: VAST Data
+model: Ceres DBox DF-3015V2
+slug: vast-dbox-df3015v2
+u_height: 1
+is_full_depth: true
+airflow: front-to-rear
+interfaces:
+  - {name: "c1-p{1..2}", label: "BF-3 canister 1", type: 200gbase-x-qsfp56}
+  - {name: "c2-p{1..2}", label: "BF-3 canister 2", type: 200gbase-x-qsfp56}
+  - {name: "c{1..2}-bmc", type: 1000base-t, mgmt_only: true}
+power-ports:
+  - {name: psu1, type: iec-60320-c14, maximum_draw: 1600, allocated_draw: 425}
+  - {name: psu2, type: iec-60320-c14, maximum_draw: 1600, allocated_draw: 425}

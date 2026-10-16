@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# dgxnb — plan/apply/destroy the DGX SuperPOD design in NetBox (see src/dgxnb/cli.py).
+#
+# Usage:  bin/dgxnb [plan|apply|destroy [--yes]|export|bom] [--spec PATH]
+# Needs NETBOX_URL + NETBOX_TOKEN for plan/apply/destroy:
+#   export both variables first (never echo the token)
+set -euo pipefail
+here="$(cd "$(dirname "$0")/.." && pwd)"
+# macOS Local Network privacy blocks LAN sockets from Homebrew/uv Pythons ("No route
+# to host"); Apple's /usr/bin/python3 is allowed, so .venv is built on it (.python-version).
+export PYTHONWARNINGS="ignore::Warning:urllib3"   # LibreSSL notice from the system Python
+exec uv run --quiet --project "$here" python -m dgxnb.cli "$@"

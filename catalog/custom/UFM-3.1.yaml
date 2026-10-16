@@ -1,0 +1,18 @@
+# NVIDIA UFM Appliance 3.1 — custom: not in devicetype-library.
+# RA H200 Table 7 (4 appliances), Table 8 (UFM system transceivers, UFM back-to-back,
+# QSFP-to-SFP+ adapters for the 1G mgmt link). Power: DCG Table 4, 750 W peak.
+# The two IB ports run at NDR200 (RA Table 8 "NDR Cables, 200 Gbps, UFM to leaf ports").
+manufacturer: Nvidia
+model: UFM Appliance 3.1
+slug: nvidia-ufm-appliance-3-1
+u_height: 1
+is_full_depth: true
+airflow: front-to-rear
+interfaces:
+  - {name: ib1, label: "NDR200", type: 400gbase-x-osfp}
+  - {name: ib2, label: "NDR200", type: 400gbase-x-osfp}
+  - {name: mgmt0, label: "OOB", type: 1000base-t, mgmt_only: true}
+  - {name: ha0, label: "HA back-to-back", type: 1000base-t}
+power-ports:
+  - {name: psu1, type: iec-60320-c14, maximum_draw: 750, allocated_draw: 375}
+  - {name: psu2, type: iec-60320-c14, maximum_draw: 750, allocated_draw: 375}

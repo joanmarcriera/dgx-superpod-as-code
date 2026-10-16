@@ -1,0 +1,16 @@
+# In-rack coolant distribution manifold of a DGX GB300 NVL72 rack — modelling stand-in for
+# the rack's rear supply/return manifold that feeds every compute and NVLink switch tray
+# through blind-mate quick disconnects (RA-GB300 Fig. 4 "liquid"; reference/compute-dgx-gb300).
+# The manifold is part of the NVL72 rack as shipped, so it has no power port; its two
+# `other` interfaces are the rack's hose connections to the row header (spec cooling.loops.dlc).
+# Mounted like the 0U PDUs (position null) at the rack rear: scene.py maps role
+# cooling-manifold to mount "rear-manifold".
+manufacturer: Nvidia
+model: DGX GB300 NVL72 rack coolant manifold
+slug: nvidia-nvl72-coolant-manifold
+u_height: 0
+is_full_depth: false
+comments: Rear supply/return manifold + blind-mate QDs of the NVL72 rack. Custom definition — see catalog/custom/README.md.
+interfaces:
+  - {name: SUPPLY, label: "rack supply (from row header)", type: other}
+  - {name: RETURN, label: "rack return (to row header)", type: other}

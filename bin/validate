@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# validate — assert the live NetBox design matches the spec (see src/dgxnb/validate.py).
+#
+# Usage:  bin/validate [--spec PATH]     exit 0 = all checks pass
+# Needs NETBOX_URL + NETBOX_TOKEN (read-only):
+#   export both variables first (never echo the token)
+set -euo pipefail
+here="$(cd "$(dirname "$0")/.." && pwd)"
+# macOS Local Network privacy blocks LAN sockets from Homebrew/uv Pythons ("No route
+# to host"); Apple's /usr/bin/python3 is allowed, so .venv is built on it (.python-version).
+export PYTHONWARNINGS="ignore::Warning:urllib3"   # LibreSSL notice from the system Python
+exec uv run --quiet --project "$here" python -m dgxnb.validate "$@"

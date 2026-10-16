@@ -1,0 +1,72 @@
+# One Scalable Unit of an NVIDIA DGX SuperPOD with DGX GB300 (NVL72) — the "just for fun" site.
+# Source: "NVIDIA DGX SuperPOD ... Reference Architecture Featuring NVIDIA DGX GB300 Systems"
+# (https://docs.nvidia.com/pdf/dgx-spod-gb300-ra.pdf, referred to as RA-GB300). Every number is
+# traced in docs/ra-notes-gb300.md; CHOICE = modelling decision the RA leaves open.
+kind: gb300-nvl72
+name: dgx-gb300-su
+tag: dgx-gb300-su
+description: 1-SU NVIDIA DGX SuperPOD with DGX GB300 NVL72 (576 GPUs), modelled as IaC
+
+tenancy: {group: clients, tenant: dgx-design, tenant_name: DGX Design}   # shared with dgx-lab-01
+
+site:
+  region: dgx-lab
+  region_name: DGX Lab
+  slug: dgx-lab-02
+  name: DGX Lab 02 (GB300)
+  location: hall-1
+  location_name: Data Hall 1
+
+compute:
+  gpu_gen: gb300
+  sus: 1
+  racks_per_su: 8              # "each SU contains 8 DGX GB300 systems" (Abstract, Table 1)
+  trays_per_rack: 18           # "18 compute nodes (aka. compute trays)" (Compute Tray)
+  gpus_per_node: 4             # per tray: 2 Superchips x 2 B300 (Compute Tray)
+  nvswitch_trays_per_rack: 9   # "nine NVLink switches (aka. NVLink switch tray)"
+  power_shelves_per_rack: 8    # "eight total power shelves" (DGX Power Shelves)
+  rails: 4                     # "four Quantum X-800 connections per system" (Table 1)
+  leaves_per_rail: 2           # "eight leaf switches distributed in 4 rails" (Compute Fabric)
+  ib_ports: 144                # Q3400-RD "144 port"
+  ufm: [gb-ufm-c-01, gb-ufm-c-02]   # Fig. 8 C-UFM-1/2, attached to rail-4 leaves
+
+ethernet:                      # "Ethernet Fabric" + Table 4 (no 1-SU row: halved -> CHOICE)
+  compute_leaves: 4            # "Each SU contains four leaf SN5600 switches"
+  compute_leaf_uplinks: 24     # "each compute leaf connects via 24 links at 400 Gbps"
+  storage_leaves: 2            # "starting at 2 leaves"
+  mgmt_leaves: 2               # "a pair of management leaves"
+  mgmt_leaf_uplinks: 24        # "management leaves are connected at 24x 400 Gbps"
+  spines: 2                    # CHOICE: Table 4 gives 4 at 2 SU; 1 SU -> 2
+  oob_spines: 2                # "a pair of out-of-band-spines"
+  edge_links: 2                # "Customer Edge": >= 2 x 100GbE
+  hps_appliances: 4            # CHOICE: storage is vendor-specific
+
+mgmt_servers: [gb-bcm-head-01, gb-bcm-head-02, gb-ctl-01, gb-ctl-02, gb-ctl-03]  # CHOICE (Fig. 14: BCM x2 + control plane; no count in RA)
+
+racks:
+  u_height: 48
+  width_mm: 600
+  depth_mm: 1200
+  budget_kw_compute_rack: 150  # RA: "Each SU requires ... 1.2 Megawatts" / 8 racks
+  budget_kw_mgmt_rack: 40      # CHOICE: 3 x 415 V/32 A/3φ N+1 = 43.6 kW usable
+  mgmt_racks: 4
+
+power:
+  shelf_feed: {voltage: 415, amperage: 63, phase: three-phase}   # CHOICE: 1 feed per 33 kW shelf
+  mgmt_feed: {voltage: 415, amperage: 32, phase: three-phase}
+  pdus_per_mgmt_rack: 3
+
+ipam:
+  container: 10.210.0.0/15
+  oob: {vrf: gb-oob, prefix: 10.210.0.0/22, vlan: 300}
+  inband: {vrf: gb-inband, prefix: 10.210.8.0/24, vlan: 310}
+  storage: {vrf: gb-storage, prefix: 10.210.16.0/23, vlan: 320}
+  ib_compute: {vrf: gb-ib-compute, prefix: 10.211.0.0/22}      # one /24 per rail
+
+validate:                      # consumed by bin/validate
+  compute_role: gb-compute-tray
+  leaf_role: ib-compute-leaf
+  spine_role: ib-compute-spine
+  # RA Fig. 8 attaches C-UFM-1/2 to rail leaves but a Q3400-RD leaf is exactly 72 down +
+  # 72 up. We give each UFM one uplink port on a rail-4 leaf -> those leaves run 72:71.
+  max_leaf_oversubscription: 1.02

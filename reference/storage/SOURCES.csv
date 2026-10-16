@@ -1,0 +1,12 @@
+path,url,publisher,kind,terms,retrieved
+media/nvidia-ra-11336-001-dgx-superpod-h200.pdf,https://docs.nvidia.com/dgx-superpod/reference-architecture/scalable-infrastructure-h200/latest/_downloads/bbd08041e98eb913619944ead1f92373/RA-11336-001-DSPH200-ReferenceArch.pdf,NVIDIA,pdf,vendor marketing material — internal reference only,2026-09-30
+media/vast-dgx-superpod-reference-architecture.pdf,https://assets.ctfassets.net/2f3meiv6rg5s/23wcCVOMwi2i5MUR37qSWI/c4a675f68c3e3db513fb565eed3005da/tme303-dspa100-ra1138901-vast.pdf,NVIDIA/VAST Data,pdf,vendor marketing material — internal reference only,2026-09-30
+media/vast-ncp-high-performance-storage-reference-architecture.pdf,https://assets.ctfassets.net/2f3meiv6rg5s/6EpbNfITwBTBNpNi3YHwCU/aec3dadb51a8d6df60bf3e450d352e5c/VAST-NVIDIA-NCP-White-Paper-FINAL-3.pdf,VAST Data,pdf,vendor marketing material — internal reference only,2026-09-30
+media/ddn-h100-superpod-reference-architecture.pdf,https://www.ddn.com/wp-content/uploads/2024/08/ddn-nvidia-h100-superpod-reference-architecture.pdf,DDN,pdf,vendor marketing material — internal reference only,2026-09-30
+media/ddn-ai400x3-series-product.png,https://www.ddn.com/wp-content/uploads/2025/06/ddn-product-ai400x3-series.jpg,DDN,photo,vendor marketing material — internal reference only (saved as PNG screenshot of the rendered image; 1200x637),2026-09-30
+media/ddn-logo-black.svg,https://www.ddn.com/wp-content/uploads/2026/02/ddn-logo-black.svg,DDN,svg,vendor marketing material — internal reference only,2026-09-30
+media/vast-ceres-v2-front.png,https://kb.vastdata.com/docs/dbox-df-3015v2df-3060v2-ceres-datasheet,VAST Data,diagram,vendor marketing material — internal reference only,2026-09-30
+media/vast-ceres-v2-open-top.png,https://kb.vastdata.com/docs/dbox-df-3015v2df-3060v2-ceres-datasheet,VAST Data,diagram,vendor marketing material — internal reference only,2026-09-30
+media/vast-ceres-v2-rear.png,https://kb.vastdata.com/docs/dbox-df-3015v2df-3060v2-ceres-datasheet,VAST Data,diagram,vendor marketing material — internal reference only,2026-09-30
+media/vast-ceres-v2-dimensions.png,https://kb.vastdata.com/docs/dbox-df-3015v2df-3060v2-ceres-datasheet,VAST Data,diagram,vendor marketing material — internal reference only,2026-09-30
+media/vast-logo-white.png,https://kb.vastdata.com/docs/dbox-df-3015v2df-3060v2-ceres-datasheet,VAST Data,logo,vendor marketing material — internal reference only (white on transparent),2026-09-30

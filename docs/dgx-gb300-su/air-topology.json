@@ -1,0 +1,639 @@
+{
+  "format": "JSON",
+  "title": "dgx-gb300-su Ethernet slice",
+  "ztp": null,
+  "content": {
+    "nodes": {
+      "gb-bcm-head-01": {
+        "os": "generic/ubuntu2404",
+        "cpu": 2,
+        "memory": 2048,
+        "storage": 10
+      },
+      "gb-bcm-head-02": {
+        "os": "generic/ubuntu2404",
+        "cpu": 2,
+        "memory": 2048,
+        "storage": 10
+      },
+      "gb-el-01": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "gb-el-02": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "gb-el-03": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "gb-el-04": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "gb-eml-01": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "gb-eml-02": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "gb-es-01": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "gb-es-02": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "gb-esl-01": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "gb-esl-02": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "gb-hps-01": {
+        "os": "generic/ubuntu2404",
+        "cpu": 2,
+        "memory": 2048,
+        "storage": 10
+      },
+      "gb-hps-02": {
+        "os": "generic/ubuntu2404",
+        "cpu": 2,
+        "memory": 2048,
+        "storage": 10
+      },
+      "gb-su1-r01-t01": {
+        "os": "generic/ubuntu2404",
+        "cpu": 2,
+        "memory": 2048,
+        "storage": 10
+      },
+      "gb-su1-r01-t02": {
+        "os": "generic/ubuntu2404",
+        "cpu": 2,
+        "memory": 2048,
+        "storage": 10
+      },
+      "gb-su1-r05-t01": {
+        "os": "generic/ubuntu2404",
+        "cpu": 2,
+        "memory": 2048,
+        "storage": 10
+      },
+      "gb-su1-r05-t02": {
+        "os": "generic/ubuntu2404",
+        "cpu": 2,
+        "memory": 2048,
+        "storage": 10
+      }
+    },
+    "links": [
+      [
+        {
+          "node": "gb-su1-r01-t01",
+          "interface": "eth1"
+        },
+        {
+          "node": "gb-el-01",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "gb-su1-r01-t01",
+          "interface": "eth2"
+        },
+        {
+          "node": "gb-el-02",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "gb-su1-r01-t02",
+          "interface": "eth1"
+        },
+        {
+          "node": "gb-el-01",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "gb-su1-r01-t02",
+          "interface": "eth2"
+        },
+        {
+          "node": "gb-el-02",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "gb-su1-r05-t01",
+          "interface": "eth1"
+        },
+        {
+          "node": "gb-el-03",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "gb-su1-r05-t01",
+          "interface": "eth2"
+        },
+        {
+          "node": "gb-el-04",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "gb-su1-r05-t02",
+          "interface": "eth1"
+        },
+        {
+          "node": "gb-el-03",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "gb-su1-r05-t02",
+          "interface": "eth2"
+        },
+        {
+          "node": "gb-el-04",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "gb-hps-01",
+          "interface": "eth1"
+        },
+        {
+          "node": "gb-esl-01",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "gb-hps-01",
+          "interface": "eth2"
+        },
+        {
+          "node": "gb-esl-01",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "gb-hps-01",
+          "interface": "eth3"
+        },
+        {
+          "node": "gb-esl-02",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "gb-hps-01",
+          "interface": "eth4"
+        },
+        {
+          "node": "gb-esl-02",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "gb-hps-02",
+          "interface": "eth1"
+        },
+        {
+          "node": "gb-esl-01",
+          "interface": "swp3"
+        }
+      ],
+      [
+        {
+          "node": "gb-hps-02",
+          "interface": "eth2"
+        },
+        {
+          "node": "gb-esl-01",
+          "interface": "swp4"
+        }
+      ],
+      [
+        {
+          "node": "gb-hps-02",
+          "interface": "eth3"
+        },
+        {
+          "node": "gb-esl-02",
+          "interface": "swp3"
+        }
+      ],
+      [
+        {
+          "node": "gb-hps-02",
+          "interface": "eth4"
+        },
+        {
+          "node": "gb-esl-02",
+          "interface": "swp4"
+        }
+      ],
+      [
+        {
+          "node": "gb-bcm-head-01",
+          "interface": "eth1"
+        },
+        {
+          "node": "gb-eml-01",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "gb-bcm-head-01",
+          "interface": "eth2"
+        },
+        {
+          "node": "gb-eml-02",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "gb-bcm-head-02",
+          "interface": "eth1"
+        },
+        {
+          "node": "gb-eml-01",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "gb-bcm-head-02",
+          "interface": "eth2"
+        },
+        {
+          "node": "gb-eml-02",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-01",
+          "interface": "swp3"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-01",
+          "interface": "swp4"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-01",
+          "interface": "swp5"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-01",
+          "interface": "swp6"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-02",
+          "interface": "swp3"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp3"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-02",
+          "interface": "swp4"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp3"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-02",
+          "interface": "swp5"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp4"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-02",
+          "interface": "swp6"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp4"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-03",
+          "interface": "swp3"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp5"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-03",
+          "interface": "swp4"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp5"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-03",
+          "interface": "swp5"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp6"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-03",
+          "interface": "swp6"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp6"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-04",
+          "interface": "swp3"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp7"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-04",
+          "interface": "swp4"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp7"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-04",
+          "interface": "swp5"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp8"
+        }
+      ],
+      [
+        {
+          "node": "gb-el-04",
+          "interface": "swp6"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp8"
+        }
+      ],
+      [
+        {
+          "node": "gb-esl-01",
+          "interface": "swp5"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp9"
+        }
+      ],
+      [
+        {
+          "node": "gb-esl-01",
+          "interface": "swp6"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp9"
+        }
+      ],
+      [
+        {
+          "node": "gb-esl-01",
+          "interface": "swp7"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp10"
+        }
+      ],
+      [
+        {
+          "node": "gb-esl-01",
+          "interface": "swp8"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp10"
+        }
+      ],
+      [
+        {
+          "node": "gb-esl-02",
+          "interface": "swp5"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp11"
+        }
+      ],
+      [
+        {
+          "node": "gb-esl-02",
+          "interface": "swp6"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp11"
+        }
+      ],
+      [
+        {
+          "node": "gb-esl-02",
+          "interface": "swp7"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp12"
+        }
+      ],
+      [
+        {
+          "node": "gb-esl-02",
+          "interface": "swp8"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp12"
+        }
+      ],
+      [
+        {
+          "node": "gb-eml-01",
+          "interface": "swp3"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp13"
+        }
+      ],
+      [
+        {
+          "node": "gb-eml-01",
+          "interface": "swp4"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp13"
+        }
+      ],
+      [
+        {
+          "node": "gb-eml-01",
+          "interface": "swp5"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp14"
+        }
+      ],
+      [
+        {
+          "node": "gb-eml-01",
+          "interface": "swp6"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp14"
+        }
+      ],
+      [
+        {
+          "node": "gb-eml-02",
+          "interface": "swp3"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp15"
+        }
+      ],
+      [
+        {
+          "node": "gb-eml-02",
+          "interface": "swp4"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp15"
+        }
+      ],
+      [
+        {
+          "node": "gb-eml-02",
+          "interface": "swp5"
+        },
+        {
+          "node": "gb-es-01",
+          "interface": "swp16"
+        }
+      ],
+      [
+        {
+          "node": "gb-eml-02",
+          "interface": "swp6"
+        },
+        {
+          "node": "gb-es-02",
+          "interface": "swp16"
+        }
+      ]
+    ]
+  }
+}

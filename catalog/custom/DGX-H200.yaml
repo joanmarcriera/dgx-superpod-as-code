@@ -1,0 +1,45 @@
+# NVIDIA DGX H200 — custom: not in devicetype-library @ 0451a7c.
+# Sources:
+#   UG  = DGX H100/H200 User Guide, "Introduction" (Tables 3, 5, 6)
+#         https://docs.nvidia.com/dgx/dgxh100-user-guide/introduction-to-dgxh100.html
+#   RA  = DGX SuperPOD H200 RA (RA-11336-001 V2), "Network Fabrics", Figure 4
+# Port names follow UG Table 5 "Port Designation"; labels carry the default Linux netdev
+# and the GPU each compute port is affine to (UG Table 6). 8U, 130.45 kg, 6 x 3.3 kW PSU
+# (4+2 redundant), 10.2 kW max (UG Table 3).
+manufacturer: Nvidia
+model: DGX H200
+slug: nvidia-dgx-h200
+u_height: 8
+is_full_depth: true
+airflow: front-to-rear
+weight: 130.45
+weight_unit: kg
+comments: 8x H200 141 GB (1,128 GB HBM3e). Custom definition — see catalog/custom/README.md.
+interfaces:
+  # Compute fabric: 4 twin-port OSFP cages -> 8 single-port ConnectX-7 NDR400.
+  - {name: OSFP1P1, label: "ibp220s0 / GPU7", type: 400gbase-x-osfp}
+  - {name: OSFP1P2, label: "ibp154s0 / GPU4", type: 400gbase-x-osfp}
+  - {name: OSFP2P1, label: "ibp206s0 / GPU6", type: 400gbase-x-osfp}
+  - {name: OSFP2P2, label: "ibp192s0 / GPU5", type: 400gbase-x-osfp}
+  - {name: OSFP3P1, label: "ibp79s0 / GPU2", type: 400gbase-x-osfp}
+  - {name: OSFP3P2, label: "ibp64s0 / GPU1", type: 400gbase-x-osfp}
+  - {name: OSFP4P1, label: "ibp94s0 / GPU3", type: 400gbase-x-osfp}
+  - {name: OSFP4P2, label: "ibp24s0 / GPU0", type: 400gbase-x-osfp}
+  # 2x dual-port QSFP112 ConnectX-7: P1 defaults to IB (storage), P2 to Ethernet (in-band).
+  - {name: Slot1P1, label: "ibp170s0f0 (storage)", type: 400gbase-x-qsfp112}
+  - {name: Slot1P2, label: "enp170s0f1np1 (in-band)", type: 400gbase-x-qsfp112}
+  - {name: Slot2P1, label: "ibp41s0f0 (storage)", type: 400gbase-x-qsfp112}
+  - {name: Slot2P2, label: "enp41s0f1np1 (in-band)", type: 400gbase-x-qsfp112}
+  # Dual-port 100GbE in slot 3 — not used by the RA.
+  - {name: Slot3P1, label: ens6f0, type: 100gbase-x-qsfp28}
+  - {name: Slot3P2, label: ens6f1, type: 100gbase-x-qsfp28}
+  - {name: LAN, label: "10GbE (unused in SuperPOD, RA Fig. 4)", type: 10gbase-t}
+  - {name: BMC, type: 1000base-t, mgmt_only: true}
+  - {name: bond0, label: "in-band bond (Slot1P2 + Slot2P2)", type: lag}
+power-ports:
+  - {name: PSU1, type: iec-60320-c20, maximum_draw: 3300, allocated_draw: 1700}
+  - {name: PSU2, type: iec-60320-c20, maximum_draw: 3300, allocated_draw: 1700}
+  - {name: PSU3, type: iec-60320-c20, maximum_draw: 3300, allocated_draw: 1700}
+  - {name: PSU4, type: iec-60320-c20, maximum_draw: 3300, allocated_draw: 1700}
+  - {name: PSU5, type: iec-60320-c20, maximum_draw: 3300, allocated_draw: 1700}
+  - {name: PSU6, type: iec-60320-c20, maximum_draw: 3300, allocated_draw: 1700}

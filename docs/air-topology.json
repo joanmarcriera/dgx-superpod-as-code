@@ -1,0 +1,371 @@
+{
+  "format": "JSON",
+  "title": "dgx-superpod-512 Ethernet slice",
+  "ztp": null,
+  "content": {
+    "nodes": {
+      "dgx-su1-n01": {
+        "os": "generic/ubuntu2404",
+        "cpu": 2,
+        "memory": 2048,
+        "storage": 10
+      },
+      "dgx-su1-n02": {
+        "os": "generic/ubuntu2404",
+        "cpu": 2,
+        "memory": 2048,
+        "storage": 10
+      },
+      "dgx-su2-n01": {
+        "os": "generic/ubuntu2404",
+        "cpu": 2,
+        "memory": 2048,
+        "storage": 10
+      },
+      "dgx-su2-n02": {
+        "os": "generic/ubuntu2404",
+        "cpu": 2,
+        "memory": 2048,
+        "storage": 10
+      },
+      "inb-spine-01": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "inb-spine-02": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "inb-su1-leaf-a": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "inb-su1-leaf-b": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "inb-su2-leaf-a": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      },
+      "inb-su2-leaf-b": {
+        "os": "cumulus-vx-5.16.1",
+        "cpu": 2,
+        "memory": 4096,
+        "storage": 20
+      }
+    },
+    "links": [
+      [
+        {
+          "node": "dgx-su1-n01",
+          "interface": "eth1"
+        },
+        {
+          "node": "inb-su1-leaf-a",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "dgx-su1-n01",
+          "interface": "eth2"
+        },
+        {
+          "node": "inb-su1-leaf-b",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "dgx-su1-n02",
+          "interface": "eth1"
+        },
+        {
+          "node": "inb-su1-leaf-a",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "dgx-su1-n02",
+          "interface": "eth2"
+        },
+        {
+          "node": "inb-su1-leaf-b",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "dgx-su2-n01",
+          "interface": "eth1"
+        },
+        {
+          "node": "inb-su2-leaf-a",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "dgx-su2-n01",
+          "interface": "eth2"
+        },
+        {
+          "node": "inb-su2-leaf-b",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "dgx-su2-n02",
+          "interface": "eth1"
+        },
+        {
+          "node": "inb-su2-leaf-a",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "dgx-su2-n02",
+          "interface": "eth2"
+        },
+        {
+          "node": "inb-su2-leaf-b",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "inb-su1-leaf-a",
+          "interface": "swp3"
+        },
+        {
+          "node": "inb-su1-leaf-b",
+          "interface": "swp3"
+        }
+      ],
+      [
+        {
+          "node": "inb-su1-leaf-a",
+          "interface": "swp4"
+        },
+        {
+          "node": "inb-su1-leaf-b",
+          "interface": "swp4"
+        }
+      ],
+      [
+        {
+          "node": "inb-su2-leaf-a",
+          "interface": "swp3"
+        },
+        {
+          "node": "inb-su2-leaf-b",
+          "interface": "swp3"
+        }
+      ],
+      [
+        {
+          "node": "inb-su2-leaf-a",
+          "interface": "swp4"
+        },
+        {
+          "node": "inb-su2-leaf-b",
+          "interface": "swp4"
+        }
+      ],
+      [
+        {
+          "node": "inb-spine-01",
+          "interface": "swp1"
+        },
+        {
+          "node": "inb-spine-02",
+          "interface": "swp1"
+        }
+      ],
+      [
+        {
+          "node": "inb-spine-01",
+          "interface": "swp2"
+        },
+        {
+          "node": "inb-spine-02",
+          "interface": "swp2"
+        }
+      ],
+      [
+        {
+          "node": "inb-su1-leaf-a",
+          "interface": "swp5"
+        },
+        {
+          "node": "inb-spine-01",
+          "interface": "swp3"
+        }
+      ],
+      [
+        {
+          "node": "inb-su1-leaf-a",
+          "interface": "swp6"
+        },
+        {
+          "node": "inb-spine-01",
+          "interface": "swp4"
+        }
+      ],
+      [
+        {
+          "node": "inb-su1-leaf-a",
+          "interface": "swp7"
+        },
+        {
+          "node": "inb-spine-02",
+          "interface": "swp3"
+        }
+      ],
+      [
+        {
+          "node": "inb-su1-leaf-a",
+          "interface": "swp8"
+        },
+        {
+          "node": "inb-spine-02",
+          "interface": "swp4"
+        }
+      ],
+      [
+        {
+          "node": "inb-su1-leaf-b",
+          "interface": "swp5"
+        },
+        {
+          "node": "inb-spine-01",
+          "interface": "swp5"
+        }
+      ],
+      [
+        {
+          "node": "inb-su1-leaf-b",
+          "interface": "swp6"
+        },
+        {
+          "node": "inb-spine-01",
+          "interface": "swp6"
+        }
+      ],
+      [
+        {
+          "node": "inb-su1-leaf-b",
+          "interface": "swp7"
+        },
+        {
+          "node": "inb-spine-02",
+          "interface": "swp5"
+        }
+      ],
+      [
+        {
+          "node": "inb-su1-leaf-b",
+          "interface": "swp8"
+        },
+        {
+          "node": "inb-spine-02",
+          "interface": "swp6"
+        }
+      ],
+      [
+        {
+          "node": "inb-su2-leaf-a",
+          "interface": "swp5"
+        },
+        {
+          "node": "inb-spine-01",
+          "interface": "swp7"
+        }
+      ],
+      [
+        {
+          "node": "inb-su2-leaf-a",
+          "interface": "swp6"
+        },
+        {
+          "node": "inb-spine-01",
+          "interface": "swp8"
+        }
+      ],
+      [
+        {
+          "node": "inb-su2-leaf-a",
+          "interface": "swp7"
+        },
+        {
+          "node": "inb-spine-02",
+          "interface": "swp7"
+        }
+      ],
+      [
+        {
+          "node": "inb-su2-leaf-a",
+          "interface": "swp8"
+        },
+        {
+          "node": "inb-spine-02",
+          "interface": "swp8"
+        }
+      ],
+      [
+        {
+          "node": "inb-su2-leaf-b",
+          "interface": "swp5"
+        },
+        {
+          "node": "inb-spine-01",
+          "interface": "swp9"
+        }
+      ],
+      [
+        {
+          "node": "inb-su2-leaf-b",
+          "interface": "swp6"
+        },
+        {
+          "node": "inb-spine-01",
+          "interface": "swp10"
+        }
+      ],
+      [
+        {
+          "node": "inb-su2-leaf-b",
+          "interface": "swp7"
+        },
+        {
+          "node": "inb-spine-02",
+          "interface": "swp9"
+        }
+      ],
+      [
+        {
+          "node": "inb-su2-leaf-b",
+          "interface": "swp8"
+        },
+        {
+          "node": "inb-spine-02",
+          "interface": "swp10"
+        }
+      ]
+    ]
+  }
+}

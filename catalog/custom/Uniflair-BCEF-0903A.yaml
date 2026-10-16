@@ -1,0 +1,22 @@
+# Schneider Electric Uniflair BCEF 0903A — air-cooled free-cooling chiller (oil-free
+# centrifugal, R134a), one module of the outdoor plant block. Custom.
+# Sources (reference/cooling-schneider/README.md §3, UNI21 = Uniflair Chillers catalogue 2021,
+# BCEF table): "Cooling capacity (3) kW 965.1" at "(3) ... water temperatures 15/10 °C and
+# glycol 20%, external temperature 35 °C"; absorbed power (3) 284.23 kW; 1259.5 kW at 30/20 C;
+# 14 fans; H 2531 x D 2200 x L 10720 mm; quiet version 61.4 dB(A) at 10 m; free-cooling
+# coils + dedicated pump; dual power with ATS; Modbus / BACnet cards. Weight NOT FOUND.
+# Non-racked (role cooling-plant), outside the hall wall. SUPPLY/RETURN = the module's
+# chilled-water connections to the facility-water header (spec cooling.plant).
+manufacturer: Schneider Electric
+model: Uniflair BCEF 0903A
+slug: uniflair-bcef-0903a
+u_height: 0
+is_full_depth: false
+comments: 965.1 kW at 15/10 C (20 % glycol, 35 C ambient), 284 kW absorbed; 10720 x 2200 x 2531 mm. Custom definition — see catalog/custom/README.md.
+interfaces:
+  - {name: SUPPLY, label: "chilled water out (to FWS header)", type: other}
+  - {name: RETURN, label: "chilled water in (from FWS header)", type: other}
+  - {name: mgmt0, label: "BMS Modbus/BACnet", type: 1000base-t, mgmt_only: true}
+power-ports:
+  - {name: A, label: "feed A, 400 V 3ph (ATS)", type: hardwired, maximum_draw: 284230, allocated_draw: 284230}
+  - {name: B, label: "feed B, 400 V 3ph (ATS)", type: hardwired, maximum_draw: 284230}

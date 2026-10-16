@@ -1,0 +1,496 @@
+{
+ "gen": "GB200",
+ "ra": {
+  "title": "NVIDIA DGX SuperPOD: Next Generation Scalable Infrastructure for AI Leadership Reference Architecture Featuring NVIDIA DGX GB200",
+  "doc_id": null,
+  "version": null,
+  "date": "Last updated Nov 19, 2025",
+  "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/index.html"
+ },
+ "system": {
+  "name": "DGX GB200 NVL72",
+  "gpus_per_system": 72,
+  "trays_per_rack": 18,
+  "gpus_per_tray": 4,
+  "nvlink_switch_trays": 9,
+  "power_shelves": 8,
+  "gpu": "NVIDIA B200 Blackwell (2 per GB200 Superchip; 1 Grace CPU per Superchip; 2 Superchips per tray)",
+  "u_height_tray": 1,
+  "rack_power_kw": 120,
+  "cooling": "hybrid",
+  "compute_nics_per_tray": {
+   "count": 4,
+   "speed_gbps": 400,
+   "type": "ConnectX-7 single-port OSFP NDR InfiniBand (UG: single port 400G OSFP)"
+  },
+  "dpu_per_tray": "2x BlueField-3 (RA: 2x200Gbps for in-band mgmt + storage; UG: dual-port QSFP each, left port=storagenet, right port=dgxnet; 4 ports total per tray, 2 of 4 per DPU dedicated to storage)",
+  "bmc": "1x 1GbE RJ45 tray BMC; 2x 1GbE RJ45 BlueField-3 BMC (UG); NVLink switch tray: 1 BMC RJ45 + 2 COMe RJ45 (RA)"
+ },
+ "su": {
+  "racks_per_su": 8,
+  "gpus_per_su": 576,
+  "su_power_mw": 1.2,
+  "mgmt_racks": "Fig 1: rack row = High Performance Storage | Network Switches | 8x GB200 NVL72 racks | Network Switches | Management Nodes (count of racks not stated; figure is a low-res row photo)"
+ },
+ "compute_fabric": {
+  "tech": "NVIDIA NDR 400Gb/s InfiniBand, rail-optimized full fat-tree, 4 rails",
+  "switch_model": "NVIDIA Quantum QM9700",
+  "switch_ports": null,
+  "rails": 4,
+  "leaves_per_su": 32,
+  "su_table": [
+   {
+    "sus": 1,
+    "gpus": 576,
+    "leaves": 32,
+    "spines": 9,
+    "core": 0
+   },
+   {
+    "sus": 2,
+    "gpus": 1152,
+    "leaves": 64,
+    "spines": 48,
+    "core": 18
+   },
+   {
+    "sus": 4,
+    "gpus": 2304,
+    "leaves": 128,
+    "spines": 96,
+    "core": 36
+   },
+   {
+    "sus": 8,
+    "gpus": 4608,
+    "leaves": 256,
+    "spines": 192,
+    "core": 72
+   },
+   {
+    "sus": 16,
+    "gpus": 9216,
+    "leaves": 512,
+    "spines": 384,
+    "core": 144
+   }
+  ],
+  "oversubscription": "non-blocking (full fat-tree); per-SU: 18x400G down per leaf (18 trays) and 2x400G to each of 9 spines (Fig 9)"
+ },
+ "ethernet_fabric": {
+  "tech": "Spectrum-4 800GbE Ethernet, VXLAN/EVPN segments (storage, in-band, OOB), RoCE for storage; LACP active/active 2x200GbE to DGX trays; eBGP to customer edge",
+  "switch_model": "NVIDIA SN5600 (leaf/spine/super-spine); SN2201 (1GbE OOB and legacy RJ45 leaf)",
+  "compute_leaves_per_su": 4,
+  "storage_leaves": "1 pair SN5600 (storage appliances + control-plane nodes)",
+  "mgmt_leaves": "1 pair SN2201 (legacy/RJ45/QSFP uplink devices, in-band 1GbE); OOB SN2201 stack separate",
+  "spines_table": [
+   {
+    "sus": 1,
+    "spines": 2
+   },
+   {
+    "sus": 4,
+    "spines": 8
+   },
+   {
+    "sus": 8,
+    "spines": 16
+   },
+   {
+    "sus": 16,
+    "spines": 32
+   }
+  ],
+  "uplinks": "Spine->super-spine: 28x800GbE per spine (text), Fig 14 legend '14 x 800 Gbps' (per super-spine group); super-spine switches 4/8/14 for 4/8/16 SUs (2 groups). Leaf->spine 6x800G per leaf, 4x800G per storage/mgmt leaf to spine (Fig 13 legend). Customer edge: >=2x100GbE DR1 (text), 2-4x100GbE BGP (Fig 16). Storage: 16x800Gbps non-blocking per SU; compute side 5:3 blocking."
+ },
+ "oob": {
+  "switch_model": "NVIDIA SN2201 (48x1GbE copper)",
+  "counts": "Not stated in text. Fig 17 shows a stack of ~7 SN2201 OOB switches per SU, 2 SN2201 near racks + 2 SN2201 for IB switches/UFM (Fig 18); each SN2201 uplinks 1x100G to SN5600 spines; racks 1x(2x100G) + 10x1G to rack SN2201 pair. Also 2 TOR mgmt switches per NVL72 rack (UG)."
+ },
+ "mgmt_plane": {
+  "ufm": "NVIDIA UFM Appliance Enterprise Edition; 2 appliances (C-UFM-1, C-UFM-2) on 1GbE in-band VTEP/OOB",
+  "nmx": "NVIDIA NMX Manager (Fig 16 shows 3 NMX nodes on OOB VTEP); NVLink switches run NVOS",
+  "bcm_or_mgmt_nodes": "Base Command Manager x2 (Fig 16, OOB VTEP); Mission Control software manages SuperPOD; 3x K8s + 2x Slurm head nodes in Fig 16",
+  "other": "Run:ai via Mission Control; NFS user storage 2x100GbE DR1; BMS (building management system) integration via customer edge eBGP"
+ },
+ "major_components_table": [
+  {
+   "count": 8,
+   "component": "Compute racks",
+   "model": "NVIDIA DGX GB200 NVL72",
+   "config_size": "18 compute trays x 4 GPUs = 72 GPUs/rack; 9 NVLink switch trays; 8 power shelves"
+  },
+  {
+   "count": 144,
+   "component": "Compute trays (derived 8x18; Fig 9 node names GB200-[0001-0144])",
+   "model": "DGX GB200 compute tray",
+   "config_size": "2 Grace + 4 B200; 4x CX-7; 2x BF3; 4x3.84TB E1.S RAID0 + 1x1.92TB M.2"
+  },
+  {
+   "count": 72,
+   "component": "NVLink switch trays (derived 8x9)",
+   "model": "NVLink 5 switch tray",
+   "config_size": "2 NVLink switch chips/tray"
+  },
+  {
+   "count": 32,
+   "component": "IB leaf switches (4 rails x 8)",
+   "model": "NVIDIA Quantum QM9700",
+   "config_size": "NDR 400G"
+  },
+  {
+   "count": 9,
+   "component": "IB spine switches, single SU (Fig 9 labels Spine-01..Spine-09)",
+   "model": "NVIDIA Quantum QM9700",
+   "config_size": "NDR 400G"
+  },
+  {
+   "count": 2,
+   "component": "Ethernet spine",
+   "model": "NVIDIA SN5600",
+   "config_size": "64x800G"
+  },
+  {
+   "count": 4,
+   "component": "Ethernet compute leaf (Fig 13: 4 leaves, each to 2 racks)",
+   "model": "NVIDIA SN5600",
+   "config_size": "64x800G"
+  },
+  {
+   "count": 2,
+   "component": "Ethernet storage/mgmt-node leaf pair",
+   "model": "NVIDIA SN5600",
+   "config_size": "64x800G"
+  },
+  {
+   "count": 2,
+   "component": "Ethernet legacy/RJ45 leaf pair",
+   "model": "NVIDIA SN2201",
+   "config_size": "48x1GbE + uplinks"
+  },
+  {
+   "count": 2,
+   "component": "UFM appliances",
+   "model": "NVIDIA UFM Enterprise Appliance",
+   "config_size": "C-UFM-1/2"
+  },
+  {
+   "count": 2,
+   "component": "BCM nodes (Fig 16)",
+   "model": "Base Command Manager",
+   "config_size": null
+  },
+  {
+   "count": 3,
+   "component": "NMX Manager nodes (Fig 16)",
+   "model": "NVIDIA NMX",
+   "config_size": null
+  }
+ ],
+ "cables_table": [
+  {
+   "count": 576,
+   "component": "IB compute: tray CX-7 -> rail leaf (derived 144 trays x 4)",
+   "connection": "400G NDR, 1 per rail per tray",
+   "model": null
+  },
+  {
+   "count": 576,
+   "component": "IB leaf -> spine (derived 32 leaves x 9 spines x 2)",
+   "connection": "2x400G NDR per leaf-spine pair (Fig 9 legend)",
+   "model": null
+  },
+  {
+   "count": null,
+   "component": "Tray BF3 -> SN5600 leaf",
+   "connection": "Fig 13: 2x200G per rack-leaf line (gray); text: 4x200GbE per tray",
+   "model": null
+  },
+  {
+   "count": null,
+   "component": "SN5600 leaf -> SN5600 spine",
+   "connection": "6x800G per compute leaf (Fig 13 legend green); 4x800G storage leaf (brown)",
+   "model": null
+  },
+  {
+   "count": null,
+   "component": "Customer edge",
+   "connection": ">=2x100GbE DR1 single-mode",
+   "model": "DR1"
+  }
+ ],
+ "storage_perf": [
+  {
+   "metric": "Single SU aggregate read (GBps)",
+   "good": 40,
+   "better": 125,
+   "best": null
+  },
+  {
+   "metric": "Single SU aggregate write (GBps)",
+   "good": 20,
+   "better": 62,
+   "best": null
+  },
+  {
+   "metric": "4 SU aggregate read (GBps)",
+   "good": 160,
+   "better": 500,
+   "best": null
+  },
+  {
+   "metric": "4 SU aggregate write (GBps)",
+   "good": 80,
+   "better": 250,
+   "best": null
+  }
+ ],
+ "power_cooling": {
+  "rack_power_kw": "~120 kW per rack (DGX GB200 user guide); SU TDP 1.2 MW (RA)",
+  "cdu_or_liquid": "Hybrid: GPUs/CPUs direct liquid cooled via rack manifolds and cold plates; other components air cooled. CDU specs not in RA/user guide.",
+  "notes": "8 power shelves/rack, each 6x5.5kW PSUs = 33kW (RA says N redundancy, UG says N+N). Shelves convert AC to 50-51V DC to bus bar. Data center should meet Uptime Tier 3 / TIA942-B Rated 3 / EN50600 Class 3."
+ },
+ "rack_elevation": "RA gives no U-position elevation. Fig 1: one row = High Performance Storage | Network Switches | GB200 NVL72 racks | Network Switches | Management Nodes. Tray U height 1RU (UG); 18 compute + 9 NVLink switch trays + 2 TOR mgmt switches + 8 power shelves in rack.",
+ "citations": [
+  {
+   "field": "system.trays_per_rack",
+   "value": 18,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Multi-node NVLink Fabric",
+   "quote": "Each DGX GB200 rack is built with 18 compute trays and 9 NVLink switch trays."
+  },
+  {
+   "field": "system.nvlink_switch_trays",
+   "value": 9,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Multi-node NVLink Fabric",
+   "quote": "18 compute trays and 9 NVLink switch trays"
+  },
+  {
+   "field": "system.gpus_per_tray",
+   "value": 4,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/dgx-superpod-components.html",
+   "section": "DGX GB200 Compute Tray",
+   "quote": "Each compute tray contains two GB200 Superchips, and each Superchip has two B200 GPUs and one Grace CPU."
+  },
+  {
+   "field": "system.power_shelves",
+   "value": 8,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/dgx-superpod-components.html",
+   "section": "DGX Power Shelves",
+   "quote": "There are eight total power shelves in a single DGX GB200 NVL72 rack system."
+  },
+  {
+   "field": "system.compute_nics_per_tray",
+   "value": 4,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/dgx-superpod-components.html",
+   "section": "DGX GB200 Compute Tray",
+   "quote": "The compute tray integrates four ConnectX-7 (CX-7) NICs to support InfiniBand NDR (400Gbps)"
+  },
+  {
+   "field": "system.dpu_per_tray",
+   "value": "2",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/dgx-superpod-components.html",
+   "section": "DGX GB200 Compute Tray",
+   "quote": "two BlueFiled-3 (BF3) NICs to support 2x200Gbps connectivity for the In-band Management and Storage networks"
+  },
+  {
+   "field": "system.u_height_tray",
+   "value": 1,
+   "url": "https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html",
+   "section": "Rack Configuration",
+   "quote": "18x 1RU compute trays, each with 2 Grace CPUs and 4 Blackwell GPUs."
+  },
+  {
+   "field": "system.rack_power_kw",
+   "value": 120,
+   "url": "https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html",
+   "section": "Power Shelves",
+   "quote": "The rack power consumption is approximately 120kW."
+  },
+  {
+   "field": "su.racks_per_su",
+   "value": 8,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/abstract.html",
+   "section": "Abstract",
+   "quote": "each SU contains 8 DGX GB200 systems"
+  },
+  {
+   "field": "su.su_power_mw",
+   "value": 1.2,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/dgx-superpod-architecture.html",
+   "section": "DGX SuperPOD Architecture",
+   "quote": "Each SU requires a Thermal Design Power (TDP) of 1.2 Megawatts (MW)."
+  },
+  {
+   "field": "su.gpus_per_su",
+   "value": 576,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Compute Fabric",
+   "quote": "Figure 9 Compute fabric for full 576 GPUs DGX SuperPOD"
+  },
+  {
+   "field": "compute_fabric.rails",
+   "value": 4,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Compute Fabric",
+   "quote": "Each SU contains 4 SLGs to match with the number of IB rails (which equals the number of GPUs per compute tray)."
+  },
+  {
+   "field": "compute_fabric.leaves_per_su",
+   "value": 32,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Compute Fabric (Table 3)",
+   "quote": "IB Leaf Switch Per SU 32 (Table 3 flattened row: 1152 GPUs, 2 SUs, ... 32 | 64 | 24 | 48)"
+  },
+  {
+   "field": "compute_fabric.su_table.spines_per_su_scaled",
+   "value": 24,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Compute Fabric",
+   "quote": "There are 8 leaf switches (one for each compute rack) and 6 spine switches in each SLG"
+  },
+  {
+   "field": "compute_fabric.su_table",
+   "value": [
+    2,
+    4,
+    8,
+    16
+   ],
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Table 3",
+   "quote": "Core switches 18/36/72/144; spines 48/96/192/384; leaves 64/128/256/512 for 2/4/8/16 SUs"
+  },
+  {
+   "field": "compute_fabric.su_table.spines_1su",
+   "value": 9,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Fig 9 (image10.png)",
+   "quote": "Spine-01 ... Spine-09 (figure labels only)"
+  },
+  {
+   "field": "compute_fabric.switch_model",
+   "value": "QM9700",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/dgx-superpod-components.html",
+   "section": "Table 1",
+   "quote": "NVIDIA Quantum QM9700 InfiniBand switches"
+  },
+  {
+   "field": "ethernet_fabric.compute_leaves_per_su",
+   "value": 4,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Fig 13 (image14.png)",
+   "quote": "figure shows 4 SN5600 leaf switches each connected to 2 racks (figure-only)"
+  },
+  {
+   "field": "ethernet_fabric.spines",
+   "value": 2,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Storage and In-band Ethernet Fabric",
+   "quote": "Each SU features two SN5600 switches as the aggregation layer or spine layer"
+  },
+  {
+   "field": "ethernet_fabric.storage_leaves",
+   "value": "pair",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Storage and In-band Ethernet Fabric",
+   "quote": "One additional pair of SN5600 switches serves as the ingestion point for Storage Appliances and control plane nodes."
+  },
+  {
+   "field": "ethernet_fabric.mgmt_leaves",
+   "value": "pair",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Storage and In-band Ethernet Fabric",
+   "quote": "One additional pair of SN2201 switches are to connect all legacy devices requiring RJ45 connections or QSFP based uplink connectivity."
+  },
+  {
+   "field": "ethernet_fabric.spines_table",
+   "value": [
+    8,
+    16,
+    32
+   ],
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Table 4",
+   "quote": "Ethernet spines per SU = 2 (Table 4 totals 8/16/32 for 4/8/16 SUs are flattened; derived)"
+  },
+  {
+   "field": "ethernet_fabric.uplinks",
+   "value": 28,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Storage and In-band Ethernet Fabric",
+   "quote": "Each Spine is expected to have 28x 800GbE connection uplinks"
+  },
+  {
+   "field": "ethernet_fabric.storage_bw",
+   "value": 16,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Storage Network",
+   "quote": "Each scalable unit is designed to carry 16x 800Gbps non-blocking bandwidth to the storage appliances."
+  },
+  {
+   "field": "ethernet_fabric.blocking",
+   "value": "5:3",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Storage Network",
+   "quote": "a slightly blocking fabric with a blocking factor of 5:3"
+  },
+  {
+   "field": "oob.switch_model",
+   "value": "SN2201",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/dgx-superpod-components.html",
+   "section": "Table 1",
+   "quote": "NVIDIA SN2201 switch | 48 x 1 Gbps Ethernet switch leveraging copper ports"
+  },
+  {
+   "field": "mgmt_plane.ufm",
+   "value": "2",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html",
+   "section": "Fig 13/16",
+   "quote": "C-UFM-1 / C-UFM-2 (figure labels)"
+  },
+  {
+   "field": "storage_perf",
+   "value": [
+    40,
+    125,
+    20,
+    62,
+    160,
+    500,
+    80,
+    250
+   ],
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/storage-architecture.html",
+   "section": "Table 6",
+   "quote": "Single SU aggregate system read | 40 | 125 ... 4 SU aggregate system write | 80 | 250"
+  },
+  {
+   "field": "power_cooling.shelf_kw",
+   "value": 33,
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/dgx-superpod-components.html",
+   "section": "DGX Power Shelves",
+   "quote": "six 5.5kW PSUs configured as N redundancy and can deliver up to 33kW of power"
+  },
+  {
+   "field": "system.cooling",
+   "value": "hybrid",
+   "url": "https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/dgx-superpod-architecture.html",
+   "section": "DGX SuperPOD Architecture",
+   "quote": "Each DGX GB200 leverages hybrid cooling with both direct liquid cooling and air cooling"
+  }
+ ],
+ "ambiguities": [
+  "RA is the Nov 2025 'Next Generation Scalable Infrastructure' doc; HTML index <title> still says 'Featuring NVIDIA DGX B200' (copy-paste), body is GB200. No doc_id/version/PDF found on docs.nvidia.com/dgx-superpod/ for GB200 (only GB300 pdf/dgx-spod-gb300-ra.pdf, Vera Rubin, B200/B300 best-practice PDFs).",
+  "RA has NO major-components count table, NO cable table, NO U-position rack elevation, NO CDU spec; all counts here beyond text are derived from figures (Figs 9, 13, 16, 17, 18) or multiplication.",
+  "Single-SU IB spines: Fig 9 labels Spine-01..Spine-09 (9), but the scale-out SLG design uses 6 spines per SLG (24/SU, Table 3). 1-SU spine count=9 is figure-derived.",
+  "Table 1 says 'eight NDR400 connections per system' vs text/UG: 4 CX-7 single-port 400G per tray (4 rails) - the 8 likely counts two trays or is an error (B200 text leftover). Text also refers to 'DGX B200 CPU tray' and 'B200 GPU ... 18 NVL5 links' copy-paste remnants; 'fully tested scales to two SUs' vs architecture page 'four SUs or more contact NVIDIA'; Table 4 (super-spine) flattened and contains stray rows (copy of Table 3 data), super-spine count 4/8/14 for 4/8/16 SUs; super-spine uplinks '28x800GbE' text vs Fig 14 legend '14 x 800 Gbps'.",
+  "Switch ports for QM9700 not stated in RA (64 NDR ports/32 OSFP cages is external knowledge); leaf port use 18 down + 18 up inferred from Fig 9.",
+  "BF3 speed: RA '2x200Gbps' / '4x 200GbE' per tray; UG says dual-port 400G-capable DPUs; Fig 13 gray link label 2x200G per rack-to-leaf line is unclear (per tray vs per rack).",
+  "Power: RA says power shelves 'N redundancy' (6x5.5kW=33kW), UG says N+N; UG ~120 kW rack vs 8x33 kW=264 kW shelf capacity. SU TDP 1.2 MW (RA) vs 8x120=0.96 MW racks, remainder presumably network/storage/mgmt (not stated).",
+  "OOB SN2201 count per SU not stated; Fig 17 draws ~7 stacked, Fig 18 draws 2+2+2 groups. Per-rack 2 TOR mgmt switches per UG (model not stated).",
+  "Cabling guide (design-guide-cabling-data-centers) is generic NDR/Ethernet cabling, not GB200-specific; no GB200 CDU/rack elevation found there.",
+  "Storage tiers are Standard/Enhanced only (mapped to good/better); no 'best' tier."
+ ]
+}

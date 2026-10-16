@@ -1,0 +1,18 @@
+# DDN A³I AI400X2 Turbo (AI400X2T) — EXAScaler (Lustre) appliance, the DDN model NVIDIA
+# certifies for Hopper DGX SuperPODs (reference/storage/README.md: NVIDIA SuperPOD partner
+# page; DDN H100 SuperPOD RA). Ports: 8 × NDR200/HDR200 InfiniBand (DDN H100 RA, "HDR200
+# IB x8"), reached from the storage leaves through NDR 400G -> 2 × 200G splitters (ra-notes
+# 3.9). Power: DCG Table 4 storage example (2,880 W avg / 3,600 W peak) — DDN's own X2T
+# figure was not published (datasheet behind a form). 2U per DDN.
+manufacturer: DDN
+model: AI400X2T
+slug: ddn-ai400x2t
+u_height: 2
+is_full_depth: true
+airflow: front-to-rear
+interfaces:
+  - {name: "ib{1..8}", label: "NDR200", type: 200gbase-x-qsfp56}
+  - {name: "mgmt{1..2}", type: 1000base-t, mgmt_only: true}
+power-ports:
+  - {name: psu1, type: iec-60320-c20, maximum_draw: 3600, allocated_draw: 1800}
+  - {name: psu2, type: iec-60320-c20, maximum_draw: 3600, allocated_draw: 1800}

@@ -1,0 +1,27 @@
+# Motivair (a Schneider Electric company) ChilledDoor M8 — active rear-door heat exchanger
+# for a 48U x 600 mm rack. Custom: not in devicetype-library.
+# Sources (reference/cooling-schneider/README.md §1, CD25 = ChilledDoor brochure 2025):
+#   nominal 30 kW "Calculated at 35% RH and 75F Room Temp; Supply Temperature Range 55F - 65F
+#   water; 100% water"; "Depth 14.3" in = 363 mm; "Fan Quantity 5"; "Max Watts 840";
+#   208/230 V 1-phase, C14 plug (HPE QuickSpecs); "GPM (Range) 0 - 23"; PLC with Modbus /
+#   BACnet (MOT remote-communication page); 95 deg swing. Weight NOT FOUND.
+# Mounted at the rack rear like the 0U PDUs (position null): scene.py maps role
+# cooling-rdhx to mount "rear-door". SUPPLY/RETURN are the 1 in hose connections to the row
+# header (spec cooling.loops.rdhx); FAN is the door's own power inlet (rack rPDU). No
+# allocated_draw: the fans modulate with load (far below 840 W at ~21 kW of rack heat) and
+# mgmt-r01 sits at 21.39 of its 21.8 kW 2N budget — the fan heat is added to the LOOP load
+# by cooling.model (spec fan_w) instead; see docs/design-choices.md "Mixed pod".
+manufacturer: Motivair
+model: ChilledDoor M8 (48U 600 mm)
+slug: motivair-chilleddoor-m8-48u-600
+part_number: M8-48U-600
+u_height: 0
+is_full_depth: false
+airflow: front-to-rear
+comments: 30 kW nominal at 12.8-18.3 C supply water; 363 mm deep; 5 EC fans, 840 W max. Custom definition — see catalog/custom/README.md.
+interfaces:
+  - {name: SUPPLY, label: "1 in supply hose (from row header)", type: other}
+  - {name: RETURN, label: "1 in return hose (to row header)", type: other}
+  - {name: mgmt0, label: "PLC Modbus/BACnet", type: 1000base-t, mgmt_only: true}
+power-ports:
+  - {name: FAN, label: "5 x EC fans + PLC, 230 V 1ph", type: iec-60320-c14, maximum_draw: 840}

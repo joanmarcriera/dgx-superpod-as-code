@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+# Built Atlas page (CI builds it)
+viewer/dist/
+# Vendor media fetched by reference/fetch.py (provenance is in each SOURCES.csv)
+reference/*/media/
+blender/out/
+.env
+.env.*

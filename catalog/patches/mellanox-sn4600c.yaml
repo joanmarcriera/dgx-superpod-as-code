@@ -1,0 +1,5 @@
+# Power: DCG DG-11301-001 Table 4, SN4600C peak 820 W / avg 466 W, allocated_draw = peak / 2 PSUs.
+update:
+  power-ports:
+    psu0: {maximum_draw: 820, allocated_draw: 410}
+    psu1: {maximum_draw: 820, allocated_draw: 410}

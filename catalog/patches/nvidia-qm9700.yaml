@@ -1,0 +1,12 @@
+# Fixes for the upstream QM9700 definition.
+# - Upstream lists P22.0 then P23.1: P22.1 and P23.0 are missing (62 of 64 ports).
+# - No management port and no power ports (PSUs are module bays only).
+# Power: DCG DG-11301-001 Table 4, QM9700 peak 1,720 W / avg 1,376 W, allocated_draw = peak / 2 PSUs.
+add:
+  interfaces:
+    - {name: P22.1, type: 400gbase-x-osfp}
+    - {name: P23.0, type: 400gbase-x-osfp}
+    - {name: mgmt0, type: 1000base-t, mgmt_only: true}
+  power-ports:
+    - {name: psu1, type: iec-60320-c14, maximum_draw: 1720, allocated_draw: 860}
+    - {name: psu2, type: iec-60320-c14, maximum_draw: 1720, allocated_draw: 860}
